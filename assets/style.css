@@ -203,6 +203,11 @@ footer.foot{
   max-width:640px; margin:0 auto; padding:28px 20px 40px; text-align:center;
   color:var(--ink-faint); font-size:12px; line-height:1.9;
 }
+footer.foot .legal{
+  margin-top:16px; padding-top:16px; border-top:1px solid var(--line);
+  font-size:11px; line-height:1.9; color:var(--ink-faint); text-align:left;
+}
+footer.foot .legal p{margin:0;}
 
 @media (max-width:380px){
   h1.title{font-size:21px;}
