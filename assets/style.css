@@ -1,0 +1,211 @@
+:root{
+  --paper:#F1EEE6;
+  --paper-raised:#FFFFFF;
+  --ink:#16181C;
+  --ink-soft:#4B4E54;
+  --ink-faint:#83868C;
+  --line:rgba(22,24,28,.12);
+  --accent:#A8672E;
+  --accent-soft:rgba(168,103,46,.12);
+  --accent-ink:#7A4B1E;
+  --rise:#B33B2B;
+  --rise-soft:rgba(179,59,43,.10);
+  --fall:#2E6B52;
+  --fall-soft:rgba(46,107,82,.10);
+  --shadow:0 1px 2px rgba(22,24,28,.06), 0 8px 24px -16px rgba(22,24,28,.25);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#12151A;
+    --paper-raised:#191D23;
+    --ink:#E9E6DC;
+    --ink-soft:#B2ADA1;
+    --ink-faint:#7B7870;
+    --line:rgba(233,230,220,.14);
+    --accent:#D08C4C;
+    --accent-soft:rgba(208,140,76,.14);
+    --accent-ink:#E4A968;
+    --rise:#E06A57;
+    --rise-soft:rgba(224,106,87,.14);
+    --fall:#5EA085;
+    --fall-soft:rgba(94,160,133,.14);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12151A; --paper-raised:#191D23; --ink:#E9E6DC; --ink-soft:#B2ADA1; --ink-faint:#7B7870;
+  --line:rgba(233,230,220,.14); --accent:#D08C4C; --accent-soft:rgba(208,140,76,.14); --accent-ink:#E4A968;
+  --rise:#E06A57; --rise-soft:rgba(224,106,87,.14); --fall:#5EA085; --fall-soft:rgba(94,160,133,.14);
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+}
+:root[data-theme="light"]{
+  --paper:#F1EEE6; --paper-raised:#FFFFFF; --ink:#16181C; --ink-soft:#4B4E54; --ink-faint:#83868C;
+  --line:rgba(22,24,28,.12); --accent:#A8672E; --accent-soft:rgba(168,103,46,.12); --accent-ink:#7A4B1E;
+  --rise:#B33B2B; --rise-soft:rgba(179,59,43,.10); --fall:#2E6B52; --fall-soft:rgba(46,107,82,.10);
+  --shadow:0 1px 2px rgba(22,24,28,.06), 0 8px 24px -16px rgba(22,24,28,.25);
+}
+
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html{background:var(--paper);}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:-apple-system,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",sans-serif;
+  font-size:16px; line-height:1.85; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+::selection{background:var(--accent-soft); color:var(--ink);}
+a{color:var(--accent-ink); text-decoration-thickness:1px; text-underline-offset:2px;}
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
+
+.font-display{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;}
+.num{font-variant-numeric:tabular-nums; letter-spacing:.01em;}
+
+.wrap{max-width:640px; margin:0 auto; padding:0 20px 96px;}
+
+/* ---------- Masthead ---------- */
+header.masthead{
+  max-width:640px; margin:0 auto; padding:22px 20px 16px;
+  border-bottom:1px solid var(--line);
+}
+header.masthead .eyebrow{
+  display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  font-size:12px; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:8px;
+}
+header.masthead .eyebrow a{color:var(--ink-faint); text-decoration:none;}
+header.masthead .eyebrow a:hover{color:var(--accent-ink);}
+h1.title{
+  margin:0 0 6px; font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  font-weight:600; font-size:24px; line-height:1.4; text-wrap:balance; letter-spacing:.01em;
+}
+.range{color:var(--ink-soft); font-size:13.5px;}
+
+/* ---------- Section nav ---------- */
+nav.jump{
+  position:sticky; top:0; z-index:20; background:var(--paper); border-bottom:1px solid var(--line);
+  padding:10px 0; margin-bottom:4px;
+}
+nav.jump .track{
+  display:flex; gap:8px; overflow-x:auto; padding:0 20px; max-width:640px; margin:0 auto;
+  scrollbar-width:none;
+}
+nav.jump .track::-webkit-scrollbar{display:none;}
+nav.jump a{
+  flex:0 0 auto; white-space:nowrap; font-size:12.5px; color:var(--ink-soft); text-decoration:none;
+  padding:6px 12px; border-radius:100px; border:1px solid var(--line); background:var(--paper-raised);
+}
+nav.jump a:hover{color:var(--accent-ink); border-color:var(--accent);}
+
+/* ---------- Article body (converted markdown) ---------- */
+article section{padding:26px 0; border-bottom:1px solid var(--line); scroll-margin-top:56px;}
+article section:last-of-type{border-bottom:none;}
+article h2{
+  display:flex; align-items:center; gap:10px;
+  font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  font-weight:600; font-size:19px; margin:0 0 14px; text-wrap:balance;
+}
+article h2::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--accent); flex:0 0 auto;}
+article h3{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  font-weight:600; font-size:16px; margin:24px 0 10px; color:var(--ink);
+}
+article h3:first-of-type{margin-top:2px;}
+article p{margin:0 0 14px; color:var(--ink-soft); font-size:15px; line-height:1.85;}
+article p:last-child{margin-bottom:0;}
+article strong{color:var(--ink); font-weight:600;}
+
+/* Bullet lists become card rows */
+article ul{list-style:none; margin:14px 0; padding:0; display:flex; flex-direction:column; gap:9px;}
+article ul li{
+  background:var(--paper-raised); border:1px solid var(--line); border-radius:8px;
+  padding:11px 14px; font-size:14.5px; color:var(--ink-soft); line-height:1.75;
+}
+article ul li strong:first-child{color:var(--ink); font-weight:700;}
+
+/* Numbered lists (recommended trades) get a distinct card treatment */
+article ol{list-style:none; counter-reset:trade; margin:14px 0; padding:0; display:flex; flex-direction:column; gap:12px;}
+article ol li{
+  counter-increment:trade;
+  background:var(--paper-raised); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:13px 15px 13px 15px; font-size:14.5px; color:var(--ink-soft); line-height:1.8;
+  box-shadow:var(--shadow); position:relative;
+}
+article ol li strong:first-child{color:var(--ink); font-weight:700; font-size:15px;}
+
+/* Lead summary block: first bullet list right under 本日のポイント */
+article section:first-of-type ul{
+  background:var(--paper-raised); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:6px; padding:4px 4px; box-shadow:var(--shadow); gap:0;
+}
+article section:first-of-type ul li{
+  background:transparent; border:none; border-radius:0; border-bottom:1px dashed var(--line);
+  padding:13px 14px;
+}
+article section:first-of-type ul li:last-child{border-bottom:none;}
+
+/* Wide content safety net (should rarely trigger given no tables) */
+article table{display:block; overflow-x:auto; border-collapse:collapse; font-size:13px;}
+article pre{overflow-x:auto;}
+
+/* Sources (collapsed by default) */
+article #sources h2{margin-bottom:10px;}
+.src-details{
+  border:1px solid var(--line); border-radius:8px; background:var(--paper-raised); padding:2px 15px;
+}
+.src-details summary{
+  cursor:pointer; padding:12px 0; font-size:13.5px; font-weight:600; color:var(--ink-soft);
+  list-style:none; display:flex; align-items:center; justify-content:space-between;
+}
+.src-details summary::-webkit-details-marker{display:none;}
+.src-details summary::after{content:"+"; font-size:18px; color:var(--accent-ink);}
+.src-details[open] summary::after{content:"\2013";}
+.src-body{padding-bottom:14px;}
+.src-body p{color:var(--ink-faint); font-size:12.5px; margin-bottom:10px; line-height:1.8;}
+.src-body p strong{color:var(--ink-soft);}
+
+/* ---------- Report index list ---------- */
+.report-list{list-style:none; margin:20px 0; padding:0; display:flex; flex-direction:column; gap:10px;}
+.report-list li{
+  background:var(--paper-raised); border:1px solid var(--line); border-radius:10px;
+}
+.report-list a{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:16px 18px; text-decoration:none; color:var(--ink);
+}
+.report-list .date{font-weight:700; font-size:15.5px; font-variant-numeric:tabular-nums;}
+.report-list .dow{color:var(--ink-faint); font-size:12.5px; margin-left:8px; font-weight:400;}
+.report-list .chevron{color:var(--ink-faint); font-size:18px;}
+.report-list a:hover{background:var(--accent-soft);}
+
+/* ---------- Gate (passcode) ---------- */
+.gate{
+  min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px;
+}
+.gate[hidden]{display:none;}
+.gate .card{
+  width:100%; max-width:360px; background:var(--paper-raised); border:1px solid var(--line);
+  border-radius:14px; padding:32px 28px; box-shadow:var(--shadow); text-align:center;
+}
+.gate h1{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif; font-size:20px; margin:0 0 8px;}
+.gate p{color:var(--ink-faint); font-size:13.5px; margin:0 0 20px;}
+.gate input[type="password"]{
+  width:100%; padding:12px 14px; font-size:16px; border:1px solid var(--line); border-radius:8px;
+  background:var(--paper); color:var(--ink); margin-bottom:12px; text-align:center; letter-spacing:.1em;
+}
+.gate button{
+  width:100%; padding:12px 14px; font-size:15px; font-weight:600; border:none; border-radius:8px;
+  background:var(--accent); color:#fff; cursor:pointer;
+}
+.gate button:hover{background:var(--accent-ink);}
+.gate .err{color:var(--rise); font-size:13px; margin-top:10px; min-height:1.2em;}
+
+footer.foot{
+  max-width:640px; margin:0 auto; padding:28px 20px 40px; text-align:center;
+  color:var(--ink-faint); font-size:12px; line-height:1.9;
+}
+
+@media (max-width:380px){
+  h1.title{font-size:21px;}
+  .wrap{padding:0 16px 96px;}
+  header.masthead{padding:20px 16px 14px;}
+}

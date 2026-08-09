@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>金融市場リサーチ | 日次レポート</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<div id="gate" class="gate">
+  <div class="card">
+    <h1>金融市場リサーチ</h1>
+    <p>合言葉を入力してください</p>
+    <input type="password" id="passcode" inputmode="numeric" autocomplete="off" placeholder="••••">
+    <button id="enter">開く</button>
+    <div class="err" id="err"></div>
+  </div>
+</div>
+<div id="listing" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><span>KINYU MARKET RESEARCH</span></div>
+    <h1 class="title">日次マーケットレポート</h1>
+    <div class="range">対象日を選択してください（新しい順）</div>
+  </header>
+  <div class="wrap">
+    <ul class="report-list">
+      <li><a href="reports/2026-08-07.html"><span><span class="date num">2026-08-07</span><span class="dow">（金）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-08-06.html"><span><span class="date num">2026-08-06</span><span class="dow">（木）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-08-05.html"><span><span class="date num">2026-08-05</span><span class="dow">（水）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-08-04.html"><span><span class="date num">2026-08-04</span><span class="dow">（火）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-08-03.html"><span><span class="date num">2026-08-03</span><span class="dow">（月）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-31.html"><span><span class="date num">2026-07-31</span><span class="dow">（金）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-30.html"><span><span class="date num">2026-07-30</span><span class="dow">（木）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-29.html"><span><span class="date num">2026-07-29</span><span class="dow">（水）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-28.html"><span><span class="date num">2026-07-28</span><span class="dow">（火）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-27.html"><span><span class="date num">2026-07-27</span><span class="dow">（月）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-24.html"><span><span class="date num">2026-07-24</span><span class="dow">（金）</span></span><span class="chevron">›</span></a></li>
+      <li><a href="reports/2026-07-23.html"><span><span class="date num">2026-07-23</span><span class="dow">（木）</span></span><span class="chevron">›</span></a></li>
+    </ul>
+  </div>
+  <footer class="foot">毎営業日朝に自動生成</footer>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
