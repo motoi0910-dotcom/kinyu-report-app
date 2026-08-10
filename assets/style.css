@@ -80,6 +80,19 @@ h1.title{
 }
 .range{color:var(--ink-soft); font-size:13.5px;}
 
+/* ---------- Individual agent-note links (integrated report ⇄ per-agent notes) ---------- */
+.agentrow{max-width:640px; margin:0 auto; padding:14px 20px 0;}
+.agentrow .label{font-size:11px; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:8px;}
+.agentrow .track{display:flex; gap:8px; overflow-x:auto; scrollbar-width:none;}
+.agentrow .track::-webkit-scrollbar{display:none;}
+.agentrow a, .agentrow .current{
+  flex:0 0 auto; white-space:nowrap; font-size:12.5px;
+  padding:6px 12px; border-radius:100px; border:1px solid var(--line);
+}
+.agentrow a{color:var(--ink-soft); text-decoration:none; background:var(--paper-raised);}
+.agentrow a:hover{color:var(--accent-ink); border-color:var(--accent);}
+.agentrow .current{color:#fff; background:var(--accent); border-color:var(--accent); font-weight:600;}
+
 /* ---------- Section nav ---------- */
 nav.jump{
   position:sticky; top:0; z-index:20; background:var(--paper); border-bottom:1px solid var(--line);
