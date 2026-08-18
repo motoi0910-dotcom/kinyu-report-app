@@ -156,6 +156,27 @@ article section:first-of-type ul li{
 }
 article section:first-of-type ul li:last-child{border-bottom:none;}
 
+/* ---------- FX pair chart (embedded directly under its bullet comment) ---------- */
+article ul li:has(.pair-chart){padding-bottom:8px;}
+.pair-chart{
+  margin:10px -3px -3px; padding:6px 6px 2px; border-top:1px dashed var(--line);
+}
+.pair-chart-img{display:block; width:100%; height:auto; border-radius:4px;}
+.pair-chart-img.theme-dark{display:none;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .pair-chart-img.theme-light{display:none;}
+  :root:not([data-theme="light"]) .pair-chart-img.theme-dark{display:block;}
+}
+:root[data-theme="dark"] .pair-chart-img.theme-light{display:none;}
+:root[data-theme="dark"] .pair-chart-img.theme-dark{display:block;}
+
+/* ---------- FX detail chart (1営業日、値動き詳細セクションの見出し直下) ---------- */
+.detail-chart{
+  margin:2px 0 16px; background:var(--paper-raised); border:1px solid var(--line); border-radius:8px;
+  padding:8px; box-shadow:var(--shadow);
+}
+.detail-chart .pair-chart-img{border-radius:4px;}
+
 /* Wide content safety net (should rarely trigger given no tables) */
 article table{display:block; overflow-x:auto; border-collapse:collapse; font-size:13px;}
 article pre{overflow-x:auto;}
