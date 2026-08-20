@@ -211,6 +211,10 @@ article #sources h2{margin-bottom:10px;}
 .report-list .chevron{color:var(--ink-faint); font-size:18px;}
 .report-list a:hover{background:var(--accent-soft);}
 
+/* ---------- Archive (past months) section on the front page / month archive pages ---------- */
+.archive-section{margin-top:28px;}
+.list-label{font-size:11px; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:10px;}
+
 /* ---------- Gate (passcode) ---------- */
 .gate{
   min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px;
