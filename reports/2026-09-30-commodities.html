@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-09-30 コモディティストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-09-30.html">統合レポートを見る</a><span>2026-09-30</span></div>
+  <h1 class="title">2026-09-30 コモディティストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-09-30-fx.html">為替</a>
+    <span class="current">コモディティ</span>
+    <a href="2026-09-30-jgb.html">円債</a>
+    <a href="2026-09-30-ust.html">米国債</a>
+    <a href="2026-09-30-intl-bonds.html">外債</a>
+    <a href="2026-09-30-jp-equity.html">日本株式</a>
+    <a href="2026-09-30-us-equity.html">米国株式</a>
+    <a href="2026-09-30-politics.html">政治・地政学</a>
+    <a href="2026-09-30-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">サマリー</a>
+    <a href="#sec-2">値動きの時系列解説</a>
+    <a href="#sec-3">主要商品</a>
+    <a href="#sec-4">フロー・需給・ポジション動向</a>
+    <a href="#sec-5">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<p>&gt; <strong>データ制約に関する注記</strong>：本ノート作成セッションでは、(1) WebSearchツールが9エージェント共有の利用上限（200回）に本ノート作成中に到達し追加検索が不可能となったこと、(2) Reuters・Bloomberg・CNBC・Yahoo Finance・TradingEconomics・USAGOLD・Kitco・Investing.com等、主要な一次・準一次情報源のほぼ全てがWebFetchで`EGRESS_BLOCKED`（ネットワークegressプロキシによる遮断）となったこと、という二重の制約に直面した。このため、<strong>対象営業日9/30当日および前営業日9/29の日中値・終値は一次情報で裏付けを取れておらず「未確認」である</strong>。確度高く確認できた最後の終値アンカーは前営業日9/28終値（`daily/agents/2026-09-28-commodities.md`にて複数ソースでクロスチェック済み）であり、本ノートはこれを起点に、9/29〜9/30にかけて判明している定性的な材料（RBA利上げ、JOLTS上振れ、PCE発表、Escondidaストライキ投票結果等）を時系列で積み上げる構成とした。数値を作り出さないというCLAUDE.mdの方針に基づき、9/29・9/30の価格水準は「推定」「未確認」の明記なしには記載しない。</p>
+<section id="sec-1">
+<h2>サマリー</h2>
+<ul>
+<li>確度高く確認できる最終アンカーは前営業日9/28の引け：<strong>WTI 92.60ドル（+0.2%）／Brent 105.28ドル（+0.92%）／金4,148.69ドル（-3.19%、7週間ぶり安値）／銀61.53ドル（-4.31%、8/7以来初の62ドル割れ）／プラチナ1,716〜1,726ドル／銅（COMEX）6.70ドル/lb前後（史上最高値圏）／天然ガス3.11ドル/MMBtu（-3.57%）</strong>。9/28はTrump大統領のイラン提案拒否報道で原油が乱高下（Brentザラ場108.83ドル、WTI96.54ドル）した後、サウジ東西パイプライン復旧報道で急反落するという典型的なヘッドライン相場となり、原油急伸を起点とした金利上昇・ドル高が貴金属を大きく押し下げた。</li>
+<li>9/29には豪RBAが25bp利上げ（4.35%→4.60%、15年ぶり高水準）を決定、米8月JOLTS求人件数が722.7万件（予想710.0万件を上回る）となり、世界的なタカ派傾斜が一段と強まったとみられる（いずれも複数の市場情報源で確認済みだが、これが同日の商品価格に与えた具体的な値幅は未確認）。</li>
+<li>対象営業日9/30は米8月分PCE（個人消費支出）物価指数の発表、財務省2年・5年債入札、そしてチリEscondida鉱山（BHP、世界最大の銅鉱山）の労組ストライキ投票（9/28-30実施）の結果判明が予定されており、いずれも金利・ドル・貴金属・銅の値動きを左右しうる材料が集中する日となる。ただし当日の実際の値動き・指標確定値は本セッション終了時点で未確認。</li>
+<li>地政学面では、Trump大統領によるイラン提案拒否・ホルムズ海峡封鎖を巡る緊張が9月後半を通じて原油の地政学プレミアムを支配する構図が継続しているとみられるが、サウジ東西パイプラインの部分復旧（日量約350万バレル、フル稼働700万バレルの半分）が上値を抑える綱引きが続いている。</li>
+<li>米国の政府予算・つなぎ予算(H.R.6500、12/11まで資金確保）を巡る状況は前日までの複数ノートで情報源間の不整合が指摘されており、本ノートでも同様の不確実性を引き継ぐ。</li>
+</ul>
+</section>
+<section id="sec-2">
+<h2>値動きの時系列解説</h2>
+<p><strong>前営業日9/28（確認済みアンカー）</strong></p>
+<p>Trump大統領が9/26（土）にイラン側が提示した「7日間ロードマップ」（ホルムズ海峡再開・対イラン制裁解除・海上封鎖解除が条件）を拒否したとの報道を受け、週明け9/28のアジア時間から原油に地政学プレミアムが乗る展開でスタート。NY時間にかけてBrentはザラ場108.83ドル、WTIは96.54ドルまで急伸する場面があったが、サウジアラビアが攻撃で損傷していた東西パイプライン（容量日量700万バレル）の修復を完了し日量約350万バレルまで輸送を回復させたとの報道（Bloomberg、Saudi Gazette等）を受け急速に反落。結局Brentは+0.96ドル（+0.92%）の105.28ドル、WTIは+0.19ドル（+0.2%）の92.60ドルで引けた。この原油急伸を受けて米10年債利回りは5.21%（前日比+0.05%pt、約20年ぶり高水準）、30年債も5.3%台に乗せ、ドル指数（DXY）は101.1台の2カ月ぶり高値圏まで上昇。CME FedWatchの10月利上げ確率は70.3%（前日64.2%から上昇）。この金利上昇・ドル高・インフレ懸念の三重苦で金は前日比-3.19%の4,148.69ドル（7週間ぶり安値）、銀は-4.31%の61.53ドル（8/7以来初の62ドル割れ）まで急落し、金銀レシオは約67.4倍まで拡大。プラチナも1,716〜1,726ドル前後まで軟化した。銅（COMEX）はBHP Escondida鉱山（世界最大の銅鉱山）での死亡事故（9/23発生）による操業停止と、監督者・スタッフ労組の賃金合意拒否・ストライキ投票（9/28-30実施）という供給懸念が下支えする一方、ドル高・利上げ観測の強まりが重石となり6.70ドル/lb近辺で方向感の乏しい推移。天然ガスはLNG輸出設備の秋季定期メンテナンスによるフィードガス需要低下と温暖な気候予報が重なり-3.57%の3.11ドル/MMBtuまで続落。</p>
+<p><strong>9/29（前営業日、値動きは未確認）</strong></p>
+<p>豪RBAが市場予想通り25bp利上げ（4.35%→4.60%）を全会一致で決定、2011年以来15年ぶりの高水準となった。声明は「中東紛争の拡大と世界的なエネルギー価格上昇が想定を上回っている」とタカ派を維持した一方、ブロック総裁は会見で「理事会は休止延長も議論した」とやや慎重なトーンを示したと報じられている。米国では8月分JOLTS求人件数が722.7万件（予想710.0万件を上回る、前月7月分727万件から減速）となり、労働需給の底堅さが確認された。これら二つの材料はいずれも世界的な金融引き締め観測を強める方向であり、9/28からの金利上昇・ドル高地合いが継続した可能性が高いと推定されるが、9/29当日の商品価格の具体的な値幅・終値は本セッションでは確認できなかった。</p>
+<p><strong>対象営業日9/30（当日）</strong></p>
+<p>東京時間の寄り付き以降の値動きは未確認。当日の最大の注目材料は、米BEA（経済分析局）による8月分PCE（個人消費支出）物価指数の発表（9/28付前回ノートの時点でカレンダーに記載）であり、インフレの粘着性次第で10月FOMCの利上げ織り込み（9/28時点でCME FedWatch 70.3%）がさらに変動しうる。また財務省による2年・5年債入札も予定されており、金利急上昇後の需給を占う材料となる。チリのEscondida鉱山（BHP）における監督者・スタッフ労組のストライキ投票は9/28-30の日程で実施されており、対象営業日中に結果が判明する可能性が高い。否決（会社提案拒否）の場合は最低5日間（延長で最大10日間）の法定調停手続きに移行し、その後ストライキ権が発生する見込みであり、銅の供給懸念を左右する重要な分岐点となる。いずれの材料についても、当日の商品価格への具体的な反応は本セッション終了時点では一次情報で確認できていない。</p>
+</section>
+<section id="sec-3">
+<h2>主要商品</h2>
+<p>（注：前営業日9/28終値を最終確認値とし、それ以降の記載は明記のとおり未確認）</p>
+<ul>
+<li><strong>WTI原油</strong> 92.60ドル/bbl（9/28終値、前日比+0.2%、高値96.54ドル／安値未確認）— 9/29・9/30の値動きは未確認。イラン提案拒否report直後の急伸をサウジ東西パイプライン復旧報道が打ち消す展開が9/28に発生。</li>
+<li><strong>Brent原油</strong> 105.28ドル/bbl（9/28終値、前日比+0.92%、高値108.83ドル／安値未確認）— 同上。9/29・9/30は未確認。地政学プレミアムの急騰・急落が交錯する乱高下地合いが継続している可能性。</li>
+<li><strong>金（Gold）</strong> 4,148.69ドル/oz（9/28終値、前日比-3.19%、7週間ぶり安値）— 原油急伸によるインフレ懸念再燃、米10年債利回り5.21%（約20年ぶり高水準）、ドル指数101.1台（2カ月ぶり高値）の三重苦。9/29のRBA利上げ・JOLTS上振れというさらなるタカ派材料を受け、9/29・9/30も軟調地合いが継続している可能性があるが未確認。</li>
+<li><strong>銀（Silver）</strong> 61.53ドル/oz（9/28終値、前日比-4.31%、8/7以来初の62ドル割れ）— 金以上に金利・ドル高の影響を受け急落。金銀レシオ約67.4倍。9/29以降は未確認。</li>
+<li><strong>プラチナ</strong> 1,716〜1,726ドル/oz前後（9/28、前日比-2.9%程度、ソースにより差異）— 貴金属全般の売り圧力＋ドル高・金利上昇が重石。南アWPICの2026年需給赤字予想（4年連続赤字、29.7万オンス）は構造的な下支え要因として残存。</li>
+<li><strong>銅（COMEX）</strong> 6.70ドル/lb前後（9/28、史上最高値圏。前日比変化率は情報源間で不明瞭）— Escondida鉱山の操業停止・ストライキ投票（9/28-30、本日結果判明見込み）による供給懸念と、対米関税（精製銅、2027年1月から15%・2028年から30%で検討中）を巡る不確実性が交錯。COMEX在庫は46営業日連続で積み上がり史上最高の67万5,185トン。</li>
+<li><strong>天然ガス（Henry Hub）</strong> 3.11ドル/MMBtu（9/28、前日比-3.57%）— LNG輸出設備の秋季定期メンテナンスによるフィードガス需要低下、温暖な気候予報による電力向け需要減（前年比約5%減）が重石。国内生産は油田随伴ガスに支えられ高水準を維持。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li><strong>CFTC建玉（COMEX、disaggregated futures-only、集計対象週：9/22時点、9/26頃発表）</strong>：金の建玉41万2,800枚、うちスワップディーラーのショート25万752枚（ロング1万4,626枚）、マネーマネージド（投機筋）のロング13万5,699枚・ショート8,310枚。銀は建玉10万6,474枚、スワップディーラーショート4万8,987枚（ロング2万2,745枚）、マネーマネージドロング1万9,303枚・ショート5,994枚。銅は建玉30万1,657枚、プロデューサー/マーチャントのショート14万1,667枚（ロング2万9,092枚）、マネーマネージドロング9万6,421枚・ショート1万3,899枚。次回COTレポート（集計対象週9/29時点分、10/2〜3頃発表見込み）は未発表であり、9/28の急落・9/29以降のポジション変化は未確認。</li>
+<li><strong>金ETFフロー</strong>：9月上旬（9/1-9/8週）にGLDへ約13.78億ドルの大幅流入、姉妹ファンドGLDMも5.90億ドルの流入を記録した一方、9/7-9/14週にはGLDから約6.03億ドルの流出（低コストファンドへのフィー裁定によるローテーションが主因と分析）。World Gold Councilによれば世界の金ETFは8月単月で180億ドルの流入（史上2番目の月間流入額）。直近1〜2週間（9/22-9/29）の確定フローは未確認。</li>
+<li><strong>銅需給</strong>：Escondida鉱山の操業停止（日量約3,455トンの供給減、年産量約126万トンの世界最大鉱山）とストライキ投票（9/28-30、結果が対象営業日中に判明見込み）が短期的な需給タイト化材料。一方でCOMEX在庫は46営業日連続の積み増しで史上最高の67万5,185トンに達しており、対米関税を見越した「タリフ・アービトラージ」的な在庫の偏在（COMEX高・LME/上海薄）が構造的な特徴として続いている。</li>
+<li><strong>原油需給</strong>：直近EIA週間統計（週末9/18時点、9/23発表）では米原油在庫は前週比+300万バレルの4億2,640万バレルと5年平均比+2%の水準。次回統計（週末9/25時点分）は10/1発表予定で未確認。地政学プレミアム（ヘッドラインドリブン）とファンダメンタルズ（在庫増）の綱引きが続いている。</li>
+<li><strong>銀需給</strong>：8/7以来初の62ドル割れとなったが、リース金利の急騰や現物赤字観測の構造自体に大きな変化があったとの報道はなく、9/28の急落は金利・ドルショックによるマクロ主導の可能性が高い。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>推奨トレード</h2>
+<h3>トレード1：金（Gold）押し目買い</h3>
+<ul>
+<li>根拠：9/28の急落（-3.19%、4,148.69ドル、7週間ぶり安値）は、原油の地政学ヘッドライン（Trump氏のイラン提案拒否）を起点とした一時的な金利・ドルショックが主因であり、サウジ東西パイプライン復旧報道で原油自体は引けにかけて上げ幅を大きく縮小している。地政学リスクの本質（イラン・米交渉の停滞、ホルムズ海峡問題）は解消しておらず、中央銀行の継続的な金購入トレンド（WGC想定：2026年通年で約850トン）、年初来の大幅な価格調整（1月29日のLBMA AM高値5,501.70ドルからの累積調整）を踏まえると、ファンダメンタルズの長期上昇トレンド自体が崩れたとは言い難い。9/29のRBA利上げ・JOLTS上振れというさらなるタカ派材料で一段安となっている可能性はあるが、その分オーバーシュート修正の余地も大きい。</li>
+<li>エントリー目安：4,050〜4,150ドル（9/28安値圏、及び9/29以降の一段安があればその水準を実勢レートで再確認のうえ）。</li>
+<li>利確目安：4,260ドル（1次、9/28寄り付き水準）、4,400ドル（2次）。</li>
+<li>損切り目安：3,980ドル割れ（8月上旬以前の水準を明確に下抜け、実質金利上昇・ドル高が一段と進行したと判断される場合）。</li>
+<li>ホライズン：1〜2週間程度（9/30 PCE、10/2雇用統計、10/4 OPEC+会合という金融政策・インフレ織り込みを左右するイベントを跨ぐスイング）。</li>
+<li>リスク：(1) 9/30 PCE、10/2雇用統計が予想を上回り10月利上げ確率がさらに上昇すれば金利・ドル高圧力が継続し逆行する。(2) イラン・米交渉が完全決裂し軍事衝突が激化すれば安全資産買いで金が逆に急騰するリスクもあり、方向性の見極めが難しい局面である点に留意。(3) 本ノートの前提となる9/28終値自体が「最後に確認できたアンカー」であり、9/29・9/30に一段の変動があった場合はエントリー水準の再設定が必要。</li>
+</ul>
+<h3>トレード2：銅（COMEX）Escondidaストライキ材料での短期ロング（イベントドリブン）</h3>
+<ul>
+<li>根拠：世界最大の銅鉱山であるEscondida（BHP、チリ、年産量約126万トン）は9/23の死亡事故で操業停止中に加え、監督者・スタッフ労組の賃金合意拒否・ストライキ投票が9/28-30の日程で実施されており、対象営業日9/30中に結果が判明する見込み。会社提案が否決されれば最低5日間（延長で最大10日間）の法定調停手続きに移行し、その後ストライキ権が発生する構図であり、供給懸念が短期的に強まりやすい。一方でCOMEX在庫は史上最高の67万5,185トンまで積み上がっており（対米関税を見越した在庫偏在）、上値は抑制されやすい側面もあるため、大陽線を狙う順張りというよりイベント前後のボラティリティ捕捉を意識したポジションとする。</li>
+<li>エントリー目安：6.60〜6.75ドル/lb（実勢レートで9/30当日のストライキ投票結果発表前後の値動きを確認のうえ）。</li>
+<li>利確目安：6.90〜7.00ドル/lb（ストライキ権発生・操業停止長期化が確認された場合）。</li>
+<li>損切り目安：6.45ドル/lb割れ（労組が会社提案を受諾し供給懸念が後退した場合、またはドル高・利上げ観測がさらに強まり金属全般が売られた場合）。</li>
+<li>ホライズン：数日〜2週間程度（ストライキ投票結果の判明から法定調停手続きの帰趨まで）。</li>
+<li>リスク：(1) 労組が会社提案を受諾しストライキが回避されれば供給懸念は急速に後退する。(2) COMEX在庫の歴史的高水準・対米関税を巡る不確実性の解消（関税見送り等）が判明すれば「タリフ・アービトラージ」による在庫積み上げが巻き戻り軟化要因となりうる。(3) ドル高・金利上昇が続けば銅を含む金属全般への重石となる。(4) ストライキ投票結果自体の判明時期・内容が本ノート作成時点で未確認であるため、エントリー前に必ず最新ニュースで確認すること。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>9月30日（水） 米国BEA</strong> 8月分PCE物価指数・個人所得支出〔重要度：高〕— インフレ粘着性の確認材料。10月FOMC利上げ織り込み（9/28時点でCME FedWatch 70.3%）を左右。</li>
+<li><strong>9月30日（水） 米国財務省</strong> 2年債・5年債入札〔重要度：高〕— 金利急上昇後の需給確認。直近5年債入札（9/23）はテール3.1bp・indirect比率54.31%と弱い結果であり注目度が高い。</li>
+<li><strong>9月28日〜30日 チリ・Escondida鉱山（BHP）</strong> 監督者・スタッフ労組のストライキ投票〔重要度：高〕— 結果は対象営業日9/30中に判明見込み。否決の場合は法定調停手続き（最低5日間、延長で最大10日間）に移行し銅の供給懸念材料となる。</li>
+<li><strong>10月1日（木） 米国EIA</strong> 週間石油在庫統計（週末9/25時点分）〔重要度：高〕— 在庫積み増しトレンドの継続有無を確認。</li>
+<li><strong>10月2日（金） 米国BLS</strong> 雇用統計（9月分）〔重要度：高〕— FOMCの10月・12月利上げ織り込みに直結する最重要指標の一つ。米政府機関予算の状況次第で発表延期の可能性も指摘されている（未確認、政治・米国株式セクション参照）。</li>
+<li><strong>10月2〜3日頃 CFTC</strong> COTレポート（集計対象週9/29時点分）〔重要度：中〕— 貴金属・銅の投機筋ポジション変化を確認。9/28の急落を受けたポジション調整の有無に注目。</li>
+<li><strong>10月4日（日） OPEC+（8カ国）</strong> 閣僚級会合〔重要度：高〕— 10月生産方針（9月水準据え置き）を踏まえた11月以降の増産再開の是非を協議する見込み。</li>
+<li><strong>随時 米・イラン</strong> ホルムズ海峡再開・対イラン制裁解除を巡る交渉、フーシ派・イラン革命防衛隊の攻撃動向〔重要度：高〕— サウジ東西パイプラインの完全復旧（日量700万バレルへの回復）進捗も要注目。</li>
+<li><strong>10月13日（月） 米国BLS</strong> 9月分CPI〔重要度：高〕。</li>
+<li><strong>10月27-28日（火-水） 米国FOMC</strong> 次回FOMC会合・政策金利発表〔重要度：高〕— CME FedWatchで10月利上げ確率70.3%（9/28時点）。決定・声明・記者会見が金利・ドル・金価格の方向性を左右する最重要イベント。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [Oil price today: WTI, Brent, Trump, Iran - CNBC](https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html)（検索結果スニペット経由、2026-09-28取得、9/28終値として本ノートでも継続参照）</p><p>- [Trump Rejects Iran Proposal to Reopen Strait of Hormuz - Bloomberg](https://www.bloomberg.com/news/articles/2026-09-26/trump-says-he-rejected-latest-iran-proposal-to-reopen-hormuz)（2026-09-28取得）</p><p>- [Saudi Arabia's Crucial Oil Pipeline Starts Exports After Repairs - Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/saudi-arabia-s-crucial-oil-pipeline-starts-exports-after-repairs)（2026-09-28取得）</p><p>- [Physical Gold Slides To Seven-Week Low As Oil Spike Lifts Fed Rate-Hike Bets; Silver Tumbles Below $62 - USAGOLD](https://www.usagold.com/daily-precious-metals-market-report-september-28-2026/)（検索結果スニペット経由、2026-09-28取得）</p><p>- [Gold prices today, Monday, September 28, 2026 - Yahoo Finance](https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-september-28-2026-gold-prices-slump-as-iran-tensions-and-oil-prices-rise-110730952.html)（2026-09-28取得）</p><p>- [Silver Price Forecast: XAG/USD falls to near $62.00 amid Fed rate hike odds - FXStreet](https://www.fxstreet.com/news/silver-price-forecast-xag-usd-falls-to-near-6200-amid-fed-rate-hike-odds-202609280322)（2026-09-28取得）</p><p>- [Copper Futures Slip as Rate Bets Offset China Demand; Chile, Peru in Focus - Rio Times Online](https://www.riotimesonline.com/copper-markets-latam-monday-september-28-2026)（2026-09-28取得）</p><p>- [BHP Escondida Halted: Copper Supply at Risk as Strike Looms - Discovery Alert](https://discoveryalert.com/news/bhp-escondida-copper-strike-accident-september-2026/)（2026-09-28取得）</p><p>- [Escondida No. 2 union rejects wage offer, strike vote set for September 28–30 - Shanghai Metals Market (SMM)](https://news.metal.com/newscontent/104129471-escondida-no-2-union-rejects-wage-offer-strike-vote-set-for-september-28%E2%80%9330)（2026-09-28取得）</p><p>- [Natural Gas (NATGAS) Is down 2.99% on Sep 28 - TradingKey](https://www.tradingkey.com/news/market-movers/262188562-market-movers-natgas-20260928)（2026-09-28取得）</p><p>- [OPEC+ keeps output policy unchanged for October - Energy Connects](https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october)（2026-09-28取得）</p><p>- [Seven OPEC+ countries keep October oil output quota unchanged - Gulf News](https://gulfnews.com/business/energy/opec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366)（2026-09-30検索取得）</p><p>- [US tariff threat disrupts copper surplus as prices near all-time peak - Qatar Tribune](https://www.qatar-tribune.com/article/250626/business/us-tariff-threat-disrupts-copper-surplus-as-prices-near-all-time-peak)（2026-09-30検索取得）</p><p>- [What's next for US copper import tariffs - ING Think](https://think.ing.com/articles/whats-next-for-us-copper-import-tariffs/)（2026-09-30検索取得）</p><p>- [Summary of Weekly Petroleum Data for the week ending September 18, 2026 - EIA](https://ir.eia.gov/wpsr/wpsrsummary.pdf)（前回ノート2026-09-25付、継続参照）</p><p>- [CFTC Commitments of Traders Report - CMX (Futures Only) - CFTC](https://www.cftc.gov/dea/futures/deacmxlf.htm)（集計対象週9/22時点、前回ノートより継続参照）</p><p>- [Gold ETF Outflows: Where Did GLD's $603M Go? - GoldSilver.com](https://goldsilver.com/industry-news/goldsilver-news/gold-etf-outflow-fee-arbitrage-gld-gldm-iau/)（前回ノートより継続参照）</p><p>- [August 2026 PCE Release: September 30 Time &amp; Inflation Preview - Stock Market Hours](https://stockmarkethours.org/events/us-pce-release)（2026-09-28取得）</p><p>- [Goldman Sachs / J.P. Morgan / Deutsche Bank 2026年金価格見通し関連報道（複数ソース要約）](https://www.biznews.com/global-investing/gold-eyes-fresh-record-highs-2026)（2026-09-30検索取得）</p><p>- `daily/agents/2026-09-28-commodities.md`、`daily/agents/2026-09-29-commodities.md`（社内既存ノート、継続参照）</p><p><strong>本ノートの情報信頼性に関する注記</strong>：本セッションはWebSearchツールが9エージェント共有の利用上限（200回）に到達し、対象営業日9/29・9/30当日の値動きを裏付ける追加検索ができなかった。また主要金融情報源（Reuters、Bloomberg、CNBC、Yahoo Finance、TradingEconomics、USAGOLD、Kitco等）へのWebFetchは全てネットワークegressプロキシにより`EGRESS_BLOCKED`となり、本文へのアクセスは終始不可能だった。このため本ノートは前営業日9/28終値（複数ソースでクロスチェック済み）を最後の確認済みアンカーとし、それ以降の記載は全て「未確認」「推定」を明記している。実務での利用にあたっては、本ノート中の全ての価格水準について一次情報源・リアルタイムデータでの再確認を強く推奨する。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
