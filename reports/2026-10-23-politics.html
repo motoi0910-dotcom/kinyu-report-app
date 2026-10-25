@@ -48,15 +48,15 @@
 </nav>
 <div class="wrap">
 <article>
-<p><strong>データ取得上の留意点（冒頭一括記載）</strong>：本稿作成時点でWebSearchの検索インデックスは対象営業日（10/23）当日固有の確定報道をほとんど反映しておらず、取得できた記事の多くは10/16〜10/22頃に配信されたものが中心。日本の9月全国CPI（本日8:30発表予定）の実際の数値は、複数回（3回）の検索を試みたが総務省統計局の公表値を一次情報・報道のいずれでも確認できず「未確認」とする（発表直後で検索インデックスへの反映が追いついていない可能性）。仏Moody's格付け審査（10/23）の結果も、通常は欧州市場引け後（日本時間深夜）に公表されるため、本稿作成時点では「結果未定・未確認」。フランスPLF2027第一部の本会議採決日程については、複数の新しい報道（10/19〜10/22配信）で「10/27」への再設定が確認でき、前営業日ノートの「未確認」から更新された。米Fed理事Lisa Cook氏の訴訟スケジュールについても新情報が見つかり、前営業日までのノートの記述（本案審理は2027年1月予定）を修正する必要がある可能性が高い（詳細は後述、単一ソースのため確度は低）。個々のラベル以外にこの背景説明は本文中で繰り返さない。</p>
+<p><strong>データ取得上の留意点（冒頭一括記載）</strong>：本稿は2026-10-25（対象営業日の2日後）に再調査して作成した。WebSearchの検索インデックスは10/23当日固有の確定報道の反映が薄く、特に①日本9月全国CPIの確報、②仏Moody's格付け審査（10/23実施）の結果、③仏下院の予算審議法定期限の正確な日付は、複数回（2〜3回）の検索・WebFetch試行を行ったが確報を得られなかった。①はstat.go.jp公式ページをWebFetchしたところ「+2.1%」という数値が返ったが、取得ツール自身が文字化け箇所からの推測である旨を明示しており、信頼度は低いためその旨を付して扱う。②は10/21時点の市場観測（Aa3からA1への1段階格下げを多数のエコノミストが予想、仏10年債利回りが10/21に2002年以来初めて5%に達したとの報道）までは確認できたが、23日の実際の決定は確認できていない。③は「11/17」「11/26」の既報に加え、憲法上の40日審議期限を10/12起点で機械的に算出した「11/21頃」という第三の推計も得られ、いずれも未確定のまま併記する。個々のラベル以外にこの背景説明は本文中で繰り返さない。</p>
 <section id="sec-1">
 <h2>サマリー</h2>
 <ul>
-<li>フランスでは、PLF2027第一部（歳入部分）の本会議採決（vote solennel）が、当初予定の10/20から「10/27」に再設定されたことが複数の新しい報道で確認できた。同日はPLFSS（社会保障予算関連法案）の本会議採決予定日（憲法上の20日審議期限）とも重なり、両法案の審議が10/27前後に集中する見通し。下院での予算案全体（第一部＋第二部）の第一読会法定期限については「11/17」との報道があり、前営業日ノートに記載していた「11/26」と食い違いがあるため、要再確認として両論併記する。</li>
-<li>日本では、9月全国CPI（10/23 8:30発表予定）の実際の数値が本稿作成時点で確認できず、消費税減税法案の衆院財務金融委員会審議の10/23時点の具体的進捗も未確認。与党は消費税率引き下げ（飲食料品8%→1%、2年間）法案の11月上旬衆院通過・12/12会期末成立を目指す方針に変化なし（既報）。</li>
-<li>米国では中間選挙（11/3）まで10日。下院選択調査は民主党優位（情報源によりリード幅2〜9ポイントと大きな分散）が継続。Fed理事Lisa Cook氏の訴訟について、単一ソース（Wikipedia）ながら、口頭弁論は既に2026年1月21日に実施済み、最高裁は6月29日にトランプ政権による解任を当面認めず同氏の在職継続を認める決定を下したことが確認できた。本案（解任の法的権限そのもの）の最終決着時期は本稿の調査では依然不明確。</li>
-<li>英国は10/28の秋季予算に向け、キャピタルゲイン税（CGT）を所得税率（20/40/45%）に近づける方向の観測が複数の税務・会計系アドバイザー（RSM、PwC、Grant Thornton、Rathbones等）から出ており、前営業日ノートの「単一ソース」よりは情報源の広がりが確認できた（ただし依然予想段階）。</li>
-<li>地政学面では、ウクライナ・ロシアのエネルギー限定休戦、中東（ホルムズ海峡・ガザ）、台湾海峡、ベネズエラについて、本日固有の新規進展は確認できず、既報の状態（実効性に疑義が残る休戦、緊張の高止まり）を維持しているとみられる。</li>
+<li>日本では9月全国CPI（コア、生鮮食品を除く総合）が本日8:30発表予定だったことをstat.go.jp公式ページで確認。発表後の確報値は検索経由では未確認だが、WebFetchで一時的に取得できた「+2.1%」（8月+1.7%からの加速を示唆）は信頼度の低い推測値であり、各ストラテジストには総務省統計局公式発表での再確認を推奨する。消費税減税法案（飲食料品8%→1%）の衆院財務金融委員会における10/23時点の具体的な審議進捗は確認できず、11月上旬衆院通過・12/12会期末成立という与党方針に変化はない。</li>
+<li>フランスでは、Moody'sによる格付け定例審査が本日実施された。審査前（10/21時点）の報道では、多数のエコノミストがAa3からA1への1段階格下げを予想しており、仏10年債利回りは10/21に5%へ達し2002年以来初の水準となったことが確認できた。審査結果自体は本稿調査時点（10/25）でも検索経由で確認できず、週明けの再確認が必要。PLF2027第一部の本会議採決は10/27へ再設定された状態（既報）に変化なし。</li>
+<li>米国では中間選挙（11/3）まで11日。下院選択調査の民主党優位は継続するが、リード幅は情報源間で2〜9ポイントと依然大きく分散。Fed理事Lisa Cook氏の解任訴訟について、複数の独立した報道機関の記事で経緯を再確認でき、2025年10月に連邦最高裁が即時解任を認めず本案の口頭弁論を2026年1月に実施する方針を示し、2026年6月29日に5-4でトランプ政権による解任を（訴訟進行中は）認めないとの決定を下したことが判明。この決定はあくまで仮の地位保全（stay）であり、大統領の解任権限の有無という本案自体には踏み込んでいないことが明確になった（前営業日までのノートの「単一ソースのため確度低」という留保を一部解消）。</li>
+<li>英国は10/28の秋季予算に向け、キャピタルゲイン税（CGT）を所得税率に近づける観測が継続。新たにCenTaxの推計として、CGT改革パッケージ全体で年間約140億ポンドの増収効果という具体的な数字が確認できた（予想段階）。</li>
+<li>地政学面（中東、ウクライナ・ロシア、台湾海峡、ベネズエラ）およびトランプ政権の対外関税措置について、本日固有の新規進展は検索経由で確認できず、既報の状態を維持しているとみられる。</li>
 </ul>
 </section>
 <section id="sec-2">
@@ -64,25 +64,24 @@
 <p>（アジア→欧州→米州の順。時刻は原則日本時間）</p>
 <h3>アジア</h3>
 <ul>
-<li><strong>日本（9月全国CPI）</strong>: 本日8:30発表予定とされる9月全国消費者物価指数（総合・生鮮食品を除く総合・生鮮食品及びエネルギーを除く総合）の実際の数値は、本稿作成時点（複数回検索）で一次情報・報道のいずれでも確認できず「未確認」。10/29-30のBOJ金融政策決定会合・展望レポート直前の最重要材料であることに変わりなく、経済担当ノートとの数値の整合性確認を翌営業日以降推奨する。</li>
-<li><strong>日本（消費税減税法案）</strong>: 高市首相は法案の早期成立を目指す考えを重ねて示しているとされる（10/20前後の報道）。与党は衆院財務金融委員会での本格審議を進める方針に変化なく、野党「中道」の30時間質疑・連合審査要求、公明党の反対姿勢、国民民主党の住民税減税対抗法案検討という構図も既報から変化なし。NHKの10/13時点世論調査では内閣支持率51%・不支持32%（既報）。10/23時点の委員会審議の具体的な開催・進捗は未確認。</li>
-<li><strong>日中関係・台湾海峡</strong>: 本日固有の新規進展（高官対話再開、中国軍機・艦船の活動量データ等）は確認できず、既報の緊張継続状態を維持する。</li>
-<li><strong>中国（五中全会準備）</strong>: 10/26〜29・北京開催の日程に変化なし。政治局が全会提出文書として決定した案件が党規律関連決定案（全面从严治党）中心であるという既報の評価を維持し、本日新たな経済政策関連の準備報道は確認できなかった。</li>
+<li><strong>日本（9月全国CPI）</strong>: 総務省統計局公式ページ（stat.go.jp）で、2026年9月分全国消費者物価指数の発表予定日が「2026年10月23日」であることを確認した。同ページからWebFetchで取得した生鮮食品を除く総合指数の前年同月比は「+2.1%」（指数102.3）という値だったが、取得ツール自身が「ページの文字化けを一部推測して読み取っている」と明示しており、信頼度は低い。これが正確であれば8月の+1.7%から加速となり、10/29-30の日銀会合・展望レポートに向けタカ派材料となりうるが、他の検索では9月分の確報を裏取りできなかったため「未確認」のまま扱う。各ストラテジストには総務省統計局の公表資料・報道各社の速報記事での再確認を強く推奨する。</li>
+<li><strong>日本（消費税減税法案）</strong>: 与党は10/20の衆院本会議で法案の審議入りを図り、週内の衆院財務金融委員会での本格審議開始を目指していたとされる（10/18時点報道）。野党「中道」は30時間程度の質疑・農林水産委員会との連合審査、高市首相の委員会出席を要求。10/23時点の委員会の具体的な開催・進捗は検索経由で確認できなかった。11月上旬の衆院通過・12/12会期末成立を目指す与党方針に変化なし。財源・制度設計の不透明感も既報どおり継続。</li>
+<li><strong>日中関係・台湾海峡</strong>: 本日固有の新規進展は確認できず、既報の緊張継続状態を維持。</li>
+<li><strong>中国（五中全会準備）</strong>: 10/26〜29・北京開催の日程に変化なし。主要議題が党規律関連決定案中心であるという既報の評価を維持し、本日新たな経済政策関連の準備報道は確認できなかった。</li>
 </ul>
 <h3>欧州</h3>
 <ul>
-<li><strong>フランス（PLF2027、採決日程の更新）</strong>: 国民議会のPLF2027第一部（歳入部分）の本会議採決（vote solennel）は、未審議の修正案が2,800件超（当初の約3,400件のうち）残存していたことを理由に当初予定の10/20から延期されていたが、複数の新しい報道（Acteurs Publics経由の報道、cryptoast.fr等、いずれも10/19〜10/22配信）により、再設定日が「10/27（火）」であることが確認できた。同日はPLFSS（社会保障予算関連法案）についても憲法上の第一読会20日審議期限（受理から数え10/27）に当たり、本会議採決予定日と重なるため、審議の輻輳・日程調整リスクが指摘されている（Acteurs Publics、審議が上院送付前に終わらない可能性を指摘）。下院での予算案全体（第一部＋第二部）の第一読会法定期限について、本日の検索では「11/17」との記述が見られたが、前営業日（10/22）ノートでは「11/26」と記載しており、両者の食い違いを解消できていない（憲法第47条の40日規定の算定基準日の違いによる可能性があるが未検証）。ルコルニュ首相の「49.3条も政令も使わない」方針に変化があったとの報道は確認できなかった。参考として、2026年度予算（本年2月最終成立）ではルコルニュ首相が最終的に49.3条を3回発動した上で野党の不信任動議が否決され成立した経緯が改めて確認できた（既報の前例を補強）。</li>
-<li><strong>フランス（Moody's格付け審査）</strong>: 本日10/23が次回定例審査日であることに変化なし。格付け結果（Aa3・見通しネガティブからの変更有無）は通常欧州市場引け後に公表されるため、本稿作成時点では未定・未確認。</li>
-<li><strong>英国（秋季予算プレビュー）</strong>: 10/28のヒーリー財務相による秋季予算について、所得税・国民保険（従業員分）・VATの基本税率は変更しないとの既報方針を前提に、キャピタルゲイン税（CGT）を所得税率（20%・40%・45%）に近づける方向の観測が、RSM UK・PwC・Grant Thornton UK・Rathbons等、複数の税務・資産運用アドバイザーから出ていることが確認できた（前営業日ノートの「単一ソース」から情報源が広がった）。PwCは財政余地（フィスカル・ヘッドルーム）が金利・利回り変動でおよそ半減し約140億ポンドに縮小したと推定。事業用資産処分軽減（Business Asset Disposal Relief）の縮小・廃止観測も継続。いずれも予算前の予想段階であり確定情報ではない。</li>
+<li><strong>フランス（Moody's格付け審査、本日実施）</strong>: 本日10/23がMoody'sによる仏国格付けの定例審査日であったことに変化なし。審査前の10/21時点報道（ABC Bourse等）では、多数のエコノミストがAa3（見通しネガティブ）からA1への1段階格下げを予想しており、これが実現すればFitch（A+、安定的）・S&amp;P（A+、安定的）と同水準に並ぶことになるとされていた。同記事は、仏10年債利回りが10/21に2002年以来初めて5%に達したことも報じている。審査結果自体は、本稿作成時点（10/25）でも複数回の検索で確認できず「未確認」。過去の審査例（2025年10月は格付け維持・見通しのみネガティブ化）もあり、格下げ・維持のいずれであったかは週明けの再確認が必須。</li>
+<li><strong>フランス（PLF2027、採決日程）</strong>: 本会議採決（vote solennel）が10/27へ再設定された状態（既報）に変化なし。下院第一読会の法定期限について、既報の「11/17」「11/26」に加え、憲法上の40日審議期限を10/12起点で機械的に算出すると「11/21頃」という第三の推計が得られたが、いずれも公式カレンダーでの確定は未検証（確度：低）。ルコルニュ首相の「49.3条も政令も使わない」方針に変化があったとの報道は確認できなかった。</li>
+<li><strong>英国（秋季予算プレビュー）</strong>: 10/28のヒーリー財務相（バーナム政権下、本稿で確認した一部情報源による肩書き。他情報源での確証は限定的）による秋季予算について、CGTを所得税率（20/40/45%）に近づける観測が継続。新たにシンクタンクCenTaxの推計として、rate alignmentを含むCGT改革パッケージ全体で年間約140億ポンドの増収効果という具体的な数字が確認できた。所得税・VAT・雇用者保険の基本税率は変更しない方針に変化なし、しきい値の凍結延長観測も継続（いずれも予想段階）。</li>
 <li><strong>ドイツ</strong>: 本日固有の政局変化は確認できなかった。</li>
 </ul>
 <h3>米州</h3>
 <ul>
-<li><strong>米国・中間選挙</strong>: 11/3まで10日。下院選択（generic ballot）調査は民主党優位の継続が複数情報源で示されるが、リード幅は情報源間で大きく分散（RealClearPolitics集計：約9ポイント、Nate Silverトラッカー：10/7時点+8.9、別のSubstack集計：+5.2前後でYouGov最新は+2とする外れ値も）。前日ノートからの収束・拡大方向の明確なトレンドは確認できなかった。</li>
-<li><strong>米国・Fed理事解任訴訟（Lisa Cook氏）</strong>: 単一ソース（Wikipedia「Trump v. Cook」項目、他情報源での交差確認は未完了）によれば、本件の口頭弁論は2026年1月21日に実施済みで、連邦最高裁は2026年6月29日、トランプ政権による即時解任を認めず、Cook氏が訴訟継続中は在職を継続できるとの決定を下した。この情報が正確であれば、前営業日までのノートに記載していた「本案審理は2027年1月に予定」との記述は誤りであった可能性が高く、訂正する。ただし、この決定が本案（大統領の解任権限の有無）そのものの最終判断か、訴訟継続中の暫定的な地位保全（差止め）に過ぎないかは、今回の調査では明確に区別できなかった（確度：低、他の一次情報源での再確認を推奨）。</li>
-<li><strong>米国・財政・FOMCブラックアウト</strong>: 9月成立のつなぎ予算（12/11まで現行支出水準を延長）に変化なし。FOMCブラックアウト（10/17〜10/29）が継続し、本日FRB高官発言はなし。</li>
-<li><strong>米中通商</strong>: 9/23の閣僚級協議で成立した休戦延長（当初11/10期限を2027/1/10まで2カ月延長、フェンタニル関税20%→10%引き下げ等）に変化なく、本日固有の新規進展は確認できなかった。</li>
-<li><strong>米国・選挙区再編（ゲリマンダー）訴訟</strong>: テキサス州・カリフォルニア州による中間選挙区再編（2025年成立）を巡る訴訟・住民投票の進捗について、本日固有の新規動向は確認できなかった（過去の既報状態を維持、最新ステータスは未確認）。</li>
+<li><strong>米国・中間選挙</strong>: 11/3まで11日。下院選択調査は民主党優位の継続が複数情報源で示されるが、リード幅は情報源間で2〜9ポイントと依然大きく分散（ある集計では直近平均が5.6ポイントから5.2ポイントへやや縮小との記述もあるが、YouGov最新は+2ポイントとの外れ値も存在）。収束・拡大方向の明確なトレンドは確認できなかった。</li>
+<li><strong>米国・Fed理事解任訴訟（Lisa Cook氏）</strong>: 複数の独立した報道機関（Commercial Observer、The Grio、WABE、WTTW、MPR News等）の記事で経緯を再確認できた。2025年10月1日、連邦最高裁はトランプ政権による即時解任を認めず、本案の口頭弁論を2026年1月に実施する方針を示した。2026年6月29日、同裁判所は5-4（ロバーツ首席判事執筆）で、訴訟進行中はトランプ政権がCook氏を解任できないとの決定を下した。ただし複数の記事が、この決定はあくまで仮の地位保全（下級審の差止め命令に対する政権側のstay申請を認めるかどうかという「非常に予備的な」局面での判断）であり、大統領に解任の法的権限があるか否かという本案自体の憲法上の問題には踏み込んでいないと明記している。前営業日までのノートで「単一ソースのため確度低」としていた点は、複数ソースでの裏取りにより決定の存在自体は確度が上がったが、本案の決着時期は依然不明確（確度：中）。</li>
+<li><strong>米国・FOMCブラックアウト</strong>: 10/17〜10/29のブラックアウト期間が継続し、本日FRB高官発言はなし（経済担当ノートと整合）。</li>
+<li><strong>米国・対外関税</strong>: 本日固有の新規の関税発表・通商措置は検索経由で確認できなかった。米中通商休戦（2027/1/10まで延長済み）に変化なし。</li>
 </ul>
 </section>
 <section id="sec-3">
@@ -92,23 +91,22 @@
 <li><strong>中東（ホルムズ海峡・ペルシャ湾）</strong>: 限定休戦の実効性に疑義が残るとみられる既報を維持。本日固有の新規ヘッドラインは確認できなかった。</li>
 <li><strong>中東（ガザ）</strong>: 2025年10月の停戦合意から1年が経過した不安定な停戦継続状態に変化なしという既報を維持。本日固有の新規進捗・後退は確認できなかった。</li>
 <li><strong>台湾海峡・米中</strong>: 中国軍機・艦船の活動量に関する本日固有の新規データは確認できず、既報の緊張高止まり評価を維持。</li>
-<li><strong>ベネズエラ</strong>: 1月のマドゥロ氏拘束・体制移行（デルシー・ロドリゲス暫定大統領）以降の原油輸出回復という既報に変化なし。本日固有の新規動向は確認できなかった。</li>
+<li><strong>ベネズエラ</strong>: 1月のマドゥロ氏拘束・体制移行以降の原油輸出回復という既報に変化なし。本日固有の新規動向は確認できなかった。</li>
 </ul>
 </section>
 <section id="sec-4">
 <h2>各アセットクラスへの示唆</h2>
 <ul>
-<li>フランスPLF2027第一部の本会議採決が10/27に再設定されたこと（確認）は、PLFSS採決と同日競合する審議輻輳リスクを伴うため、OAT-Bundスプレッド・ユーロの来週に向けたボラティリティ要因として継続〔確度：中〜高〕</li>
-<li>下院第一読会の法定期限（11/17との報道、11/26との既報に食い違いあり）は、仏政局の時間的制約を巡る不確実性としてOAT・ユーロのテールリスク要因〔確度：低〕</li>
-<li>仏Moody's格付け審査（10/23、結果は本稿作成時点未定）は、本日深夜から翌営業日朝にかけてOAT-Bund10年スプレッド・ユーロに直接影響し得るカレンダーイベント〔確度：高〕</li>
-<li>日本9月全国CPI（本日発表、数値未確認）はBOJ10/29-30会合の利上げ判断・展望レポートの物価見通しに直結する最重要材料。発表後の数値確認を各ストラテジストに推奨〔確度：高〕</li>
+<li>日本9月全国CPI（低確度の推測値+2.1%、確報未確認）は日銀10/29-30会合の利上げ判断・展望レポートの物価見通しに直結する最重要材料〔確度：低〕</li>
+<li>仏Moody's格付け審査（結果未確認）は週明けのOAT-Bund10年スプレッド・ユーロに直接影響し得るカレンダーイベント〔確度：高〕</li>
+<li>仏10年債利回りの5%到達（2002年以来初、10/21確認）は仏財政リスクプレミアムの高まりを示し、OAT-Bundスプレッド・ユーロのボラティリティ要因として継続〔確度：高〕</li>
+<li>仏PLF2027・PLFSS採決の10/27集中と下院審議法定期限の不確実性（11/17・11/21・11/26の三説並存）はOAT・ユーロの時折のワイドニング要因〔確度：中〕</li>
 <li>日本の消費税減税法案の委員会審議継続・財源不透明感は、日本国債（超長期ゾーン）の金利上昇圧力・政局不透明感要因として継続〔確度：中〕</li>
-<li>米中間選挙（11/3まで10日）に向けた下院選択調査の民主党優位継続（幅は情報源間で分散）はドル・米国株の政策不確実性プレミアムを高める方向〔確度：中〕</li>
-<li>Fed理事Lisa Cook氏訴訟に関する新情報（単一ソース、本案の性質は未確定）は、FRBの独立性・構成を巡る不確実性について従来ノートより後退方向の材料だが、確度が低いため米国債・ドルへの影響は限定的と評価〔確度：低〕</li>
-<li>英国秋季予算（10/28）に向けたCGT増税観測（所得税率への接近、複数ソースで裏付け強化）はGilt金利・GBPの財政リスクプレミアム要因として継続、情報源の広がりにより確度をやや引き上げ〔確度：中〕</li>
+<li>米中間選挙に向けた下院選択調査の民主党優位継続（幅は不確実）はドル・米国株の政策不確実性プレミアムを高める方向〔確度：中〕</li>
+<li>Fed理事Lisa Cook氏の在職継続（仮の地位保全、複数ソースで裏取り済み、本案は未決着）はFRBの独立性を巡る不確実性をやや後退させる方向だが完全な解消ではない〔確度：中〕</li>
+<li>英国秋季予算（10/28）に向けたCGT増税観測（CenTax推計で年間約140億ポンド規模、複数ソースで裏付け継続）はGilt金利・GBPの財政リスクプレミアム要因〔確度：中〕</li>
 <li>中国五中全会（10/26〜29、主要議題は党規律関連文書との既報を維持）は、具体的な新規経済刺激策への期待が後退する方向のリスクとして人民元・中国株・銅等産業金属に留意要〔確度：低〜中〕</li>
-<li>米中通商休戦（2027/1/10まで延長済み、本日進展なし）の継続は資源国通貨（AUD等）・中国関連株・半導体関連のボラティリティを当面抑制する安定要因〔確度：中〕</li>
-<li>ウクライナ・ロシアのエネルギー限定休戦の実効性への疑義継続は、欧州天然ガス・原油の地政学プレミアムの維持要因として方向感に変化なし〔確度：低〕</li>
+<li>米中通商休戦（2027/1/10まで延長済み、本日進展なし）の継続は資源国通貨・中国関連株・半導体関連のボラティリティを当面抑制する安定要因〔確度：中〕</li>
 <li>ベネズエラ産原油輸出の回復継続は原油供給サイドの増加要因としてWTI/Brentに下押し〔確度：中〕</li>
 <li>台湾海峡の緊張高止まり（具体的進展なし）はアジア株・台湾ドル・半導体セクターのテールリスクとして継続〔確度：低〕</li>
 </ul>
@@ -116,27 +114,26 @@
 <section id="sec-5">
 <h2>翌営業日以降の注目政治イベント</h2>
 <ul>
-<li><strong>2026-10-23（金）日本</strong> 9月全国CPI発表（数値未確認、BOJ会合直前の最重要材料）〔重要度：高〕</li>
-<li><strong>2026-10-23（金）フランス</strong> Moody'sによる仏国格付け定例審査（結果は未定）〔重要度：高〕</li>
 <li><strong>2026-10-26〜29 中国（北京）</strong> 中国共産党第20期中央委員会第5回全体会議（五中全会、主要議題は党規律関連決定案）〔重要度：高〕</li>
-<li><strong>2026-10-27（火）フランス</strong> PLF2027第一部（歳入部分）本会議採決（vote solennel、10/20から再設定）〔重要度：高〕</li>
+<li><strong>2026-10-27（火）フランス</strong> PLF2027第一部（歳入部分）本会議採決（vote solennel）〔重要度：高〕</li>
 <li><strong>2026-10-27（火）フランス</strong> PLFSS（社会保障予算関連法案）本会議採決（vote solennel、第一読会20日審議期限）〔重要度：中〕</li>
 <li><strong>2026-10-27〜28 米国</strong> FOMC（政策金利判断、結果発表10/28 14:00 ET）〔重要度：高〕</li>
 <li><strong>2026-10-28（水）英国</strong> ヒーリー財務相、秋季予算発表（OBR経済・財政見通し同時公表）〔重要度：高〕</li>
-<li><strong>2026-10-28（水）カナダ</strong> BOC政策金利決定〔重要度：中〕</li>
+<li><strong>2026-10-28（水）カナダ／NZ</strong> BOC・RBNZ政策金利決定〔重要度：中〕</li>
+<li><strong>2026-10-28（水）豪州</strong> Q3CPI（四半期）〔重要度：高〕</li>
 <li><strong>2026-10-28〜29 ユーロ圏</strong> ECB理事会〔重要度：高〕</li>
 <li><strong>2026-10-29〜30 日本</strong> 日銀金融政策決定会合・展望レポート公表〔重要度：高〕</li>
 <li><strong>2026-11-03（火）米国</strong> 中間選挙投開票（下院435議席・上院33議席）〔重要度：高〕</li>
 <li><strong>2026-11-05 英国</strong> BOE金融政策委員会〔重要度：中〕</li>
 <li><strong>2026-11-上旬 日本</strong> 消費税減税・支援金法案の衆院通過目標（与党方針）〔重要度：中〕</li>
-<li><strong>2026-11-17（報道、確認要） フランス</strong> 予算案（PLF）下院第一読会の法定期限（前日までの既報「11/26」との食い違いを要再確認）〔重要度：中〕</li>
+<li><strong>2026-11-17／11-21頃／11-26（いずれも未確定、要再確認） フランス</strong> 予算案（PLF）下院第一読会の法定期限〔重要度：中〕</li>
 <li><strong>2026-11-18〜19 中国（深圳）</strong> APEC首脳会議〔重要度：中〕</li>
-<li><strong>2027-01-10 米中</strong> 関税相互削減休戦の延長期限（9/23合意）〔重要度：中〕</li>
 <li><strong>2026-12-11 米国</strong> つなぎ予算期限、FY2027本予算協議再燃の見通し〔重要度：中〕</li>
 <li><strong>2026-12-12 日本</strong> 臨時国会会期末（消費税減税法案の成立目標期限）〔重要度：中〕</li>
+<li><strong>2027-01-10 米中</strong> 関税相互削減休戦の延長期限（9/23合意）〔重要度：中〕</li>
 </ul>
 </section>
-<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [Budget 2027: le marathon de la partie "recettes" loin d'être terminé, le vote prévu demain à l'Assemblée va être reporté - LCP](https://lcp.fr/actualites/budget-2027-le-marathon-de-la-partie-recettes-loin-d-etre-termine-le-vote-prevu-demain-a)（2026-10-23取得）</p><p>- [Budget 2027 : vote recettes reporté, mesures fiscales restent en discussion - Boursedescrédits](https://www.boursedescredits.com/actualite-budget-2027-vote-recettes-reporte-mesures-fiscales-restent-discussion-30021.php)（2026-10-23取得、WebSearch要約経由）</p><p>- [Fiscalité crypto : aucun vote aujourd'hui car l'examen de la première partie du PLF 2027 n'est pas terminée - Cryptoast](https://cryptoast.fr/plf-2027-vote-partie-recettes-reporte-fiscalite-crypto/)（2026-10-23取得）</p><p>- [Budget 2027 fonction publique cybersécurité - Acteurs Publics](https://acteurspublics.fr/articles/budget-2027-fonction-publique-cybersecurite/)（2026-10-23取得、WebSearch要約経由）</p><p>- [Organisation de la discussion budgétaire（審議日程資料） - Assemblée nationale](https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1119828/file/organisation_discussion_budgetaire.pdf)（2026-10-23取得）</p><p>- [Autumn Budget 2026 predictions - RSM UK](https://www.rsmuk.com/insights/budget/autumn-budget-2026-predictions)（2026-10-23取得）</p><p>- [PwC previews the UK Autumn Budget 2026 - PwC UK](https://www.pwc.co.uk/press-room/press-releases/research-commentary/2026/pwc-previews-the-uk-autumn-budget-2026.html)（2026-10-23取得）</p><p>- [Autumn Budget 2026 predictions: the tax changes to watch - Grant Thornton UK](https://www.grantthornton.co.uk/insights/autumn-budget/2026-predictions/)（2026-10-23取得）</p><p>- [UK Autumn Budget 2026: what it could mean for your finances - Rathbones](https://www.rathbones.com/en-gb/wealth-management/knowledge-and-insight/uk-autumn-budget-2026-what-it-could-mean-for-your-finances)（2026-10-23取得）</p><p>- [令和8年秋の臨時国会における所信表明演説 - kaiketsu-j.com](https://www.kaiketsu-j.com/?p=24422)（2026-10-23取得）</p><p>- [消費減税法案20日審議入り 財源、制度設計は不透明 - 熊本日日新聞（共同通信配信）](https://kumanichi.com/articles/2047873)（2026-10-23取得、既報の再確認）</p><p>- [中共中央政治局召开会议 讨论拟提请二十届五中全会审议的文件 - 中国网信网](https://www.cac.gov.cn/2026-09/21/c_1791741056345268.htm)（2026-10-23取得、既報の再確認）</p><p>- [Which party do voters want in Congress? - Plus Minus（substack）](https://plusminus4.substack.com/p/generic-ballot-2026)（2026-10-23取得）</p><p>- [Trump v. Cook - Wikipedia](https://en.wikipedia.org/wiki/Trump_v._Cook)（2026-10-23取得、単一ソース・他情報源での交差確認未完了）</p><p>- [Trump says Russia and Ukraine agree to an energy ceasefire - St. Louis Public Radio（NPR配信）](https://www.stlpr.org/npr/2026-10-12/trump-says-russia-and-ukraine-agree-to-an-energy-ceasefire)（2026-10-23取得、既報の再確認）</p><p>- 本リポジトリ内：`daily/agents/2026-10-22-politics.md`、`daily/agents/2026-10-21-politics.md`（整合性確認・既報内容の参照）</p><p><strong>データ品質に関する注記</strong>：日本の9月全国CPIの実際の数値（3回検索を試みたが確認不可）、仏Moody's格付け審査の結果（本稿作成時点で未公表の可能性）、フランス予算案下院第一読会の法定期限（11/17か11/26かの食い違い）、米Fed理事Lisa Cook氏訴訟の正確な本案ステータス（単一ソースのみ）について、いずれも翌営業日以降の再確認を推奨する。特にCPIについては、総務省統計局の公式発表ページまたは発表直後の日経・ロイター・共同通信の速報記事での裏取りが必要。</p></div></details></section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [消費者物価指数 毎月公表資料（発表予定日2026年10月23日、2026年9月分） - 総務省統計局](https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html)（WebFetch経由取得、2026-10-25。抽出数値「+2.1%」はツール自身が文字化け箇所からの推測と明示、確度低）</p><p>- [moody note france 23 octobre - credit immobilier - Selectra](https://selectra.info/finance/actualites/marche/moody-note-france-23-octobre-credit-immobilier)（WebSearch経由取得、2026-10-25）</p><p>- [Moody's pourrait dégrader la note de la France vendredi（仏10年債利回り5%到達、10/21）- ABC Bourse](https://www.abcbourse.com/marches/moody-s-pourrait-degrader-la-note-de-la-france-vendredi_704606)（WebSearch経由取得、2026-10-25）</p><p>- [France: Moody's maintient la note souveraine à Aa3 avec perspective négative - allnews.ch](https://allnews.ch/node/152441)（WebSearch経由取得、2026-10-25、日付特定不能のため参考情報）</p><p>- [Organisation de la discussion budgétaire（審議日程資料） - Assemblée nationale](https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1119828/file/organisation_discussion_budgetaire.pdf)（2026-10-25再確認、WebSearch経由）</p><p>- [消費減税法案20日審議入り 財源、制度設計は不透明 - 熊本日日新聞（共同通信配信）](https://kumanichi.com/articles/2047873)（WebSearch経由取得、2026-10-25、既報の再確認）</p><p>- [中共中央政治局召开会议 讨论拟提请二十届五中全会审议的文件 - 中国网信网](https://www.cac.gov.cn/2026-09/21/c_1791741056345268.htm)（既報の再確認、過去ノート経由）</p><p>- [Which party do voters want in Congress? - Plus Minus（substack）](https://plusminus4.substack.com/p/generic-ballot-2026)（WebSearch経由取得、2026-10-25）</p><p>- [Democrats lead generic ballot by nine points ahead of US midterms - OrissaPOST（IANS配信）](https://www.orissapost.com/democrats-lead-generic-ballot-by-nine-points-ahead-of-us-midterms/)（WebSearch経由取得、2026-10-25）</p><p>- [Supreme Court Rules Trump Cannot Remove Lisa Cook From Fed — For Now - Commercial Observer](https://commercialobserver.com/2026/06/supreme-court-trump-lisa-cook-fed/)（WebSearch経由取得、2026-10-25）</p><p>- [Supreme Court says not so fast to Trump's attempt to fire Fed Bank's first Black governor Lisa Cook - The Grio](https://thegrio.com/2026/06/29/supreme-court-trump-lisa-cook/)（WebSearch経由取得、2026-10-25）</p><p>- [Supreme Court lets Georgia native Lisa Cook remain as a Federal Reserve governor for now - WABE](https://www.wabe.org/supreme-court-lets-georgia-native-lisa-cook-remain-as-a-federal-reserve-governor-for-now/)（WebSearch経由取得、2026-10-25）</p><p>- [In Rare Denial of Trump, Supreme Court Lets Lisa Cook Remain as a Federal Reserve Governor for Now - WTTW](https://news.wttw.com/2025/10/01/rare-denial-trump-supreme-court-lets-lisa-cook-remain-federal-reserve-governor-now)（WebSearch経由取得、2026-10-25、2025年10月の最高裁判断に関する背景確認）</p><p>- [Autumn Budget 2026: possible CGT changes, pre-Budget planning - Wealthbriefing](https://www.wealthbriefing.com/html/article.php/autumn-budget-2026:-possible-cgt-changes,-pre_dash_budget-planning-)（WebSearch経由取得、2026-10-25、CenTax推計年間約140億ポンドを含む）</p><p>- [Autumn Budget 2026: Latest predictions - Money to the Masses](https://moneytothemasses.com/news/autumn-budget-2026-latest-predictions)（WebSearch経由取得、2026-10-25）</p><p>- 本リポジトリ内：`daily/agents/2026-10-22-politics.md`、`daily/agents/2026-10-23-economist.md`、`daily/agents/2026-10-23-fx.md`（数値・既報内容との整合性確認のため参照）</p><p><strong>データ品質に関する注記</strong>：日本9月全国CPIの確報値、仏Moody's格付け審査の実際の結果、仏下院予算審議法定期限の正確な日付（11/17・11/21・11/26のいずれか）について、いずれも本稿作成時点（対象営業日の2日後）でも一次情報での確定確認ができなかった。翌営業日以降、総務省統計局・Moody's公式発表・Assemblée nationale公式カレンダーでの再確認を推奨する。</p></div></details></section>
 </article>
 </div>
 <footer class="foot">

@@ -50,26 +50,27 @@
 </nav>
 <div class="wrap">
 <article>
-<p>&gt; <strong>データ取得上の制約（本稿共通）</strong>：本日は無人実行環境のWebFetchがDNS解決エラーで機能せず、全情報をWebSearchのスニペット経由で収集した。リアルタイムティックデータへの直接アクセスができないため、USD/JPY・EUR/USDの詳細セッション解説は「確認できた始値・高値・安値・終値・前日比・経済指標の標準発表時刻」を骨格に、セッション内の値動きの経路（どのタイミングでどちらに動いたか）は市場の定型的なパターンと材料のタイミングから合理的に推定した部分を含む。推定箇所には「推定」を明記する。また`daily/`・`daily/agents/`に本件より前の既存ファイルが存在しないため、過去水準との整合性チェックは実施できていない（本リポジトリでの初回記録と推察される）。</p>
+<p>&gt; <strong>データ取得上の制約（本稿共通）</strong>：無人実行環境のWebFetchは、ECB（ecb.europa.eu）・日銀（boj.or.jp）・FRB（federalreserve.gov）等の公式一次情報源に対しては問題なく機能し、本稿のポリシー金利データとECB参照為替レート（毎営業日14:15CET＝日本時間21:15時点の公式スナップショット）はいずれも一次情報で直接確認できた。一方、報道系・民間データベンダー系ドメインはWebFetchが機能しないためWebSearchのスニペット経由に限られ、かつ検索インデックスの10/23当日分の反映が薄く、分足・日中高安値（OHLC）、日本の9月全国CPI確報値、米欧flash PMIの実際の発表値、直近週のCFTC/IMMポジションは確認できなかった。本稿では、ECB参照レート（14:15CET＝21:15JST時点）を3営業日分（10/21・10/22・10/23）一次情報で取得し、これを前日比算出の統一的なアンカーとして採用している。このアンカーは「1日のOHLC」ではなく「特定時刻のスナップショット」である点に留意されたい。日中高安値・セッション内の経路は、前日(10/22)の個別ノートで確認済みの二次情報レンジ等を参考値として用い、「推定」「未確認」を付して記述する。</p>
 <section id="sec-1">
 <h2>サマリー</h2>
 <ul>
-<li>ドル円は週前半の158円台から本日156円台前半～157円台のレンジへ値を下げ、日銀を巡るタカ派観測（審議委員発言）と介入警戒、投機筋の円ロング積み増しが重石となっている。</li>
-<li>ユーロドルは10月15日の米CPI上振れ（9月+3.7%y/y、予想+3.6%）を受けた下落トレンドが続き、2025年5月以来の安値圏（1.12付近）で推移。本日は1.1200前後、ややドル優位。</li>
-<li>来週10/27-28にFOMC（利下げ確率は市場予想で15-22%程度とみられ、据え置き優勢）、10/29-30に日銀金融政策決定会合（展望レポート）、10/29（または30）にECB理事会と、主要中銀イベントが3つ連続で控える「イベント前の調整」的な地合い。</li>
-<li>本日はドル円・ユーロドルともに事前の経済指標（日本全国CPI、米欧flash PMI）に反応しつつも、来週の中銀イベントを前にレンジ内の往来にとどまった可能性が高い（推定）。</li>
-<li>原油（Brent）は中東情勢を背景に週前半$112近辺まで上昇後、$108台へ軟化。コモディティ連動のCAD・NOKにも緩やかな影響。</li>
+<li>FRB・ECB・日銀は、いずれも2026年9月中旬（FRB 9/16・ECB 9/16・日銀9/18）にほぼ同時に利上げを実施しており、中東情勢に伴う原油高とAI需要拡大を背景とした世界同時的なインフレ再燃・金融引き締めサイクルという、通常の「利下げ待ち」局面とは異なる地合いが継続している（FRB・ECB・日銀の公式発表資料で確認済み）。政策金利はFRB 3.75〜4.00%、ECB預金ファシリティ2.50%、日銀1.25%で、日米金利差は依然2.5〜2.75%ポイントと大きい。</li>
+<li>ドル円はECB参照レートから算出した時点比較で、10/21の157.88円から10/23は156.80円まで2営業日で約1.08円（▲0.69%）下落。本日単体では10/22比▲0.16%（157.05→156.80）の小幅安。日銀は9/18声明で「基調的な物価上昇率は2%に向けて緩やかに上昇しており、政策金利の引き上げを継続する」と明示的にタカ派的なフォワードガイダンスを示しており、10/29-30会合（展望レポート）を控えた円買い地合いの一因とみられる。</li>
+<li>ユーロドルも同様に10/21の1.1234から10/23は1.1193まで下落（▲0.37%）。ECBも9/16に預金金利を2.25%→2.50%へ引き上げ済みで、一部報道では10/29会合での追加利上げ（2.75%への引き上げ）を先物市場が約6割織り込んでいるとの観測もある（未確認、情報源間で相反する報道あり）が、それでもユーロドルは軟化しており、ドル全体の底堅さ（米早期PMIへの事前の底堅い見方、リスクセンチメント等）が勝っている可能性。</li>
+<li>本日は日本の9月全国CPI（8:30発表、確報値は検索インデックス未反映のため未確認）、英・米の10月flash PMIが材料視された一日。来週はFOMC（10/27-28）、RBNZ・BOC（10/28）、ECB・日銀（10/29、10/29-30）とG10中銀イベントが集中する「イベントウィーク」前の調整的な地合いだったとみられる。</li>
+<li>中東情勢（日銀9/18声明でも「特に注意が必要」と名指し）とAI関連需要の拡大が、インフレ再燃・世界的利上げサイクルという今サイクル特有の構図を規定しており、通常の「米金利差＝ドル高」という単純なフレームでは説明しきれない複雑な地合いである点に留意が必要。</li>
 </ul>
 </section>
 <section id="sec-2">
 <h2>値動きの時系列解説</h2>
-<p><strong>オセアニア～東京朝（9:00頃）</strong>：東京朝の時点で、ドル円は前日のNY引け水準（156円台後半、推定）からスタート。8:30には日本の全国消費者物価指数（9月分、生鮮食品を除く総合）が発表された。市場では前月までのコア指数が1.7～1.9%y/y前後で推移していたとの報道があり、9月分の確報値は本稿執筆時点で未確認。発表直後の反応規模は未確認だが、来週10/29-30の日銀会合（展望レポート）を控え、指標の上振れ・下振れいずれも日銀の次の一手を巡る思惑に直結しやすい局面だった。</p>
-<p><strong>東京午後～ロンドン序盤</strong>：ロンドン勢参入前にかけて、ドル円は156円台前半～157円台前半のレンジで推移したとみられる（本日の実勢レンジ156.08～157.16、投資家向けリアルタイム情報より）。ロンドン朝方（日本時間17時台）には英国の10月flash PMI（製造業・サービス業）が発表され、FXStreetの報道見出しによれば「予想を上回る内容」であったにもかかわらずポンドはアウトパフォームできなかったとされ、ポンド単独要因よりもドル全体の底堅さが優勢だった可能性を示唆する。</p>
-<p><strong>ロンドン午後～NY序盤</strong>：NY勢参入にかけて、豪ドルは米早期PMI発表（米東部時間9:45=日本時間22:45が標準発表時刻）を控えて小幅に値を戻す動きが報じられた（FXStreet見出し「Australian Dollar edges up ... ahead of US flash PMI data」）。米flash PMIについては別のFXStreet見出しで「鈍化しつつも底堅い内容が見込まれる」との事前観測が伝えられており、過度なドル売りには繋がりにくい地合いだったとみられる。</p>
-<p><strong>NY午後～引け</strong>：カナダドルは前週(10/19)のカナダCPI下振れを受けた戻りが一服し、10/22時点の報道では「ドルの戻りがさらなる上昇を抑制」とされUSD/CADは1.4032前後（当日安値1.4013＝1カ月ぶり安値から戻す形）で推移していた。本日(10/23)のNY引けにかけての値動きは確報を得られておらず、カナダ国内の材料が限られる中、ドル全体のトーン次第の展開だったと推察される。</p>
+<p><strong>オセアニア〜東京朝（9:00頃〜）</strong>：前日10/22のNY時間終盤（ECB参照レート基準、21:15JST時点でドル円157.05円、ユーロドル1.1205）からの地続きで、東京朝は157円台前半〜半ばでの推移だったとみられる（推定）。8:30に日本の9月全国消費者物価指数（生鮮食品を除く総合）が発表されたが、確報値は検索インデックス未反映のため未確認。参考情報として、大阪市の9月分（生鮮食品を除く総合）は前年同月比+1.6%（前月から横ばい）、9月の東京都区部CPI（先行指標、9月下旬発表分）は同+2.5%前後（8月の+2.6%からやや鈍化）とされており、全国値もこのレンジ近辺（1.6〜2.5%程度）だった可能性がある（複数の未確認情報からの推定）。日銀は9/18声明で基調的物価上昇率が「2026年度後半から2027年度にかけて2%とおおむね整合的な水準に達する」との見通しを示しており、9月分CPIが想定レンジ内であれば10/29-30会合でのタカ派スタンス継続を支持する材料になりやすい。</p>
+<p><strong>東京午後〜ロンドン序盤</strong>：ロンドン勢参入にかけて、ドル円は156円台後半〜157円台前半のレンジで推移したとみられる（推定、前日個別ノートで確認された二次情報の実勢レンジ156.08〜157.16と整合的）。ロンドン朝方（日本時間17時台）には英国の10月flash PMI（製造業・サービス業）が発表され、前日ノートで確認したFXStreet報道見出しによれば「予想を上回る内容」だったにもかかわらずポンドは単独でアウトパフォームできなかったとされ、ポンド要因よりもドル全体の底堅さが優勢だった可能性を示唆する。</p>
+<p><strong>ロンドン午後〜NY序盤</strong>：ECB参照レート算出時点（21:15JST＝14:15CET、米早期PMI発表の22:45JSTより前）で、ドル円156.80円、ユーロドル1.1193、ポンドドル1.3368、豪ドル米ドル0.7022、NZドル米ドル0.5687、米ドルカナダドル1.3995、米ドルスイスフラン0.8244、米ドルスウェーデンクローナ9.945、米ドルノルウェークローネ9.351（いずれもECB公式参照レートからの逆算、一次情報）。前日同時刻比でドル円▲0.16%、ユーロドル▲0.11%、カナダドルは対ドルで+0.28%と相対的に底堅く（前週のカナダCPI下振れ後の戻りが継続）、スイスフランはやや軟化。</p>
+<p><strong>NY午後〜引け</strong>：米早期PMI（標準発表時刻22:45JST、米東部時間9:45am）は、前日ノートで確認したFXStreet見出しで「鈍化しつつも底堅い内容が見込まれる」との事前観測があったが、実際の発表値・市場反応は検索インデックス未反映のため未確認。本日のECB参照レート時点（21:15JST、PMI発表前）までの値動きが相対的に緩やかだったことを踏まえると、NY引けにかけても大きな方向感の変化は限定的だったと推察されるが、確証はない。</p>
 </section>
 <section id="sec-3">
 <h2>USD/JPY・EUR/USD 値動き詳細（チャート形状がイメージできる粒度）</h2>
+<p>以下はECB参照レート（10/21・10/22・10/23、いずれも14:15CET＝21:15JST時点、一次情報）を確定アンカーとし、その間のセッション内経路は前日ノートで確認済みの二次情報レンジ・材料タイミングから合理的に構成した記述である。分足レベルの確定ティックではない点に留意。</p>
 <h3>USD/JPY</h3><div class="detail-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/JPYのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="246.5" x2="580" y2="246.5" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="250.0" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">156.82</text>
@@ -96,11 +97,11 @@
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">USD/JPY　直近1営業日（+0.01%）</text>
 </svg></div>
 <ul>
-<li><strong>東京（9:00頃〜）</strong>：前日NY引け水準の156円台後半（推定）からスタート。8:30発表の全国CPI（9月、生鮮食品除く）の結果次第で振れたとみられるが、確報値・反応の値幅は未確認。東京午前は156円台半ば～157円台前半のレンジ内で推移したとみられる（推定、根拠：本日の実勢レンジ156.08～157.16）。</li>
-<li><strong>東京夕方〜ロンドン序盤</strong>：日銀会合（10/29-30）接近に伴う円の構造的な買い（投機筋の円ロングはCFTCベースで直近約86パーセンタイルまで積み上がっているとの民間集計あり）を背景に、上値は156円台後半～157円台前半で抑えられがちだったとみられる（推定）。</li>
-<li><strong>ロンドン午後〜NY序盤</strong>：米早期PMI発表（日本時間22:45頃が標準時刻）を挟み、ドル全体がやや底堅さを見せたことで、ドル円も156円台前半の安値圏から幾分持ち直す動きがあったとみられる（推定）。</li>
-<li><strong>NY午後〜引け</strong>：週を通して158円台（10/21時点の参考値）から156円台（10/23）まで約1円強下落した流れの中、本日単体の終値はTrading Economics基準で156.87（前日比+0.06%）とされ、前日からの変化は限定的。本日のレンジ（156.08～157.16）の範囲内で小幅な往来となり、週初からの下落トレンドが一旦足踏みした形と解釈できる（推定を含む）。</li>
-<li>参考：本日のリアルタイム情報の一つでは156.48（日中レンジ156.08～157.16）との表示もあり、引け値確定水準には複数情報源間でなお差異があるため、156円台後半を中心値として幅を持って見るのが妥当。</li>
+<li><strong>東京（9:00頃〜）</strong>：前日21:15JST時点のアンカー157.05円から、NY終盤〜東京朝にかけてやや上伸し、東京朝は157円台前半〜半ば圏でスタートしたとみられる（推定）。8:30の全国CPI発表は、確報値未確認ながら大阪市・東京都区部の先行データ（1.6〜2.5%レンジ）からは「予想通り〜やや強め」程度の反応だったとみられ、大きなブレイクは伴わなかった可能性が高い（推定）。</li>
+<li><strong>東京夕方〜ロンドン序盤</strong>：日銀の9/18声明「政策金利の引き上げを継続する」との明示的なタカ派ガイダンスを意識し、10/29-30会合接近に伴う円の構造的な買いが徐々に強まり、156円台後半〜157円台前半のレンジで上値が抑えられがちになったとみられる（推定、根拠：前日ノート記載の実勢レンジ156.08〜157.16との整合性）。</li>
+<li><strong>ロンドン午後〜NY序盤</strong>：21:15JST（米早期PMI発表の1.5時間前）時点でドル円は156.80円となっており、ロンドン午後にかけて156円台後半方向へのじり安が進行したとみられる。前日同時刻比▲25pips（▲0.16%）、直近2営業日(10/21→10/23)では▲108pips（▲0.69%）の下落。</li>
+<li><strong>NY午後〜引け</strong>：22:45JSTの米早期PMI発表後の反応は確報未確認。事前に「鈍化しつつも底堅い」との見方が優勢だったことを踏まえると、NY引けにかけても156円台後半〜157円台前半のレンジ内で収斂した可能性が高いが（推定）、確定的な引け値・高安値は未確認。</li>
+<li>参考：日米金利差（FRB3.75〜4.00%、日銀1.25%）は依然2.5〜2.75%ポイントと大きく、キャリー面ではドル優位の構図が崩れていない一方、日銀の明示的なタカ派ガイダンスと9/8時点CFTCポジション（投機筋が円ショートから小幅ネットロング＋10,800枚へ転換、Saxo Bank二次情報）が、週を通じた上値の重さの一因になっているとみられる。</li>
 </ul>
 <h3>EUR/USD</h3><div class="detail-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EUR/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="235.4" x2="580" y2="235.4" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -126,17 +127,18 @@
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">EUR/USD　直近1営業日（-0.02%）</text>
 </svg></div>
 <ul>
-<li><strong>東京（9:00頃〜）</strong>：前日ECB参考レート（10/22時点1.1205）近辺からスタートしたとみられる（推定）。東京時間は方向感の乏しい展開だったとみられる。</li>
-<li><strong>東京夕方〜ロンドン序盤</strong>：ロンドン勢参入にかけて、10/15の米CPI上振れ（9月+3.7%y/y、予想+3.6%）以降の下落トレンドの範囲内で1.1197～1.1232のレンジに収まる展開（本日のレンジ、Moneyswapp基準）。前日終値1.1223からやや値を下げた。</li>
-<li><strong>ロンドン午後〜NY序盤</strong>：米早期PMI発表（日本時間22:45頃）を挟み、「鈍化しつつも底堅い」との事前観測通りの結果であれば過度な反応は出にくく、ユーロドルはレンジ下限側（1.12付近）での推移が継続したとみられる（推定）。</li>
-<li><strong>NY午後〜引け</strong>：NY時間午前（米東部4:41am＝日本時間17:41、Bloomberg基準）には1.1191まで値を落とす場面があったと報じられており、これは本日のセッション内では相対的に低めの水準。終値はTrading Economics基準で1.1200（前日比-0.14%）、Moneyswapp基準で1.1205（前日比-0.12%）とされ、1.12の節目を挟んだ小幅安で引けた可能性が高い。</li>
-<li>技術的には、週間（10/19-23）のレジスタンスが1.1223・1.1379、サポートが1.1112・1.1037とされており（RoboForex）、本日の終値1.1200前後は週初のレジスタンス1.1223をわずかに下回る水準で推移した計算になる。</li>
+<li><strong>東京（9:00頃〜）</strong>：前日21:15JST時点のアンカー1.1205からの地続きでスタートしたとみられる（推定）。東京時間は日本・欧州双方で重要指標がなく、方向感の乏しい展開だったとみられる。</li>
+<li><strong>東京夕方〜ロンドン序盤</strong>：ロンドン勢参入にかけて、ECBが9/16に預金金利を2.50%へ引き上げ済み（公式確認）であるにもかかわらず、ドル全体の底堅さが優勢となり、緩やかな下押しが進行したとみられる（推定）。前日ノートで確認された二次情報の実勢レンジは1.1197〜1.1232とされていたが、本稿のECB参照レート（1.1193）はこのレンジをわずかに下回っており、レンジ下限〜やや下を試す展開だった可能性がある。</li>
+<li><strong>ロンドン午後〜NY序盤</strong>：21:15JST時点でユーロドル1.1193（前日同時刻比▲12pips、▲0.11%）。米早期PMI発表前の時点でこの水準にあり、ロンドン午後にかけてじり安基調が継続したとみられる。</li>
+<li><strong>NY午後〜引け</strong>：22:45JSTの米早期PMI発表後の反応は確報未確認。事前の「鈍化しつつも底堅い」との見方通りであれば過度な反応は出にくく、1.1190前後を中心としたレンジ推移が継続した可能性が高い（推定）。</li>
+<li>技術的には、週間（10/19-23）のレジスタンスが1.1223・1.1379、サポートが1.1112・1.1037とされており（RoboForex、前日ノート経由の二次情報）、本日のアンカー水準1.1193はこのレジスタンス1.1223をやや下回る水準で推移した計算になる。ECBは次回10/29会合を控え、一部報道では追加利上げ（2.75%）の織り込みが先物市場で約6割との観測もある（未確認、情報源間で相反）が、現時点のスポット動向にはまだ明確に反映されていない可能性がある。</li>
 </ul>
 </section>
 <section id="sec-4">
 <h2>主要通貨ペア</h2>
+<p>（前日比はECB参照レート、10/22時点との比較。高安値は前日ノート記載の二次情報レンジを参考値として付記、未確認）</p>
 <ul>
-<li><strong>USD/JPY</strong> 156.87（前日比+0.06%、高値157.16／安値156.08）— 週初158円台から本日156円台まで軟化。日銀会合（10/29-30）接近に伴う円ロング積み増しと介入警戒が重石。終値水準は情報源間で156.5～156.9付近に幅あり。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/JPYのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>USD/JPY</strong> 156.80（前日比▲0.16%、参考レンジ156.08〜157.16・未確認）— 日米金利差(2.5〜2.75pt)はドル優位だが、日銀の明示的タカ派ガイダンス（9/18声明「利上げ継続」）と10/29-30会合接近で上値重い。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/JPYのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="199.0" x2="580" y2="199.0" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="202.5" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">156.50</text>
 <line x1="50" y1="156.3" x2="580" y2="156.3" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -162,7 +164,7 @@
 <text x="584.2" y="173.5" font-size="13" font-weight="700" fill="var(--fall)" style="font-variant-numeric:tabular-nums">156.85</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">USD/JPY　直近3営業日（-0.80%）</text>
 </svg></div></li>
-<li><strong>EUR/USD</strong> 1.1200（前日比-0.14%、高値1.1232／安値1.1197）— 10/15の米CPI上振れ以降の下落トレンドが継続。2025年5月以来の安値圏（1.12付近）で推移。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EUR/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>EUR/USD</strong> 1.1193（前日比▲0.11%、参考レンジ1.1190〜1.1232・未確認）— ECBも9/16に2.50%へ利上げ済みだがドル全体の底堅さに押され軟化。10/29ECB会合での追加利上げ観測（未確認）が次の焦点。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EUR/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="195.5" x2="580" y2="195.5" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="199.0" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">1.1200</text>
 <line x1="50" y1="142.9" x2="580" y2="142.9" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -186,7 +188,7 @@
 <text x="584.2" y="192.1" font-size="13" font-weight="700" fill="var(--fall)" style="font-variant-numeric:tabular-nums">1.1203</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">EUR/USD　直近3営業日（-0.26%）</text>
 </svg></div></li>
-<li><strong>GBP/USD</strong> 1.3380前後（前日比-0.1～-0.2%、高値／安値未確認）— 英flash PMIが予想を上回ったにもかかわらずドル全体の底堅さに上値を抑えられ、月間高値1.3419の手前で推移。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GBP/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>GBP/USD</strong> 1.3368（前日比▲0.07%、高安未確認）— 英flash PMIが予想を上回ったとされる(前日ノート記載の二次情報)にもかかわらずドル全体の底堅さに上値を抑制。10/28の英秋季予算を控えた財政不安も重石。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GBP/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="224.9" x2="580" y2="224.9" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="228.4" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">1.3360</text>
 <line x1="50" y1="192.4" x2="580" y2="192.4" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -216,7 +218,7 @@
 <text x="584.2" y="176.3" font-size="13" font-weight="700" fill="var(--fall)" style="font-variant-numeric:tabular-nums">1.3376</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">GBP/USD　直近3営業日（-0.12%）</text>
 </svg></div></li>
-<li><strong>AUD/USD</strong> 0.7020前後（前日比+0.3～0.4%・推定、高値／安値未確認）— 前日(10/22)の0.7008から小幅に持ち直し。米flash PMI待ちで方向感は限定的。CFTCベースの豪ドル投機的ショートは直近で年末以来最大規模との民間集計あり。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AUD/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>AUD/USD</strong> 0.7022（前日比+0.14%、高安未確認）— 対ユーロ・対NZDではやや底堅い。米早期PMI待ちで方向感は限定的だったとみられる。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AUD/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="205.0" x2="580" y2="205.0" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="208.5" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">0.7000</text>
 <line x1="50" y1="165.0" x2="580" y2="165.0" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -244,7 +246,7 @@
 <text x="584.2" y="77.8" font-size="13" font-weight="700" fill="var(--rise)" style="font-variant-numeric:tabular-nums">0.7033</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">AUD/USD　直近3営業日（+0.04%）</text>
 </svg></div></li>
-<li><strong>EUR/JPY</strong> 176.0前後（前日比未確認、高値／安値未確認）— ユーロ安・円高の綱引きでおおむね横ばい圏。情報源間で175.1～176.0と幅があり水準は参考値。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EUR/JPYのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>EUR/JPY</strong> 175.51（前日比▲0.26%、高安未確認）— ユーロ安・円高の綱引きで緩やかに下落。ECB・日銀とも金利差（2.50%対1.25%、約1.25pt）は依然ユーロ優位だが、日銀のタカ派ガイダンスが相対的な重石。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EUR/JPYのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="236.3" x2="580" y2="236.3" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="239.8" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">175.00</text>
 <line x1="50" y1="202.7" x2="580" y2="202.7" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -274,7 +276,7 @@
 <text x="584.2" y="192.5" font-size="13" font-weight="700" fill="var(--fall)" style="font-variant-numeric:tabular-nums">175.71</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">EUR/JPY　直近3営業日（-1.06%）</text>
 </svg></div></li>
-<li><strong>NZD/USD</strong> 0.5697前後（取得時点未確認、参考値）— 直近スナップショットのみで前日比・高安値は未確認。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NZD/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>NZD/USD</strong> 0.5687（前日比+0.11%、高安未確認）— 10/28のRBNZ会合を控え、同会合では追加利上げ（2.75%→3.00%）の織り込みが高い(約8割、未確認の二次情報)とされ、NZD下支え要因。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NZD/USDのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="223.8" x2="580" y2="223.8" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="227.3" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">0.5670</text>
 <line x1="50" y1="179.2" x2="580" y2="179.2" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -302,7 +304,7 @@
 <text x="584.2" y="91.9" font-size="13" font-weight="700" fill="var(--rise)" style="font-variant-numeric:tabular-nums">0.5700</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">NZD/USD　直近3営業日（+0.02%）</text>
 </svg></div></li>
-<li><strong>USD/CAD</strong> 1.4032前後（10/22時点、高値／安値：当日安値1.4013＝1カ月ぶり安値）— 前週のカナダCPI下振れでの下落が一服し、ドルの戻りで上値を回復。本日(10/23)の確報は未確認。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/CADのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>USD/CAD</strong> 1.3995（前日比▲0.28%、高安未確認）— カナダドルが主要通貨で相対的に底堅い。前週のカナダCPI下振れ後の戻りが一服しつつも、10/28のBOC会合を意識した動き。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/CADのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="214.6" x2="580" y2="214.6" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="218.1" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">1.3980</text>
 <line x1="50" y1="166.7" x2="580" y2="166.7" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -328,7 +330,7 @@
 <text x="584.2" y="161.8" font-size="13" font-weight="700" fill="var(--fall)" style="font-variant-numeric:tabular-nums">1.4004</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">USD/CAD　直近3営業日（-0.30%）</text>
 </svg></div></li>
-<li><strong>USD/CHF</strong> 0.8210前後（前日比未確認、参考値）— スイスフランは大きな材料なく小動き。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/CHFのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
+<li><strong>USD/CHF</strong> 0.8244（前日比+0.29%、高安未確認）— スイスフランは主要通貨中で最も軟調。大きな独自材料はなく、ドル全体の底堅さを反映した動きとみられる。<div class="pair-chart"><svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USD/CHFのチャート" font-family="-apple-system,'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif">
 <line x1="50" y1="232.5" x2="580" y2="232.5" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
 <text x="42" y="236.0" text-anchor="end" font-size="10.5" fill="var(--ink-faint)" style="font-variant-numeric:tabular-nums">0.8190</text>
 <line x1="50" y1="204.8" x2="580" y2="204.8" stroke="var(--ink)" stroke-opacity="0.10" stroke-width="0.7"/>
@@ -362,51 +364,55 @@
 <text x="584.2" y="70.5" font-size="13" font-weight="700" fill="var(--rise)" style="font-variant-numeric:tabular-nums">0.8250</text>
 <text x="0" y="18" font-size="13" font-weight="700" fill="var(--ink-soft)">USD/CHF　直近3営業日（+0.05%）</text>
 </svg></div></li>
+<li><strong>USD/SEK</strong> 9.945、<strong>USD/NOK</strong> 9.351（ECB参照レートからの算出、一次情報）— 北欧通貨は他のG10対比で突出した動きはなし。</li>
 </ul>
 </section>
 <section id="sec-5">
 <h2>フロー・需給・ポジション動向</h2>
 <ul>
-<li>CFTC IMMポジション（週次データ、対象週は10/6時点、民間解説記事(VT Markets、10/11-12付)による紹介のため一次情報とは時点がやや異なる点に留意）：ユーロは投機的ネットショートが約9.93万枚とされ、過去のポジション分布の中でも極端な低（ショートに偏った）パーセンタイル水準。円は投機的ネットロングが積み上がり、分布上は約86パーセンタイルと高水準。豪ドルは投機的ネットショートが約9.86万枚で、2025年末以来で最大規模のショート積みとされる。</li>
-<li>円ロングが既に高水準に積み上がっていることは、日銀会合（10/29-30）で追加利上げ期待を裏切られた場合の巻き戻し（ドル円の急反発）リスクを内包している点に留意。</li>
-<li>ユーロの極端なネットショートは、ポジション調整による自律的な反発（ショートカバー）リスクを示唆する一方、ファンダメンタルズ（米CPI上振れ・ECB据え置き観測）はショート継続を支持する方向。</li>
-<li>日本の為替介入動向：財務省は2026年中に複数回、円買い・ドル売り介入を実施したとみられる（4月28日～5月27日に計約11.7兆円、7月30日に6～7兆円規模、片山財務大臣の「断固たる措置」発言等を伴う／各種報道ベース、財務省の正式介入実績公表資料での最終確認は未実施）。160円台後半で介入警戒が強まる地合いが続いており、ドル円の上値を心理的に抑える要因となっている。</li>
-<li>具体的なオプションバリア情報（木曜・金曜のNYカットに向けた大口バリア等）は本日入手できず、未確認。</li>
+<li>CFTC/IMMポジション：直近で確認できたのは2026年9月8日時点のデータ（Saxo Bank二次情報）で、投機筋の円ポジションが「相応のネットショートから小幅なネットロング（+10,800枚）へ転換、純買い越し約10.3万枚（約84億ドル相当）」とされる。日銀会合（9/18）接近を見込んだポジション調整とみられる。10月分（直近週）のCFTC確報値は検索インデックス未反映のため未確認。</li>
+<li>日本の為替介入動向：2026年中に複数回、円買い・ドル売り介入を実施したとの報道が複数ある（4月末〜5月に計700億ドル超、7月31日には日米共同介入＝1998年以来初とされる、いずれも報道ベースで財務省公式発表資料での直接確認は未実施）。160円接近時は当局警戒が強まりやすい地合いが継続しているとみられる。</li>
+<li>中銀政策スタンスとフローの関係：FRB・ECB・日銀がいずれも9月中旬にほぼ同時に利上げを実施したという今サイクル特有の構図下では、単純な金利差に基づくキャリートレードのシグナルがやや複雑化している。日銀の明示的なタカ派ガイダンスは、相対的に出遅れていた円のショートカバー・ロング積み増しを誘発しやすい局面とみられる。</li>
+<li>オプションバリア等の具体的フロー情報は本日入手できず、未確認。</li>
 </ul>
 </section>
 <section id="sec-6">
 <h2>推奨トレード</h2>
-<h3>トレード1：EUR/JPY 売り</h3>
+<h3>トレード1：USD/JPY 売り（日銀会合前の戦術的ポジション）</h3>
 <ul>
-<li>根拠：（1）日銀は10/29-30に金融政策決定会合・展望レポートを控え、審議委員のタカ派的発言が相次ぐ中、投機筋の円ロングはCFTCベースで約86パーセンタイルまで積み上がり円高バイアスが強い。（2）ユーロは10/15の米CPI上振れ以降下落トレンドが継続し、ECBも次回理事会（10/29または30、報道により日付に差異あり）で据え置きが有力視される中、対円でも上値が重くなりやすい。</li>
-<li>エントリー目安：176.50～177.00への戻りを売り</li>
-<li>利確目安：173.00（次の目標172.50）</li>
-<li>損切り目安：178.20（10月半ばの戻り高値を上回る水準）</li>
-<li>ホライズン：数日～1-2週間（日銀・ECB会合通過まで）</li>
-<li>リスク：日銀が会合でハト派的（追加利上げ見送り・タイミング後ずれ）な姿勢を示せば、積み上がった円ロングの巻き戻しで逆行する可能性。米国株・リスクセンチメントが大きく改善し全面的ドル高・リスクオンが強まれば、クロスで下支えされるリスクもある。</li>
+<li>根拠：（1）日銀は9/18声明で「政策金利の引き上げを継続する」と明示的にタカ派的なフォワードガイダンスを示しており（一次情報、BOJ公式声明）、10/29-30会合（展望レポート）を控え追加利上げ観測が高まりやすい。（2）9/8時点CFTCポジションで投機筋が円ショートからネットロングへ転換済みであり、円買いモメンタムが継続している可能性。（3）テクニカルには10/21の157.88円から10/23の156.80円まで2営業日で約1.08円下落するトレンドが継続中。他方、日米金利差（3.75〜4.00%対1.25%）は依然大きく、ドル全面安ではなく戻り売り中心のレンジ下方模索を想定。</li>
+<li>エントリー目安：157.20〜157.60への戻りを売り</li>
+<li>利確目安：155.50（次の目標155.00、日銀会合でタカ派確認なら154円台も視野）</li>
+<li>損切り目安：158.30（10月半ばの戻り高値を上回る水準）</li>
+<li>ホライズン：イントラデイ〜1週間程度（日銀会合10/29-30通過まで）</li>
+<li>リスク：9月全国CPI確報が市場予想を下回れば日銀の早期追加利上げ観測が後退し反発するリスク。米FOMC（10/27-28）でタカ派寄りの声明・会見となれば日米金利差拡大観測でドル買いが優勢になる可能性。156円を大きく割り込む局面では財務省の口先介入（円高是正方向）にも留意。</li>
 </ul>
-<h3>トレード2：USD/JPY 売り（戦術的）</h3>
+<h3>トレード2：EUR/USD 押し目買い</h3>
 <ul>
-<li>根拠：日銀会合・介入警戒・投機的円ロング積み増しに加え、週初(10/21時点参考値158.10)から本日(156円台)にかけて約1円強の下落モメンタムが継続。他方、米早期PMIは「鈍化しつつも底堅い」との事前観測が多く、FOMC(10/27-28)の利下げ確率も市場予想で15-22%程度と低く据え置き優勢とみられるため、ドル全面安ではなくレンジ下方模索の展開を想定。</li>
-<li>エントリー目安：157.60～158.00への戻りを売り</li>
-<li>利確目安：155.50（次の目標155.00）</li>
-<li>損切り目安：158.80</li>
-<li>ホライズン：イントラデイ～数日（日銀会合前まで）</li>
-<li>リスク：本日発表の全国CPI(9月、生鮮食品除く)の確報が市場予想を下回れば日銀の早期追加利上げ観測が後退し、ドル円が反発する可能性。逆に156円を大きく割り込む局面では、財務省による口先介入（円高是正方向）に注意。</li>
+<li>根拠：ECBも9/16に預金金利を2.25%→2.50%へ引き上げ済み（一次情報、ECB公式発表）であり、10/29会合では追加利上げ（2.75%への引き上げ）の思惑が一部先物市場で高まっているとされる（未確認、情報源間で差異あり）。現状のユーロ軟化はドル全体の底堅さが主因とみられ、ファンダメンタルズ面でのユーロ劣後は限定的。週間テクニカルサポート1.1112・1.1037（RoboForex）が下値めど。</li>
+<li>エントリー目安：1.1160〜1.1190への押し目を買い</li>
+<li>利確目安：1.1260（次の目標1.1320、週間レジスタンス1.1223・1.1379が節目）</li>
+<li>損切り目安：1.1100割れ（週間サポート1.1112を明確に割り込んだ場合は撤退）</li>
+<li>ホライズン：数日〜1週間程度（ECB会合10/29、FOMC10/27-28通過まで）</li>
+<li>リスク：米早期PMI・FOMCでドル全面高が強まるシナリオでは下振れ継続のリスク。ECB理事会でハト派的な姿勢（追加利上げ観測の後退）が示されれば逆行する可能性。</li>
 </ul>
 </section>
 <section id="calendar">
 <h2>翌営業日以降の注目イベント・材料</h2>
 <ul>
-<li><strong>10/23（本日）22:45頃 米</strong> S&amp;P Global 製造業・サービス業 flash PMI（10月）〔重要度：中〕— 事前報道では「鈍化しつつも底堅い」内容が見込まれている（FXStreet、10/23付見出しより）。</li>
-<li><strong>10/23（本日）17:30頃 英</strong> flash PMI（10月、製造業・サービス業）〔重要度：中〕— 本日発表済み。予想を上回ったとの報道があるが、ポンドの反応は限定的だった可能性（FXStreet見出しより）。</li>
-<li><strong>10/27-28 米</strong> FOMC（10/28 2:00pm ET声明、2:30pm ET議長会見。SEPなし）〔重要度：高〕— 市場予想では利下げ確率15-22%程度(複数の予測市場集計、確度は未確認)とみられ、据え置きが優勢。9月米CPI上振れ(+3.7%y/y)を受けたタカ派傾斜に注目。</li>
-<li><strong>10/29（または30、報道により差異あり） ユーロ圏</strong> ECB政策理事会〔重要度：高〕— 事前のロイター調査(FXStreet、10/22付)では金利据え置きが有力とされる。現行の政策金利水準は情報源間で2.00%とする報道と2.50%とする報道が混在し未確認、確認が必要。</li>
-<li><strong>10/29-30 日本</strong> 日銀金融政策決定会合（展望レポート、10/30 15:30総裁記者会見）〔重要度：高〕— 審議委員から追加利上げに前向きな発言が出ており、投機筋の円ロングも積み上がる中、政策スタンスの確認がドル円の次の方向性を左右する。</li>
-<li><strong>10/23以降 日本</strong> 全国消費者物価指数（9月、生鮮食品除く）確報の市場への浸透〔重要度：中〕— 本稿執筆時点で確報値は未確認。日銀会合直前の重要な判断材料。</li>
+<li><strong>10/23（本日）22:45頃 米国</strong> S&amp;P Global 製造業・サービス業flash PMI（10月）〔重要度：中〕— 事前観測は「鈍化しつつも底堅い」内容が見込まれていた（前日ノート経由の二次情報）。実際の発表値・市場反応は未確認。</li>
+<li><strong>10/26-28頃 米国</strong> 2年・5年・7年国債入札〔重要度：中〜高〕— 米金利・ドル全般への影響。</li>
+<li><strong>10/26〜29 中国（北京）</strong> 中国共産党第20期中央委員会第5回全体会議（五中全会）〔重要度：中〕</li>
+<li><strong>10/27-28 米国</strong> FOMC政策金利発表（結果10/28 14:00 ET）〔重要度：最高〕— 9/16に3.75〜4.00%へ利上げ済み（一次情報）。据え置きが基本線との見方が優勢（未確認の二次情報では約8割がホールドを織り込み）だが、Warsh議長（二次情報ベース）の会見トーン次第でタカ派サプライズのリスクも残る。</li>
+<li><strong>10/28（水） カナダ</strong> BOC政策金利発表〔重要度：中〜高〕— 現行2.25%（6会合連続据え置き、公式サイト経由の集計情報）。</li>
+<li><strong>10/28（水） ニュージーランド</strong> RBNZ政策金利決定〔重要度：中〜高〕— 現行2.75%（9/2に25bp利上げ済み）。追加利上げ（3.00%）の織り込みが高いとの観測あり（未確認）。</li>
+<li><strong>10/28（水） 英国</strong> 秋季予算（Autumn Budget）〔重要度：高〕— 財政規律・増税観測がGBP全般のボラティリティ要因。</li>
+<li><strong>10/29（木）14:15 CET頃 ユーロ圏</strong> ECB政策理事会〔重要度：高〕— 現行預金金利2.50%（9/16に利上げ済み、一次情報）。追加利上げの有無とラガルド総裁会見に注目。</li>
+<li><strong>10/29〜30（木金） 日本</strong> 日銀金融政策決定会合・展望レポート（10/30 15:30総裁記者会見）〔重要度：高〕— 現行1.25%（9/18に7-2で利上げ済み、一次情報）。声明文では「政策金利の引き上げを継続する」と明示されており、追加利上げの時期・ペースに関する言及に要注目。</li>
+<li><strong>週内随時 中東情勢</strong>〔重要度：中〕— 日銀9/18声明でも名指しされたリスク要因。原油価格・リスクセンチメント・JPY/CHFの逃避需要に影響。詳細は地政学担当（analyst-politics）の分析も参照。</li>
 </ul>
 </section>
-<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [USD/JPY historical/forecast snapshot context - Bloomberg Linea等複数（WebSearch経由）](https://www.bloomberglinea.com/english/quote/USDJPY%3ACUR/)（取得日時：2026-10-23、WebSearch）</p><p>- [USD/JPY, EUR/USD live rate snapshots（Trading Economics, Investing.com, Pluang, currencyrate.today）](https://tradingeconomics.com/japan/currency)（取得日時：2026-10-23、WebSearch経由の要約）</p><p>- [EUR/USD snapshot（Trading Economics, Moneyswapp, Bloomberg, ECB参考レート）](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)（取得日時：2026-10-23、WebSearch経由）</p><p>- [GBP/USD snapshot（Trading Economics, FXStreet, Eurochange, Pound Sterling Live）](https://www.fxstreet.com/news/pound-sterling-price-news-and-forecast-gbp-underperforms-despite-upbeat-uk-flash-pmi-report-202610231209)（取得日時：2026-10-23、WebSearch経由）</p><p>- [AUD/USD snapshot（Bloomberg, Trading Economics, FXStreet）](https://www.fxstreet.com/news/australian-dollar-edges-up-against-us-dollar-ahead-of-us-flash-pmi-data-202610231111)（取得日時：2026-10-23、WebSearch経由）</p><p>- [US flash PMI事前観測](https://www.fxstreet.com/news/us-sp-global-pmi-expected-to-show-moderating-business-activity-in-october-202610231007)（取得日時：2026-10-23、WebSearch経由）</p><p>- [USD/CAD snapshot（FXStreet 10/19・10/22付）](https://www.fxstreet.com/news/canadian-dollar-steadies-as-us-dollar-recovery-limits-further-upside-202610221331)（取得日時：2026-10-23、WebSearch経由）</p><p>- [ECB政策金利・据え置き観測報道（FXStreet、ロイター調査引用）](https://www.fxstreet.com/news/ecb-sets-to-leave-deposit-rate-unchanged-at-2-on-october-30-reuters-poll-202510221122)（取得日時：2026-10-23、WebSearch経由。日付表記202510221122は検索結果上の表記ゆれの可能性あり、未確認）</p><p>- [FOMC Meeting Schedule October 2026](https://fedratecalc.com/fomc-meeting-schedule/october-2026/)（取得日時：2026-10-23、WebSearch経由）</p><p>- [日本銀行 金融政策決定会合日程（公式カレンダー参照、WebSearch要約）](https://www.boj.or.jp/announcements/calendar/index.htm)（取得日時：2026-10-23、WebSearch経由）</p><p>- [米CPI・BOJ見通し関連（RoboForex USD/JPY・EUR/USD週次/日次テクニカル分析）](https://roboforex.com/beginners/analytics/forex-forecast/currencies/usd-jpy-forecast-2026-10-15/)（取得日時：2026-10-23、WebSearch経由）</p><p>- [財務省為替介入動向関連報道の要約（大和総研・だいいち生命経済研等レポートのWebSearch要約）](https://www.dir.co.jp/report/research/capital-mkt/securities/20260703_025877.html)（取得日時：2026-10-23、WebSearch経由。財務省公式発表資料での直接確認は未実施）</p><p>- [CFTC IMMポジション解説（VT Markets、10/11-12付）](https://www.vtmarkets.com/en-ca/?p=69483)（取得日時：2026-10-23、WebSearch経由。対象データは10/6時点）</p><p>- [米国株式・原油（Brent）終値（10/20時点、AP通信系配信記事のWebSearch要約）](https://www.joplinglobe.com/region/national_business/how-major-us-stock-indexes-fared-tuesday-8-25-2026/article_71e10b69-24fe-59f5-889e-e300a366ccd7.html)（取得日時：2026-10-23、WebSearch経由。実際の記事日付は10/20分として参照）</p><p>- [Fed Funds Rate現状・利下げ観測（CryptoBriefing, Manifold Markets等のWebSearch要約）](https://cryptobriefing.com/markets-price-in-21-chance-of-fed-rate-cut-in-2026/)（取得日時：2026-10-23、WebSearch経由）</p><p>※本稿はWebFetchが利用不可（DNS解決エラー）だった環境下で、WebSearchのスニペット要約のみを情報源としている。数値・日付の一部は複数情報源間で差異があり、該当箇所に「未確認」「推定」を付した。次回作業時はWebFetchの復旧状況を確認し、一次情報（BOJ・ECB・Fed公式サイト、財務省発表資料等）での直接検証を優先されたい。</p></div></details></section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [Federal Reserve issues FOMC statement（2026年9月16日付、政策金利を3.75〜4.00%に25bp引き上げ、12-0採決）- Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)（WebFetch経由取得、2026-10-25）</p><p>- [ECB Key ECB interest rates（預金ファシリティ金利2.50%、2026年9月16日適用、6月17日時点2.25%からの変更）- European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html)（WebFetch経由取得、2026-10-25）</p><p>- [Euro Foreign Exchange Reference Rates, 23 October 2026（EUR/USD 1.1193、EUR/JPY 175.51等）- European Central Bank](https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261023.pdf)（WebFetch/Read経由取得、2026-10-25）</p><p>- [Euro Foreign Exchange Reference Rates, 22 October 2026（EUR/USD 1.1205、EUR/JPY 175.97等）- European Central Bank](https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261022.pdf)（WebFetch/Read経由取得、2026-10-25）</p><p>- [Euro Foreign Exchange Reference Rates, 21 October 2026（EUR/USD 1.1234、EUR/JPY 177.36等）- European Central Bank](https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261021.pdf)（WebFetch/Read経由取得、2026-10-25）</p><p>- [Change in the Guideline for Money Market Operations（2026年9月18日付、無担保コールレート誘導目標を1.25%に引き上げ、7-2採決、「will continue to raise the policy interest rate」との声明文言）- Bank of Japan](https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf)（WebFetch/Read経由取得、2026-10-25）</p><p>- [Monetary Policy Meetings schedule（2026年10月会合は10/29-30、12月会合は12/17-18）- Bank of Japan](https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm)（WebFetch経由取得、2026-10-25）</p><p>- [日本の9月全国CPI先行指標関連（大阪市消費者物価指数、香川県消費者物価指数等）](https://www.pref.osaka.lg.jp/hodo/fumin/o040090/prs_51272.html)（WebSearch経由取得、2026-10-25。全国確報値は未確認）</p><p>- [Japan's Tokyo CPI inflation September release context - FXStreet](https://www.fxstreet.com/amp/news/when-is-the-japan-tokyo-cpi-and-how-it-could-affect-usd-jpy-202509252232)（WebSearch経由取得、2026-10-25）</p><p>- [FOMC Meeting Schedule — October 2026 / 市場織り込み関連](https://fedratecalc.com/fomc-meeting-schedule/october-2026/)（WebSearch経由取得、2026-10-25）</p><p>- [Bank of Canada rate tracker（現行2.25%、次回10/28）](https://www.macroradar.io/canada-overnight-rate-target)（WebSearch経由取得、2026-10-25）</p><p>- [RBNZ OCR動向（9/2に2.75%へ利上げ、次回10/28）関連記事](https://www.focus-economics.com/countries/new-zealand/news/monetary-policy/new-zealand-central-bank-meeting-02-09-2026/)（WebSearch経由取得、2026-10-25）</p><p>- [RBA cash rate動向（4.60%、9月利上げ）関連記事 - moneymag.com.au](https://www.moneymag.com.au/rba-holds-rates-steady-what-it-means-for-2026)（WebSearch経由取得、2026-10-25。見出しと本文内容に齟齬があり水準は参考値）</p><p>- [CFTC/IMM円ポジション動向（9月8日時点、COT on Forex and Commodities）- Saxo Bank](https://www.home.saxo/en-ch/content/articles/commodities/cot-on-forex-and-commodities---week-to-8-sept-2026-14092026)（WebSearch経由取得、2026-10-25）</p><p>- [ECB Meeting October 2026: Real Dates and What Markets Watch - Admiral Markets](https://admiralmarkets.com/analytics/traders-blog/ecb-meeting-october-2026)（WebSearch経由取得、2026-10-25。10/29追加利上げ織り込み約6割との記述は他情報源と相反し未確認）</p><p>- 過去ノート：`daily/agents/2026-10-22-fx.md`、`daily/agents/2026-10-21-fx.md`（セッション内レンジ・材料タイミングの参考情報として参照、個別の二次情報の再検証はせず「未確認」を維持）</p><p>※本稿はWebFetchが公式一次情報源（ECB・BOJ・FRB等）に対しては機能する環境下で作成された。これにより政策金利・ECB参照レートという強固なアンカーを確保できたが、日中のOHLC・日本9月全国CPI確報値・米欧flash PMI実際の発表値・直近週のCFTCポジションは検索インデックス未反映のため未確認のまま。次回作業時はこれらの確報値の反映状況を確認されたい。</p></div></details></section>
 </article>
 </div>
 <footer class="foot">
