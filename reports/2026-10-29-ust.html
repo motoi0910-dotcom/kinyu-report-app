@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-10-29 米国債ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-10-29.html">統合レポートを見る</a><span>2026-10-29</span></div>
+  <h1 class="title">2026-10-29 米国債ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-10-29-fx.html">為替</a>
+    <a href="2026-10-29-commodities.html">コモディティ</a>
+    <a href="2026-10-29-jgb.html">円債</a>
+    <span class="current">米国債</span>
+    <a href="2026-10-29-intl-bonds.html">外債</a>
+    <a href="2026-10-29-jp-equity.html">日本株式</a>
+    <a href="2026-10-29-us-equity.html">米国株式</a>
+    <a href="2026-10-29-politics.html">政治・地政学</a>
+    <a href="2026-10-29-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得上の留意点</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">イールドカーブ</a>
+    <a href="#sec-5">FRB動向・入札結果</a>
+    <a href="#sec-6">フロー・需給・ポジション動向</a>
+    <a href="#sec-7">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得上の留意点</h2>
+<p>本稿作成時点で、米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）への直接WebFetchはいずれもDNS解決エラーで失敗し、一次情報での直接裏取りができなかった（10/26〜10/28付ノートと同じ制約が継続）。最大の懸案は前日10/28 14:00（ET、日本時間10/29 3:00）に発表されたFOMC政策金利決定そのものの確定結果で、WebSearchを多数回・多様な言い回しで試行したが、決定内容（据え置きか利上げか、声明文の文言、投票内訳）を明確に報じる当該決定の確報記事を特定できなかった（検索結果は決定前のプレビュー記事や、6月・7月・9月の過去会合の記事が混在し、10/28会合そのものの確報は掴めず）。このため本稿のFOMC関連記述は「決定直前（10/22〜10/25時点）の市場プライシングに基づく推定シナリオ」であり、実際の決定結果・市場の初期反応は「未確認」として扱う。イールドカーブの数値も、直近で確認できた参考値（10/21時点の二次情報：10年5.12%程度・2年4.79%程度）を起点に、FOMC結果・GDP・PCEなどのイベントを経た推定レンジを記載するものであり、確定値ではない。7年債入札（10/29実施）・2年債（10/26）・5年債（10/27）入札の確定結果（最高落札利回り・応札倍率・indirect比率）もいずれも未確認。これらの制約は本稿全体に及ぶため、個々の数値には「推定」「未確認」の表示のみ付し、背景説明の反復は避ける。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>10/28のFOMCは、市場の事前プライシング（Kalshi/Polymarket等、10/22〜10/25時点）では据え置き（3.75-4.00%維持）が87〜94%、利上げが6〜13%程度と、据え置きが圧倒的優勢だった（複数ソース、推定）。一方で同時点の12月FOMCでの利上げ確率は75%程度まで高まっていたとの報道もあり（単一ソース、未確認）、市場は「10月は様子見で据え置き、12月に利上げ」という、いわゆる「ホーキッシュ・ホールド」を織り込みつつあった可能性がある。実際の決定内容・声明文・Warsh議長会見のトーンは本稿作成時点で未確認であり、この解釈はあくまで決定前のポジショニングに基づく推定シナリオである。</li>
+<li>上記の「ホーキッシュ・ホールド」想定が確認された場合、フロントエンド（2年）の利回り低下余地は従来想定（前日までのノートで見込んでいたブル・スティープ化の勢い）より限定的になりやすく、12月利上げ観測の高まりが2年ゾーンを支え続ける一方、長期・超長期ゾーンは財政・発行要因によるタームプレミアムの高止まりが続く構図が想定される。これは前日・前々日ノートの「ブル・スティープ化継続」シナリオに対する下方修正であり、カーブはむしろ横ばい〜ベア・フラット化バイアスに転じるリスクがある点に留意。</li>
+<li>対象営業日のNY時間には、7-9月期GDP速報・9月PCE価格指数（いずれも8:30ET）、そして7年債入札（$44bn程度、推定）という重要イベントが集中。7年債入札はFOMC結果公表後の初めての中期ゾーン供給テストとなり、需給の実勢を確認する重要な材料となる。</li>
+<li>推奨トレードは、前日までの2s10sスティープナーから一部修正し、フロントエンド（2年）アウトライト・ショート（12月利上げ観測の高まりに賭けるポジション）を中心に据える。FOMC結果・GDP・PCEの実際の反応を確認したうえでのエントリーを前提とする。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>東京時間</strong>：日本時間3:00のFOMC結果発表・3:30のWarsh議長会見を経た直後の時間帯にあたり、東京時間の米金利先物（10年債先物・SOFR先物）はFOMC結果を受けた値動きの消化・持ち高調整が中心だったとみられる（推定）。日銀金融政策決定会合（10/29-30、結果10/30）も同時進行しており、JGB・USTともに複数の中銀イベントが重なる神経質な地合いだったとみられる。</li>
+<li><strong>欧州時間</strong>：この日はECB理事会の結果発表（10/29）もあり、Bund・Gilt市場もFOMC・ECB双方の結果を消化する展開。USTはこれに追随したとみられるが、詳細な反応は未確認。</li>
+<li><strong>NY午前</strong>：8:30（ET）に7-9月期GDP速報・9月PCE価格指数が発表され、FOMC結果公表翌日の最初の重要マクロ指標として注目された。PCEがFed目標からの乖離を確認する内容であれば12月FOMCの観測に直結しやすい。</li>
+<li><strong>NY日中</strong>：13:00（ET）頃に7年債入札（$44bn程度、推定）。FOMC結果判明後の最初の中期・長期ゾーン供給イベントであり、海外中銀（indirect）需要・応札倍率の実勢を見るうえで重要。</li>
+<li><strong>NY午後〜引け</strong>：引け後にアマゾン・インテルの決算発表が予定され、株式市場のリスクセンチメントがクロスアセットでUSTにも波及した可能性がある（推定）。FOMC・GDP・PCE・入札という複数イベントを経た後の持ち高調整が続いたとみられるが、確定的な値動きは未確認。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>イールドカーブ</h2>
+<ul>
+<li><strong>2年</strong> 4.80~4.95%程度（推定、前日比上昇方向）— FOMCが「ホーキッシュ・ホールド」（据え置きだが12月利上げ観測を支持する文言・会見トーン）であった場合、12月利上げプライシングの強化を受けて上昇しやすい。直近の確認可能な参考値は10/21時点で4.79%程度（二次情報）。</li>
+<li><strong>5年</strong> 4.90~5.00%程度（推定）— 2年ゾーンに準じて上昇方向。当日の7年債入札の需給テストの影響も受けやすい。</li>
+<li><strong>10年</strong> 5.05~5.15%程度（推定）— 10/21時点の参考値5.12%程度からFOMC結果・GDP・PCEを経た範囲内の推定。財政赤字拡大・大量発行によるタームプレミアムの高止まりが続いているとみられる。</li>
+<li><strong>30年</strong> 5.55~5.65%程度（推定）— 財政赤字拡大（2026年度財政赤字は2.0兆ドル規模、推定）とAI関連企業の起債需要を背景に、超長期ゾーンは2002年前後以来の高水準で推移。</li>
+</ul>
+<p>カーブ形状：10月中旬以降定着していたブル・スティープ化（フロントエンドの利上げ思惑後退による利回り低下が長期ゾーンより大きい）の流れは、FOMC前の市場プライシングに「12月利上げ確率75%程度」という材料が混在していたことを踏まえると、FOMC通過後は一旦足踏み、あるいはベア・フラット化方向への巻き戻しが生じている可能性がある（推定、未確認）。2s10s（FRED T10Y2Yベース、10/16-20時点+33~38bp程度）がこの水準から縮小したか拡大したかは本稿作成時点で確認できていない。2s30sについても同様に確定データなし。「短中期＝政策折り込みの進行度合い」「超長期＝財政・発行懸念によるタームプレミアム」という二層構造の骨格自体は変わっていないとみられるが、FOMC結果・GDP・PCEを経た後の実勢レベルは次営業日以降に要確認。</p>
+<p>SOFRスワップカーブ・UST対SOFRスワップスプレッドについては当日の新規データは取得できず、背景情報（前日までのノートと同内容）を繰り返すに留める。10年ゾーンのスワップスプレッドは財政赤字拡大・大量発行・ディーラーのバランスシート制約を背景にマイナス方向（国債がスワップレートに対し割安）に拡大する局面が2026年を通じて報じられており（ING等、-20bp台から-50~-75bp程度まで拡大するリスク指摘、二次情報・時点不明）、この構造に変化はないとみられるが直近の具体的水準は未確認。</p>
+</section>
+<section id="sec-5">
+<h2>FRB動向・入札結果</h2>
+<p><strong>FRB動向</strong>：10/27-10/28開催のFOMC（ウォーシュ議長下）は、9月16日会合での25bp利上げ（3.50-3.75%→3.75-4.00%、2023年以来初）後、初めての定例会合。市場の事前プライシングは据え置き優勢（87~94%、推定）だったが、12月会合での利上げ確率が同時に75%程度まで高まっていたとの報道もあり（単一ソース、未確認）、「据え置きだがタカ派的な地ならし」というシナリオが意識されていた。実際の決定内容・声明文の文言変更・Warsh議長記者会見でのトーン（インフレ目標達成への姿勢、12月会合への含意）は、本稿作成時点でWebSearchから確報を得られず「未確認」。QT（量的引き締め）については2025年12月1日付でバランスシートの純圧縮を終了し、ample reserves維持のためのリザーブマネジメント目的の資産購入に移行済みという経緯に変化はないとみられる。</p>
+<p><strong>入札結果</strong>：対象週は2年債（10/26）・5年債（10/27）・7年債（10/29＝対象営業日当日）の3本が連続。想定サイズは2年$69bn、5年$70bn、7年$44bn程度（TBAC資料に基づく推定）。10/26・10/27の確定結果（最高落札利回り・応札倍率・テール・indirect比率）は本稿作成時点でも未確認のまま。参考値として、9/22の2年債入札は最高落札利回り4.787%（2024年5月以来の高水準）・応札倍率2.63倍、9/23の5年債入札は最高落札利回り5.033%（2006年6月以来の高水準）・応札倍率2.21倍（2018年12月以来の弱さ）・indirect比率54.31%と、需要面でやや軟調な結果が報じられている。</p>
+<p>対象営業日の7年債入札（$44bn程度、推定）は、FOMC結果公表後に初めて実施される中期ゾーンの供給イベントであり、ホーキッシュ・ホールドが確認された場合はテール発生・indirect比率の後退などの需給悪化シグナルが出やすいリスクがある一方、市場予想通りの無難な結果に終われば、入札後のコンセッション解消（利回り低下）が期待できる。11/4予定の四半期リファンディング発表（次回クーポン発行計画）も、長期・超長期ゾーンの供給方向性を左右する重要イベントとして控えている。</p>
+</section>
+<section id="sec-6">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>海外中銀保有動向（TIC統計）は発表に約2カ月のラグがあり、対象営業日時点の最新データは未確認。2026年を通じて米国債発行の急増（週間$700bn規模の発行事例も報じられた、2026年2月時点）とAI関連企業の大型起債が民間クレジット市場の資金需要を拡大させている構図が続いており、国債消化における海外需要の重要性は一段と高まっている。</li>
+<li>CFTC建玉（Commitment of Traders）についても対象営業日時点のデータは未確認。年間を通じたベア・トレンド（利回り上昇）の中で、アセットマネージャー層のショート・レバレッジドファンド層のロングといった典型的な分布が継続している可能性があるが、直近の具体的な変化は確認できていない。</li>
+<li>フロー面では、FOMC結果・GDP・PCE・7年債入札という複数イベントが1〜2日に集中するタイミングであり、ディーラー・アセットマネージャー双方がイベント通過後の持ち高調整（デュレーション調整）を活発化させやすい地合いだったとみられる。超長期ゾーンは年金・生保等のロングエンド需要があるものの、発行増加ペースに需要が追い付かず、タームプレミアムの高止まり構造は変わらないとみられる。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>推奨トレード</h2>
+<h3>トレード1：UST 2年ゾーン アウトライト・ショート（利回り上昇を見込む）</h3>
+<ul>
+<li>根拠：FOMC前の市場プライシングでは10月据え置きが優勢（87~94%、推定）だった一方、12月会合での利上げ確率は同時点で75%程度まで高まっていたとの報道があり（未確認）、「据え置きでも12月利上げへの地ならし」というホーキッシュ・ホールドのシナリオが相応の確度を持つ。この場合、9月利上げ後にフロントエンドで進んでいた追加利上げプレミアムの剥落（ブル・スティープ化の原動力）は巻き戻され、2年ゾーンの利回りは再上昇しやすい。9月CPI上振れ・GDP/PCEの上振れリスクも2年ゾーンの重石となりうる。</li>
+<li>エントリー目安：FOMC結果・GDP・PCE発表後の実勢レベルを確認したうえで、2年利回り4.75~4.85%程度（推定、対象営業日前後のレベル）でのショート構築。</li>
+<li>利確目安：5.00~5.10%程度（9月利上げ直後、10月入り後のピーク圏への回帰を目安）。</li>
+<li>損切り目安：FOMCがハト派的な据え置き（12月利上げ観測の後退を伴う）であったことが確認され、2年利回りが4.60%を明確に下回った場合。</li>
+<li>ホライズン：2~4週間程度（12月8-9日FOMC〈SEP会合〉に向けた金利観測の進展、11月上旬の雇用統計・ISM、11/4四半期リファンディング発表の内容を見ながら調整）。</li>
+<li>リスク：①FOMC結果自体が本稿作成時点で未確認であり、実際にハト派的な内容だった場合は方向性が逆転するリスク、②GDP・PCEが市場予想より弱い結果となった場合の金利低下リスク、③中間選挙（11/3）前後の政治リスク・リスクオフフローによる質への逃避（米国債買い）、④7年債入札の結果が著しく強ければ中期ゾーン全体に買いが入るリスク。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>10/29 08:30（ET）/ 21:30（JST）</strong> 7-9月期GDP速報・9月PCE価格指数〔重要度：高〕— GDP予想+3.6%程度・コアPCE前年比+3.1%程度との観測あり（単一ソース、未確認）。12月FOMCの判断材料として重要。</li>
+<li><strong>10/29 13:00（ET）頃 / 10/30 02:00（JST）頃</strong> 7年国債入札（$44bn程度、推定）〔重要度：高〕— FOMC結果公表後初の中期ゾーン供給テスト。</li>
+<li><strong>10/29（NY市場引け後）</strong> アマゾン・インテル決算発表〔重要度：中〕— 株式市場のリスクセンチメント経由でUSTにも波及する可能性。</li>
+<li><strong>10/29〜30</strong> 日銀金融政策決定会合・展望レポート（結果10/30）〔重要度：中（USTへの直接的影響は限定的だが、グローバル金利環境・リスクセンチメントへの波及に留意）〕</li>
+<li><strong>10/29</strong> ECB理事会結果発表〔重要度：中〕</li>
+<li><strong>11/3</strong> 米中間選挙〔重要度：高〕— 財政・政策不確実性プレミアムを通じて長期ゾーンに影響する可能性。</li>
+<li><strong>11/4</strong> 四半期リファンディング発表（財務省・TBAC）〔重要度：高〕— 2027年1-3月期の発行計画・サイズ見直し。長期・超長期ゾーンの供給増減方向性が市場の最大の注目点。</li>
+<li><strong>11月上旬</strong> 雇用統計・ISM等の経済指標〔重要度：高〕— FOMC後・中間選挙後の次の政策判断材料として重要度が高い。</li>
+<li><strong>12/8〜9</strong> FOMC（SEP会合）〔重要度：高〕— 12月利上げ観測（事前プライシングで75%程度、未確認）の実現可否が最大の注目点。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [FOMC Meeting Schedule — October 2026 - fedratecalc.com](https://fedratecalc.com/fomc-meeting-schedule/october-2026/)（取得日時：2026-10-29）</p><p>- [DeFi Rate - Fed Decision Odds Snapshot (2026-10-25)](https://defirate.com/odds/fed-decision/snapshot/2026-10-25T1931/)（取得日時：2026-10-29）</p><p>- [Warsh-led Fed holds rates steady, as inflation rules out easing sought by Trump - washingtonexaminer.com（検索結果スニペット経由、会合日未確定）](https://www.washingtonexaminer.com/?p=4612574)（取得日時：2026-10-29）</p><p>- [Fed Chair Warsh Faces Highest Dissent Level Since 1970 as FOMC Holds Rates Steady - pro.edgex.exchange（検索結果スニペット経由、会合日未確定）](https://pro.edgex.exchange/en-US/news/article/fed-warsh-record-dissent-since-1970)（取得日時：2026-10-29）</p><p>- [Treasury yield levels referenced around Oct 21, 2026 - biztoc.com（検索結果スニペット経由、tippinsights配信）](https://biztoc.com/x/6d3ff6d6ccc75727)（取得日時：2026-10-29）</p><p>- [US GDP and PCE Inflation: Why October 29 Could Move Markets - cryptodaily.co.uk](https://cryptodaily.co.uk/2026/10/us-gdp-and-pce-inflation-why-october-29-could-move-markets)（取得日時：2026-10-29）</p><p>- [US Gross Domestic Product October 2026 - financecalendar.com](https://www.financecalendar.com/event/us-gross-domestic-product-october-2026/)（取得日時：2026-10-29）</p><p>- [Treasury 2-Year Note Auction Clears 4.787%, Highest Since May 2024 - primerates.com](https://primerates.com/treasury-2-year-note-auction-4-787-percent-highest-since-may-2024/)（取得日時：2026-10-29、参考値として引用）</p><p>- [Treasury 5-Year Note Auction Clears 5.033%, Highest Since June 2006 - primerates.com](https://primerates.com/treasury-5-year-note-auction-5-033-percent-highest-since-june-2006/)（取得日時：2026-10-29、参考値として引用）</p><p>- [ING - Rates spark / US bond market deficit funding analysis - think.ing.com](https://think.ing.com/articles/us-bond-market-on-the-precipice-when-it-comes-to-funding-the-deficit/)（取得日時：2026-10-29、背景情報として引用）</p><p>- [FRED - 10-Year Treasury Constant Maturity Minus 2-Year Treasury Constant Maturity (T10Y2Y)](https://fred.stlouisfed.org/graph/?g=KWqs)（取得日時：2026-10-29、直近確認値は10月中旬時点）</p><p>- 2026-10-28付 daily/agents/2026-10-28-ust.md、2026-10-27付 daily/agents/2026-10-27-ust.md（前日・前々日ノート、整合性確認のため参照）</p><p>- 2026-10-28付 daily/2026-10-28.md（統合レポート、整合性確認のため参照）</p><p>- 米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）への直接WebFetchアクセスはDNS解決エラーのため失敗。本稿の数値はWebSearch経由の二次情報・検索結果スニペットに基づく推定・未確認情報であり、確定値ではない点に留意。特に当日(10/28)のFOMC決定結果そのものが本稿作成時点で未確認。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
