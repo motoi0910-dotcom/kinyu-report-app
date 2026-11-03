@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-03 米国債ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-03.html">統合レポートを見る</a><span>2026-11-03</span></div>
+  <h1 class="title">2026-11-03 米国債ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-03-fx.html">為替</a>
+    <a href="2026-11-03-commodities.html">コモディティ</a>
+    <a href="2026-11-03-jgb.html">円債</a>
+    <span class="current">米国債</span>
+    <a href="2026-11-03-intl-bonds.html">外債</a>
+    <a href="2026-11-03-jp-equity.html">日本株式</a>
+    <a href="2026-11-03-us-equity.html">米国株式</a>
+    <a href="2026-11-03-politics.html">政治・地政学</a>
+    <a href="2026-11-03-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得上の留意点</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">イールドカーブ</a>
+    <a href="#sec-5">FRB動向・入札結果</a>
+    <a href="#sec-6">フロー・需給・ポジション動向</a>
+    <a href="#sec-7">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得上の留意点</h2>
+<p>本稿作成時点で、米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）・FRED（fred.stlouisfed.org）・mortgagenewsdaily.comへの直接WebFetchはいずれもDNS解決エラーで失敗し、一次情報での直接裏取りができなかった（10月下旬以降のノートと同じ制約が継続）。対象営業日11/3当日のイールドカーブ確定値・ISM製造業PMI（10月分、11/2発表）の確定結果・9月JOLTS求人件数（本日発表予定）・RBA理事会結果（本日発表）・2年債(10/26)・5年債(10/27)・7年債(10/29)の3入札の確定結果（最高落札利回り・応札倍率・テール・indirect比率）は、いずれもWebSearchでも確報を得られず「未確認」のまま。イールドカーブの数値は、前営業日11/2ノートで確認したアンカー（10/27時点30年5.304%程度、10/14時点2年4.82%程度、10/19〜10/20時点2s10s+33~38bp程度）を起点に、本日確認できた材料（中国PMI下振れ・RBA結果不透明・FRBブラックアウト解除後のタカ派発言再開・中間選挙の不確実性）を踏まえた推定レンジとして記載する。確定値は社内端末（Bloomberg/Reuters）での確認を強く推奨する。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>本日最大の注目はRBA理事会（日本時間12:30頃発表）。10/28の豪州Q3CPI上振れを受け事前には大手銀行の多くが25bp利上げ（4.60%→4.85%）を本命視していたが、11/3当日付とみられる二次情報（FXStreet記事見出しの変化）は「予想された利上げ見送り（hold）」との表現に転じており、据え置き（4.60%維持）の可能性を示唆している（単一の二次情報、確度中、未確定）。USTへの直接的影響は限定的だが、グローバル金利環境・リスクセンチメントへの波及材料として意識される。</li>
+<li>アジア時間に発表された中国10月RatingDog（旧Caixin）製造業PMIは50.6（予想50.9、前回52.1）と予想を下回り、新規輸出受注も再び縮小圏に入ったと報じられている。外需モメンタムの一服を示すマイルドなリスクオフ材料であり、グローバルな質への逃避（UST買い）を多少支えた可能性がある（推定）。</li>
+<li>米国では10/29解除済みのFOMCブラックアウト後、本日はハマック・クリーブランド連銀総裁（2026年投票メンバー、タカ派）とバーキン・リッチモンド連銀総裁（2027年投票メンバー、中立）の発言が予定されているとの情報があり（Newsquawk、確度中）、12月FOMCへの地ならしが続く地合い。9月JOLTS求人件数（本日10:00ET発表予定）も労働市場の緩み度合いを測る材料として注目されるが、結果は本稿作成時点で未確認。</li>
+<li>米国は本日が中間選挙（下院435議席・上院35議席・39州知事選）の投開票日。市場は事前の予測市場（Polymarket、10/29時点）に基づき「分割議会（ねじれ）」を優勢視していたとみられ、これが実現すれば大型財政拡張策（トランプ氏の「共和党が制した場合は成人全員に5,000ドル給付」との発言等）の実現可能性は後退し、長期ゾーンの財政リスクプレミアムをやや和らげる方向に働きうる。一方、財務省は選挙前の市場動揺を避けるため入札サイズを維持しているとの報道があり（複数の二次情報）、選挙結果自体よりも翌11/4の四半期リファンディング発表・その後の財政政策の方向性が構造的なテーマである点は不変。</li>
+<li>カーブは、10月後半に進んだブル・フラット化（超長期主導の利回り低下、クーポン増額観測の後ずれが背景）の構造が大きくは崩れていないとみられる一方、本日のFedspeak再開・中間選挙を控えた持ち高調整で方向感に乏しい一日だったと推察される（推定）。推奨トレードは、11/2ノートから継続する11/4四半期リファンディング発表を見据えた30年ゾーン・ロング／10s30sフラットナーを維持する。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>東京時間</strong>：前営業日11/2のNY引けを引き継いだ地合いで始まったとみられる。10:45頃に中国10月RatingDog製造業PMI（50.6、予想50.9・前回52.1）が発表され、外需の減速を示す内容として、グローバルにマイルドなリスクオフ・質への逃避（UST買い）方向の材料になった可能性がある（推定）。日本は「文化の日」で市場休場のため、JGB関連の直接的な波及材料はなし。</li>
+<li><strong>東京午後（12:30頃）</strong>：RBA理事会結果・政策金利発表。事前予想（25bp利上げ、4.85%）と、当日付とみられる二次情報が示唆する据え置き（4.60%維持）との間にギャップが生じた可能性があり（確度中、未確定）、豪金利・AUDを中心に反応したとみられる。USTへの直接的な波及は限定的だが、グローバル金利環境の先行指標として意識された可能性がある（推定）。</li>
+<li><strong>欧州時間</strong>：スイス10月CPI等の指標はあったが確定値未確認。ユーロ圏・英国からの新規の重要材料は限定的で、米中間選挙・翌日の四半期リファンディング発表を控えた調整的な動きが中心だったとみられる（推定）。</li>
+<li><strong>NY午前（10:00ET）</strong>：9月JOLTS求人件数発表。前回8月は7.08～7.1百万件程度（情報源間でわずかな差異）。結果が市場予想（コンセンサス未公表との情報あり）を下回れば労働市場の緩みを示すハト派材料、上回ればタカ派材料となるが、本稿作成時点で結果は未確認。</li>
+<li><strong>NY日中</strong>：FOMCブラックアウト解除後のFedspeak再開。ハマック・クリーブランド連銀総裁（タカ派）とバーキン・リッチモンド連銀総裁（中立）の発言が予定されていたとみられるが（確度中）、内容の詳細（12月利上げへの言及の有無）は未確認。株式市場では決算発表が続く局面でもあり、クロスアセットのリスクセンチメントがUSTにも波及した可能性がある（推定）。</li>
+<li><strong>NY午後〜引け（日本時間翌早朝）</strong>：米中間選挙の投票は現地時間朝から進行するが、東海岸の投票終了は現地時間18〜19時（日本時間翌4日08〜09時頃）が中心であり、NY市場引け時点では主要な確定結果が出ていない可能性が高い。市場は事前にある程度「分割議会」を織り込んでいたとみられ、サプライズが生じない限りNY引け時点でのUST反応は限定的だったと推察される（推定）。翌11/4の四半期リファンディング発表を控えたポジション調整（コンセッション形成）も長期・超長期ゾーンで入りやすいタイミングだった。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>イールドカーブ</h2>
+<ul>
+<li><strong>2年</strong> 4.75〜4.90%程度（推定）— 10/14時点のアンカー4.82%程度を起点に、FOMC後も残存するタカ派色（ハマック総裁ら2026年投票メンバーのタカ派発言再開）と、中国PMI下振れ・JOLTS結果待ちによる労働市場の緩み懸念が相反する材料として働いているとみられる。</li>
+<li><strong>5年</strong> 4.85〜5.00%程度（推定）— 2年ゾーンに準じたレベル。10/27実施の7年債入札の需給評価が未確定のまま、中期ゾーン全体の実勢評価は持ち越し。</li>
+<li><strong>10年</strong> 4.95〜5.10%程度（推定）— 10/23時点アンカー5.00%程度を起点に、クーポン増額観測の後ずれ（長期金利に対する緩和材料）と中間選挙・財政不確実性（タームプレミアムの重石）が綱引きしているとみられる。</li>
+<li><strong>30年</strong> 5.20〜5.35%程度（推定）— 10/27時点アンカー5.304%程度を起点に、クーポン増額見送りの観測が優勢なことによる下支えと、トランプ氏の給付金公約等の潜在的な財政拡張リスクが拮抗しているとみられる。10月前半（5.6〜5.7%台）からは大きく低下した水準で推移。</li>
+</ul>
+<p>カーブ形状：10月後半に進んだブル・フラット化（超長期主導の利回り低下、クーポン増額後ずれ観測が背景）の構造は大きくは崩れていないとみられる。2s10s（FRED T10Y2Yベース、10/19〜10/20時点+33~38bp程度）は、その後の情報源（10/19時点+38bpとする二次情報）とも整合的で、10月前半（10/6時点+48bp程度）からの縮小トレンドが続いている可能性が高い（確度中）。2s30sの具体的な数値は未確認だが、30年のレンジ低下ペースが2年より大きいとみられることから、2s30sも縮小方向にあると推察される。背景は、①クーポン増額観測の2027年2月・5月への後ずれ（超長期供給懸念の後退）、②中国PMI下振れ等によるグローバルな成長懸念の再評価（質への逃避）、の2点が長期ゾーンの利回り低下に寄与し、一方でFOMC後も残存するタカ派色とFedspeak再開がフロントエンドの低下を抑制している構図。「短中期＝政策折り込みの進行度合い」「超長期＝財政・発行懸念によるタームプレミアム」という二層構造の骨格自体は継続しているが、超長期側のタームプレミアムは一時的に後退しているとみられる。中間選挙で分割議会（ねじれ）が確定すれば、大型財政拡張策の実現可能性低下を通じてこの後退がさらに進む可能性がある一方、サプライズ（与党一方の完全制覇等）が生じれば逆に財政リスクプレミアムの再拡大リスクがある。</p>
+<p>SOFRスワップカーブの当日データは未確認。参考として、10年SOFRスワップレートは7月末時点で4.22%程度（BlueGamma、確度中、時点が古い）との情報があり、同時点のUST10年実勢（8月初旬時点4.70%程度、MND系二次情報）と対比すると10年スワップスプレッドは概ね-45~-50bp程度（推定・計算値）となる。これはING（2025年12月時点）の「10年平均50bp、直近40bp」との見立てとも大きくは矛盾しない一方、別の二次情報（Hedgeweek、時点不明）では10年-59bp・30年-94bpという、より深く負の水準も報じられており、情報源間で絶対水準に幅がある（確度低）。いずれも財政赤字拡大・大量発行・ディーラーのバランスシート制約を背景に、国債がスワップレートに対し割安（スプレッドが負に拡大）という構造自体は共通しており、この構造に変化はないとみられるが直近11月時点の具体的水準は未確認。</p>
+</section>
+<section id="sec-5">
+<h2>FRB動向・入札結果</h2>
+<p><strong>FRB動向</strong>：10/27-10/28開催のFOMC（ウォーシュ議長下）は政策金利を3.75-4.00%で維持することを10対2の賛成多数で決定済み（既報）。反対票2名（クック理事・ハマック・クリーブランド連銀総裁、いずれも利上げ支持、1970年以来最大規模の反対）に変化はない。10/29のブラックアウト解除後、本日はハマック総裁（2026年投票メンバー、タカ派）・バーキン・リッチモンド連銀総裁（2027年投票メンバー、中立）の発言が予定されているとの情報があり（Newsquawk、確度中）、今週すでに同様の見解を示しているとされサプライズ性は低いとの評価だが、12月8-9日FOMC（SEP・ドットプロット公表会合）に向けた地ならしの一環として注視すべき。QT（量的引き締め）については2025年12月1日付で純圧縮を終了し、ample reserves維持のためのリザーブマネジメント目的の資産購入に移行済みという経緯に変化はないとみられる。</p>
+<p><strong>入札結果</strong>：対象営業日11/3に国債入札はない（短期ビル入札を除く、推定。例年月初の13週・26週物ビル入札は実施されたとみられるが確定結果は未確認）。10月下旬に実施された2年債（10/26）・5年債（10/27）・7年債（10/29）の3本の確定結果（最高落札利回り・応札倍率・テール・indirect比率）は、本稿作成時点でも依然として未確認のまま（10/29以降のノートからの制約継続）。次の重要イベントは11/4の四半期リファンディング発表（財務省・TBAC）。クーポン発行サイズの増額時期については、MNI等の分析で当初2026年11月を本線視していた見方から、2027年2月・5月への後ずれが優勢視されるとの報道（確度中）が継続しており、今回11/4での増額発表の可能性は低いとみられる。財務省が選挙前の市場動揺を避けるため、当面の入札サイズを維持する方向との報道（複数の二次情報、確度中）もあり、サイズ変更そのもののサプライズは限定的と予想される一方、TBAC提言文書の表現如何によっては長期・超長期ゾーンの需給観測に影響する可能性がある。3年・10年・30年債入札は例年11月中旬（11/10前後〜12日頃）に実施される見込みで、サイズ・日程の確定情報は未確認。</p>
+</section>
+<section id="sec-6">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>海外中銀保有動向（TIC統計）は発表に約2カ月のラグがあり、対象営業日時点の最新データは未確認（次回公表は11/18予定、9月分が目安）。2026年を通じて米国債発行の急増とAI関連企業の大型起債が民間クレジット市場の資金需要を拡大させている構図が続いており、国債消化における海外需要の重要性は一段と高まっている。</li>
+<li>CFTC建玉（Commitment of Traders）についても対象営業日時点のデータは未確認。年間を通じたベア・トレンド（利回り上昇）の中で、アセットマネージャー層のショート・レバレッジドファンド層のロングといった典型的な分布が継続している可能性があるが、直近の具体的な変化は確認できていない。</li>
+<li>フロー面では、中間選挙・四半期リファンディング発表という2つの重要イベントに挟まれたタイミングであり、ディーラー・アセットマネージャー双方が持ち高調整（デュレーション調整、リファンディング前のコンセッション形成）を活発化させやすい地合いだったとみられる。超長期ゾーンは、クーポン増額見送り観測が一時的な支援材料になっている一方、トランプ氏の給付金公約等の潜在的な財政拡張リスクが完全には払拭されておらず、年金・生保等のロングエンド需要と発行増加ペースへの懸念のせめぎ合いが続いているとみられる。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>推奨トレード</h2>
+<h3>トレード1：UST 30年ゾーン ロング／10s30sフラットナー（11/4四半期リファンディング発表前のポジショニング、継続）</h3>
+<ul>
+<li>根拠：11/4の四半期リファンディング発表で、クーポン増額観測が2026年11月から2027年2月・5月へ後ずれしたとの市場見方（MNI等、確度中）が優勢であり、財務省自身も選挙前の市場動揺回避のため当面のサイズ維持を志向しているとの報道がある。今回増額見送りが確認されれば、超長期ゾーンの近い将来の供給懸念が後退し、10月後半に進んだブル・フラット化（長期主導の利回り低下）が再び強まりやすい。加えて、本日の中国PMI下振れ・RBA結果の不透明感といったグローバルな成長懸念の再評価も、超長期ゾーンへの質への逃避を支える方向に働く。</li>
+<li>エントリー目安：30年利回り5.25〜5.35%程度（推定、対象営業日前後のレベル。エントリー前に最新実勢の再確認を推奨）でのロング構築、またはこれに対応する10s30sフラットナー（30年ロング・10年ショート）。</li>
+<li>利確目安：30年利回り5.00〜5.10%程度（10月後半安値圏への回帰を目安）。</li>
+<li>損切り目安：30年利回りが5.45%を明確に上回った場合（11/4リファンディングでクーポン増額が前倒しで示唆された、または中間選挙結果が財政拡張的なサプライズ（例：一方の党の完全制覇）だった場合の長期ゾーン売り優勢シグナル）。</li>
+<li>ホライズン：1〜2週間程度（11/4四半期リファンディング発表、11/6雇用統計の結果を見ながら調整）。</li>
+<li>リスク：①11/4のTBAC提言文書・財務省声明でクーポン増額が前倒しで示唆される場合の急激な巻き戻し（長期金利上昇）、②中間選挙で財政拡張的なサプライズ（一方の党の完全制覇、トランプ氏の給付金公約の実現可能性上昇等）が生じた場合の財政リスクプレミアム再拡大リスク、③11/6雇用統計・本日のJOLTS結果が強ければ12月利上げ観測の再強化を通じて全ゾーンに売りが波及するリスク（フロントエンド主導のベア・フラット化に転じ、本トレードには不利）、④ブラックアウト解除後のFRB高官発言（本日のハマック発言含む）がタカ派的な場合の金利上昇リスク、⑤本稿のイールドカーブ数値自体が推定レンジであり、エントリー時の実勢確認が不可欠である点。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>11/3（本日）10:00（ET）/ 24:00（JST）米国</strong> 9月JOLTS求人件数〔重要度：中〜高〕— 前回8月7.08〜7.1百万件程度（推定）。</li>
+<li><strong>11/3（本日）12:30頃（JST）豪州</strong> RBA理事会結果〔重要度：中（USTへの直接影響は限定的、グローバル金利環境への波及に留意）〕— 利上げ（4.85%）が事前本命視されていたが据え置きの可能性を示す二次情報あり（未確定）。</li>
+<li><strong>11/3（本日）米国</strong> 中間選挙投開票〔重要度：高〕— 開票本格化は日本時間4日朝以降。分割議会（ねじれ）が市場の事前コンセンサス。</li>
+<li><strong>11/4（水）米国</strong> 四半期リファンディング発表（財務省・TBAC）〔重要度：高〕— 2027年1-3月期の発行計画・サイズ見直し。クーポン増額の有無・TBAC提言文書の表現が長期・超長期ゾーンの最大の注目点。</li>
+<li><strong>11/4（水）米国</strong> ISM非製造業（サービス）PMI、9月分個人所得・消費支出（PCE価格指数、発表日に情報源間で不一致あり要確認）〔重要度：高〕</li>
+<li><strong>11/5（木）英国</strong> BOE政策金利決定〔重要度：中（USTへの直接影響は限定的）〕— 3.75%→4.00%への利上げが高確率で織り込み。</li>
+<li><strong>11/6（金・予定）米国</strong> 10月雇用統計（NFP）〔重要度：高〕— FOMC・GDP上振れ後の次の政策判断材料として重要度が高い。発表日程は政府機関の資金繰り状況次第で変動するリスクがあり要確認。</li>
+<li><strong>11月中旬 米国</strong> 3年・10年・30年債入札（例年11/10前後〜12日頃）〔重要度：高〕— 四半期リファンディング後最初の長期・超長期ゾーン供給テスト。</li>
+<li><strong>11/18 米国</strong> TIC国際資本統計（9月分）公表〔重要度：中〕</li>
+<li><strong>12/8〜9 米国</strong> FOMC（SEP・ドットプロット公表会合）〔重要度：高〕— 12月利上げ観測の実現可否が最大の注目点。</li>
+<li><strong>随時</strong> CFTC週間COT建玉報告の更新確認〔重要度：中〕</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [fxstreet.com - Bullock Speech: RBA Governor speaks on policy outlook after the expected interest rate hold（旧見出し：RBA set to hold interest rate as inflation tops target, labor market remains tight）](https://www.fxstreet.com/news/rba-set-to-hold-interest-rate-as-inflation-tops-target-labor-market-remains-tight-202511032145)（取得日時：2026-11-03、単一の二次情報・確度中・未確定）</p><p>- [propertyinvestmentprofessionals.com.au - RBA November 2026 Rate Decision: A Hike to 4.85% Is Now the Base Case](https://propertyinvestmentprofessionals.com.au/blog/rba-november-2026-rate-decision-preview-property-investors)（取得日時：2026-11-03）</p><p>- [fxstreet.com - China RatingDog Manufacturing PMI came in at 50.6, below forecasts 50.9 in October](https://www.fxstreet.com/amp/news/china-ratingdog-manufacturing-pmi-came-in-at-506-below-forecasts-509-in-october-202511030145)（取得日時：2026-11-03）</p><p>- [wallstreetcn.com - 中国10月RatingDog制造业PMI 50.6，连续三月位于荣枯线上方，新出口订单重陷收缩](https://wallstreetcn.com/articles/3758526)（取得日時：2026-11-03）</p><p>- [newsquawk.com - PRIMER - Today's Fedspeak includes: Hammack, Barkin](https://www.newsquawk.com/headlines/primer---todays-fedspeak-includes-hammack-barkin)（取得日時：2026-11-03、確度中）</p><p>- [securities.io - U.S. Job Openings Little Changed at 7.1 Million in August](https://www.securities.io/u-s-job-openings-little-changed-at-7-1-million-in-august/)（取得日時：2026-11-03）</p><p>- [kitco.com - US fiscal deterioration main headache for investors as midterms loom](https://www.kitco.com/news/off-the-wire/2026-10-30/us-fiscal-deterioration-main-headache-investors-midterms-loom)（取得日時：2026-11-03）</p><p>- [cryptobriefing.com - US Treasury reportedly keeping bond auction sizes steady to avoid pre-election market chaos](https://cryptobriefing.com/us-treasury-bond-market-elections-jpmorgan/)（取得日時：2026-11-03）</p><p>- [247wallst.com - Trump promises every adult a $5,000 check if Republicans sweep the 2026 midterms](https://247wallst.com/cards/xpost-01m414hqnykjsnazkhwk79v68g)（取得日時：2026-11-03、確度低〜中）</p><p>- [OCBC - US Midterms Part 2（分割議会を基本シナリオとする分析）](https://www.ocbc.com/iwov-resources/sg/ocbc/gbc/pdf/Regional%20Focus/Global%20Outlook/US.Midtermspart2.15Oct26.pdf)（取得日時：2026-11-03）</p><p>- [stockwirex.com - Fed Hikes Flatten the Curve: What a Yield Curve Steepener Bets on（2s10s 10/19時点+38bp参照）](https://stockwirex.com/?p=52101)（取得日時：2026-11-03、確度中）</p><p>- [bluegamma.io - 10 Year SOFR Swap Rate（7月末時点4.22%参照）](https://www.bluegamma.io/usd-swap-rates/10-year-sofr-swap-rate)（取得日時：2026-11-03、時点が古く確度中）</p><p>- [think.ing.com - US bond market on the precipice when it comes to funding the deficit（10年スワップスプレッド参考値）](https://think.ing.com/articles/us-bond-market-on-the-precipice-when-it-comes-to-funding-the-deficit/)（取得日時：2026-11-03、背景情報として引用）</p><p>- [hedgeweek.com - Rising yields squeeze swap spread bets](https://www.hedgeweek.com/rising-yields-squeeze-swap-spread-bets/)（取得日時：2026-11-03、時点不明の参考値）</p><p>- [mnimarkets.com - US: November Refunding: Starting To Considering Futures Increases To Coupon Size](https://www.mnimarkets.com/articles/november-refunding-starting-to-considering-futures-increases-to-coupon-size-1762349466064)（取得日時：2026-11-03、前日ノートから継続参照）</p><p>- [fxstreet.com - Treasury Refunding Preview: Steady As She Goes](https://www.fxstreet.com/analysis/treasury-refunding-preview-steady-as-she-goes-202510301405)（取得日時：2026-11-03）</p><p>- [tftc.io - Treasury Auctions Calendar（11月中旬の3年・10年・30年債入札日程参照）](https://www.tftc.io/treasury-auctions/calendar)（取得日時：2026-11-03）</p><p>- 2026-11-02付 `daily/agents/2026-11-02-ust.md`、2026-10-30付 `daily/agents/2026-10-30-ust.md`（前営業日・継続性確認のため参照）</p><p>- 2026-11-03付 `daily/agents/2026-11-03-economist.md`、2026-11-03付 `daily/agents/2026-11-03-fx.md`（同日他エージェントノート、整合性確認のため参照）</p><p>- 2026-11-02付 `daily/2026-11-02.md`（前営業日統合レポート、整合性確認のため参照）</p><p>- 米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）・FRED（fred.stlouisfed.org）・mortgagenewsdaily.comへの直接WebFetchアクセスはいずれもDNS解決エラーのため失敗。本稿の数値はWebSearch経由の二次情報・検索結果スニペットに基づく推定・未確認情報であり、確定値ではない点に留意。特に対象営業日11/3当日のイールドカーブ実勢、3本の入札（10/26・10/27・10/29）確定結果、ISM製造業PMI（10月分）確定値、9月JOLTS、RBA理事会結果は本稿作成時点で未確認。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
