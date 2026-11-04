@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-04 外債（米国・日本以外）ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-04.html">統合レポートを見る</a><span>2026-11-04</span></div>
+  <h1 class="title">2026-11-04 外債（米国・日本以外）ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-04-fx.html">為替</a>
+    <a href="2026-11-04-commodities.html">コモディティ</a>
+    <a href="2026-11-04-jgb.html">円債</a>
+    <a href="2026-11-04-ust.html">米国債</a>
+    <span class="current">外債</span>
+    <a href="2026-11-04-jp-equity.html">日本株式</a>
+    <a href="2026-11-04-us-equity.html">米国株式</a>
+    <a href="2026-11-04-politics.html">政治・地政学</a>
+    <a href="2026-11-04-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得状況に関する注記</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要国国債利回り</a>
+    <a href="#sec-5">クロス市場スプレッド</a>
+    <a href="#sec-6">中銀動向</a>
+    <a href="#sec-7">フロー・需給・ポジション動向</a>
+    <a href="#sec-8">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得状況に関する注記</h2>
+<p>本営業日（2026-11-04）はRBA・リクスバンク・BOEの各国中銀イベントが連続する重要な週だが、無人実行環境ではRBA（rba.gov.au）・英DMO（dmo.gov.uk）・Bundesbank（bundesbank.de）への直接アクセスがいずれもDNS解決エラーで失敗し、一次情報での確定値の裏取りができなかった。また対象営業日当日（11/4）の引け値そのものはWebSearch上でもまだ記事化されておらず、確認できた一次情報・準一次情報は10/28〜10/30時点のものが中心となる。米10年債利回りも直近の確認済みデータが9/10時点（4.95%）に留まり、クロス市場スプレッドの絶対水準には相当の誤差を含む（該当箇所に推定と明記）。本稿はこれらの制約の範囲内で、確認できた事実・水準と、トレンド・方向感の分析を区別して記載する。経済指標・中銀の政策パス評価については `daily/agents/2026-11-04-economist.md` と整合させている（RBA・リクスバンク・BOEの決定結果はともに未確認で一致）。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>10月は欧州国債全般に「欧州財政・政治リスクの再分化」が主テーマとなった。フランスは2027年度予算を巡る対立と社会的混乱を背景にOAT-Bund10年スプレッドが10/23に約176bpと2012年以来の高水準まで拡大し、OAT10年利回りは10/21に5%を超えた。一方イタリアBTP-Bundスプレッドは115〜126bp程度に留まり、仏が伊を上回る「仏伊逆転」が定着しつつある。</li>
+<li>独Bund10年は10/29のECB理事会（預金ファシリティ金利2.50%で据え置きと報じられている）を経て10/30に3.31%程度まで低下、8週間ぶりの低水準となり月間で20bp超低下した。</li>
+<li>英GiltはHealey財務相による10/28予算が「市場予想とおおむね整合的」と受け止められ、10年利回りは10/30に5.3%をやや下回る水準（9/22以来の低水準）まで低下。30年Giltは予算前の10/1に6.03%（1998年以来の高水準）まで跳ねていたが、予算後は落ち着きを見せた。</li>
+<li>豪州は10/28のCPI上振れを受けRBAの11月利上げ観測が一時88%まで急上昇、10年AGS利回りも5.2%台まで上昇したが、10/30にはテック株売りを契機としたグローバルな質への逃避で5.1%程度（8週ぶり低水準）まで低下するなど、CPIショックと世界的リスクオフが綱引きする展開。RBAの11/3会合結果は本稿作成時点で未確認。</li>
+<li>本日11/4はスウェーデン・リクスバンクの政策決定（9:30 CET）が予定され、政策金利は1.75%での据え置きが大勢観測。翌11/5はBOEの会合が予定され、JPMorganの利上げ予想とReuters調査（エコノミスト大勢はホールド予想）が対立する際どい局面。</li>
+<li>入札については、独で11/3に5年Bobl（2031年8月償還、2.90%、増発5,250百万€程度）、11/4（本日）に2041年・2048年Bundの複数ISIN入札（目標合計約20億€）が実施されたが、いずれも結果は本稿作成時点で未確認。英では11/3に4⅝%グリーンGilt2037（32.5億£）の入札が実施されたが結果未確認。直近の同銘柄入札履歴（6月・7月）は応札倍率3.3〜3.6倍、テール0.2bp程度と良好であった。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>10/28（水）欧州</strong>：英Healey財務相が予算を発表。市場予想とおおむね整合的との評価で、Gilt利回りは低下方向に反応（発表時点でGiltはUSTを約5bp上回るパフォーマンスとの報道）。ただし長期国債の追加発行規模や財政余地次第で反応が逆転するリスクが残るとの指摘もあった。</li>
+<li><strong>10/28（水）豪州</strong>：Q3 CPIが上振れ、RBAの11月利上げ確率はわずか2週間弱で10%未満から88%まで急上昇。10年AGS利回りは5.2%近辺まで上昇。</li>
+<li><strong>10/29（木）欧州</strong>：ECB理事会。事前のBloomberg調査では調査対象のほぼ全員が預金ファシリティ金利2.50%での据え置きを予想しており、結果も据え置きと報じられている（Brussels Timesの見出し情報、未確認含む）。Bund利回りはこの結果を受けて低下方向に振れた。</li>
+<li><strong>10/30（金）欧州</strong>：Bund10年は3.31%まで低下し8週間ぶりの低水準（ECB据え置き＋月間の地合い改善を反映）。Gilt10年も9/22以来の低水準圏まで低下。</li>
+<li><strong>10/30（金）豪州</strong>：グローバルなテック株売りを契機とした質への逃避で主要国国債に買いが入り、AGS10年利回りは5.1%程度（8週ぶり低水準）まで低下、10月は6月以来初の月間低下となった。</li>
+<li><strong>11/3（火）英</strong>：4⅝%グリーンGilt2037の入札（32.5億£）実施、結果未確認。</li>
+<li><strong>11/3（火）独</strong>：5年Bobl（2031年8月償還）の増発入札（5,250百万€程度）実施、結果未確認。直近10/13の同銘柄入札では応札倍率1.1倍・平均落札利回り3.22%と低調であった点は留意材料。</li>
+<li><strong>11/3（火）豪州</strong>：RBA政策理事会開催。決定結果は本稿作成時点で未確認（CBA・Westpac・NAB等大手行の一部は11月25bp利上げ［4.60%→4.85%］を基本シナリオに切り替えていたと報じられている）。</li>
+<li><strong>11/4（水、対象営業日）欧州</strong>：独で2041年債・2048年債の複数ISIN入札（目標合計約20億€）実施、結果未確認。スウェーデン・リクスバンクが9:30 CETに政策決定、11:00 CETに記者会見予定。結果は本稿作成時点で未確認だが、政策金利パス予測が2026年中1.75%でフラットとなっていたことから、据え置き継続が大勢観測。</li>
+<li><strong>翌11/5（木）予定</strong>：BOE政策理事会・金融政策報告。9/17会合は6対3の際どい据え置き（Pill・Greene・Mannの3名が利上げ主張）。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>主要国国債利回り</h2>
+<p>（※すべて最終確認時点の値。対象営業日11/4当日の終値・前日比は本稿作成時点で未確認のため、確認できた最新時点を明記する）</p>
+<ul>
+<li><strong>ドイツ 10年</strong> 約3.31%（10/30時点、8週間ぶり低水準）／11/4時点の前日比は未確認 — 10/29のECB据え置き（預金ファシリティ2.50%、未確認含む）を受け、月間で20bp超低下。</li>
+<li><strong>英国 10年</strong> 5.3%をやや下回る水準（10/30時点、9/22以来の低水準）／11/4時点の前日比は未確認 — 10/28予算が市場予想とおおむね整合的と受け止められ、予算前の警戒感が後退。</li>
+<li><strong>英国 30年</strong> 6.03%（10/1時点、1998年以来の高水準、予算前のピーク）／その後は予算通過を経て落ち着きを見せたとみられるが11/4時点の具体的水準は未確認。</li>
+<li><strong>フランス 10年（OAT）</strong> 5%超（10/21時点で初めて5%超えと報じられている）／11/4時点は未確認 — 2027年度予算を巡る政治対立・社会的混乱を背景に上昇。</li>
+<li><strong>イタリア 10年（BTP）</strong> 約4.61%（10/6時点）、スプレッド拡大前の8/13時点では3.94% — 10月を通じてフランスとの相対的な位置付けが変化（後述）。11/4時点は未確認。</li>
+<li><strong>豪州 10年（AGS）</strong> 約5.1%（10/30時点、8週間ぶり低水準）／11/4時点の前日比は未確認 — 10/28のCPI上振れによる上昇とグローバルな質への逃避による低下が綱引き。</li>
+<li><strong>カナダ 10年</strong> 未確認 — 最新の信頼できるデータ源を確認できず。BOC政策金利は10月に2.25%→2.50%へ利上げしたとの情報があるが複数ソース間で相違があり未確認。</li>
+<li><strong>スウェーデン 10年</strong> 未確認。</li>
+<li><strong>ノルウェー 10年</strong> 未確認。Norges Bank政策金利は4.25%（5月利上げ後、6月・8月は据え置き）。11月会合の具体的日程は未確認。</li>
+<li><strong>スイス 10年</strong> 未確認。SNB政策金利の現在水準も確認できず。</li>
+</ul>
+<p><strong>カーブ形状</strong>：独Bundは、ECBが9月に2.50%まで利上げした後10/29に据え置いたことで短期ゾーンの追加利上げ観測が後退し、フランス発の財政・政治リスクを背景とした質への逃避でBund長期ゾーンにも買いが入ったとみられ、全体として利回り低下（ブルフラット〜ブルスティープ混在、明確な2s10s変化は未確認）。英Giltは、予算発表前の30年ゾーンでのスティープ化（財政悪化懸念を背景とした超長期ゾーンの売り、6.03%まで上昇）から、予算が「サプライズなし」と受け止められたことで長期ゾーンが買われるブルフラット方向への反転が生じたとみられる。豪州は、CPI上振れ直後は政策金利観測の上振れを反映した上昇（ベアフラット方向）だったが、月末のグローバルな質への逃避でその動きが一部巻き戻された。</p>
+<p><strong>EUR/GBPスワップカーブ・アセットスワップスプレッド</strong>：未確認。本稿作成時点でEURIBOR/€STRスワップ、SONIAスワップカーブの具体的レベル、および国債対スワップのアセットスワップスプレッドのデータを一次・準一次情報で確認できなかった。</p>
+<p><strong>入札</strong>：</p>
+<ul>
+<li>独5年Bobl（2.90%、2031年8月償還、series 194）：11/3入札、増発5,250百万€程度。結果未確認。直近10/13の同銘柄入札は応札倍率1.1倍・平均落札利回り3.22%と低調であり、ドイツ中期ゾーンの需給がやや軟調である可能性を示唆（分析）。</li>
+<li>独2041年債（2.60%）・2048年債（1.25%）複数ISIN入札：11/4（対象営業日）実施、目標合計約20億€（各銘柄約10億€）。結果未確認。</li>
+<li>英4⅝%グリーンGilt2037：11/3入札、32.5億£。結果未確認。直近（6月・7月）の同銘柄入札は応札倍率3.3〜3.6倍・テール0.2bp程度と良好な履行歴があり、超長期グリーン債への需要自体は底堅いとみられる（分析、11/3分の結果は別途要確認）。</li>
+<li>その他、英DMOの11月入札カレンダーでは11/10（5⅜%2056、長期コンベンショナル）、11/12（4⅛%2033、短期コンベンショナル）、11/17（5¼%2041、中期コンベンショナル）が予定されている。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>クロス市場スプレッド</h2>
+<p>（※米10年債利回りの直近確認データが9/10時点（4.95%）に留まるため、Bund-UST・Gilt-UST等のスプレッド絶対水準には相当の誤差を含む。以下は参考レベルとして推定を明記する）</p>
+<ul>
+<li><strong>Bund-UST(10年)</strong> 推定で-150〜-170bp程度（Bund 3.31%［10/30］、UST推定4.9%台［9/10時点が最終確認、その後の変化は未確認］）— 誤差大、推定。ECBとFRBの政策スタンス（ECBは据え置き方向、FRBは10/28FOMCでタカ派反対票2名を伴う据え置き）の相対評価としては、米欧とも「据え置き長期化」で収束しつつある可能性。</li>
+<li><strong>Gilt-UST(10年)</strong> 推定で+30〜+45bp程度（Gilt 5.3%弱［10/30］、UST推定4.9%台）— 誤差大、推定。英国財政リスクプレミアムが米国より高い状態が継続しているとみられる。</li>
+<li><strong>OAT-Bund(10年)</strong> 約140〜176bp（10月中、10/23にピークの176bp近辺）— 2012年以来の高水準。フランスの2027年度予算を巡る政治対立・社会的混乱が主因。</li>
+<li><strong>BTP-Bund(10年)</strong> 約115〜126bp（10月中）、8/13時点は78bpとの報道もあり月を通じて拡大。ただしOATとの比較では一貫してフランスより狭い。</li>
+<li><strong>OAT-BTP(フランス-イタリア、10年)</strong> フランスの対Bundスプレッドがイタリアを上回る「仏伊逆転」が10月を通じて定着しつつある点が最大の構造変化。2010年代の欧州債務危機以降、イタリアが仏独に対する周辺国リスクの代表格だったが、フランスの財政・政治リスクがそれを上回る局面が生じている（分析）。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>中銀動向</h2>
+<ul>
+<li><strong>ECB</strong>：10/29理事会で預金ファシリティ金利2.50%（6月2.25%→9月2.50%の利上げ後、7月・10月は据え置き）を維持したと報じられている（未確認含む）。次回理事会は12/17（スタッフ経済見通し更新を伴う）。フランスの政治・財政リスクが理事会内の議論に影響した可能性がある（分析）。</li>
+<li><strong>BOE</strong>：次回会合は11/5（翌営業日）。前回9/17会合は6対3の際どい据え置き（Bank Rate 3.75%、Pill・Greene・Mannの3名が利上げ主張）。市場の一部ではNov会合での利上げ確率を77%とする報道があった一方、Reuters調査ではエコノミスト大勢がホールドを予想しており、市場と実務家の見方が分裂。JPMorganは利上げ予想、Oxford Economicsはホールド予想と銀行間でも割れている。</li>
+<li><strong>RBA</strong>：11/3理事会開催。前回9/29に25bp利上げ（9対0）し4.60%。10/28のCPI上振れを受け大手行の一部が11月の追加利上げ（4.85%）を基本シナリオに切り替えたとされるが、決定結果自体は本稿作成時点で未確認。</li>
+<li><strong>リクスバンク（スウェーデン）</strong>：本日11/4、9:30 CETに政策決定、11:00 CETに記者会見予定。政策金利は2025年9月の利下げ後1.75%で据え置きが継続（2026年8月・9月も1.75%）。政策金利パス予測が2026年中フラット（1.75%）であったことから、本日も据え置きが大勢観測だが結果は未確認。</li>
+<li><strong>BOC（カナダ）</strong>：次回会合は12/9。現在の政策金利は複数ソース間で2.25%〜2.50%の相違があり確定できず（未確認）。</li>
+<li><strong>Norges Bank（ノルウェー）</strong>：政策金利4.25%（5月利上げ後、6月・8月は据え置き）。11月の会合日程・結果は未確認。</li>
+<li><strong>SNB（スイス）</strong>：政策金利・直近決定ともに確認できず（未確認）。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>独中期ゾーン（Bobl）の需給がやや軟調（10/13入札の応札倍率1.1倍）であったことは、ドイツ国内投資家の需要が過去数カ月よりタイトになっている可能性を示唆するが、単月のデータであり継続性は未確認。</li>
+<li>英グリーンGiltは直近の入札履歴（応札倍率3.3〜3.6倍）からESG系・長期投資家からの需要が底堅いとみられるが、11/3分の結果自体は未確認。</li>
+<li>フランス国債については、OAT-Bundスプレッドの急拡大（10/23に176bp）が、海外投資家のフランス国債保有比率低下・リスク回避的なポジション調整を伴っている可能性があるが、具体的なフロー・ポジションデータは確認できていない（未確認）。</li>
+<li>豪州国債については、CPI上振れ後に短期的なショート（利回り上昇方向）のポジション構築、月末には質への逃避でのカバー・ロングポジション復元が入り混じった可能性があるが、具体的なフローデータは確認できていない（未確認）。</li>
+</ul>
+</section>
+<section id="sec-8">
+<h2>推奨トレード</h2>
+<h3>トレード1：フランスOAT対イタリアBTP、BTPロング/OATショート（スプレッド縮小方向）</h3>
+<ul>
+<li>根拠：10月を通じてOAT-Bundスプレッド（140〜176bp）がBTP-Bundスプレッド（115〜126bp）を一貫して上回る「仏伊逆転」が生じている。フランスは2027年度予算を巡る政治対立・社会的混乱という構造的な不確実性を抱えており、12月のフランス予算審議・政局イベントまでこのプレミアムが解消しにくいとみられる一方、イタリアは相対的に政治・財政面での安定感を評価されている。この相対価値のミスプライス（歴史的にはイタリアの方がフランスよりワイドだった）は、仏の政局が収束しない限り当面持続・拡大する可能性が高い。</li>
+<li>エントリー目安：OAT-BTPスプレッド（OAT10年利回り-BTP10年利回り）が+10〜+20bp程度（現状、BTP-Bund約120bp、OAT-Bund約150〜160bp換算でOAT-BTPスプレッドはおおむね+30〜+40bp相当）の局面でBTPロング／OATショートを構築。</li>
+<li>利確目安：OAT-BTPスプレッドが0bp近辺（フランスとイタリアの対Bundスプレッドが収斂）まで縮小した時点、またはOATが再びBTPに対し明確に優位（OAT-BTPスプレッドが大きくマイナス）に転じた時点。</li>
+<li>損切り目安：フランス予算が与野党合意に至る等のポジティブサプライズでOAT-Bundスプレッドが30bp以上急縮小し、OAT-BTPスプレッドがマイナス側に戻った場合。</li>
+<li>ホライズン：1〜3カ月（フランス予算審議・政局の展開、及び次回ECB理事会12/17までを一つの節目として想定）。</li>
+<li>リスク：フランスの政局が意外に早期収束した場合のOAT急速リバーサル、イタリア側での新たな財政懸念（格付け見通し変化等）の発生、デュレーション中立化が不完全な場合の金利ベータリスク。</li>
+</ul>
+<h3>トレード2：英Gilt10年ロング（BOE会合跨ぎのタクティカル、ホールド予想に賭ける）</h3>
+<ul>
+<li>根拠：10/28予算が市場予想とおおむね整合的と評価され、Gilt利回りは財政リスクプレミアムの一部剥落を伴って低下（10/30に5.3%弱、9/22以来の低水準）。Reuters調査ではエコノミスト大勢が11/5BOE会合でのホールドを予想しており、9/17の票決（6対3でのホールド）からも据え置き継続の蓲性が高いとみられる。ホールドが実現すれば、予算通過後のリスクプレミアム剥落の流れが続き、10年Gilt利回りがさらに低下する余地がある。</li>
+<li>エントリー目安：10年Gilt利回り5.25〜5.35%程度（11/4時点の具体的水準は未確認のため、直近確認水準からの目線）。</li>
+<li>利確目安：10年Gilt利回り5.05〜5.10%程度（9月中旬以来の低水準方向）への低下。</li>
+<li>損切り目安：BOEがJPMorganの予想通り利上げに動き、10年Gilt利回りが5.45%を上回って上昇した場合。</li>
+<li>ホライズン：数日〜2週間（BOE会合11/5の結果判明直後までのイベントドリブン・タクティカル）。</li>
+<li>リスク：市場の一部で報じられた77%の利上げ確率（単一ソース、未確認）が的中した場合の逆風、11月のCPI等データ次第での風向き変化、英DMOの11月入札（11/10長期コンベンショナル等）による供給サイドの圧迫。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>本日17:30頃（日本時間、9:30 CET） スウェーデン</strong> リクスバンク政策金利決定・金融政策アップデート〔重要度：中〕— 1.75%での据え置きが大勢観測、結果未確認。</li>
+<li><strong>本日19:00頃（日本時間、11:00 CET） スウェーデン</strong> リクスバンク記者会見〔重要度：中〕— 2027年にかけての金利パス修正の有無に注目。</li>
+<li><strong>11/5（木）日本時間19:00頃（12:00 GMT） 英国</strong> BOE政策金利決定・金融政策報告〔重要度：高〕— Bank Rate3.75%からの変更可否。JPMorganは利上げ予想、Reuters調査のエコノミスト大勢はホールド予想と分裂。</li>
+<li><strong>11/5（木）日本時間18:00頃 ユーロ圏・独</strong> HCOB製造業・サービス業PMI確定値（10月）〔重要度：中〕— 速報値からの修正有無。</li>
+<li><strong>11/10（火） 英国</strong> 長期コンベンショナルGilt入札（5⅜%2056）〔重要度：中〕— 超長期ゾーンの需給確認。</li>
+<li><strong>11/12（木） 英国</strong> 短期コンベンショナルGilt入札（4⅛%2033）〔重要度：低〕。</li>
+<li><strong>11月中（日程未確認） ノルウェー</strong> Norges Bank政策金利決定〔重要度：中〕— 現行4.25%からの変更有無、具体的日程は未確認。</li>
+<li><strong>12/9（火、予定） カナダ</strong> BOC政策金利決定〔重要度：中〕— 現行政策金利水準自体が未確認のため、事前の水準確認が必要。</li>
+<li><strong>12/17（木、予定） ユーロ圏</strong> ECB理事会・スタッフ経済見通し更新〔重要度：高〕— フランス情勢の理事会への影響を要確認。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [RBA raised cash rate to 4.60% on September 29, 2026 (unanimous 9-0) - LIVE: RBA lifts interest rates to 4.6 per cent - CommercialRealEstate.com.au](https://www.commercialrealestate.com.au/news/rba-interest-rates-live-updates-september-2026-decision-1560782/)（2026-11-04取得、WebSearch経由）</p><p>- [RBA set to hold interest rate as inflation tops target, labor market remains tight - FXStreet](https://www.fxstreet.com/amp/news/rba-set-to-hold-interest-rate-as-inflation-tops-target-labor-market-remains-tight-202511032145)（2026-11-04取得、WebSearch経由、11/3時点のプレビュー）</p><p>- [RBA November 2026 Rate Decision: A Hike to 4.85% Is Now the Base Case - Property Investment Professionals](https://propertyinvestmentprofessionals.com.au/blog/rba-november-2026-rate-decision-preview-property-investors)（2026-11-04取得、WebSearch経由、会合前プレビュー）</p><p>- [RBA turns increasingly hawkish as markets reprice November rate hike expectations - XTB](https://www.xtb.com/en/market-analysis/rba-turns-increasingly-hawkish-as-markets-reprice-november-rate-hike-expectations)（2026-11-04取得、WebSearch経由）</p><p>- [Australia 10Y Bond Yield Hits 8-week Low / 5-week Low - TradingEconomics](https://tradingeconomics.com/australia/government-bond-yield/news/596511)（2026-11-04取得、WebSearch経由、10/30時点記事）</p><p>- [Bund Yields Fall in October / Germany 10Y Bond Yield Hits 8-week Low - TradingEconomics](https://tradingeconomics.com/germany/government-bond-yield/news/596792)（2026-11-04取得、WebSearch経由、10/30時点記事）</p><p>- [Cbonds: Germany 10-year yield 3.322% (2026-10-30)](https://cbonds.hk/indexes/208/)（2026-11-04取得、WebSearch経由）</p><p>- [Autumn Budget 2026: Gilts steady after budget 'broadly consistent with market expectations' - Portfolio Adviser](https://portfolio-adviser.com/autumn-budget-2026-gilts-steady-after-budget-broadly-consistent-with-market-expectations/)（2026-11-04取得、WebSearch経由）</p><p>- [UK Gilt Yields Fall After Budget Announcement / UK Gilt Yields Fall to September Lows - TradingEconomics](https://tradingeconomics.com/united-kingdom/government-bond-yield/news/596816)（2026-11-04取得、WebSearch経由）</p><p>- [UK 30-year gilt yield breaches 6% for first time since 1998 - roic.ai](https://www.roic.ai/news/uk-30-year-gilt-yield-breaches-6-for-first-time-since-1998-10-01-2026)（2026-11-04取得、WebSearch経由）</p><p>- [Why Markets and Economists Disagree on a BoE November Hike - StockwireX](https://stockwirex.com/?p=47168)（2026-11-04取得、WebSearch経由）</p><p>- [Bank of England to hold rates despite better inflation news - FXStreet](https://www.fxstreet.com/analysis/bank-of-england-to-hold-rates-despite-better-inflation-news-202511030942)（2026-11-04取得、WebSearch経由）</p><p>- [Spread BTP-Bund verso quota 130 con rendimenti al 4,70%. Francia peggio dell'Italia, OAT puntano al 5% - Money.it](https://www.money.it/spread-btp-bund-verso-quota-130-con-rendimenti-al-470-francia-peggio-dell-italia-oat-puntano-al-5)（2026-11-04取得、WebSearch経由）</p><p>- [Spread a 116 punti base, Btp al 4,61%: cosa succede sui mercati - QuiFinanza](https://quifinanza.it/economia/finanza/spread-btp-bund-6-ottobre-2026/1018444/)（2026-11-04取得、WebSearch経由）</p><p>- [Spread Btp-Bund in calo a 78 punti, rendimento del decennale italiano al 3,94% - QuiFinanza](https://quifinanza.it/economia/finanza/spread-btp-bund-13-agosto-2026/1011902/)（2026-11-04取得、WebSearch経由）</p><p>- [Spannungen am französischen Anleihemarkt: Was der OAT-Bund-Spread für den Euro bedeutet - Admiral Markets](https://admiralmarkets.com/de/analysen/traders-blog/oat-bund-spread-france-euro)（2026-11-04取得、WebSearch経由）</p><p>- [ECB freezes interest rates as inflation risks linger amid economic uncertainty - Brussels Times](https://www.brusselstimes.com/1955847/ecb-freezes-interest-rates-as-inflation-risks-linger-amid-economic-uncertainty)（2026-11-04取得、WebSearch経由）</p><p>- [ECB sets to leave deposit rate unchanged at 2.5% on October 30 - Reuters poll - FXStreet](https://www.fxstreet.com/news/ecb-sets-to-leave-deposit-rate-unchanged-at-2-on-october-30-reuters-poll-202510221122)（2026-11-04取得、WebSearch経由）</p><p>- [ECB review: abated downside growth risks - FXStreet](https://www.fxstreet.com/amp/analysis/ecb-review-abated-downside-growth-risks-202510301558)（2026-11-04取得、WebSearch経由）</p><p>- [Bundesbank: 5-year Bobl (series 194) tap auction announcement, 2026-10-28 / result of 2026-10-13 auction (avg yield 3.22%, cover 1.1x)](https://www.bundesbank.de/resource/blob/1013292/)（2026-11-04取得、WebSearch経由、直接WebFetchはDNS解決エラーのためWebSearchスニペット経由）</p><p>- [Bundesbank: Bund 2041/2048 multi-ISIN tap auction announcement for 2026-11-04 (Deutsche Finanzagentur Q4 2026 issuance calendar)](https://www.deutsche-finanzagentur.de/fileadmin/user_upload/Pressemitteilung/en/2026/2026_09_24_PM_08_Issues_planned_by_the_Federal_government_for_the_4th_quarter_2026.pdf)（2026-11-04取得、WebSearch経由）</p><p>- [UK DMO: 4⅝% Green Gilt 2037 auction notice for 2026-11-03 / auction calendar Q3 2026-27](https://www.dmo.gov.uk/media/kevn4v5f/auctioncalendar281026.pdf)（2026-11-04取得、WebSearch経由、直接WebFetchはDNS解決エラーのためWebSearchスニペット経由）</p><p>- [UK sells GBP 3.25bln 4⅝% 2037 Green Gilt, BC 3.63x, average yield 4.975%, tail 0.2bps - Newsquawk](https://www.newsquawk.com/headlines/uk-sells-gbp-325bln-4625-2037-green-gilt-bc-363x-average-yield-4975-tail-02bps-)（2026-11-04取得、WebSearch経由、6月分の参考実績）</p><p>- [Riksbank calendar 2026-11-04 (policy decision 9:30 CET, press conference 11:00 CET)](https://www.riksbank.se/en-gb/press-and-published/calendar/calendar-2026/2026-11-04/)（2026-11-04取得、WebSearch経由）</p><p>- [MNI Riksbank Watch: Holds, Edges Up Rate Path - MNI Markets](https://www.mnimarkets.com/articles/mni-riksbank-watch-holds-edges-up-rate-path-1766048794114)（2026-11-04取得、WebSearch経由）</p><p>- [Bank of Canada Rate Decision December 2026 - FinanceCalendar](https://www.financecalendar.com/?p=2235)（2026-11-04取得、WebSearch経由）</p><p>- [Norges Bank policy rate 4.25% (regulatory alert, 2026-08-13 decision)](https://regalert.today/EU/NO/NB)（2026-11-04取得、WebSearch経由）</p><p>- [US Treasury 10-year yield closed at 4.95% on 2026-09-10 - Statistics of the World](https://statisticsoftheworld.com/news/2026-09-10)（2026-11-04取得、WebSearch経由）</p><p>- [2026-11-04 エコノミストノート（社内整合用）](daily/agents/2026-11-04-economist.md)（本リポジトリ内、2026-11-04作成）</p><p>※上記のうち、対象営業日（2026-11-04）当日の確定値（独Bund入札結果、リクスバンク決定、RBA決定結果、Nov4時点の各国国債終値等）については、一次情報源（rba.gov.au、bundesbank.de、dmo.gov.uk、riksbank.se）への直接アクセスがこの実行環境では行えず、確定値を裏取りできていない。該当箇所は本文中で「未確認」と明記した。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
