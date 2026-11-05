@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-05 エコノミストノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-05.html">統合レポートを見る</a><span>2026-11-05</span></div>
+  <h1 class="title">2026-11-05 エコノミストノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-05-fx.html">為替</a>
+    <a href="2026-11-05-commodities.html">コモディティ</a>
+    <a href="2026-11-05-jgb.html">円債</a>
+    <a href="2026-11-05-ust.html">米国債</a>
+    <a href="2026-11-05-intl-bonds.html">外債</a>
+    <a href="2026-11-05-jp-equity.html">日本株式</a>
+    <a href="2026-11-05-us-equity.html">米国株式</a>
+    <a href="2026-11-05-politics.html">政治・地政学</a>
+    <span class="current">マクロ経済</span>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得上の留意点</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">経済指標カレンダー・結果</a>
+    <a href="#sec-4">中銀動向（会合・声明・記者会見・要人発言）</a>
+    <a href="#sec-5">金融政策パスの評価</a>
+    <a href="#sec-6">マクロ経済分析</a>
+    <a href="#sec-7">翌営業日以降の注目指標・中銀イベント</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得上の留意点</h2>
+<p>本稿作成時点のWebSearchでは、2026年11月初旬の同時期・近接日の一次情報（BOE本日決定、RBA11/3決定、米ADP・ISM非製造業・Challenger等の結果）について、検索インデックスの反映遅れにより確定報道を確認できなかった項目が複数ある。該当箇所は「結果未確認」「予想未確認」と個別に明記し、会合前のポジショニング・市場予想を代わりに整理した。また主要中銀（FRB・ECB・日銀）の10月会合の決定内容は複数の二次報道で一致が取れたため、本日の政策パス評価の土台として採用している。一次情報源（boe.gov.uk、rba.gov.au、federalreserve.gov、ecb.europa.eu等）へのWebFetchは本実行環境ではDNS解決エラーとなり利用できなかった。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>本日11/5はBOE(英中銀)が政策金利決定とMonetary Policy Report（四半期見通し）を公表する「本丸」の一日。9月会合は3.75%で6-3の分裂維持（3名が4%への利上げを主張）だった流れを受け、市場では利上げ再開の可能性が意識されているが、本稿作成時点で結果は未確認。</li>
+<li>直近1週間で主要中銀の政策スタンスが軒並み「据え置き・様子見だが利上げ方向のリスクに留意」という共通トーンに収斂している点が最大の構造的材料。FRB（10/28、3.75-4.00%で10-2、Cook・Hammack両理事が利上げを主張して反対）、ECB（10/29、2.50%で全会一致ホールドだが利上げを協議、Lagardeは2027年2月での退任を表明）、日銀（10/30、1.25%で8-1、高田委員が1.5%への利上げを主張して反対）が軒並み「利上げ再開リスク」を残したまま据え置いた。</li>
+<li>RBA(豪中銀)は11/3に会合済みで、大手4行は7-9月期CPI上振れを受け0.25%利上げ（4.60%→4.85%）をメインシナリオとしていたが、決定結果は本稿作成時点で未確認。</li>
+<li>米国側は本日、新規失業保険申請件数・Challenger人員削減(10月分)・ADP全国雇用報告(10月分、Continuum Economics等の事前観測では11/5発表予定)が予定されているとみられるが、いずれも結果未確認。翌11/6には10月分雇用統計（非農業部門雇用者数）が発表される。</li>
+<li>複数の中銀コミュニケーションで、2月下旬開始とされるイラン情勢に起因する地政学・エネルギー市況の不透明感がインフレの上振れリスクとして繰り返し言及されており、2025年までの「利下げサイクル」から2026年後半は「据え置き〜再利上げ警戒」へと潮目が変わっている点がマクロの軸。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>経済指標カレンダー・結果</h2>
+<p>（本日分は多くが結果未確認。予想・前回が確認できた項目のみ記載し、不明な部分は「未確認」と明記）</p>
+<ul>
+<li><strong>21:00頃 日本時間 英国</strong> BOE金融政策委員会(MPC)金利決定・Monetary Policy Report — 予想：市場では利上げ再開（3.75%→4.00%）の可能性を意識する報道があったが確度は未確認／結果：未確認／前回：3.75%で据え置き（9/17、6-3の分裂、3名が4%への利上げを主張） — 本日の最重要イベント。四半期ごとのMPR公表を伴う回であり、声明文のインフレ上振れリスクの記述変化に注目</li>
+<li><strong>21:00台 日本時間 米国</strong> チャレンジャー人員削減数（10月分） — 予想：未確認／結果：未確認／前回：2025年10月は前年比急増し2003年以来の高水準だった旨の報道があるが、2026年同月の実数は未確認 — 政府データ公表体制の正常化後も民間調査としての注目度は高い</li>
+<li><strong>22:15頃 日本時間 米国</strong> ADP全国雇用報告（10月分、民間部門雇用者数） — 予想：未確認／結果：未確認／前回：9月分は減少（市場観測ベース、確定値未確認） — Continuum Economics等の事前観測では、9月分の減少からの戻りが注目点とされていた（確度未確認）</li>
+<li><strong>22:30頃 日本時間 米国</strong> 新規失業保険申請件数（週次、10/31週） — 予想：未確認／結果：未確認／前回：未確認 — 直近のレイオフ増加報道との整合性に注目</li>
+<li><strong>（参考・前日計上の可能性）米国</strong> ISM非製造業(サービス)業況指数（10月分） — 予想：未確認／結果：未確認／前回：未確認 — 発表タイミングが日本時間では11/5未明にかかる可能性があるため参考掲記。確報は未確認</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>中銀動向（会合・声明・記者会見・要人発言）</h2>
+<h3>直近の政策パス（11/5以前の既決定・背景整理）</h3>
+<ul>
+<li><strong>10/28 FRB</strong> 連邦公開市場委員会（FOMC）はフェデラルファンド(FF)レート目標を3.75〜4.00%で維持（10-2の賛成多数）。クック理事とハマック・クリーブランド連銀総裁が反対票を投じたが、両者の主張は「利下げ」ではなく「0.25%の利上げ」であった点が特異。記者会見は新議長ケビン・ウォーシュ氏が担当（Powell前議長の任期満了に伴う交代とみられる）。次回会合は12/9（経済見通し・ドットプロット公表あり）。</li>
+<li><strong>10/29 ECB</strong> 政策理事会は中銀預金ファシリティ金利を2.50%（主要リファイナンス金利2.65%）で全会一致により維持。ラガルド総裁は会見で「利上げを協議したが、12月までの追加データを待つことで合意した」と説明し、利上げの可能性を明確に排除しなかった。同総裁は2027年2月の理事会後に退任する意向を表明（ECB総裁人事の先行き不透明感が新たな材料として浮上）。次回会合は12月。</li>
+<li><strong>10/30 日銀</strong> 政策委員会は政策金利を1.25%で維持（8-1、高田創委員が1.5%への利上げを主張して反対）。10月の「経済・物価情勢の展望」（展望レポート）では、見通しが実現すれば利上げを継続する方針を維持。市場では12/17-18の次回会合での1.50%への利上げが有力視されている（確度は複数の二次報道に基づく推測であり未確認）。</li>
+<li><strong>11/3 RBA</strong> 定例会合（四半期ごとのStatement on Monetary Policyを伴う回）。会合前の時点でキャッシュレートは4.60%（9/29に9-0の全会一致で0.25%利上げ、2011年11月以来の高水準）。9月期CPIの上振れを受け、豪4大銀行はいずれも0.25%利上げ（4.85%への到達）をメインシナリオとしていた。決定結果・ブロック総裁会見の内容は本稿作成時点で確定報道を確認できず、未確認のまま。</li>
+</ul>
+<h3>本日（11/5）の中心的イベント：BOE</h3>
+<ul>
+<li>英中銀は本日12:00（英国時間、日本時間21:00）に政策金利決定とMonetary Policy Report（四半期経済見通し）を公表する。MPRを伴う会合は2月・5月・8月・11月の年4回。</li>
+<li>前回9/17会合は3.75%で据え置き（6-3）。反対票を投じた3名はいずれも4.00%への利上げを主張しており、英国内のインフレ粘着性（財・サービス双方）への警戒が続いていたことを示す。7/30会合も6-3での据え置き（グリーン、マン、ピル委員が利上げ主張で反対）だった。</li>
+<li>市場では本日会合に向けて利上げ再開を意識する報道が見られたが、具体的な織り込み度・ヘッドラインの確度は確認できなかった。声明文・MPRでのインフレ見通し上方修正の有無、反対票の構成変化（利上げ派が過半数に近づくか）が最大の注目点。</li>
+<li>決定結果・ベイリー総裁の記者会見内容は本稿作成時点で確認できていない。</li>
+</ul>
+<h3>米国（高官発言・データコミュニケーション）</h3>
+<ul>
+<li>10/28FOMC後、新議長ウォーシュ氏の記者会見内容の詳細（質疑応答）は確認できなかったが、タカ派理事2名（クック、ハマック）が利上げを主張した事実自体が、FRB内部で「次の一手は利下げではなく、データ次第では利上げ再開もあり得る」という緊張関係を示している。ハマック総裁はジャクソンホール前後からインフレ警戒の発言を続けてきた経緯があり、タカ派色を強めている。</li>
+<li>本日時点でウィリアムズNY連銀総裁ら高官の発言スケジュールは確認できなかった。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>金融政策パスの評価</h2>
+<ul>
+<li><strong>FRB</strong> 政策金利3.75-4.00%（FFレート目標）／次回会合2026-12-09（経済見通し・ドット公表あり）／織り込み：本稿では確認できず — 10月会合でハト派的な利下げではなく、タカ派理事がむしろ利上げを主張して反対した構図は、市場が年内追加利下げを期待しにくい環境を示唆。12月会合はドット公表を伴うため、2027年の金利パスに関する新議長ウォーシュ体制下での初めての定量的メッセージとして重要度が高い。</li>
+<li><strong>ECB</strong> 政策金利（中銀預金ファシリティ）2.50%／次回会合2026年12月（日程詳細未確認）／織り込み：一部の民間アナリストは12月の0.25%利上げ（2.75%）を予想との報道があるが確度は未確認 — ラガルド総裁が「利上げを協議したが時期尚早として見送った」と明言したことは、ECBが利下げサイクルを終え、条件次第で利上げに転換する余地を残していることを意味する。総裁人事（2027年2月退任表明）も中期的なコミュニケーション・リスクとして留意。</li>
+<li><strong>日銀</strong> 政策金利1.25%（複数回の利上げを経た水準）／次回会合2026-12-17〜18／織り込み：市場では12月の0.25%利上げ（1.50%へ）が有力との報道が複数あるが、確度は未確認 — 高田委員の利上げ主張による反対票は、政策委員会内でタカ派寄りの意見が台頭していることを示す。10月展望レポートの「見通し実現なら利上げ継続」との文言は従来方針の継続。</li>
+<li><strong>RBA</strong> 政策金利（キャッシュレート）4.60%（11/3会合前時点）／次回会合：2026年内の追加会合スケジュールおよび11/3会合の結果は未確認／織り込み：会合前時点で豪4大銀行は0.25%利上げ（4.85%）をメインシナリオとしていた — 結果が確認できないため、利上げが実現した場合は豪州が主要国の中で最も明確に「利上げサイクル再開」に踏み込んだ中銀となる点を念頭に置く必要がある。</li>
+<li><strong>BOE</strong> 政策金利（Bank Rate）3.75%（本日会合前時点）／次回会合2026-12-17／織り込み：本日決定に向けて利上げ再開を意識する報道が一部あったが確度・織り込み比率は未確認 — 9月・7月と連続して反対票が「利上げ主張」側に偏っていた経緯を踏まえると、本日の投票構成（反対票の増減）が声明文以上に重要な手がかりとなる可能性。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>マクロ経済分析</h2>
+<ul>
+<li><strong>グローバルな政策スタンスの転換点</strong>：2025年までの主要中銀の潮流は概ね「インフレ正常化に伴う緩やかな利下げ」であったのに対し、直近の10月末〜11月初の一連の会合（FRB・ECB・日銀）はいずれも「据え置きだが利上げオプションを明示的に排除しない」という共通トーンに収斂している。RBAの利上げ再開観測、BOEの反対票が利上げ側に偏る構図も同じ方向を向いており、主要国間でインフレ再加速・高止まりへの警戒が同時多発的に強まっている可能性が示唆される。</li>
+<li><strong>地政学・エネルギー要因</strong>：複数の報道で言及される「2月下旬以降のイラン情勢（および米国による海上封鎖）」がエネルギー市況のボラティリティ要因として繰り返し言及されており、ユーロ圏・英国など資源輸入国のインフレ見通しに上振れリスクを与えている構図が各中銀コミュニケーションに共通して見られる。この地政学要因の持続性については本稿では検証できておらず、トレード材料としての扱いには留意が必要。</li>
+<li><strong>米国雇用情勢</strong>：確認できた直近のNFP（9月分、10/2発表）は+29,000人、失業率4.2%という弱めの内容であり、同時期の政策当局内でタカ派理事が利上げを主張していた点とは整合性に欠けるように見える。これは「賃金・物価面の上振れ懸念」と「雇用の緩やかな軟化」が同時進行する典型的なスタグフレーション的緊張を示しており、12月FOMCでの判断材料（特に明日11/6発表の10月分雇用統計）が重要になる。</li>
+<li><strong>中銀間の分岐</strong>：日銀・RBAは明確な利上げサイクル継続（またはその途上）にあるのに対し、FRB・ECB・BOEは「利下げから据え置きへの転換を経て、条件次第で利上げも排除しない」という、より両義的な段階にある。この非対称性は政策金利差を通じた通貨・金利市場への構造的な影響軸になり得るが、具体的な市場価格への示唆は各ストラテジストの担当範囲。</li>
+<li><strong>データの質に関する留保</strong>：2025年秋には43日間に及ぶ米政府機関閉鎖（10/1〜11/12、暫定予算により2026/1/30まで資金確保）があり、2026年1月末にも短期の閉鎖（国土安全保障省関連）が発生したと報じられている。これらの影響で米国の経済指標公表スケジュールが過去1年にわたり度々乱れた経緯がある。本稿で確認した9月分NFPが10/2発表、10月分NFPが11/6発表予定という間隔は概ね平常パターンに近いが、再度の政府機関閉鎖リスクが浮上していないかは今後も確認が必要。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>翌営業日以降の注目指標・中銀イベント</h2>
+<ul>
+<li><strong>22:30頃 日本時間（8:30 ET） 米国</strong> 雇用統計（10月分、非農業部門雇用者数・失業率・平均時給）〔重要度：高〕— 9月分（+29,000人、失業率4.2%）からの改善・悪化で12月FOMCの地ならしとなる。ADP・Challengerなど10月分の民間系指標との整合性も確認材料</li>
+<li><strong>未確認 日本時間 ユーロ圏</strong> 9月分小売売上高・ドイツ製造業新規受注（公表日未確認） — 直近の確報が確認できておらず、11月中の発表スケジュールを要確認</li>
+<li><strong>2026-12-09 米国</strong> FOMC政策金利決定・経済見通し(SEP)・ドットプロット〔重要度：高〕— ウォーシュ新議長体制下で初の定量的な金利パス表明。クック・ハマック両理事の反対票の扱いにも注目</li>
+<li><strong>2026年12月（日程未確認） 欧州</strong> ECB政策理事会〔重要度：高〕— ラガルド総裁が10月会見で言及した「12月までの追加データ待ち」の結果として、利上げの有無が決まる可能性</li>
+<li><strong>2026-12-17 英国</strong> BOE次回MPC会合〔重要度：中〜高〕— 本日11/5会合での反対票構成・MPRのインフレ見通し次第で、12月会合への期待値が大きく変わる</li>
+<li><strong>2026-12-17〜18 日本</strong> 日銀金融政策決定会合〔重要度：高〕— 市場では0.25%利上げ（1.25%→1.50%）が有力との観測が複数あるが確度は未確認。高田委員の反対票の扱いにも注目</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [The full statement from the October 2026 FOMC rate decision - InvestingLive](https://investinglive.com/central-banks/the-full-statement-from-the-october-2026-fomc-rate-decision/)（取得日時：2026-11-05）</p><p>- [Warsh Press Conference: Fed Holds Rates at 3.75% to 4% as Cook and Hammack Vote for a Hike - Admiral Markets](https://admiralmarkets.com/analytics/traders-blog/warsh-press-conference-october-2026)（取得日時：2026-11-05）</p><p>- [FOMC October 2026: Fed Holds Rates in a 10-2 Vote as Markets Price a December Hike - Admiral Markets](https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates)（取得日時：2026-11-05）</p><p>- [ECB Holds Rates Amid Inflation and Growth Risks - Trading Economics](https://tradingeconomics.com/euro-area/interest-rate/news/596342)（取得日時：2026-11-05）</p><p>- [ECB review: a no hike decision - FXStreet](https://www.fxstreet.com/amp/analysis/ecb-review-a-no-hike-decision-202610291544)（取得日時：2026-11-05）</p><p>- [ECB holds interest rates steady at 2.5% after Lagarde resigns as president - Investment Week](https://www.investmentweek.co.uk/news/4538092/ecb-holds-interest-rates-steady-lagarde-resigns-president)（取得日時：2026-11-05）</p><p>- [Bank of Japan governor Kazuo Ueda all but locks in December rate hike - political.org](https://political.org/2026/11/01/bank-of-japan-governor-kazuo-ueda-all-but-locks-in-december-rate-hike-but-neutral-rate-uncertainty-clouds-path-beyond/)（取得日時：2026-11-05）</p><p>- [Ueda Signals More BoJ Rate Hikes, Yet Yen Holds Near 158 - Stockwirex](https://stockwirex.com/?p=51197)（取得日時：2026-11-05）</p><p>- [RBA November 2026 Rate Decision: A Hike to 4.85% Is Now the Base Case - Property Investment Professionals of Australia](https://propertyinvestmentprofessionals.com.au/blog/rba-november-2026-rate-decision-preview-property-investors)（取得日時：2026-11-05）</p><p>- [RBA interest rate decision: November 2026 - Cryptoslate Predictions](https://cryptoslate.com/predictions/market/rba-interest-rate-decision-november-2026/)（取得日時：2026-11-05）</p><p>- [Monetary Policy Committee dates for 2026 and 2027 - Bank of England（検索結果経由、本文一次確認は不可）](https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates)（取得日時：2026-11-05）</p><p>- [Bank of England keeps key rate at 3.75% for the fifth time this year - Tribune-Democrat](https://www.tribdem.com/news/business/bank-of-england-keeps-key-rate-at-3-75-for-the-fifth-time-this-year/article_6f4caac7-ce0f-5629-990c-0e9b90bbc61c.html)（取得日時：2026-11-05）</p><p>- [BoE rate hike in November all but guaranteed as 'fast forward' expectations mount - Investment Week](https://www.investmentweek.co.uk/news/4535920/boe-rate-hike-november-guaranteed-fast-forward-expectations-mount)（取得日時：2026-11-05）</p><p>- [Preview due November 5: US October ADP employment, correction from September decline - Continuum Economics](https://continuumeconomics.com/a/4471ae77/preview-due-november-5-us-october-adp-employment-correction-from-september-decline)（取得日時：2026-11-05）</p><p>- [US Challenger Job Cuts calendar listing - MTS Insights](https://www.mtsinsights.com/events/3906/)（取得日時：2026-11-05）</p><p>- [Next NFP release: Fri 6 Nov 2026 - Thrive in Markets](https://thriveinmarkets.com/calendar/dates/nfp-2026/)（取得日時：2026-11-05）</p><p>- [US Employment Situation October 2026 calendar listing - FinanceCalendar](https://www.financecalendar.com/event/us-employment-situation-non-farm-payrolls-october-2026/)（取得日時：2026-11-05）</p><p>- [Euro zone Oct Flash PMI: Composite At 17-month High / 3-month low（検索結果の要約、原文未確認） - MNI Markets](https://www.mnimarkets.com/articles/oct-flash-pmi-composite-at-17-month-high-france-the-laggard-1761293746090)（取得日時：2026-11-05）</p><p>- [Euro zone factory growth eases in October but remains solid, final PMI shows - political.org](https://political.org/2026/11/02/euro-zone-factory-growth-eases-in-october-but-remains-solid-final-pmi-shows/)（取得日時：2026-11-05）</p><p>- [2025 United States federal government shutdown 関連記事 - Washington Times](https://m.washingtontimes.com/news/2025/nov/4/government-shutdown-break-record-longest-ever-senators-look/)（取得日時：2026-11-05）</p><p>※上記はWebSearch経由で取得した二次情報が中心であり、各国中央銀行・統計局の公式一次情報（boe.gov.uk, rba.gov.au, federalreserve.gov, ecb.europa.eu等）へのWebFetchは本実行環境のネットワーク制約によりすべて失敗した（`getaddrinfo ENOTFOUND`）。特にBOE本日決定・RBA11/3決定・米ADP/ISM非製造業/Challenger10月分の確定数値は未確認のまま。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
