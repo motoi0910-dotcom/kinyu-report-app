@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-09 エコノミストノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-09.html">統合レポートを見る</a><span>2026-11-09</span></div>
+  <h1 class="title">2026-11-09 エコノミストノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-09-fx.html">為替</a>
+    <a href="2026-11-09-commodities.html">コモディティ</a>
+    <a href="2026-11-09-jgb.html">円債</a>
+    <a href="2026-11-09-ust.html">米国債</a>
+    <a href="2026-11-09-intl-bonds.html">外債</a>
+    <a href="2026-11-09-jp-equity.html">日本株式</a>
+    <a href="2026-11-09-us-equity.html">米国株式</a>
+    <a href="2026-11-09-politics.html">政治・地政学</a>
+    <span class="current">マクロ経済</span>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得上の留意点</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">経済指標カレンダー・結果</a>
+    <a href="#sec-4">中銀動向（会合・声明・記者会見・要人発言）</a>
+    <a href="#sec-5">金融政策パスの評価</a>
+    <a href="#sec-6">マクロ経済分析</a>
+    <a href="#sec-7">翌営業日以降の注目指標・中銀イベント</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得上の留意点</h2>
+<p>本稿作成時点のWebSearchでは、2026年11月9日（月）当日分の指標（中国10月分CPI/PPI、ユーロ圏11月分Sentix investor confidence、ドイツ9月分貿易収支、米9月分卸売在庫）の確定結果はいずれも検索インデックスに反映されておらず未確認。一方、11/3〜11/6にかけて発生した複数中銀の決定・米加雇用統計は、前日までの持ち越し材料として確度の高い情報が得られたため、本稿の「中銀動向」「マクロ経済分析」で改めて整理し直した（前回11/6付ノートの時点では未確認だったBOE・Norges Bank・Riksbankの決定も含め、全て確報が取れた）。公式一次情報源（boe.gov.uk、rba.gov.au、bankofcanada.ca、boj.or.jp、ecb.europa.eu、norges-bank.no等）へのWebFetchは本実行環境では一貫してDNS解決エラー（`getaddrinfo ENOTFOUND`）となり利用できず、全て二次情報（報道・民間カレンダー）経由での確認となっている点に留意。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>直近1週間（10/28〜11/6）で主要中銀の「利上げ再開」の動きが一斉に確報となった。RBA（11/3、4.60%→4.85%）、BOE（11/5、3.75%→4.00%、8-1でうち1名は4.25%を主張）、Riksbank（11/4、1.75%→2.00%、3年超ぶりの利上げ）が利上げを実施し、BOC（10/28、2.25%→2.50%、2023年7月以来初の利上げ）も加わった。Norges Bankのみ11/5に4.50%で据え置き（9月に利上げ済み）。</li>
+<li>FRBは9/16会合で2023年以来初の利上げ（3.50-3.75%→3.75-4.00%、12-0）を実施した後、10/28会合では据え置き（10-2、Cook理事・Hammackクリーブランド連銀総裁が利上げを主張して反対）。9月のSEPは2026年にさらに1回の利上げを示唆しており、12/8-9会合がその実行会合として市場の最大の注目点。</li>
+<li>11/6発表の米10月分雇用統計は+165,000人（事前予想59,000〜65,000人程度を大幅に上回る）、失業率4.1%（9月4.2%から低下）、平均時給+0.4%m/m、直近2か月分が合計+84,000人上方修正という強い内容。市場の12月FOMC利上げ確率は発表直後に85%まで上昇後、78%程度に落ち着いた（Reuters/Kitco、11/6）。</li>
+<li>対照的にカナダは同日（11/6）発表の10月分雇用統計で雇用者数▲4,700人（事前予想+13,600人）、失業率6.5%→6.7%（2か月連続上昇）と軟化が続いており、米加の雇用モメンタムが明確に分岐している。</li>
+<li>本日11/9は中国10月分CPI/PPI、ユーロ圏11月分Sentix investor confidence、ドイツ9月分貿易収支等が予定されているが、本稿作成時点でいずれも結果未確認（カレンダー上の予定のみ確認）。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>経済指標カレンダー・結果</h2>
+<p>（本日11/9分は多くが結果未確認のためカレンダー予定として記載。11/3〜11/6の持ち越し確報は別途「中銀動向」「マクロ経済分析」で整理）</p>
+<ul>
+<li><strong>10:30頃 日本時間 中国</strong> 消費者物価指数(CPI)・生産者物価指数(PPI)（10月分） — 予想：未確認／結果：未確認／前回：9月分CPI+0.9%y/y、PPI+5.0%y/y（4年ぶりの上昇幅、確度中） — 本稿作成時点で発表の有無・結果ともに未確認。例年11/9前後に発表される月であり本日発表の可能性が高い</li>
+<li><strong>16:00頃 日本時間 ドイツ</strong> 貿易収支（9月分） — 予想：未確認／結果：未確認／前回：8月分は貿易黒字が195億ユーロに縮小（7月改定213億ユーロから、確度中） — 9月分の確報は検索結果に反映されておらず未確認</li>
+<li><strong>18:30頃 日本時間 ユーロ圏</strong> Sentix投資家信頼感指数（11月分） — 予想：一部カレンダーで+1.8（前回+2.7）との表示があるが、過去の同指数は負値圏（10月分も-9前後）が続いていたとの報道もあり整合性が取れず、予想値自体の信頼度が低い／結果：未確認／前回：未確認（情報源間で不整合） — 数値の扱いに注意</li>
+<li><strong>未確認 日本時間 日本</strong> 景気先行指数（9月分、速報） — 予想：未確認／結果：未確認 — カレンダー上の予定のみ確認</li>
+<li><strong>24:00頃 日本時間（10:00 ET） 米国</strong> 卸売在庫（9月分） — 予想：未確認／結果：未確認 — 重要度は低いが本日のカレンダーに掲記</li>
+</ul>
+<h3>参考：直近の確報（11/3〜11/6、持ち越し整理）</h3>
+<ul>
+<li><strong>11/3 豪州</strong> RBA四半期毎のStatement on Monetary Policyを伴う会合 — 結果：現金金利を0.25%引き上げ4.60%→4.85%（18年ぶりの高水準、6-3の賛成多数） — 声明文から「さらなる引き上げの可能性」の文言が削除され、ブロック総裁は反対票を投じた3名が「下振れインフレリスクをより重視した」と説明</li>
+<li><strong>11/4 スウェーデン</strong> Riksbank政策金利決定 — 結果：1.75%→2.00%への0.25%利上げ（3年超ぶりの利上げ） — 声明文の詳細（投票構成等）は確認できず</li>
+<li><strong>11/5 ノルウェー</strong> Norges Bank政策金利決定 — 結果：4.50%で据え置き（市場予想通り、9月会合で利上げ済みの水準を維持） — 次回会合は12/17（新たなMonetary Policy Report公表を伴う）</li>
+<li><strong>11/5 英国</strong> BOE金融政策委員会(MPC)金利決定・Monetary Policy Report — 結果：3.75%→4.00%への0.25%利上げ（8-1、1名は4.25%への0.50%利上げを主張） — 政策が「あらかじめ決まった経路にはない」とする文言を維持</li>
+<li><strong>11/4 米国</strong> ADP全国雇用報告（10月分） — 予想：+75,000人／結果：+86,000人（2か月連続の堅調な伸び） — 貿易・運輸・公益で+39,000人、教育・医療で+28,000人、専門職・企業サービスは3か月連続の減少</li>
+<li><strong>11/5 米国</strong> ISM非製造業(サービス)業況指数（10月分） — 予想：54.8／結果：54.5（単一ソースのみ確認、確度中）／前回：54.9</li>
+<li><strong>11/5 米国</strong> S&amp;P Global サービスPMI確報（10月分） — 結果：56.1（速報57.9から下方修正）</li>
+<li><strong>11/6 米国</strong> 雇用統計（10月分） — 予想：+59,000〜65,000人程度（情報源間で差）／結果：+165,000人、失業率4.1%（9月4.2%から低下）、平均時給+0.4%m/m、直近2か月（8-9月）分の合計上方修正+84,000人 — 事前予想を大幅に上回るサプライズ増。民間部門+159,000人、政府部門+6,000人。専門職・企業サービス+70,000人、医療+42,000人が主導</li>
+<li><strong>11/6 カナダ</strong> 雇用統計Labour Force Survey（10月分） — 予想：+13,600人・失業率6.5%不変（Reuters調査）／結果：雇用者数▲4,700人、失業率6.5%→6.7%（2か月連続悪化） — アルバータ州で▲24,000人（9月の+23,000人をほぼ相殺）、卸売・小売で▲29,000人</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>中銀動向（会合・声明・記者会見・要人発言）</h2>
+<h3>アジア・オセアニア</h3>
+<ul>
+<li><strong>RBA（11/3決定）</strong>：現金金利を4.60%→4.85%に0.25%引き上げ（18年ぶり高水準）。投票は6-3で、反対票（4.60%据え置き主張）を投じた3名についてブロック総裁は「ダウンサイドのインフレリスクをより重視した」と説明（確度中）。声明文からは従来あった「さらなる引き上げの可能性」の文言が削除され、追加利上げを機械的に予告しない姿勢に転換。市場の一部は「ハト派的な利上げ」と評価。次回会合は12/7-8（12/8決定発表）。</li>
+<li><strong>日銀（10/30決定、既報）</strong>：政策金利1.25%で維持（8-1、高田委員が1.50%への利上げを主張して反対）。10月展望レポートは「見通し実現なら利上げ継続」との方針を維持。次回会合は12/17-18。本日時点で新規の政策委員発言は確認できず。</li>
+</ul>
+<h3>欧州</h3>
+<ul>
+<li><strong>Riksbank（11/4決定）</strong>：政策金利を1.75%→2.00%に0.25%引き上げ、3年超ぶりの利上げ再開。声明文の詳細・投票構成は確認できなかった。</li>
+<li><strong>Norges Bank（11/5決定）</strong>：政策金利を4.50%で据え置き（市場予想通り）。9月会合での利上げ実施後の一服とみられる。次回会合・Monetary Policy Report公表は12/17。</li>
+<li><strong>BOE（11/5決定）</strong>：Bank Rateを3.75%→4.00%に0.25%引き上げ（8-1、1名は0.50%の利上げ(4.25%へ)を主張）。声明文・Monetary Policy Reportでは「政策はあらかじめ決まった経路にはない」との文言を維持しつつ、インフレ粘着性への警戒を踏まえた利上げに踏み切った。ベイリー総裁会見の詳細な質疑内容は確認できなかったが、12月会合に向けては市場の一部で追加利上げ確率が5割程度との報道があった（単一ソース、確度低）。前回9/17会合（3.75%据え置き、6-3）からの変化として、反対票の構成が「利上げ不足」側から「決定への追随」側へ転換した点が目立つ。</li>
+<li><strong>ECB（10/29決定、既報）</strong>：中銀預金ファシリティ金利2.50%で全会一致維持。ラガルド総裁は「利上げを協議したが12月までの追加データを待つことで合意」と説明し利上げの可能性を排除せず。同総裁は2027年2月の理事会後に退任する意向を表明済み（確度中）。次回会合は12/17（スタッフ経済見通し公表を伴う）。</li>
+</ul>
+<h3>北米</h3>
+<ul>
+<li><strong>FRB（9/16決定、10/28決定、既報の確度向上）</strong>：9/16会合でフェデラルファンド(FF)レート目標を3.50-3.75%→3.75-4.00%に0.25%引き上げ（12-0、全会一致、2023年以来初の利上げ）。同時公表のSEP（経済見通し）では2026年中にさらに1回の利上げを示唆する内容（参加者の年末時点ドット分布は2回・3回・1回の追加利上げに分散）。ウォーシュ議長は会見で「正しい決定」と述べた。続く10/28会合では3.75-4.00%で据え置き（10-2、Cook理事・Hammackクリーブランド連銀総裁が利上げを主張して反対）。11/6の強い雇用統計後、Hammack総裁・Barkinダラス連銀総裁（原文ではダラス連銀表記、所属は複数報道で確認要）が追加利上げ支持を改めて表明したとの報道がある。次回会合は12/8-9（SEP・ドットプロット公表あり）。市場の12月利上げ確率は雇用統計直後に85%まで上昇後、78%程度に落ち着いている（Reuters/Kitco、11/6時点）。</li>
+<li><strong>BOC（10/28決定、既報の確度向上）</strong>：政策金利を2.25%→2.50%に0.25%引き上げ、2023年7月以来初の利上げ。10月版Monetary Policy Reportでは2026年GDP成長率+1%、2027・2028年は+2%を予測。次回会合は12/9。市場（LSEGベース）の12月追加利上げ確率は決定時点で43%程度、CIBCのエコノミストは12月据え置き後1月利上げを予想するなど見方が分かれる。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>金融政策パスの評価</h2>
+<ul>
+<li><strong>FRB</strong> 政策金利3.75-4.00%（FFレート目標、9/16に2023年以来初の利上げ実施、10/28は据え置き）／次回会合2026-12-08〜09（SEP・ドット公表あり）／織り込み：12月0.25%利上げの確率は約78%（11/6時点、Reuters/Kitco） — 9月SEPが示唆した「年内あと1回の利上げ」の実行会合が12月であり、タカ派理事（Cook・Hammack）の存在も踏まえると利上げ実施の確度は高いとみられるが、確率は100%ではない。</li>
+<li><strong>BOE</strong> 政策金利（Bank Rate）4.00%（11/5に0.25%利上げ実施）／次回会合2026-12-17／織り込み：12月追加利上げの市場確率は一部報道で5割程度（単一ソース、確度低） — 投票構成（1名が0.50%利上げを主張）はインフレ粘着性への警戒が委員会内で強いことを示す。</li>
+<li><strong>ECB</strong> 政策金利（中銀預金ファシリティ）2.50%／次回会合2026-12-17（スタッフ経済見通し公表あり）／織り込み：一部アナリストが12月の0.25%利上げ（2.75%）を予想との報道があるが確度未確認 — ラガルド総裁の「時期尚早」発言から利上げの可能性は残存。総裁人事（2027年2月退任表明）も中期的なコミュニケーション・リスク。</li>
+<li><strong>日銀</strong> 政策金利1.25%／次回会合2026-12-17〜18／織り込み：市場では0.25%利上げ（1.50%へ）が有力との報道が複数あるが確度は未確認 — 10/30会合での高田委員の反対（利上げ主張）が政策委員会内のタカ派傾向を示す。</li>
+<li><strong>RBA</strong> 政策金利（キャッシュレート）4.85%（11/3に0.25%利上げ実施）／次回会合2026-12-07〜08（12/8決定）／織り込み：声明文から追加引き上げの明示的言及が外れ、当面は様子見姿勢に転じた可能性 — 市場では2027年半ばまでに1.5回程度の追加利上げを見込む報道があるが単一ソースで確度低。</li>
+<li><strong>BOC</strong> 政策金利2.50%（10/28に0.25%利上げ実施、2023年7月以来初）／次回会合2026-12-09／織り込み：12月追加利上げの市場確率は約43%（LSEG、決定時点） — カナダの雇用軟化（10月分▲4,700人、失業率6.7%）が続けば据え置きに傾く可能性があり、12月の判断は国内雇用・インフレ指標次第。</li>
+<li><strong>Riksbank</strong> 政策金利2.00%（11/4に0.25%利上げ実施、3年超ぶりの利上げ再開）／次回会合：日程未確認／織り込み：未確認 — 詳細な声明文・投票構成が確認できておらず、今後の政策パス評価には追加情報が必要。</li>
+<li><strong>Norges Bank</strong> 政策金利4.50%（9月利上げ後、11/5は据え置き）／次回会合2026-12-17／織り込み：未確認 — 市場予想通りの据え置きであり、当面は様子見姿勢とみられる。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>マクロ経済分析</h2>
+<ul>
+<li><strong>主要中銀の「利上げ再開」が同時多発的に確報へ</strong>：11/5までに主要中銀のうちFRB（9月）・BOC（10月）・RBA（11月）・BOE（11月）・Riksbank（11月）の5中銀が実際に利上げを実施したことが確認された。2025年までの「インフレ正常化に伴う利下げサイクル」から、2026年後半は主要国で同時多発的な「利上げ再開」局面に転換したことが、個々の決定の積み上げによって裏付けられた形。日銀も含めれば主要6中銀中5つが直近数か月以内に利上げを実施または実施方針を維持しており、世界的な金融環境のタイト化が進行している。</li>
+<li><strong>米国雇用の「二面性」の解消（一部）</strong>：9月分NFP（+29,000人、失業率4.2%）という弱い内容から一転し、10月分は+165,000人・失業率4.1%へ大幅改善。直近2か月の合計上方修正（+84,000人）も加わり、米雇用市場の軟化懸念はいったん後退した。これはFRB内のタカ派理事（Cook・Hammack）が10月会合で利上げを主張していた構図と整合的であり、12月FOMCでの利上げ実行の確度を高める材料と評価できる。</li>
+<li><strong>北米の雇用モメンタムの分岐</strong>：米国の雇用改善とは対照的に、カナダは10月分で雇用者数▲4,700人・失業率6.5%→6.7%（2か月連続悪化）となり、BOCが10月に利上げを実施した直後だけに、12月会合での判断（追加利上げか一服か）を左右する重要な材料となっている。米加の雇用モメンタムの分岐は、同じ北米地域内でも金融政策パスが収斂しない可能性を示唆する。</li>
+<li><strong>BOEの投票構成の変化</strong>：9月会合（6-3、反対票は利上げ主張）から11月会合（8-1、反対票はむしろ「もっと大きい利上げ」を主張）への変化は、委員会内でインフレ粘着性への警戒が広がり、利上げそのものへの合意形成が進んだことを示す。他方で1名が0.50%の利上げを主張した事実は、英国のインフレ再加速リスクが他国より強く意識されている可能性を示唆する。</li>
+<li><strong>ECB・日銀は「利上げ予告型」にとどまる</strong>：ECBは利上げを協議しつつ実施を12月に持ち越し、日銀も次回会合（12/17-18）まで決定を待つ構図。FRB・BOE・BOC・RBA・Riksbankが「実行フェーズ」に入ったのに対し、ECB・日銀は「予告フェーズ」にとどまっており、12月の各中銀会合（FRB12/8-9、BOC12/9、RBA12/8、ECB・日銀・BOE・Norges Bank全て12/17前後に集中）が政策パスの収斂・分岐を見極める一大節目となる。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>翌営業日以降の注目指標・中銀イベント</h2>
+<ul>
+<li><strong>本日中 日本時間 中国</strong> 10月分CPI・PPI〔重要度：中〕— 本稿作成時点で結果未確認。9月分PPI+5.0%y/yという4年ぶりの上昇幅からの継続性に注目</li>
+<li><strong>本日中 日本時間 ユーロ圏</strong> 11月分Sentix投資家信頼感指数〔重要度：低〕— 予想値自体の整合性に疑義があり結果の解釈に留意</li>
+<li><strong>2026-12-07〜08 豪州</strong> RBA理事会（12/8決定発表）〔重要度：中〕— 11月会合で「追加利上げ」の文言が外れた後の政策姿勢を確認</li>
+<li><strong>2026-12-08〜09 米国</strong> FOMC政策金利決定・経済見通し(SEP)・ドットプロット〔重要度：高〕— 9月SEPが示唆した「年内あと1回の利上げ」の実行会合。市場は25bp利上げを約78%の確率で織り込み（11/6時点）</li>
+<li><strong>2026-12-09 カナダ</strong> BOC政策金利決定〔重要度：中〜高〕— 10月分雇用統計の軟化を受け、追加利上げか一服かが分かれ目（市場織り込みは約43%）</li>
+<li><strong>2026-12-17 英国</strong> BOE次回MPC会合〔重要度：中〜高〕— 11月会合での1名の0.50%利上げ主張を踏まえ、投票構成の変化に注目</li>
+<li><strong>2026-12-17 欧州</strong> ECB政策理事会・スタッフ経済見通し公表〔重要度：高〕— ラガルド総裁が言及した「12月までの追加データ待ち」の結果として利上げの有無が決まる可能性</li>
+<li><strong>2026-12-17 ノルウェー</strong> Norges Bank次回会合・Monetary Policy Report〔重要度：中〕</li>
+<li><strong>2026-12-17〜18 日本</strong> 日銀金融政策決定会合〔重要度：高〕— 市場では0.25%利上げ（1.25%→1.50%）が有力との観測が複数あるが確度は未確認。高田委員の反対票の扱いにも注目</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [US jobs surge, Fed hike odds rebound - roic.ai](https://www.roic.ai/news/us-jobs-surge-fed-hike-odds-rebound-11-06-2026)（取得日時：2026-11-09）</p><p>- [October Jobs Report: US Adds 165,000 Jobs as Unemployment Falls to 4.1% - IndustryWeek](https://www.industryweek.com/talent/news/55417255/october-jobs-report-us-adds-165000-jobs-as-unemployment-falls-slightly-to-41)（取得日時：2026-11-09）</p><p>- [US economy adds 165,000 jobs in October, blowing past expectations - Fox Business](https://foxbusiness.com/economy/us-jobs-report-october-2026)（取得日時：2026-11-09）</p><p>- [Fed seen sticking to December rate hike after jobs data - Kitco/Reuters](https://www.kitco.com/news/off-the-wire/2026-11-06/fed-seen-sticking-december-rate-hike-after-jobs-data)（取得日時：2026-11-09）</p><p>- [What October's jobs report means for Fed monetary policy - Axios](https://axios.com/2026/11/06/federal-reserve-jobs-report-bonds)（取得日時：2026-11-09）</p><p>- [Statistics Canada Labour Force Survey, October 2026 (dq261106a) - StatCan](https://www150.statcan.gc.ca/daily-quotidien/261106/dq261106a-eng.htm)（取得日時：2026-11-09）</p><p>- [Unemployment rate rose to 6.7% in October - CP24](https://www.cp24.com/news/canada/2026/11/06/unemployment-rate-rose-to-67-in-october-statcan-says/)（取得日時：2026-11-09）</p><p>- [Bank of England raises the Bank Rate to 4.00% as expected in a 9-0 vote - investinglive](https://investinglive.com/central-banks/bank-of-england-raises-the-bank-rate-to-4-00-as-expected-in-a-9-0-vote/)（取得日時：2026-11-09）</p><p>- [Monetary Policy Summary and Minutes, November 2026 - Bank of England（検索結果経由、全文一次確認は不可）](https://www.bankofengland.co.uk/-/media/boe/files/monetary-policy-summary-and-minutes/2026/monetary-policy-summary-and-minutes-november-2026.pdf)（取得日時：2026-11-09）</p><p>- [RBA raises cash rate to 4.85% - savings.com.au](https://www.savings.com.au/news/no-more-cash-rate-increases-let-s-take-stock)（取得日時：2026-11-09）</p><p>- [headline rba interest rate decision november 2026 fifth hike split vote - babypips](https://www.babypips.com/news/headline-rba-interest-rate-decision-november-2026-fifth-hike-split-vote)（取得日時：2026-11-09）</p><p>- [RBA's Bullock offers no guidance, says it is probably good to wait for data after hike - investinglive](https://investinglive.com/central-banks/rba-s-bullock-offers-no-guidance-says-it-is-probably-good-to-wait-for-data-after-hike/)（取得日時：2026-11-09）</p><p>- [RBA December 2026 Meeting - rbaratewatch.com](https://rbaratewatch.com/rba-meeting/december-2026/)（取得日時：2026-11-09）</p><p>- [Norges Bank Holds Key Interest Rate, Signals Readiness to Tighten - Morningstar/Dow Jones](https://www.morningstar.com/news/dow-jones/202611054081/norges-bank-holds-key-interest-rate-signals-readiness-to-tighten-update)（取得日時：2026-11-09）</p><p>- [Norges Bank press release, 2026-11-05（検索結果経由）](https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-11-05-rate/)（取得日時：2026-11-09）</p><p>- [Norges Bank Leaves Key Rate Steady as Expected - Trading Economics](https://tradingeconomics.com/norway/interest-rate/news/598575)（取得日時：2026-11-09）</p><p>- [Norges Bank hikes for second time as Riksbank picks hawkish hold - swissinfo](https://www.swissinfo.ch/eng/norges-bank-hikes-for-second-time-as-riksbank-picks-hawkish-hold/92111868)（取得日時：2026-11-09）</p><p>- [Bank of Canada raises the policy rate by 25 basis points to 2½% - Bank of Canada（検索結果経由）](https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/)（取得日時：2026-11-09）</p><p>- [Bank of Canada delivers 1st hike in three years - advisor.ca](https://www.advisor.ca/economy/policy/bank-of-canada-delivers-1st-hike-in-three-years/)（取得日時：2026-11-09）</p><p>- [Federal Reserve press release, September 16, 2026 - federalreserve.gov（検索結果経由）](https://federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)（取得日時：2026-11-09）</p><p>- [Federal Reserve hikes interest rates for first time since 2023 - Fox Business](https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026)（取得日時：2026-11-09）</p><p>- [FOMC rate decision: Fed hikes for the first time in three years - investinglive](https://investinglive.com/central-banks/fomc-rate-decision-fed-hikes-for-the-first-time-in-three-years/)（取得日時：2026-11-09）</p><p>- [Private sector added 86,000 jobs in October, above expectations, ADP says - Fox Business](https://www.foxbusiness.com/economy/private-sector-added-86000-jobs-october-above-expectations-adp-says)（取得日時：2026-11-09）</p><p>- [October US ISM services 54.5 vs 54.8 expected - investinglive](https://investinglive.com/news/october-us-ism-services-vs-54-8-expected/)（取得日時：2026-11-09）</p><p>- [US final October S&amp;P Global services PMI 56.1 vs 57.9 prelim - investinglive](https://investinglive.com/news/us-final-october-s-p-global-services-pmi-56-1-vs-57-9-prelim/)（取得日時：2026-11-09）</p><p>- [German trade surplus narrows in August - Trading Economics](https://tradingeconomics.com/germany/balance-of-trade/news/590405)（取得日時：2026-11-09）</p><p>- [ECB next Governing Council meeting schedule - financecalendar/admiralmarkets（複数ソース経由）](https://www.financecalendar.com/event/ecb-rate-decision-december-2026/)（取得日時：2026-11-09）</p><p>- 本リポジトリ内：daily/agents/2026-11-06-economist.md、daily/agents/2026-11-05-economist.md（継続性・整合性確認のため参照）</p><p>※中国10月分CPI/PPI、ユーロ圏11月分Sentix、ドイツ9月分貿易収支等、本日11/9当日分の指標は本稿作成時点で確定結果を確認できず、カレンダー予定として記載した。各国中央銀行公式サイト（boe.gov.uk、rba.gov.au、bankofcanada.ca、federalreserve.gov、ecb.europa.eu、norges-bank.no、boj.or.jp等）へのWebFetchは本実行環境のネットワーク制約によりすべて失敗（`getaddrinfo ENOTFOUND`）し、上記はいずれも二次情報源（報道・民間カレンダー）経由での確認である。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
