@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-11 エコノミストノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-11.html">統合レポートを見る</a><span>2026-11-11</span></div>
+  <h1 class="title">2026-11-11 エコノミストノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-11-fx.html">為替</a>
+    <a href="2026-11-11-commodities.html">コモディティ</a>
+    <a href="2026-11-11-jgb.html">円債</a>
+    <a href="2026-11-11-ust.html">米国債</a>
+    <a href="2026-11-11-intl-bonds.html">外債</a>
+    <a href="2026-11-11-jp-equity.html">日本株式</a>
+    <a href="2026-11-11-us-equity.html">米国株式</a>
+    <a href="2026-11-11-politics.html">政治・地政学</a>
+    <span class="current">マクロ経済</span>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得上の留意点</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">経済指標カレンダー・結果</a>
+    <a href="#sec-4">中銀動向（会合・声明・記者会見・要人発言）</a>
+    <a href="#sec-5">金融政策パスの評価</a>
+    <a href="#sec-6">マクロ経済分析</a>
+    <a href="#sec-7">翌営業日以降の注目指標・中銀イベント</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得上の留意点</h2>
+<p>本稿作成時点でWebFetchは本実行環境内でbls.gov・mof.go.jp・destatis.de・rba.gov.auを含む全ドメインがDNS解決エラーとなり利用不可であったため、全面的にWebSearch経由の二次情報に依拠している。加えて、前営業日11/10（火）に発表予定だった複数の指標（中国10月CPI/PPI、ユーロ圏11月Sentix、独9月貿易収支）は実際には<strong>前々営業日11/9（月）</strong>に発表されていたことが本稿作成時に判明し、直近複数日のノートにあった「11/10発表予定」との記載を本稿で修正した。米10月分CPI（11/10発表）は、複数の二次情報（karmactive、spaziocrypto、fattail等のニュースアグリゲーター系サイト）で headline+0.4%m/m・core+0.3%m/m という一致した数値が確認できたが、BLS一次情報での裏取りはできておらず確度中として扱う。日銀「主な意見」（10/29-30会合分、11/10公表予定）の具体的文言は検索結果に見当たらず未確認。本日11/11は米国がベテランズデーで国債市場休場（株式市場は通常取引）のため、新規の米重要指標発表は見込まれない一日である。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>米10月分CPI（11/10発表）は headline+0.4%m/m（事前予想+0.2〜0.3%程度）、core+0.3%m/m（事前予想+0.2%）という上振れ内容だったと複数の二次情報で確認（確度中）。2025年10月の政府機関閉鎖により同月の基礎データが欠落しているため、BLSは前年比(y/y)統計を公表していない。この結果は12/8-9FOMCでの追加利上げ確度をさらに固める材料とみられる。</li>
+<li>前々営業日11/9に、当初11/10発表と見込まれていた中国10月分CPI・PPI、ユーロ圏11月分Sentix投資家信頼感指数、独9月分貿易収支がいずれも発表済みだったことが判明。中国はCPI+0.7%y/y（予想+0.8%から下振れ、前回+0.9%から縮小）に対しPPI+5.7%y/y（予想+5.3%を上振れ、前月から拡大）と、生産者・消費者物価のギャップが拡大。</li>
+<li>日銀「主な意見」（10/29-30会合分）は11/10公表予定とされていたが、具体的文言は本稿作成時点で確認できず。同会合は8-1で政策金利1.25%維持、高田審議委員が1.50%への利上げを提案して反対した経緯は既報。</li>
+<li>FRB高官からは、ローガン・ダラス連銀総裁（2026年投票メンバー、タカ派）が「少なくとも追加2回の0.25%利上げが必要」との見解を示し、ウィリアムズNY連銀総裁は「2026年中あと1回の利上げは適切となり得るが、2027年の追加利上げは不要」との見解を示したと複数の二次情報で確認（いずれも10月時点の発言、確度中）。</li>
+<li>本日11/11は米国がベテランズデーで国債市場休場（株式市場は通常取引）。スウェーデンではRiksbankの新政策金利2.00%が本日から適用開始。日本では参院本会議で消費税減税関連法案の審議入りが予定されている（政治領域、財源論議はJGB超長期ゾーンのタームプレミアム評価に間接的に影響）。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>経済指標カレンダー・結果</h2>
+<h3>前々営業日11/9発表分（当初11/10発表予定と見込まれていたが、確認の結果11/9発表だったもの）</h3>
+<ul>
+<li><strong>10:00頃 日本時間 中国</strong> 消費者物価指数(CPI)・生産者物価指数(PPI)（10月分、11/9発表） — 予想：CPI+0.8%y/y・PPI+5.3%y/y／結果：CPI+0.7%y/y（前月比横ばい、コアCPI+0.8%y/y、前回+1.0%から縮小）・PPI+5.7%y/y（前月比+0.7%、前回から拡大）／前回：CPI+0.9%y/y — ガソリン価格+22.4%y/yがエネルギー価格を押し上げ、生鮮野菜▲16.9%・豚肉▲8.6%が食品価格の下落幅拡大に寄与。メモリー半導体価格高騰を背景に通信機器価格は+16.1%y/y。生産者・消費者物価のギャップは約5ポイントに拡大（評価：消費者物価は予想より弱く内需の弱さを示す一方、生産者物価は予想より強く、両者の乖離拡大は内需刺激策の必要性を示唆）</li>
+<li><strong>18:30頃 日本時間 ユーロ圏</strong> Sentix投資家信頼感指数（11月分、11/9発表） — 予想：2.1／結果：2.4（前月+2.7から低下、2か月連続の悪化）／前回：2.7 — 独サブインデックスは-3.3（前月比+0.3pt、なお負値圏）。グローバル総合指数は3か月連続の低下で12.7（評価：予想は上回ったが経済期待の悪化トレンドは継続、ユーロ圏景気の緩慢な停滞観を補強）</li>
+<li><strong>16:00頃 日本時間 ドイツ</strong> 貿易収支（9月分、11/9発表） — 予想：輸出+0.5%m/m程度／結果：輸出141.1億ユーロ（季調済み、+2.0%m/m、予想上振れ、+7.7%y/y）、輸入は輸出の2倍超のペースで増加（+8.7%y/y）、季調済み貿易黒字は約155〜156億ユーロ（前年9月の約155億ユーロとほぼ同水準）。未調整ベースでは貿易黒字204億ユーロ（8月133億ユーロから急拡大、情報源間で調整有無の混在に留意） — 対米輸出は134億ユーロ（▲0.5%）、対中輸出は55億ユーロ（▲5.2%）（評価：輸出は予想を上回る伸びだが輸入の伸びがそれを上回り黒字は横ばい圏、需要サイドの底堅さと輸入コスト上昇の綱引き）</li>
+</ul>
+<h3>対象営業日前日11/10発表分</h3>
+<ul>
+<li><strong>8:50頃 日本時間 日本</strong> 日銀「金融政策決定会合における主な意見」（10/29-30開催分） — 公表予定だったが、具体的文言は本稿作成時点で検索結果から確認できず未確認。会合自体（既報）は8-1で政策金利1.25%維持、高田審議委員が1.50%への利上げを提案して反対し、2026年度コアCPI見通しを+2.8%から+2.5%に下方修正しつつリスクバランスは上方との認識</li>
+<li><strong>22:30頃 日本時間（米東部時間8:30） 米国</strong> 消費者物価指数(CPI)（10月分） — 予想：headline+0.2〜0.3%m/m程度（MUFG+0.29%、Cleveland Fed nowcast+0.24%）・core+0.2%m/m程度／結果：headline+0.4%m/m・core+0.3%m/m（複数の二次情報源で一致、確度中。前年比統計はBLSが2025年10月分の基礎データ欠落のため非公表）／前回：9月分headline+3.7%y/y・+0.6%m/m、core+2.6%y/y・+0.3%m/m — 内訳は住居費+0.3%、食品+0.5%、エネルギー+0.7%との二次情報（確度中）。予想を上回る内容で、ウォラー理事はcoreが+0.3%前後であれば12月の0.50%利上げも選択肢になり得るとの見解を示したとの報道がある（確度中）（評価：headline・core双方の上振れは12月FOMCでの追加利上げ確度を一段と高める材料。ただし前年比統計の欠落により市場・FOMC双方にとって基調的インフレの評価に例年以上の不確実性が残る点に留意）</li>
+<li><strong>未確認 日本時間 日本</strong> 30年利付国債入札 — 結果未確認（前回10/8実施の第92回は応募額1兆7,472億円、募入最高利回り4.121%、応札倍率3.88倍）</li>
+<li><strong>21:00頃 日本時間（米東部時間7:00） 米国</strong> NFIB中小企業楽観指数（10月分） — 予想：未確認／結果：未確認／前回：9月分97.9（予想98.2から下振れ、6月以来の低水準、Uncertainty Index90）</li>
+<li><strong>未確認 日本時間 米国</strong> 10年国債リオープン入札 — 結果未確認（金利ストラテジスト担当範囲だが、CPIと同日実施のため市場変動要因として付記）</li>
+<li><strong>未確認 日本時間 英国</strong> 長期コンベンショナルGilt入札（5⅜%2056、10億£） — 結果未確認</li>
+</ul>
+<h3>対象営業日11/11分（予定・実施見込み）</h3>
+<ul>
+<li><strong>未確認 日本時間 日本</strong> M2マネーストック（10月分） — 予想：+2.10%y/y程度（単一の二次情報、確度低）／前回：+2.0%y/y程度 — 重要度は低いが本日のカレンダーに掲記。確定値は未確認</li>
+<li><strong>未確認 日本時間 日本</strong> 工作機械受注（10月分、速報） — 予想・結果ともに未確認</li>
+<li><strong>終日 米国</strong> ベテランズデー — 国債市場は休場（株式市場は通常取引）。新規の米重要指標発表は見込まれない</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>中銀動向（会合・声明・記者会見・要人発言）</h2>
+<h3>アジア・オセアニア</h3>
+<ul>
+<li><strong>日銀</strong>：10/29-30会合（既報）では政策金利を1.25%で維持（8-1、高田審議委員が1.50%への0.25%利上げを提案して反対）。展望レポートで2026年度コアCPI見通しを+2.8%から+2.5%へ下方修正しつつ、物価のリスクバランスは上方との認識を示した（既報、確度中〜高）。11/10公表予定とされた「主な意見」の具体的文言（各委員の賃金・物価見通しへの言及、高田委員の反対論拠の詳細等）は、本稿作成時点で検索結果から確認できなかった。Reuters調査（10/13-19実施、既報）では調査対象78人中54人が今四半期中の1.50%への利上げを予想し、そのうち約8割が12月（次回会合12/17-18）を予想。本日11/11固有の新規発言は確認できず。</li>
+<li><strong>RBA</strong>：11/3決定（既報）で現金金利を4.60%→4.85%に0.25%引き上げ（6-3）。同日発表のStatement on Monetary Policy（11月号）では、インフレ率が目標範囲(2-3%)の中央値に戻るのは2028年半ば頃になるとの見通しを示し、中東情勢に伴うエネルギー価格上昇等を背景に物価のリスクは上方に見ていると説明（確度中）。同時に、引き締め的な政策スタンスと住宅市況の弱さを背景に成長率はトレンド以下にとどまり、2027年に労働市場の余剰が生じ始めるとの見通しも示された。次回会合は12/7-8。本日固有の新規発言は確認できず。</li>
+</ul>
+<h3>欧州</h3>
+<ul>
+<li><strong>ECB</strong>：10/29会合（既報）で中銀預金ファシリティ金利2.50%を全会一致で維持。ラガルド総裁は会見で「利上げを協議したが12月までの追加データを待つことで合意した」と説明。シュナーベル専務理事は11/5にフランクフルトで講演（"Navigating stormy waters: reflections on monetary policy"）を行ったが、具体的な政策スタンスへの新規言及は未確認。本日11/11固有のECB高官の新規発言・講演予定は検索結果からは確認できず。次回理事会は12/17（スタッフ経済見通し公表あり）。</li>
+<li><strong>BOE</strong>：11/5会合（既報）でBank Rateを3.75%→4.00%に0.25%利上げ（8-1、マン委員が0.50%の利上げを主張して反対）。本日固有の新規発言は確認できず。次回会合は12/17。</li>
+<li><strong>その他欧州中銀</strong>：Riksbankは11/4決定（1.75%→2.00%の利上げ）の新政策金利が<strong>本日11/11から適用開始</strong>。Norges Bankは11/5会合で4.50%据え置き、次回会合は12/17。本日固有の新規発言はいずれも確認できず。</li>
+</ul>
+<h3>北米</h3>
+<ul>
+<li><strong>FRB</strong>：10/28会合（既報）で3.75-4.00%のFFレート目標を維持（10-2、Cook理事・Hammackクリーブランド連銀総裁が利上げを主張して反対）。直近（10月時点）の高官発言としては、ローガン・ダラス連銀総裁（2026年投票メンバー、タカ派）が「政策をより適切なバランスに戻すには、少なくとも追加で2回の0.25%利上げが必要」との見解を示し、ウィリアムズNY連銀総裁は「2026年中にあと1回の利上げが適切となり得るが、2027年には追加利上げの必要はない」との見解を示したと複数の二次情報で確認（いずれも10月時点、確度中）。ウォラー理事も、10月分core CPIが+0.3%前後であれば12月会合での0.50%利上げも選択肢になり得るとの見解を示したとの報道がある（確度中）。これらを踏まえると、FOMC内では「利上げの実施自体はほぼ既定路線だが、0.25%か0.50%か」という幅の議論に進んでいる可能性がある。次回会合は12/8-9（SEP・ドットプロット公表あり）。本日11/11固有の新規発言は確認できず。</li>
+<li><strong>BOC</strong>：10/28会合（既報）で2.25%→2.50%への利上げを実施。本日固有の新規発言は確認できず。次回会合は12/9。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>金融政策パスの評価</h2>
+<ul>
+<li><strong>FRB</strong> 政策金利3.75-4.00%（9/16利上げ実施、10/28据え置き10-2）／次回会合2026-12-08〜09（SEP・ドット公表）／織り込み：CME FedWatch等で12月利上げ確率は11/9時点で約84.5%（前日76.3%から上昇、Russell Investments経由）、11/10の上振れCPI（headline+0.4%・core+0.3%、確度中）を受けてさらに高まったとみられるが発表後の具体的な織り込み率は未確認 — ローガン総裁（2回の追加利上げを主張）・ウィリアムズ総裁（2026年あと1回）・ウォラー理事（coreが強ければ0.50%も選択肢）という発言の幅は、FOMC内で「利上げの有無」ではなく「利上げの規模・ペース」に論点が移行している可能性を示す。</li>
+<li><strong>日銀</strong> 政策金利1.25%（10/29-30維持、8-1で高田委員が1.50%を提案して反対）／次回会合2026-12-17〜18／織り込み：Reuters調査（10/13-19）では78人中54人が今四半期中の1.50%への利上げを予想、うち約8割が12月を予想（確度中） — 11/10公表予定の「主な意見」の内容は未確認だが、これが確認できれば12月利上げの確度評価の重要な補強材料となる。</li>
+<li><strong>ECB</strong> 政策金利（中銀預金ファシリティ）2.50%（10/29維持、全会一致）／次回会合2026-12-17（スタッフ経済見通し公表あり）／織り込み：一部報道で12月の0.25%利上げ（2.75%）観測があるが確度未確認 — 11/9発表のSentix（2.4、2か月連続悪化）・独貿易収支（輸出堅調だが輸入増でネットの黒字は横ばい）は、ユーロ圏の需要サイドがなお脆弱である可能性を示し、ラガルド総裁の「12月までデータ待ち」姿勢を正当化する内容。</li>
+<li><strong>BOE</strong> 政策金利（Bank Rate）4.00%（11/5利上げ実施、8-1、マン委員が0.50%利上げを主張して反対）／次回会合2026-12-17／織り込み：12月追加利上げの市場観測は一部報道で5割程度（単一ソース、確度低）。</li>
+<li><strong>RBA</strong> 政策金利（キャッシュレート）4.85%（11/3利上げ実施、6-3）／次回会合2026-12-07〜08／織り込み：11月SMPで「インフレの目標中央値への復帰は2028年半ば頃」との見通しを示し、上方リスクを意識しつつも当面は様子見的なトーンとみられる（確度中） — インフレの戻りが長期化するとの見通しは、RBAが利上げサイクルを急がずデータ次第で進める姿勢を補強。</li>
+<li><strong>BOC</strong> 政策金利2.50%（10/28利上げ実施）／次回会合2026-12-09／織り込み：12月追加利上げの市場確率約43%（LSEG、既報） — カナダ雇用軟化（10月分▲4,700人）が続けば据え置きに傾く可能性。</li>
+<li><strong>Riksbank</strong> 政策金利2.00%（11/4利上げ実施、<strong>本日11/11適用開始</strong>）／次回会合：日程未確認／織り込み：未確認。</li>
+<li><strong>Norges Bank</strong> 政策金利4.50%（11/5据え置き）／次回会合2026-12-17／織り込み：未確認。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>マクロ経済分析</h2>
+<ul>
+<li><strong>米インフレの上振れが「規模」の論争に発展しつつある</strong>：9月分CPI（headline+3.7%y/y、core+2.6%y/y）に続き、10月分も予想を上回る内容（headline+0.4%m/m、core+0.3%m/m、確度中）だったとみられる。これまでFRB内の論点は「12月に利上げするか否か」だったが、ローガン総裁の「追加2回の利上げが必要」、ウォラー理事の「coreが強ければ0.50%も選択肢」といった発言は、論点が「利上げの有無」から「利上げの規模・ペース」へ移行している可能性を示す。他方、2025年10月分データの欠落により前年比統計が公表されないため、基調的インフレの絶対水準を評価する上での不確実性は例年より大きく、FOMC内でも解釈の幅が生じやすい局面にある。</li>
+<li><strong>中国の生産者・消費者物価ギャップの拡大</strong>：10月分CPI+0.7%y/y（予想下振れ、前月から縮小）に対しPPI+5.7%y/y（予想上振れ、前月から拡大）となり、両者のギャップは約5ポイントに拡大。ガソリン・半導体部材（メモリー）価格上昇という供給・コストサイドの要因が生産者物価を押し上げる一方、食品価格（特に生鮮野菜・豚肉）の下落が続き消費者物価を抑制しており、内需の弱さと輸入・エネルギーコストの上振れが併存する構図。中国当局の追加財政・消費刺激策の必要性を測る材料として注視が必要。</li>
+<li><strong>ユーロ圏の需要指標はなお脆弱</strong>：11/9発表のSentix投資家信頼感指数（2.4）は予想は上回ったが2か月連続の悪化であり、独サブインデックスもなお負値圏（-3.3）。同日発表の独貿易収支は輸出が予想を上回る伸びを示したが、輸入の伸びがそれを上回り貿易黒字自体は横ばい圏に留まった。これらは、ECBが「12月までデータ待ち」としている中、ユーロ圏の内需回復がなお本格化していない可能性を示す。</li>
+<li><strong>RBAの「インフレ戻りの長期化」見通しと主要中銀の「データ依存度の高まり」</strong>：RBAが11月SMPで示した「インフレの目標中央値復帰は2028年半ば頃」との見通しは、FRB・BOE・BOC・Riksbankが直近で利上げを実施した一方、各中銀が機械的な連続利上げではなく都度のデータ確認に基づく判断を重視している構図と整合的。ECB・日銀は「利上げ予告型」にとどまっており、12月に集中する各中銀会合（FRB12/8-9、BOC12/9、RBA12/7-8、ECB・日銀・BOE・Norges Bank12/17前後）に向けて、11月中旬〜下旬に発表される指標（米PPI、英Q3GDP、日銀「主な意見」等）がそれぞれの政策判断を左右する重要な材料となる局面が続く。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>翌営業日以降の注目指標・中銀イベント</h2>
+<ul>
+<li><strong>2026-11-12（木） 日本</strong> 5年利付国債入札〔重要度：中〕</li>
+<li><strong>2026-11-12（木） 米国</strong> 30年国債再発行入札〔重要度：高〕</li>
+<li><strong>2026-11-12（木） 英国</strong> Q3GDP速報・9月分月次GDP〔重要度：高〕— BOEの12月判断材料</li>
+<li><strong>2026-11-13（金） 米国</strong> 10月分PPI〔重要度：中〜高〕— 12月FOMCの最後の主要インフレ指標の一つ</li>
+<li><strong>2026-11-16（月） 日本</strong> 10年物価連動国債入札〔重要度：低〜中〕</li>
+<li><strong>2026-11-16 米国</strong> FRB「生産性と雇用」に関するカンファレンス開催（ウォーシュ議長言及、既報）〔重要度：中〕</li>
+<li><strong>2026-11-18（水） 日本</strong> 20年利付国債入札〔重要度：高〕</li>
+<li><strong>2026-11-18（水） 米国</strong> 10/28FOMC議事録公表〔重要度：中〜高〕— Cook理事・Hammack総裁のタカ派反対の論拠、他委員の見解の幅に注目</li>
+<li><strong>2026-11-18〜19 中国（深圳）</strong> APEC首脳会議〔重要度：中〜高、政治領域〕</li>
+<li><strong>2026-11-20（木） フランス</strong> 上院（Sénat）でPLF2027審議開始〔重要度：高、政治領域だが仏財政・OAT市場への影響大〕</li>
+<li><strong>2026-11-25（水） 日本</strong> 40年利付国債入札〔重要度：高〕</li>
+<li><strong>2026-11-29（日） OPEC+</strong> 次回会合（2027年生産枠組みが焦点）〔重要度：中、コモディティ領域〕</li>
+<li><strong>2026-12-07〜08 豪州</strong> RBA理事会〔重要度：中〜高〕</li>
+<li><strong>2026-12-08〜09 米国</strong> FOMC政策金利決定・SEP・ドットプロット〔重要度：高〕— 11/10のCPI上振れ（確度中）を受け利上げ確度が一段高まったとみられるが、規模（0.25%か0.50%か）が新たな論点になりうる</li>
+<li><strong>2026-12-09 カナダ</strong> BOC政策金利決定〔重要度：中〜高〕</li>
+<li><strong>2026-12-09 フランス</strong> 上院でPLF2027採決予定〔重要度：高、政治領域〕</li>
+<li><strong>2026-12-10 スイス</strong> SNB政策金利決定〔重要度：中〕</li>
+<li><strong>2026-12-11 米国</strong> つなぎ予算期限〔重要度：高〕</li>
+<li><strong>2026-12-17前後 日本・欧州・英国・ノルウェー</strong> 日銀金融政策決定会合（12/17-18）、ECB理事会、BOE次回MPC会合、Norges Bank次回会合〔重要度：高〕</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [China October 2026 CPI +0.7% y/y (expected +0.8%, prior +0.9%) - investinglive](https://investinglive.com/news/china-october-2026-cpi-0-7-y-y-expected-0-8-prior-0-9/)（取得日時：2026-11-11）</p><p>- [China's October CPI up 0.7%, PPI rises 5.7% - CGTN](https://news.cgtn.com/news/2026-11-09/China-s-October-CPI-up-0-7-PPI-rises-5-7--1RVFvJks2Fa/p.html)（取得日時：2026-11-11）</p><p>- [国家统计局:2026年10月份CPI同比继续上涨 PPI环比涨幅回落 - 光明网](https://m.gmw.cn/2026-11/09/content_1304584081.htm)（取得日時：2026-11-11）</p><p>- [Eurozone Sentix Investor Confidence Index slips to 2.4 in November from 2.7 in October - FXStreet](https://www.fxstreet.com/news/eurozone-sentix-investor-confidence-index-slips-to-24-in-november-from-27-in-october-202611091000)（取得日時：2026-11-11）</p><p>- [Eurozone Sentix investor confidence weakens further in November as global growth momentum fades - investinglive](https://investinglive.com/news/eurozone-sentix-investor-confidence-weakens-further-in-november-as-global-growth-momentum-fades/)（取得日時：2026-11-11）</p><p>- [Pressemitteilung Nr. 390 vom 9. November 2026（検索結果経由） - Destatis](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html)（取得日時：2026-11-11、※WebFetch不可のため検索結果経由の要約のみ）</p><p>- [Germany's trade surplus shrinks to $17.4 billion in September（検索結果経由） - Hurriyet Daily News](https://www.hurriyetdailynews.com/germanys-trade-surplus-shrinks-to-17-4-billion-in-september-229178)（取得日時：2026-11-11）</p><p>- [October 2026 CPI Inflation Breakdown: Core Prices Rise 0.3% as December Fed Rate Nears - karmactive](https://www.karmactive.com/october-2026-cpi-inflation-breakdown-fed-rate/)（取得日時：2026-11-11、確度中）</p><p>- [US CPI October 2026: 0.4% Puts Fed Hike on the Table - spaziocrypto](https://en.spaziocrypto.com/macroeconomics/us-cpi-october-2026-inflation-fed-rate-hike-december/)（取得日時：2026-11-11、確度中）</p><p>- [October CPI 2026: Headline 0.4%, Core 0.3%, No 12-Month Rate - fattail.ai](https://fattail.ai/october-cpi-2026/)（取得日時：2026-11-11、確度中）</p><p>- [Will the Fed Raise Interest Rates in December 2026? What the Hot October CPI Means - bbntimes](https://www.bbntimes.com/financial/will-the-fed-raise-rates-in-december-2026)（取得日時：2026-11-11、確度中）</p><p>- [Even a small CPI beat could seal December Fed rate hike, Russell Investments warns - roic.ai](https://www.roic.ai/news/even-a-small-cpi-beat-could-seal-december-fed-rate-hike-russell-investments-warns-11-09-2026)（取得日時：2026-11-11）</p><p>- [Fed's Logan (2026 voter, hawk) says Fed needs at least two more 25bp rate hikes - Newsquawk（検索結果経由）](https://www.newsquawk.com/headlines/feds-logan-2206-voter-hawk-says-fed-needs-at-least-two-more-25bp-rate-hikes)（取得日時：2026-11-11）</p><p>- [Fed's Williams not swayed that a rate hike is the answer yet - bondbuyer（検索結果経由）](https://www.bondbuyer.com/news/feds-williams-not-swayed-that-a-rate-hike-is-the-answer-yet)（取得日時：2026-11-11）</p><p>- [BoJ keeps rates unchanged at 1.25% as expected in 8-1 vote with Takata the dissenter - Newsquawk](https://www.newsquawk.com/headlines/boj-keeps-rates-unchanged-at-125-as-expected-in-8-1-vote-with-takata-the-dissenter-while-it-stated-that-underlying-inflation-has-reached-levels-consistent-with-the-price-target)（取得日時：2026-11-11）</p><p>- [Statement on Monetary Policy – November 2026, Overview（検索結果経由） - RBA](https://www.rba.gov.au/publications/smp/2026/nov/overview.html)（取得日時：2026-11-11、※WebFetch不可のため検索結果経由の要約のみ）</p><p>- [RBA raises cash rate to 4.85%（既報、検索結果経由） - savings.com.au](https://www.savings.com.au/news/no-more-cash-rate-increases-let-s-take-stock)（取得日時：2026-11-11）</p><p>- 本リポジトリ内：daily/agents/2026-11-10-economist.md、daily/agents/2026-11-09-economist.md、daily/2026-11-10.md（継続性・整合性確認のため参照）</p><p>※米10月分CPIの実際の結果（headline+0.4%m/m・core+0.3%m/m）は複数の二次情報が一致して報じているため確度中として採用したが、BLS一次情報（bls.gov）への直接アクセスは本実行環境で一貫して失敗し裏取りできていない。日銀「主な意見」（10/29-30会合分）の具体的文言、NFIB10月分、米10年債・日本30年債・英Gilt入札結果は本稿作成時点でいずれも未確認。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>

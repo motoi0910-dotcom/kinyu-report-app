@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-11 米国株式ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-11.html">統合レポートを見る</a><span>2026-11-11</span></div>
+  <h1 class="title">2026-11-11 米国株式ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-11-fx.html">為替</a>
+    <a href="2026-11-11-commodities.html">コモディティ</a>
+    <a href="2026-11-11-jgb.html">円債</a>
+    <a href="2026-11-11-ust.html">米国債</a>
+    <a href="2026-11-11-intl-bonds.html">外債</a>
+    <a href="2026-11-11-jp-equity.html">日本株式</a>
+    <span class="current">米国株式</span>
+    <a href="2026-11-11-politics.html">政治・地政学</a>
+    <a href="2026-11-11-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得状況に関する注記（冒頭一括記載）</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要指数</a>
+    <a href="#sec-5">セクター・値がさ株動向</a>
+    <a href="#sec-6">フロー・需給・ポジション動向</a>
+    <a href="#sec-7">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得状況に関する注記（冒頭一括記載）</h2>
+<p>本稿作成時点で約25本のWebSearchクエリを試行したが、対象営業日11/11（水）および前営業日11/10（火）のNY市場の確定終値（S&amp;P500・ナスダック総合・NYダウ・VIX、セクターETF）はいずれも検索インデックスに未反映で取得できなかった（直近2営業日連続）。一方、11/9（月）分は複数の独立ソース（TheStreet Pro、Star-Advertiser/AP、Schwab Network、Finviz、letsdatascience/SCMP等）で相互確認が取れ確度中〜高。本稿は11/9（月）終値を直近の確定アンカーとし、11/10・11/11分は「未確認」「推定」と明記して記述する。11/10発表の米10月CPI結果（headline+0.4%m/m・core+0.3%m/m、予想上振れ）は本リポジトリ内`daily/agents/2026-11-11-economist.md`の記載（複数の二次情報一致、確度中）を引用するが、CPI発表後の実際の株価反応はFX担当ノートも含め本稿作成時点で未確認である。社内端末（Bloomberg/Reuters）での11/10・11/11当日実勢の確認を強く推奨する。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<p>対象営業日11/11（水）は米国がベテランズデーのため国債市場は休場だが株式市場は通常取引。前週11/5（木）の歴史的急落（S&amp;P500▲4.35〜4.4%、PHLX半導体指数▲12.25%、VIX+69.7%）を起点に、11/6（金）の部分反発、11/9（月）の本格的な切り返しを経て、11/10（火）には本稿作成時点で最大の非対称イベントだった米10月CPIを通過し、対象営業日11/11を迎えている。11/9（月）は原油急落（米・イラン協議進展観測、Brent4.18%安・94.21ドル、月初112ドルから大幅下落）と半導体株の自律反発（AMD・ブロードコム中心）を背景にS&amp;P500が+2.35%・7,549.94（4月以来最大の日次上昇率、確度高）まで切り返したが、NVIDIAは取締役会がフアンCEOの私生活に関する疑惑（外国情報機関との接点を含む報道）の調査を開始したことを受け、一人安い（終値まで確認できていないが日中▲3.87%・179.42ドル、確度中〜高）という対照的な動きを見せた。VIXは11/9に▲22.24%・19.93まで低下（単一ソース、確度中）し、10月の平時水準（18〜19台）に接近した。11/10のCPIは予想（headline+0.2〜0.3%m/m・core+0.2%m/m程度）を上回るheadline+0.4%m/m・core+0.3%m/mだったとみられ（経済チーム、確度中）、12月FOMC利上げ確率（11/9時点で約84.5%）をさらに押し上げる方向の材料だが、実際の株価反応は未確認。対象営業日11/11は、NVIDIA決算（11/17、GTA6発売11/19とは別日、前稿の11/19記載は訂正）・議会非公開ブリーフィング（11/18）・アプライドマテリアルズ決算（11/12引け後、確定）を控え、ガバナンスリスクとAI投資サイクルへの疑義がくすぶる中での持ち越しとなっている可能性が高い（推定）。</p>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11/6（金）＝部分反発、10月分雇用統計（既報、確度高）</strong>：BLSが10月分雇用統計を発表（+165,000人、失業率4.1%、予想大幅上振れ）。S&amp;P500+0.3%（7,376.86）、ナスダック総合+1.1%（24,579.42）、ダウ▲0.5%（51,285.73、アマゾン等大型株が重石）。週間ではS&amp;P500▲2.4〜2.7%、ナスダック▲3.1〜3.4%（6月以来最悪の週間パフォーマンス）。</li>
+<li><strong>11/7（土）〜11/8（日）</strong>：週末。新規の大型材料は確認できず。</li>
+<li><strong>11/9（月）＝半導体の自律反発とNVIDIA固有のガバナンスリスクの対照（確度高）</strong>：米・イラン協議進展観測（トランプ大統領が「対話が進展する限り追加の対イラン攻撃は見込まれない」と発言との報道）を受けBrent原油が4.18%安の94.21ドル（11月初の112ドルから急落）。前週に歴史的急落（▲12.25%）したPHLX半導体指数が自律反発し、AMDが約+12%、ブロードコムが約+9%上昇（確度中〜高）。S&amp;P500は日中10:28ET時点で+1.91%（7,517.64）まで買われ、終値は+2.35%・7,549.94（Dow Jones Market Data/FactSet経由、4月以来最大の日次上昇率、確度高）。ナスダック100は+3.3%との報道（確度中〜高）。一方、NVIDIA取締役会はフアンCEOの私生活（既婚者としての不適切な関係、米当局が中国情報機関との接点の可能性を調査していたとのNYT報道を受けたもの）に関する独立調査を11/8に開始したことが明らかとなり、株価は前週金曜終値186.64ドルから8.05%安の171.62ドルで寄り付き、日中179.42ドル（▲3.87%）で推移（複数ソース、確度中〜高。終値レベルでの確定は未確認）。VIXは前日（11/6、単一ソースで確度低の約25.64）から▲22.24%・19.93へ急低下（単一ソース、確度中）。</li>
+<li><strong>11/10（火）＝米10月分CPI発表（確度中、反応未確認）</strong>：日本時間22:30（米東部時間8:30）に発表された10月分CPIは、headline+0.4%m/m・core+0.3%m/mと事前コンセンサス（headline+0.2〜0.3%、core+0.2%程度）を上回ったとみられる（本リポジトリ内エコノミストノート、複数の二次情報一致、確度中。BLS一次情報での裏取りは未了。2025年10月分データ欠落のため前年比統計は非公表）。ウォラー理事がcoreの強さ次第で12月の0.50%利上げも選択肢になり得るとの見解を示したとの報道もある（確度中）。この結果を受けた株価指数・VIXの実際の反応は、検索を重ねたが本稿作成時点で確認できなかった。同日、アプライドマテリアルズが会計年度第4四半期決算を11/12（木）引け後発表することが確定情報として確認された（Applied Materials IR、10/22付プレスリリース）。</li>
+<li><strong>11/10〜11/11 アブダビ</strong>：ウクライナ・ロシア・米国3者協議（第4ラウンド）が開催中（既報、確度中〜高）。結果次第でリスクセンチメント・原油価格に波及し得る地政学材料だが、具体的な進展内容は未確認。</li>
+<li><strong>11/11（水、対象営業日）＝ベテランズデー（株式市場は通常取引、国債市場休場）</strong>：新規の米重要経済指標発表は見込まれない一日。NVIDIA関連では、共和党下院委員長3名が11/4付でフアンCEO宛に書簡を送付し11/18の非公開ブリーフィングを要請、コーニン上院議員は議会調査を求めたと報じられている（確度中〜高）。対象営業日当日の指数終値・VIXレベルは本稿作成時点でいずれも未確認。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>主要指数</h2>
+<p>（直近確定値は11/9（月）終値。11/10（火）・11/11（水、対象営業日）の終値は本稿作成時点で未確認）</p>
+<ul>
+<li><strong>S&amp;P500</strong> 終値未確認（2026-11-11）— 直近確定値は11/9の7,549.94（前日比+2.35%、4月以来最大の日次上昇率、確度高）。10/6の記録終値7,818.93からはなお約3.4%低い水準。</li>
+<li><strong>ナスダック総合</strong> 終値未確認（2026-11-11）— ナスダック総合自体の11/9終値は未確認だが、ナスダック100は+3.3%との報道（確度中〜高）。直近確定できたナスダック総合は11/6の24,579.42（前日比+1.1%）。</li>
+<li><strong>NYダウ</strong> 終値未確認（2026-11-11）— 直近確定できたのは11/6の51,285.73（前日比▲0.5%）。11/9分のダウ終値は本稿作成時点で未確認。</li>
+<li><strong>VIX</strong> 終値未確認（2026-11-11）— 11/9終値は19.93（前日比▲22.24%、単一ソースで確度中）で10月平時水準（18〜19台）に接近。11/5の28.17〜28.18（確度高）からの急速な正常化が進んでいた。11/10・11/11の水準は未確認。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>セクター・値がさ株動向</h2>
+<p>GICS11セクターETFの11/9〜11/11分の確定騰落率は取得できず、個別銘柄の動き・一次報道から定性的に推定する。CBOE Insights（週次ボラティリティ分析、11/9付）では、前週（11/2〜11/6）の急落局面でも「GICS11セクターのうち5セクターは週間ベースで上昇して終えた」との記載があり（単一ソース、確度中）、テック主導の急落が全セクターに均等に広がったわけではなかったことを示唆する。</p>
+<ul>
+<li><strong>半導体（PHLX Semiconductor Index想定、11/9に自律反発）</strong> AMD約+12%・ブロードコム約+9%（確度中〜高）— 11/5の記録的急落（▲12.25%）から一転、過度な売られ過ぎに対する短期的なショートカバー・買い戻しが入ったとみられる。原油急落によるマクロの地合い改善（インフレ懸念の後退、米・イラン緊張緩和観測）も追い風。</li>
+<li><strong>NVIDIA（個別、セクター内で対照的な動き）</strong> 11/9は日中▲3.87%（終値確定は未確認）— 取締役会がフアンCEOの私生活（既婚者との不適切な関係、米当局による中国情報機関との接点調査報道）を巡る独立調査を開始したことが単独の重石。11/6終値186.64ドルから寄り付きで8.05%のギャップダウン。半導体セクター全体の反発とは逆方向の動きとなり、NVIDIA一社のガバナンスリスクがセクターのベータから切り離された形。</li>
+<li><strong>エネルギー（XLE想定）</strong> Brent原油が4.18%安・94.21ドル（11月初112ドルから急落、米・イラン協議進展観測）— 相対的に弱含んだとみられる（推定、ETF個別の騰落率は未確認）。</li>
+<li><strong>情報技術（XLK想定）</strong> 半導体・メガキャップテックの自律反発を背景に相対的に強かったとみられる（推定）。直近確定できた11/6終値は162.31（当日+1.50%、週間▲8.23%）。</li>
+<li><strong>ヘルスケア・生活必需品等ディフェンシブ</strong> 11/5〜11/6の急変動局面での資金の避難先となっていた可能性があるが、11/9以降の具体的な騰落率は未確認（推定）。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>VIXは11/4の16.61→11/5の28.17〜28.18（+69.7%、1990年以降3番目に大きい日次上昇、確度高）→11/6の約25.64（単一ソース、確度低）→11/9の19.93（▲22.24%、単一ソース、確度中）という急速な正常化をたどった。CBOE Insightsは「No Contagion (Yet)」と題し、ボラティリティの急上昇が主にテックセクターに集中し、マクロ（レート）ボラティリティは早期に落ち着いたとの見方を示している（単一ソース、確度中）。11/10・11/11のVIX水準は未確認だが、CPIの上振れ（確度中）が正常化の流れを一時的に止める・反転させるリスクがある。</li>
+<li>オプション市場のプット・コール比率は11/6終値時点でほぼニュートラルな0.96程度（前稿参照、確度中）。11/9の急反発でヘッジ需要はさらに後退したとみられるが、NVIDIA個別ではガバナンスリスクを受けたオプション活動（プロテクティブプット・ヘッジ需要）が増大している可能性がある（推定）。</li>
+<li>市場の2026年内追加利上げ（12月FOMC）織込み確率は11/9時点で約84.5%（前日76.3%から上昇、経済チームノート引用）。11/10の上振れCPI（確度中）を受けてさらに高まったとみられるが、具体的な織込み率の変化は未確認。</li>
+<li>XLK（情報技術セクターETF）の11/6時点の1週間リターンが▲8.23%（前稿参照）という大幅な評価調整があったことを踏まえると、11/9の自律反発はその一部を取り戻す動きだったとみられる（推定）。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>推奨トレード</h2>
+<h3>トレード1：半導体セクター（SMH/SOXX）の戦術的な利益確定・ヘッジ（アプライドマテリアルズ決算11/12を控えて）</h3>
+<ul>
+<li>根拠：(1) 11/9の自律反発（AMD約+12%・ブロードコム約+9%）は11/5の記録的急落に対する過度な売られ過ぎの修正であり、ファンダメンタルズの改善を伴わない短期的な戻りの可能性がある。(2) 11/10の上振れCPI（確度中）がFedの利上げ確度（12月FOMC約84.5%＋）をさらに高める方向であれば、長期デュレーション資産であるグロース・半導体株のバリュエーションに逆風となりうる。(3) アプライドマテリアルズは過去11回のEPSビートのうち8回（約73%）で株価が下落したというパターンがあり（Tickzen）、好決算でも「ビート＆セル」の反応になりやすい。</li>
+<li>エントリー目安：SMH/SOXXの11/9戻り高値圏（社内端末で確定値を確認の上）でプット購入、またはコールの一部売却によるヘッジ組成。AMAT決算（11/12引け後）前にポジションを軽くする。</li>
+<li>利確目安：AMAT決算後の初期反応で+3〜5%下振れが出た場合にヘッジの利益を確定。</li>
+<li>損切り目安：AMAT決算が強い内容で好感され、セクター全体が11/6終値を明確に上回って続伸する場合、ヘッジコストを損失として受け入れ縮小。</li>
+<li>ホライズン：11/12決算当日〜数日。</li>
+<li>リスク：(1) AI投資サイクルへの楽観が強く、AMATが大幅ビートした場合にヘッジが機会損失となるリスク。(2) 11/10・11/11の実際の値動きが未確認のため、エントリーレベルの判断は社内端末での当日実勢確認が前提。</li>
+</ul>
+<h3>トレード2：NVIDIA個別のガバナンスリスク対応（カラー/プロテクティブプット、11/17決算・11/18議会ブリーフィングを控えて）</h3>
+<ul>
+<li>根拠：(1) 取締役会によるフアンCEOの独立調査（11/8開始）は、単なる私生活問題に加え米当局による外国情報機関との接点調査報道を伴う、通常の経営リスクを超えたテールリスクである。(2) 共和党議員による11/18非公開ブリーフィング要請、コーニン上院議員の議会調査要求など政治的な圧力が高まっており、ヘッドラインリスクが11/17決算までの間断続的に出やすい。(3) 株価は10月初の直近ピークから約21%下落しているとの報道があり（Stocktwits、確度中）、調査の進展・結果次第で一段の下押しリスクが残る。</li>
+<li>エントリー目安：社内端末で11/10・11/11の確定値を確認した上で、NVDAロングポジションに対しプロテクティブプット（11/17決算跨ぎの期先）を購入、またはカラー（アウトオブザマネーコール売り+プット買い）を組成。</li>
+<li>利確目安：調査が「実質的な問題なし」と結論づけられ株価が10/6急落前の水準に回復した場合、ヘッジを段階的に解消。</li>
+<li>損切り目安（ヘッジの早期解消）：調査が早期に「問題なし」と確定し、ヘッドラインリスクが実質的に消滅したと判断される場合。</li>
+<li>ホライズン：11/17決算・11/18ブリーフィングを跨ぐ数週間。</li>
+<li>リスク：(1) 調査結果・議会対応の時期・内容が不透明で、ヘッジコストが長期化するリスク。(2) NVIDIAのファンダメンタルズ（AI投資需要）自体が強ければ、ガバナンスリスクが短期的な株価インパクトに留まり過剰ヘッジとなるリスク。</li>
+</ul>
+<h3>トレード3：VIXコール／S&amp;P500プットによるテールヘッジ（12月FOMCに向けて、CPI上振れを踏まえ）</h3>
+<ul>
+<li>根拠：(1) VIXは11/9に19.93まで正常化し10月平時水準に接近、ヘッジコストが相対的に割安な水域に入った可能性がある。(2) 11/10のCPI上振れ（確度中）とウォラー理事の「coreが強ければ0.50%利上げも選択肢」との見解（確度中）を踏まえると、12/8-9FOMCに向けて利上げ規模（0.25%か0.50%か）を巡る不確実性がボラティリティの再拡大要因となりうる。</li>
+<li>エントリー目安：社内端末でVIX現物・先物の絶対水準を確認し、20台前半以下であればVIXコール（12月限）またはS&amp;P500プット（ES先物オプション、12月FOMC跨ぎ）を購入。</li>
+<li>利確目安：FOMC前後でVIXが25超、またはS&amp;P500が5%超下落した場合にポジションの大部分を確定。</li>
+<li>損切り目安：FOMCまでボラティリティが拡大せず、VIXが18台以下で安定する場合、プレミアムの50%程度で縮小。</li>
+<li>ホライズン：対象営業日〜12/8-9FOMCまでの約1か月。</li>
+<li>リスク：(1) CPI上振れが既に市場に織り込まれており、FOMCまでボラティリティが低位安定するリスク（プレミアム消耗）。(2) アブダビ協議の進展等、地政学リスクの後退がボラティリティをさらに圧縮するリスク。(3) 11/10・11/11のVIX絶対水準が未確認のため、エントリー判断は社内端末での当日実勢確認が前提。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>2026-11-12（木）引け後（16:30ET）</strong> アプライドマテリアルズ決算（会計年度第4四半期）〔重要度：高〕— Applied Materials IR（10/22付）で確定。半導体製造装置セクターの需要動向、過去11回中8回で好決算後も株価下落という「ビート＆セル」パターンに注目。</li>
+<li><strong>2026-11-13（金）22:30頃（8:30ET）</strong> 米10月分PPI〔重要度：中〜高〕— 12月FOMCの最後の主要インフレ指標の一つ。</li>
+<li><strong>2026-11-17（火）引け後（14:00PT/17:00ET）</strong> NVIDIA会計年度2027年第3四半期決算〔重要度：高〕— GTA6発売（11/19）とは別日である点に留意（前稿の11/19記載は訂正）。フアンCEOを巡る取締役会調査の進展についての言及があるか、AI投資需要サイドの実態確認が最大の焦点。</li>
+<li><strong>2026-11-18（水）</strong> 共和党下院委員長3名によるフアンCEOへの非公開ブリーフィング要請日（確度中〜高）／米国10/28FOMC議事録公表〔重要度：中〜高〕。</li>
+<li><strong>2026-11-19（木）</strong> Take-Two Interactive「GTA6」発売予定〔重要度：中〜高〕。</li>
+<li><strong>2026-12-08〜09</strong> 次回FOMC（ウォーシュ議長下）〔重要度：高〕— SEP・ドットプロット公表。11/10の上振れCPI（確度中）を受け、利上げの有無だけでなく規模（0.25%か0.50%か）が新たな論点になりつつある。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [S&amp;P 500 closes at 7,549.94 after 2.35% rally - ad-hoc-news.de](https://www.ad-hoc-news.de/boerse/news/marktberichte/s-p-500-closes-at-7-549-94-after-2-35-rally/70483327)（WebSearch経由、取得日時：2026-11-11）</p><p>- [S&amp;P 500 jumps 2.28% in midday rebound - ad-hoc-news.de](https://www.ad-hoc-news.de/boerse/news/marktberichte/s-p-500-jumps-2-28-in-midday-rebound/70482756)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Wall Street rallies after last week's AI rout; Nvidia falls - Honolulu Star-Advertiser（AP）](https://www.staradvertiser.com/2026/11/09/breaking-news/wall-street-rallies-after-last-weeks-ai-rout-nvidia-falls/)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Stock Market Today (2026-11-09 recap, SPX 7,517.64 intraday) - pro.thestreet.com](https://pro.thestreet.com/stock-market-today/2026-11-09)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Nvidia shares fall more than 4% as board investigates allegations involving CEO Jensen Huang - Finviz](https://finviz.com/news/418813/nvidia-shares-fall-more-than-4-as-board-investigates-allegations-involving-ceo-jensen-huang)（WebSearch経由、取得日時：2026-11-11）</p><p>- [NVIDIA Board opens investigation into reported foreign intelligence targeting of CEO - letsdatascience.com](https://letsdatascience.com/news/nvidia-board-opens-investigation-into-reported-foreign-intel-c5b93236)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Nvidia faces defining test: Jensen Huang probe adds chip stock turbulence - South China Morning Post](https://www.scmp.com/tech/big-tech/article/3373825/nvidia-faces-defining-test-jensen-huang-probe-adds-chip-stock-turbulence)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Nvidia Faces Governance Overhang: Jensen Huang's Affair Admission Sparks Board Probe, Analysts Warn Of Leadership Risks - Stocktwits](https://stocktwits.com/news-articles/markets/equity/nvidia-faces-governance-overhang-jensen-huang-s-affair-admission-sparks-board-probe-analysts-warn-of-leadership-risks/cNGAHe2R9IU)（WebSearch経由、取得日時：2026-11-11）</p><p>- [closing bell markets rally on softer inflation data - Schwab Network](https://schwabnetwork.com/articles/closing-bell-markets-rally-on-softer-inflation-data)（WebSearch経由、取得日時：2026-11-11。日付特定できず参考情報として扱い、本文では採用せず）</p><p>- [Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades - Cboe Insights](https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades)（WebSearch経由スニペット取得、取得日時：2026-11-11）</p><p>- [Week of 11/2/2026: Tech Rout, Muted Vol: Bullish Positioning Unwinds - Cboe Insights](https://www.cboe.com/insights/posts/week-of-11-2-2026-tech-rout-muted-vol-bullish-positioning-unwinds)（WebSearch経由スニペット取得、取得日時：2026-11-11）</p><p>- [A look at Monday's charts（VIX 11/9終値19.93、▲22.24%） - pro.thestreet.com](https://pro.thestreet.com/market-commentary/a-look-at-mondays-charts)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Q4 2026 Applied Materials Earnings Conference Call - Applied Materials IR](https://ir.appliedmaterials.com/events/event-details/q4-2026-applied-materials-earnings-conference-call)（WebSearch経由、取得日時：2026-11-11。11/12 16:30ET発表の記載）</p><p>- [Here's what to expect from Applied Materials' next earnings report - Barchart/Tickzen経由](https://www.barchart.com/story/news/37081603/here-s-what-to-expect-from-applied-materials-next-earnings-report)（WebSearch経由、取得日時：2026-11-11）</p><p>- [Is the Stock Market Open on Veterans Day 2026? - fedratecalc.com](https://fedratecalc.com/is-the-stock-market-open-on-veterans-day/)（WebSearch経由、取得日時：2026-11-11。株式市場通常取引・国債市場休場の記載）</p><p>- 本リポジトリ内個別ノート：`daily/agents/2026-11-10-us-equity.md`、`daily/agents/2026-11-11-economist.md`、`daily/agents/2026-11-11-fx.md`、`daily/2026-11-10.md`（直近の記録・数値整合性確認のため参照）</p><p>※上記のうち11/6までの確定値、および11/9のS&amp;P500終値・NVIDIA日中安値・Brent原油安値は複数ソースでの相互確認を経て確度中〜高だが、11/9のナスダック総合・ダウ終値、VIX終値（単一ソース）、11/10の米10月CPI結果を受けた実際の株価反応、11/10・11/11（対象営業日）の確定終値はいずれも本稿作成時点で確認できておらず、未確認のまま記載した。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>

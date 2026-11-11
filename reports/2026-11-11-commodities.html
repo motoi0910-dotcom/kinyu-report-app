@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-11 コモディティストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-11.html">統合レポートを見る</a><span>2026-11-11</span></div>
+  <h1 class="title">2026-11-11 コモディティストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-11-fx.html">為替</a>
+    <span class="current">コモディティ</span>
+    <a href="2026-11-11-jgb.html">円債</a>
+    <a href="2026-11-11-ust.html">米国債</a>
+    <a href="2026-11-11-intl-bonds.html">外債</a>
+    <a href="2026-11-11-jp-equity.html">日本株式</a>
+    <a href="2026-11-11-us-equity.html">米国株式</a>
+    <a href="2026-11-11-politics.html">政治・地政学</a>
+    <a href="2026-11-11-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得制約（冒頭まとめ）</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要商品</a>
+    <a href="#sec-5">フロー・需給・ポジション動向</a>
+    <a href="#sec-6">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得制約（冒頭まとめ）</h2>
+<p>CME/ICE/COMEX/LMEの確定清算値、EIA/CFTC公式サイトへの直接WebFetchは本セッションでも不可（DNS解決エラー、以下すべてWebSearch経由）。最大の論点は、前営業日11/10（火、米10月CPIが11/11ベテランズデー休場前倒しで発表）の実際の発表値と市場反応が、検索インデックス上でも確認できなかったこと（発表前のコンセンサス記事・プレビュー記事のみ検出、発表後の確定報道が見つからず）。したがって金・ドル・米金利を通じた本日（対象営業日11/11）朝の地合いの出発点が未確定である。加えて11/10・11/11当日のアジア〜NY時間の確定ティックも取得できておらず、日付が確認できた直近の確定アンカー（11/9清算値：WTI86.85ドル・Brent約92.6〜93.3ドル、11/9時点の銀52.68ドル等）を起点に「推定」で記述する。もう一つの重要イベントとして、アブダビでのウクライナ・ロシア・米国3者協議（11/10〜11、第4ラウンド）が対象営業日と重なっており、結果は本稿作成時点で未確認。CFTC建玉の11月分更新も確認できていない（未確認）。個々の数値には都度「未確認」「推定」を付すが、背景説明は本欄に一括し本文中では繰り返さない。実務判断の前に社内端末（Bloomberg/Reuters）での再確認を強く推奨する。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>原油は11/9（月）、トランプ大統領がCNNに「イランへの大規模攻撃は（イランが強固な合意に署名しない限り）実行する可能性は低い」と発言したことを受けて続落。WTIは前日比-4.38%の86.85ドルで清算（直近4週間超ぶり安値）、Brentは-5.2〜5.85%の92.6〜93.3ドル（情報源間で若干の差異）で清算した。カタールの仲介role拡大も伝えられ、イラン戦争に関する「戦争プレミアム剥落」ナラティブが継続。</li>
+<li>これに加え、クレムリンがウクライナ・ロシア・米国の3者協議をアブダビで11/10〜11（第4ラウンド）開催することを確認。協議が進展し将の制裁緩和・ロシア産原油の国際市場への復帰につながるとの観測が広がれば、イラン方面の供給楽観と並ぶ二つ目の原油下押し材料となる（進展の有無は本稿作成時点で未確認）。</li>
+<li>米10月CPI（日本時間11/10 22:30頃発表予定、11/11ベテランズデー休場前倒しの火曜発表）は事前コンセンサスがヘッドライン前月比+0.3%・コア前月比+0.2%程度（クリーブランド連銀ナウキャストはそれぞれ+0.24%・+0.21%）であったが、実際の発表値・市場反応は本稿作成時点で確認できていない（未確認）。9月分はヘッドライン+3.7%y/y（予想+3.6%）・コア+2.6%y/y（予想+2.5%）と上振れ、10/14の株安・金利上昇の引き金になった経緯があり、FRBは12月8〜9日のFOMCでの追加利上げ確率を11/6〜9時点で約78〜80%（複数報道）織り込んでいたとされる。</li>
+<li>金・銀は11/9時点で、10月30日の直近1年安値（金3,869.85ドル）・11月4日の選挙後急伸（+3.4%）からの戻りを継続。銀は52.68ドル（+1.48%）、金は複数のプレビュー記事で「4,100ドル回復」と報じられた。ただしHeraeus（Kitco経由）は、原油価格の底打ち・高いFed利上げ観測が目先の貴金属に重荷になるとも指摘している。</li>
+<li>銅（LME3カ月物）は11/4の14,325.5ドル/トン（-2.03%）→11/6の13,774ドル/トン（-1.72%）→11/9時点約13,768ドル/トンと続落・足踏みが続く。10/30のCOMEX急落（-9%、対米関税未発動の認識拡大）後の戻りが一服した状態。天然ガス（Henry Hub）は10月下旬に12営業日連続で3ドル超を維持した後、10/26に2.60ドルまで下落したとの報道があり、暖冬観測（11/20頃まで継続との予想）を背景に上値の重い展開が続いているとみられる。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<p>※11/10（火）・11/11（水、対象営業日）当日の確定ティックは確認できておらず、日付が確認できた直近の報道を時系列に並べたもの。</p>
+<ol>
+<li><strong>11月1日（日）</strong>：OPEC+有志7カ国が12月の生産目標を9月設定水準（合計約3,101万bpd）で3カ月連続維持を決定。次回会合は11月29日。</li>
+<li><strong>11月3日（火）米中間選挙当日</strong>：Brentは前日比-1%の103.60ドルで清算（約4週間ぶり安値）、WTIは96.09ドルで清算。</li>
+<li><strong>11月4日（水）選挙結果判明</strong>：Brent・WTIともに一日で約8%超追加急落。金は+3.4%急伸（8月19日以来最大の日中上昇）。</li>
+<li><strong>11月5日（木）</strong>：英BOE利上げ・ドル安を背景に金は日中4,146.63ドル（10月20日以来の高値）・終値4,117.69ドル（+1.4%）まで続伸。銅はLME3カ月物14,093ドル/トン（+0.6%）。</li>
+<li><strong>11月6日（金）米10月雇用統計</strong>：+16.5万人（予想約6万人を大幅上回り）、失業率4.2%→4.1%、平均時給+0.4%。ドル全面高・米2年債利回り+6bp・4.53%。金・パラジウム・プラチナは「金利観測」で急落、金は4,050ドル前後へ反落。12月FOMCでの利上げ確率は78〜80%程度へ上昇したと報じられた。</li>
+<li><strong>11月7〜8日（土日）</strong>：確定報道は確認できていない（未確認）。</li>
+<li><strong>11月9日（月）</strong>：トランプ大統領がCNNに「イランへの大規模攻撃は実行する可能性が低い（イランが強固な合意に署名すれば）」と発言。カタールの仲介role拡大観測も伝えられ、原油は続落（WTI-4.38%・86.85ドル清算、Brent-5.2〜5.85%・92.6〜93.3ドル清算、ともに直近4週間超ぶり安値）。同日、クレムリンがウクライナ・ロシア・米国3者協議をアブダビで11/10〜11（第4ラウンド）開催することを確認。貴金属は選挙後の反発を継続（銀52.68ドル・+1.48%、金は複数プレビューで4,100ドル回復と報じられる）、DXYは軟化方向（約101.35付近との報道）。銅はLME3カ月物約13,768ドル/トンで概ね横ばい。</li>
+<li><strong>11月10日（火、前営業日）</strong>：日本時間22:30頃に米10月CPIが発表予定。アブダビ3者協議の初日。本稿作成時点で、CPIの実際の発表値・市場反応、協議初日の進展内容はいずれも確認できていない（未確認）。</li>
+<li><strong>11月11日（水、対象営業日）</strong>：アブダビ3者協議の2日目。米国はベテランズデーで国債現物市場は休場だが、NYMEX/COMEX/CMEのコモディティ先物は通常取引。東京・NY時間の確定ティックは確認できておらず、10月CPI結果の消化・協議の進展報道が本日最大の変動要因になるとみられる。</li>
+</ol>
+</section>
+<section id="sec-4">
+<h2>主要商品</h2>
+<ul>
+<li><strong>WTI原油</strong> 推定84〜89ドル/バレル（未確認、11/9清算値86.85ドル（-4.38%、4週間超ぶり安値）を起点に、アブダビ協議・CPI結果を経た11/10-11の推定レンジ）— トランプ大統領のイラン攻撃抑制発言と露宇米協議の二重の和平ナラティブが戦争プレミアムを圧迫。</li>
+<li><strong>Brent原油</strong> 推定89〜94ドル/バレル（未確認、11/9清算値92.6〜93.3ドル（情報源間で差異、-5.2〜5.85%）を起点とした推定レンジ）— OPEC+は12月生産目標を維持（合計約3,101万bpd）、次回会合は11/29（2027年枠組みが焦点）。</li>
+<li><strong>天然ガス（Henry Hub）</strong> 推定2.5〜2.9ドル/MMBtu（未確認、10月下旬に12営業日連続3ドル超から10/26に2.60ドルへ下落との報道を踏まえた推定）— 暖冬観測（11/20頃まで継続予想）が上値を抑える方向のバイアス。EIA週間在庫統計（週末10/30時点3,801Bcf、+77Bcf）の次回発表は11/11休場の影響で11/12-13頃にずれる可能性。</li>
+<li><strong>金（COMEX/スポット）</strong> 推定4,050〜4,180ドル（未確認、11/9時点の「4,100ドル回復」との複数プレビュー報道、11/6の約4,050ドルを踏まえたCPI結果発表前後の推定レンジ）— 10/30の直近1年安値3,869.85ドルから選挙後の急反発が続くが、Heraeusは原油反発・高いFed利上げ観測が目先の重荷になり得ると指摘。</li>
+<li><strong>銀（COMEX/スポット）</strong> 推定50〜54ドル（未確認、11/9時点52.68ドル（+1.48%）を起点とした推定）— 貴金属の中でも最も強いモメンタムを維持。</li>
+<li><strong>プラチナ</strong> 推定1,300〜1,460ドル（未確認、11/3の1,421.18ドル（-1.9%）、11/6の「急落」報道以降の更新情報なし）— データ未更新のため前営業日ノートのレンジを維持。</li>
+<li><strong>パラジウム</strong> 推定950〜1,060ドル（未確認、11/5の1,042.24ドル（+3.8%）、11/6の「急落」報道以降の更新情報なし）。</li>
+<li><strong>銅（LME 3カ月/COMEX）</strong> 推定13,600〜13,900ドル/トン（未確認、11/9時点約13,768ドル/トンを起点、11/4の14,325.5ドル（-2.03%）→11/6の13,774ドル（-1.72%）からの続落・足踏みを踏まえた推定）— AIデータセンター・電力網投資に伴う構造的需要拡大観測は底流に残るが、対米関税の実発動観測後退が投機的プレミアムの重荷となっている。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li><strong>CFTC建玉</strong>：11月分の更新データは本稿でも確認できなかった（未確認）。直近の確認済みデータ（10/27時点の金ネットロング186,451枚・前週比-13,414枚、3カ月ぶり低水準。10/20時点の銅ネットロング11週連続減少・7カ月ぶり低水準）は前々日ノート（`daily/agents/2026-11-10-commodities.md`、`2026-11-09-commodities.md`）参照のまま更新なし。</li>
+<li><strong>中央銀行の金買い（WGC/Heraeus経由）</strong>：World Gold Councilの推計によれば、中央銀行・公的機関の2026年第3四半期の金購入量は321トン（前年同期比+42%、過去5年四半期平均227トンを大幅に上回る）。年初来の公的購入は675トン（前年比+6%）に達するが、公式に報告されたのはそのうち約120トンのみとされ、非公表の購入が構造的な下値支えとして働いているとの見方（Kitco/Heraeus経由、取得日時2026-11-10、WebSearch）。</li>
+<li><strong>OPEC+供給動向</strong>：有志7カ国が11月1日、12月の生産目標を9月設定水準（合計約3,101万bpd）で3カ月連続維持することを決定。湾岸諸国の輸出回復が進む一方、多くの国がなお生産目標を下回る水準で稼働中との報道あり。次回会合（11月29日）では2027年の生産枠組み（国別ベースライン見直し）が焦点。</li>
+<li><strong>ETFフロー</strong>：金・銀ETFの11月分の最新フロー統計は確認できていない（未確認）。</li>
+<li><strong>Fedの12月利上げ観測</strong>：11月6〜9日時点で約78〜80%の確率と複数報道（二次情報、確度中）。10月CPIの実際の結果がこの確率を上下させる最大の確認材料だが、本稿作成時点で未確認。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>推奨トレード</h2>
+<h3>トレード1：Brent原油 売り（戻り待ち）</h3>
+<ul>
+<li>根拠：11/9にトランプ大統領がイランへの大規模攻撃実行の可能性は低いと発言し戦争プレミアムの剥落が続く中、同日クレムリンがウクライナ・ロシア・米国3者協議（アブダビ、11/10-11、第4ラウンド）の開催を確認した。協議が進展すればロシア産原油の国際市場復帰（制裁緩和）という追加の供給サイド下押し材料が重なり、イラン・ロシアという二正面での和平／供給楽観が原油の戦争プレミアムを圧迫する構図が強まっている。OPEC+は12月生産目標を維持（合計約3,101万bpd）しつつ湾岸諸国の輸出回復も進んでおり、供給面の緩衝余地は限定的ながら下方リスクが優位と判断し、戻りを売る形でのポジション構築を推奨する。</li>
+<li>エントリー目安：91〜94ドル（アブダビ協議難航・ホルムズ海峡headline等での戻り時）</li>
+<li>利確目安：86〜89ドル（11/9清算値92.6〜93.3ドルからの続落・直近安値圏への再接近）</li>
+<li>損切り目安：97ドル超（アブダビ協議の決裂・ホルムズ海峡での大規模エスカレーションが確認された場合）</li>
+<li>ホライズン：1〜2週間</li>
+<li>リスク：（1）アブダビ協議の決裂・ロシア側の強硬姿勢表明、（2）ホルムズ海峡での大規模攻撃再燃、（3）OPEC+内部での減産方針への転換観測。</li>
+</ul>
+<h3>トレード2：金（COMEX/スポット） 押し目買い（中期・構造的買い）</h3>
+<ul>
+<li>根拠：World Gold Council推計によれば2026年第3四半期の中央銀行金購入量は321トン（前年比+42%、5年平均227トンを大幅超過）、年初来675トン（+6%）のうち公式報告はわずか約120トンと、構造的な需要の下支えが強い。一方、11/6雇用統計・11/9の原油反発・Fedの12月利上げ観測（約78〜80%）が目先の重荷になっており、10月CPIの結果次第で短期的な下振れ余地もある。この非対称性（構造的需要の底堅さ対短期的な金利観測の逆風）を踏まえ、押し目を買う中期スタンスを推奨する。CPI結果判明直後の急落時のエントリーは避け、値固め確認後に買う。</li>
+<li>エントリー目安：4,000〜4,060ドル（CPI結果を受けた下落がこの水準まで進んだ場合）</li>
+<li>利確目安：4,150〜4,200ドル（11/5の2週間ぶり高値圏・直近高値更新）</li>
+<li>損切り目安：3,900ドル割れ（10/30の1年安値3,869.85ドル圏へ接近するトレンド転換が確認された場合）</li>
+<li>ホライズン：3〜6週間（12/8-9のFOMCを通過するまでを想定）</li>
+<li>リスク：（1）10月CPIが大幅に上振れ12月利上げがほぼ確実視される場合、（2）ドル全面高の継続、（3）アブダビ協議・イラン情勢の急速な沈静化による安全資産需要後退。</li>
+</ul>
+<h3>トレード3：銅（LME 3カ月） 買い（押し目買い、小ロット）</h3>
+<ul>
+<li>根拠：AIデータセンター・電力網投資に伴う構造的需要拡大観測は依然底流にあり、CFTCの投機的ネットロングは10/20時点で11週連続減少・約7カ月ぶり低水準まで軽くなっている（未更新だが構造は変化していないとみられる）。11/4〜9にかけてLME3カ月物は14,325.5ドルから13,768ドル付近まで続落・足踏みしており、対米関税の実発動観測後退による投機的プレミアムの剥落が一服しつつある状況と見立て、ポジションが軽い中での押し目を小ロットで買う。</li>
+<li>エントリー目安：13,500〜13,800ドル/トン（直近の戻り安値圏）</li>
+<li>利確目安：14,300〜14,600ドル/トン（11月上旬高値圏への戻り）</li>
+<li>損切り目安：13,200ドル割れ（需要主導の一段深い調整が確認された場合）</li>
+<li>ホライズン：3〜6週間</li>
+<li>リスク：（1）中国需要指標の下振れ、（2）ドル高・リスクオフが産業金属全般に重荷となるリスク（本日以降のCPI結果消化次第）、（3）対米関税を巡る追加ヘッドラインによる投機的ポジションの急変。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>随時 アブダビ3者協議（露・ウクライナ・米、第4ラウンド）</strong> 進展・決裂の動向〔重要度：高〕— 11/10-11開催、結果は本稿作成時点で未確認。進展すればロシア産原油の供給楽観が追加の原油下押し材料に。</li>
+<li><strong>随時 米・イラン協議／ホルムズ海峡（UKMTO等）</strong> 動向〔重要度：高〕— トランプ大統領の11/9発言（大規模攻撃は可能性低い）後の展開、船舶攻撃の継続有無を要フォロー。</li>
+<li><strong>2026-11-12〜13頃（推定）米EIA</strong> 週間石油在庫統計〔重要度：高〕— 11/11休場の影響で発表日が通常よりずれる可能性。</li>
+<li><strong>2026-11-12〜13頃（推定）米EIA</strong> 週間天然ガス在庫統計〔重要度：中〕— 10/30時点3,801Bcf（+77Bcf）からの更新を確認。</li>
+<li><strong>2026-11-13（金、推定）米BLS</strong> 10月PPI発表〔重要度：中〕— CPI発表日の前倒しに伴い日程がずれる可能性もあり推定。</li>
+<li><strong>2026-11-29（日）OPEC+</strong> 次回会合〔重要度：高〕— 2027年の生産枠組み（国別ベースライン見直し）が焦点。</li>
+<li><strong>当面（推定）CFTC週間COT建玉報告</strong> 11月入り後の金・銀・銅・原油ポジション更新確認〔重要度：中〕</li>
+<li><strong>2026-12-08〜09（推定）FRB／FOMC</strong> 政策金利決定〔重要度：高〕— 10月CPI結果・強い雇用統計を受けた12月利上げ確率（11/6〜9時点で約78〜80%）の最終確認材料。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [Oil slides as Trump signals restraint on Iran despite fresh shipping attacks - khaleejtimes.com](https://www.khaleejtimes.com/business/oil-slides-as-trump-signals-restraint-on-iran-despite-fresh-shipping-attacks)（取得日時：2026-11-11、WebSearch経由）</p><p>- [Oil falls almost 5% as Trump signals restraint on Iran - khaleejtimes.com / koreatimes.co.kr](https://www.khaleejtimes.com/business/oil-falls-almost-5-as-trump-signals-restraint-on-iran)（取得日時：2026-11-11、WebSearch経由。WTI12月限-3.98ドル・-4.38%・86.85ドル清算、Brent1月限-5.75ドル・-5.85%・92.57ドル清算）</p><p>- [Crude slides toward $93, WTI drops to $87 as Trump rules out immediate Iran strikes - gulfnews.com](https://gulfnews.com/amp/story/business%2Fenergy%2Fcrude-slides-toward-93-wti-drops-to-87-as-trump-rules-out-immediate-iran-strikes-1.500736498)（取得日時：2026-11-11、WebSearch経由。Brent-4.65%・約93.75ドル（日中）、別報道でBrent-5.2%・93.27ドル清算との差異あり）</p><p>- [energyconnects.com「oil slides as report says trump to give iran diplomacy more time」](https://energyconnects.com/news/oil/2026/november/oil-slides-as-report-says-trump-to-give-iran-diplomacy-more-time/)（取得日時：2026-11-11、WebSearch経由。カタール仲介role拡大の報道）</p><p>- [Oil prices stabilize amid possible peace deal between Ukraine and Russia - ukrinform.net](https://www.ukrinform.net/rubric-ato/4062143-oil-prices-stabilize-amid-possible-peace-deal-between-ukraine-and-russia.html)（取得日時：2026-11-11、WebSearch経由。クレムリンによるアブダビ3者協議11/10-11確認）</p><p>- [Gold and silver prices extend post-election rebound, central banks on pace to beat 2025 purchases – Heraeus - kitco.com](https://www.kitco.com/news/article/2026-11-09/gold-and-silver-prices-extend-post-election-rebound-central-banks-pace-beat)（取得日時：2026-11-11、WebSearch経由。銀52.682ドル・+1.48%、WGC Q3中央銀行購入321トン・+42%、年初来675トン・+6%、公式報告分約120トン）</p><p>- [Money Metals「Gold and silver bounce back as tech stocks stumble」](https://www.moneymetals.com/news/2026/11/09/gold-and-silver-bounce-back-as-tech-stocks-stumble-005356)（取得日時：2026-11-11、WebSearch経由。前週の金+5%・銀+5.6%）</p><p>- [StoneX「Gold forecast: Inflation data could determine metal's next big move」](https://www.stonex.com/en-gb/news-and-analysis/gold-forecast-inflation-data-could-determine-metal-s-next-big-move-2026-11-09/)（取得日時：2026-11-11、WebSearch経由。金4,100ドル回復、DXY約0.5%軟化・101.35付近）</p><p>- [kalkine.ca「Copper rebounds as global growth signals clash with supply constraints」](https://kalkine.ca/news/general-news/copper-rebounds-as-global-growth-signals-clash-with-supply-constraints)（取得日時：2026-11-11、WebSearch経由。LME3カ月物11/9時点約13,768ドル/トン）</p><p>- [news.metal.com SMM Copper Morning Comment（11/6・11/4付）](https://news.metal.com/newscontent/104202680-risk-appetite-continued-to-pull-back-lme-copper-and-shfe-copper-both-closed-lower-smm-copper-morning-comment)（取得日時：2026-11-11、WebSearch経由。11/6終値13,774ドル・-1.72%、11/4終値14,325.5ドル・-2.03%）</p><p>- [AGA「Natural Gas Market Indicators – October 29, 2026」](https://www.aga.org/research-policy/resource-library/natural-gas-market-indicators-october-29-2026/)（取得日時：2026-11-11、WebSearch経由。10/26に2.60ドル/MMBtuへ下落、12営業日連続3ドル超からの反落）</p><p>- [fxempire「Natural gas balances above normal storage with winter demand risks」](https://www.fxempire.com/forecasts/article/natural-gas-balances-above-normal-storage-with-winter-demand-risks-1643321)（取得日時：2026-11-11、WebSearch経由。週末10/30時点3,801Bcf・+77Bcf）</p><p>- [fxstreet「US CPI preview: Moderation on the horizon but underlying pressures linger」](https://www.fxstreet.com/analysis/us-cpi-preview-moderation-on-the-horizon-but-underlying-pressures-linger-202611092231)（取得日時：2026-11-11、WebSearch経由。10月CPI発表前のコンセンサスプレビュー、実際の発表値は本稿では未確認）</p><p>- [roic.ai「Even a small CPI beat could seal December Fed rate hike, Russell Investments warns」](https://www.roic.ai/news/even-a-small-cpi-beat-could-seal-december-fed-rate-hike-russell-investments-warns-11-09-2026)（取得日時：2026-11-11、WebSearch経由）</p><p>- [OPEC+ keeps December oil output targets steady ahead of tougher call for 2027 - engineeringnews.co.za](https://engineeringnews.co.za/article/opec-keeps-december-oil-output-targets-steady-as-iran-war-disrupt-flows/)（取得日時：2026-11-10、WebSearch経由、前営業日ノートより継続参照）</p><p>- 前営業日ノート：`daily/agents/2026-11-10-commodities.md`、`daily/agents/2026-11-09-commodities.md`（CFTC建玉・LME倉庫在庫・OPEC+動向・雇用統計等の背景情報を継続参照）</p><p>- 統合レポート：`daily/2026-11-10.md`（Fed政策金利3.75-4.00%・次回FOMC12/8-9・12月利上げ確率約78-80%、アブダビ協議の位置づけ等のマクロ前提を参照）</p><p>- 注：www.bls.gov、www.eia.gov、www.cftc.gov等への直接WebFetchは本セッションでは実行基盤の制約により利用できず、すべてWebSearchのスニペット経由。米10月CPIの実際の発表値・市場反応、11/10・11/11当日のアジア〜NY時間の確定ティック、アブダビ3者協議の結果は本稿作成時点で確認できていない。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
