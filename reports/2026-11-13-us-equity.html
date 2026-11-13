@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-13 米国株式ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-13.html">統合レポートを見る</a><span>2026-11-13</span></div>
+  <h1 class="title">2026-11-13 米国株式ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-13-fx.html">為替</a>
+    <a href="2026-11-13-commodities.html">コモディティ</a>
+    <a href="2026-11-13-jgb.html">円債</a>
+    <a href="2026-11-13-ust.html">米国債</a>
+    <a href="2026-11-13-intl-bonds.html">外債</a>
+    <a href="2026-11-13-jp-equity.html">日本株式</a>
+    <span class="current">米国株式</span>
+    <a href="2026-11-13-politics.html">政治・地政学</a>
+    <a href="2026-11-13-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得状況に関する注記（冒頭一括記載）</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要指数</a>
+    <a href="#sec-5">セクター・値がさ株動向</a>
+    <a href="#sec-6">フロー・需給・ポジション動向</a>
+    <a href="#sec-7">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得状況に関する注記（冒頭一括記載）</h2>
+<p>本稿作成時点（対象営業日11/13当日）で約20本のWebSearchクエリを試行したが、確定した終値として相互確認できたのは依然11/9（月）・11/10（火）の2営業日分までである。前営業日11/11（水、ベテランズデー＝株式市場は通常取引・米国債市場は休場）・11/12（木）・対象営業日11/13（金）の指数終値・VIXレベル・NVIDIA株価・セクターETF騰落率はいずれも検索インデックスに未反映で取得できなかった（前日分の`daily/agents/2026-11-12-us-equity.md`と同様の制約が継続）。一方、NVIDIAのガバナンス問題の進捗、Anthropic IPOの日程修正、本日実施予定の米10月分PPIについては新規情報を複数ソースで確認できた。本稿は11/10（火）終値を直近の確定アンカーとし、11/11〜11/13分は構造的な推察として「未確認」「推定」を明記して記述する。社内端末（Bloomberg/Reuters）での11/11〜11/13当日実勢の確認を強く推奨する。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<p>対象営業日11/13（金）は、米10月分CPI上振れ（11/10発表、headline+0.4%m/m・core+0.3%m/m、3ヵ月連続）を起点とする「利上げ加速」地合いが続く中、本日8:30ET（22:30頃JST）に米10月分PPIが発表される、12月FOMC（12/8-9）前の最後の主要インフレ指標の一つとなる重要な一日である。直近の確定アンカーである11/10（火）終値は、S&amp;P500が-0.4%・7,520.93、ナスダック総合-0.7%・25,065.87、ダウ-0.3%・52,231.89、VIXは+1.26%・20.17であった。これに先立つ11/9（月）は原油急落と半導体株の自律反発を背景にS&amp;P500が+2.35%・7,549.94（4月以来最大の日次上昇率）まで切り返し、新華社（Xinhua）配信の報道ではS&amp;P500のGICS11セクター全てが上昇して終えたとされる（確度中）。一方でNVIDIAは取締役会がフアンCEOの私生活（外国情報機関との接点を含む報道）を巡る独立調査を開始したことを受け11/9に-4.27%・178.67ドルで独歩安となり、以降も断続的な売りが続いている（終値は11/11以降未確認）。11/11（ベテランズデー、株式市場は通常取引）・11/12（木、引け後にアプライドマテリアルズ決算）の両日の確定終値は検索インデックスに未反映のため未確認。新規に確認できた材料としては、(1) NVIDIAの取締役会調査は11/13時点でも継続中・結論未発表・フアン氏はCEOを継続という位置づけに変化なく、独立取締役委員会が元検事のJoon Kim氏（Wachtell Lipton）を外部弁護人として起用したとの報道（単独ソース、確度低〜中）、(2) AnthropicのIPO日程が「11/16週または11/19〜20頃」という前日までの観測から、ロードショー開始（11/10）・想定価格帯70〜78ドル/株（Class A株8.25億株、調達額約577.5億〜643.5億ドル）を経て、CNBC報道（単独ソース、未確定）では価格決定11/18・取引開始11/19と、やや後ろ倒しの日程観測に更新されたこと、(3) JPMorganの調査部門（11/9時点、投資情報サイト経由）が「市場が懸念する収益下降サイクルは少なくとも半年先」との見方を示し、AIバブル崩壊論への反証材料として引用されていること、の3点である。NVIDIA決算（11/17引け後）とAnthropic IPO価格決定・取引開始（観測ベースで11/18〜19）が今後1週間の最大の注目点として引き続き浮上している。</p>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11/9（月）＝半導体の自律反発とNVIDIA固有のガバナンスリスクの対照（確度高、既報）</strong>：米・イラン協議進展観測を受けBrent原油が急落。PHLX半導体指数が自律反発し、S&amp;P500は+2.35%・7,549.94、ナスダック総合+2.74%・25,253.14、ダウ+2.15%（+1,104.02pt）・52,389.75で終了。新華社配信の報道では、S&amp;P500のGICS11セクター全てが上昇して終え、業種別では産業（Industrials）・一般消費財（Consumer Discretionary）が上位だったとされる（確度中、個別の騰落率は未確認）。一方NVIDIAは取締役会による独立調査開始（11/8）を受け-4.27%・178.67ドルで独歩安。VIXは前日25.64から-22.31%・19.92へ急低下。</li>
+<li><strong>11/10（火）＝米10月分CPI上振れ・利上げ加速トリオ（確度高、既報）</strong>：米10月CPIがheadline+0.4%m/m（予想+0.3%）・core+0.3%m/m（予想+0.2%、3ヵ月連続）と上振れ。Fedウォーラー理事のタカ派発言、米10年債入札の弱い結果（最高落札利回り5.02%）が重なり、12月FOMCでの50bp利上げ確率が0%近辺から約14〜15%へ浮上。S&amp;P500は日中一時-0.71%・7,496.17まで売られた後、終値-0.4%（-29.01pt）・7,520.93、ナスダック-0.7%（-187.26pt）・25,065.87、ダウ-0.3%（-157.86pt）・52,231.89。週間ベースではS&amp;P500+2.0%程度、年初来+9.9%程度との報道（La Nación、確度中）。VIXは+1.26%・20.17。NVIDIAは日中さらに売りが進み一時-6.8%・166.60ドル付近（終値未確認）。</li>
+<li><strong>11/11（水、ベテランズデー＝株式市場は通常取引、国債市場休場）</strong>：新規の米重要経済指標発表は見込まれない一日。NVIDIA関連では共和党下院委員長3名による11/18非公開ブリーフィング要請（11/4付）への回答期限とされていたが、回答の有無・当日の指数終値はいずれも未確認。</li>
+<li><strong>11/12（木）</strong>：引け後（16:30ET）にアプライドマテリアルズの決算発表（会計年度2026年第4四半期、確定スケジュール）が行われたはずだが、結果・株価反応は本稿作成時点で未確認。同社は過去何度も「好決算でも株価下落」のパターン（直近は8月のQ3決算で好決算・上方修正にもかかわらず市場introの事前期待が過度に高く株価軟化）が指摘されており、半導体製造装置セクターの需要シグナルとして今後の確認が必要。</li>
+<li><strong>11/13（金、対象営業日）</strong>：米東部時間8:30（22:30頃JST）に米10月分PPIが発表予定。10月分CPI上振れの流れを受け、本指標も12月FOMC（25bp vs 50bp）の判断材料として重要度が高い。NVIDIAの取締役会調査は継続中で結論は出ていない（複数ソースで11/13時点でも「調査中・フアン氏はCEO継続」の構図に変化なしと確認）。Anthropicは11/10にロードショーを開始し、価格帯70〜78ドル/株（Class A株8.25億株）を提示、CNBC報道ベースでは価格決定11/18・取引開始11/19との観測（未確定）。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>主要指数</h2>
+<p>（直近確定値は11/10（火）終値。11/11〜11/13の終値は本稿作成時点で未確認）</p>
+<ul>
+<li><strong>S&amp;P500</strong> 終値未確認（2026-11-13）— 直近確定値は11/10の7,520.93（前日比-0.4%、-29.01pt）。週間ベースでは+2.0%程度・年初来+9.9%程度との報道（確度中）。本日のPPI発表の反応が焦点。</li>
+<li><strong>ナスダック総合</strong> 終値未確認（2026-11-13）— 直近確定値は11/10の25,065.87（前日比-0.7%、-187.26pt）。NVIDIAのガバナンスリスクが重石として継続している可能性。</li>
+<li><strong>NYダウ</strong> 終値未確認（2026-11-13）— 直近確定値は11/10の52,231.89（前日比-0.3%、-157.86pt）。11/9は+2.15%（+1,104.02pt）・52,389.75。</li>
+<li><strong>VIX</strong> 終値未確認（2026-11-13）— 直近確定値は11/10の20.17（前日比+1.26%）。11/9の19.92（前日25.64から-22.31%）から小幅上昇し、10月平時水準（18〜19台）近辺で推移していたと見られる（推定）。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>セクター・値がさ株動向</h2>
+<p>GICS11セクターETFの11/10〜11/13分の確定騰落率は取得できず、前日までの既報情報と新規確認事項から定性的に推定する。新華社配信の報道（11/9分）では、同日S&amp;P500のGICS11セクター全てが上昇して終え、業種別では産業（Industrials）・一般消費財（Consumer Discretionary）が上位だったとされる（確度中）。一方、週次ランキング（StockCharts「Best Five Sectors This Week」#88、11/9付公表分）では週間ベースでエネルギー・ヘルスケア・金融・生活必需品が上位、情報技術はそれより下位という結果が示されていた。両者は時間軸（日次vs週次）が異なるため矛盾するものではなく、11/9の自律反発では全セクターが参加した一方、週を通したレンジではディフェンシブ・バリュー系セクターへの資金シフトが続いていたことを示唆する（推定）。</p>
+<ul>
+<li><strong>半導体・情報技術（SMH/SOXX・XLK想定）</strong> 11/9は自律反発（AMD・ブロードコムが二桁%の上昇、既報）も、11/10はCPI上振れ・金利上昇を受け軟化したとみられる（推定、ETF個別の騰落率は未確認）— NVIDIAのガバナンスリスクがセクター全体のベータから切り離れて重石となる構図が継続。</li>
+<li><strong>NVIDIA（個別、セクター内で独歩安）</strong> 11/9終値-4.27%・178.67ドル、11/10日中一時-6.8%・166.60ドル付近（終値未確認）、10月初ピーク（239.24ドル、既報）から10/10時点で約30%低い水準との報道（確度中）— 取締役会の独立調査が11/13時点でも継続中で結論は出ていない。独立取締役委員会が元検事Joon Kim氏（Wachtell Lipton）を外部弁護人に起用したとの報道（単独ソース、確度低〜中）。</li>
+<li><strong>半導体製造装置（アプライドマテリアルズ）</strong> 11/12引け後決算の結果・反応は未確認。過去の決算では「ビート＆セル」パターン（好決算でも株価下落）が繰り返されており、本日の市場反応・AMAT株価の確認が必要。</li>
+<li><strong>産業・一般消費財（11/9の相対優位、新華社報道）</strong> 11/9の自律反発局面で業種別上位とされる（確度中）— 原油急落・利下げ観測巻き戻し前のリスクオン地合いを反映した可能性。</li>
+<li><strong>エネルギー・ヘルスケア・金融・生活必需品（週次ランキング上位、既報）</strong> AI・グロース株の急変動が続くなかでの資金の相対的な避難先となっている可能性（推定、継続）。</li>
+<li><strong>AI投資サイクル（セクター横断テーマ）</strong> Anthropicが11/10にIPOロードショーを開始、想定価格帯70〜78ドル/株（Class A株8.25億株、調達額約577.5億〜643.5億ドル）。AMD・ブロードコム・Google・Micron・Microsoft・NVIDIA・TSMCの7社が計260億ドル相当のClass N株式をIPO価格で購入することに合意済み（既報）。価格決定11/18・取引開始11/19との観測（CNBC報道ベース、単独ソース、未確定）。これはメガキャップテック各社のAI投資継続姿勢を示す材料として、NVIDIA固有のガバナンス問題とは別軸でセクター全体のファンダメンタルズに影響しうる。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>VIXは11/5の28.17〜28.18（+69.7%、1990年以降3番目に大きい日次上昇、既報）→11/6の25.64→11/9の19.92（-22.31%）→11/10の20.17（+1.26%）という経路をたどり、10月平時水準（18〜19台）近辺での推移が続いていたと見られる。11/11〜11/13の水準は未確認。</li>
+<li>12月FOMCでの25bp利上げ確率はCPI前後で約84〜89%程度との観測が続く一方、50bp利上げ確率が0%近辺から約14〜15%まで浮上した点が構造変化（CME FedWatch系、複数ソース、確度中）。本日のPPI結果次第でこの配分がさらに変化する可能性があり、長期デュレーション資産（グロース・半導体株）のバリュエーションへの影響が焦点。</li>
+<li>JPMorgan（調査部門、11/9付・投資情報サイト経由確認、確度中）は「市場が懸念するAI関連の収益下降サイクルは少なくとも半年先」との見方を示し、直近のAI株急落は「オーバーリアクション」との一部大手証券の評価（既報）と同方向。これはNVIDIA決算（11/17）・Anthropic IPO（観測ベース11/18-19）を控えたポジション調整の巻き戻し余地を示唆する一方、具体的なオプションフロー・CFTC建玉データは本稿作成時点で未確認。</li>
+<li>NVIDIAに関しては、ガバナンスリスクを受けたプロテクティブプット需要が増大している可能性があるが、具体的なプット・コール比率の変化は本稿作成時点で未確認（推定）。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>推奨トレード</h2>
+<h3>トレード1：米10月分PPI発表（本日8:30ET）を跨ぐSPY/QQQオプションのストラドル</h3>
+<ul>
+<li>根拠：(1) 11/10のCPI上振れが12月FOMCの50bp利上げ確率を0%近辺から約14〜15%まで押し上げた前例があり、本日のPPIも同様の非線形的な反応を引き起こすリスクが高い。(2) PPIは12月FOMC前の最後の主要インフレ指標の一つであり、Fed高官の発言とも重なりやすく反応が増幅されやすい。(3) 11/11〜11/13の指数終値が未確認のため、現時点でのレンジ・ボラティリティ水準を社内端末で再確認した上でのポジション調整が前提となる。</li>
+<li>エントリー目安：社内端末で直近のインプライドボラティリティとSPY/QQQの現在値を確認した上で、PPI発表直前（8:25ET頃）にアット・ザ・マネーのストラドルを組成。</li>
+<li>利確目安：発表後30分〜1時間でSPY/QQQが1.0〜1.5%超動いた場合にプレミアムの大部分を確定。</li>
+<li>損切り目安：発表後の反応が小幅（0.3%未満）で収束する場合、プレミアムの50%程度で早期縮小。</li>
+<li>ホライズン：本日（発表当日）限定、イントラデイ〜当日引けまで。</li>
+<li>リスク：(1) CPI上振れ後の警戒感から市場が既にPPIの上振れシナリオを織り込んでおり、「サプライズなしの通過」でボラティリティが沈静化するリスク。(2) 11/11〜11/13の実際の値動きが未確認のため、エントリー時点のIV水準・現在値の社内端末での確認が前提。</li>
+</ul>
+<h3>トレード2：NVIDIA個別のガバナンスリスク対応（プロテクティブプット継続、11/17決算を控えて）</h3>
+<ul>
+<li>根拠：(1) NVIDIAは11/9（-4.27%）・11/10（日中一時-6.8%）と独歩安が続き、取締役会の独立調査（ガバナンスリスク）が市場で明確に価格形成され始めている。(2) 11/13時点でも調査は継続中で結論は出ておらず、外部弁護人起用（Joon Kim氏）等の報道はヘッドラインリスクの持続を示唆する。(3) 10月初ピーク（239.24ドル）から10/10時点で約30%低い水準との報道があり、調査終結時の急速な戻りも想定される非対称なイベントである。</li>
+<li>エントリー目安：社内端末で11/11〜11/13の確定値を確認した上で、NVDAロングポジションに対しプロテクティブプット（11/17決算跨ぎの期先）を購入、またはカラーを組成。</li>
+<li>利確目安：調査が「実質的な問題なし」と結論づけられ株価が10月初のピーク圏に回復した場合、ヘッジを段階的に解消。</li>
+<li>損切り目安（ヘッジの早期解消）：調査が早期に「問題なし」と確定し、ヘッドラインリスクが実質的に消滅したと判断される場合。</li>
+<li>ホライズン：11/17決算を跨ぐ1〜2週間。</li>
+<li>リスク：(1) 調査結果・議会対応の時期・内容が不透明で、ヘッジコストが長期化するリスク。(2) 11/11〜11/13の実際の株価水準が未確認のため、エントリーレベルの判断は社内端末での当日実勢確認が前提。</li>
+</ul>
+<h3>トレード3：Anthropic IPO関連7社バスケット（AMD・ブロードコム・Google・Micron・Microsoft・NVIDIA・TSMC）の段階的ロング、価格決定（観測11/18）・取引開始（観測11/19）を見据えて</h3>
+<ul>
+<li>根拠：(1) Anthropicは11/10にIPOロードショーを開始し価格帯70〜78ドル/株を提示、7社が計260億ドル相当のClass N株式をIPO価格で購入することに既に合意済みであり、メガキャップテック各社のAI投資継続姿勢を示す具体的な証左となっている。(2) 日程がCNBC報道ベースで価格決定11/18・取引開始11/19に後ろ倒しされたとの観測（未確定）があり、NVIDIA決算（11/17）の直後というタイミングの重なりが、ポジティブ・ネガティブ両サプライズの増幅要因になりうる。(3) NVIDIA固有のガバナンス問題と分離した形でAIインフラ需要テーマへの投資機会を確保する狙い。</li>
+<li>エントリー目安：社内端末で11/11〜11/13の確定値を確認した上で、6銘柄（NVIDIA除く、またはNVIDIAは別建てでトレード2のヘッジ対象とする）の等金額バスケットを11/10終値近辺またはそれ以下の押し目で構築。</li>
+<li>利確目安：Anthropic IPOの価格決定・取引開始が確定し、バスケット平均で直近1週間の下落分の50%超を回復した時点で一部利益確定。</li>
+<li>損切り目安：Anthropic IPOの延期・中止、または7社のうち複数社がAI投資計画を下方修正する具体的なヘッドラインが出た場合。</li>
+<li>ホライズン：2〜4週間（NVIDIA決算11/17・Anthropic IPO観測日程11/18-19を跨ぐ）。</li>
+<li>リスク：(1) Anthropic IPOの日程・価格帯自体が複数回修正されており、さらなる延期・条件悪化がAI投資テーマ全体への疑義として波及するリスク。(2) 12月FOMCに向けた利上げ観測（本日のPPI次第で変動）の強化がグロース株バリュエーション全般への逆風となるリスク。(3) NVIDIAのガバナンス問題がセクター全体のセンチメントに伝播し、分離効果が働かないリスク。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>2026-11-13（金、本日）22:30頃（8:30ET）</strong> 米10月分PPI〔重要度：高〕— 12月FOMCに向けた最後の主要インフレ指標の一つ。CPI上振れ後だけに反応が増幅されやすい。</li>
+<li><strong>2026-11-13（金、本日）</strong> アプライドマテリアルズ決算（11/12引け後発表分）の市場反応・AMAT株価の確認〔重要度：中〜高〕— 本稿作成時点で未確認。</li>
+<li><strong>2026-11-17（火）引け後</strong> NVIDIA会計年度2027年第3四半期決算〔重要度：高〕— ガバナンス調査の進展についての言及の有無、AI投資需要サイドの実態確認が最大の焦点。</li>
+<li><strong>2026-11-18（水）</strong> 米国10/28FOMC議事録公表〔重要度：中〜高〕／共和党下院委員長3名によるフアンCEOへの非公開ブリーフィング（提案日）〔重要度：中〜高〕／Anthropic IPO価格決定（観測、CNBC報道ベース・未確定）〔重要度：中〜高〕。</li>
+<li><strong>2026-11-19（木）</strong> Anthropic IPO取引開始（ティッカーANT、観測・未確定）〔重要度：中〜高〕。</li>
+<li><strong>2026-12-08〜09</strong> 次回FOMC（ウォーシュ議長下）〔重要度：高〕— SEP・ドットプロット公表。本日のPPI次第で25bp/50bp利上げ確率の配分がさらに変化する可能性。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [How major US stock indexes fared Tuesday 11/10/2026 - La Nación（AP通信配信）](https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-11102026-nid10112026/)（WebSearch経由、取得日時：2026-11-13。S&amp;P500 7,520.93・-0.4%、ダウ52,231.89・-0.3%、ナスダック25,065.87・-0.7%、週間+2.0%・年初来+9.9%程度を確認）</p><p>- [stock market news for nov 10 2026 - Zacks](https://www.zacks.com/stock/news/3026944/stock-market-news-for-nov-10-2026)（WebSearch経由、取得日時：2026-11-13。11/9分の終値：S&amp;P500 7,549.94・+2.35%、ダウ+1,104.02pt・52,389.75、ナスダック+2.74%・25,253.14を確認）</p><p>- [US stocks close higher - thestar.com.my（Xinhua配信）](https://www.thestar.com.my/news/world/2026/11/10/us-stocks-close-higher)（WebSearch経由スニペット、取得日時：2026-11-13。11/9分、S&amp;P500全11セクター上昇、産業・一般消費財が上位との記載を確認）</p><p>- [NVIDIA Board opens investigation into reported foreign intelligence targeting of CEO - letsdatascience.com](https://letsdatascience.com/news/nvidia-board-opens-investigation-into-reported-foreign-intel-c5b93236)（WebSearch経由、取得日時：2026-11-13）</p><p>- [Nvidia board hires ex-prosecutor Joon Kim to investigate Jensen Huang - thenextweb.com](https://thenextweb.com/news/nvidia-board-jensen-huang-inquiry-directors-succession)（WebSearch経由、取得日時：2026-11-13。単独ソース、確度低〜中）</p><p>- [Nvidia Board Opens Independent Probe 9 Days Before Results - fourweekmba.com](https://fourweekmba.com/ai-nvidia-board-opens-independent-probe-9-days-before-results/)（WebSearch経由、取得日時：2026-11-13。11/17決算までの経緯、Huang氏はCEO継続の記載を確認）</p><p>- [WSJ: Anthropic targets Nasdaq debut next week under ticker ANT despite tech selloff - investinglive.com](https://investinglive.com/stock-market-update/wsj-anthropic-targets-nasdaq-debut-next-week-under-ticker-ant-despite-tech-selloff/)（WebSearch経由、取得日時：2026-11-13）</p><p>- [Anthropic sets IPO price range at $70-78 per share, launches roadshow - rttnews.com](https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx)（WebSearch経由、取得日時：2026-11-13。ロードショー開始11/10、Class A株8.25億株、価格帯70〜78ドルを確認）</p><p>- [The IPO Buzz: Anthropic (ANT Proposed) Unveils Terms of $61.05 Billion IPO - iposcoop.com](https://www.iposcoop.com/?p=39729)（WebSearch経由、取得日時：2026-11-13）</p><p>- [Renaissance Capital: Anthropic sets terms for $61 billion IPO targeting a $1.2 trillion market cap](https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap)（WebSearch経由、取得日時：2026-11-13。7社が計260億ドル相当のClass N株式購入に合意との記載を確認）</p><p>- [anthropic ipo what to know ant 22 banks founder vote 50 1 2026 - tech-insider.org](https://tech-insider.org/anthropic-ipo-what-to-know-ant-22-banks-founder-vote-50-1-2026/)（WebSearch経由、取得日時：2026-11-13。CNBC報道ベースの価格決定11/18・取引開始11/19との観測を確認、未確定）</p><p>- [JPMorgan sees earnings buffer for now - investinglive.com](https://investinglive.com/stocks/goldman-s-ai-memory-basket-plunges-51-from-peak-jpmorgan-sees-earnings-buffer-for-now/)（WebSearch経由、取得日時：2026-11-13。11/9付、AI関連の収益下降サイクルは半年先との見方を確認）</p><p>- [PPI Release Dates 2026 - therighttrader.com](https://therighttrader.com/economic-calendar/ppi)（WebSearch経由、取得日時：2026-11-13。米10月分PPIの発表日が11/13・8:30ETであることを確認）</p><p>- [Applied Materials Announces Third Quarter 2026 Results - ir.appliedmaterials.com](https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2026-results)（既報・継続参照。Q4ガイダンス：売上102.5億ドル±5億ドル）</p><p>- [The Best Five Sectors This Week #88 - stockcharts.com](https://articles.stockcharts.com/article/the-best-five-us-stock-market-sectors-this-week-11-09-2026-88/)（既報・継続参照。週次セクターランキング：エネルギー・ヘルスケア・金融・生活必需品が上位）</p><p>- 本リポジトリ内個別ノート：`daily/agents/2026-11-12-us-equity.md`、`daily/agents/2026-11-10-us-equity.md`、`daily/2026-11-12.md`（直近の記録・数値整合性確認のため参照）</p><p>※上記のうち11/9・11/10の終値は複数の独立ソースでの相互確認を経て確度高〜中だが、NVIDIA終値（両日とも日中値の相互確認のみ）、11/11（水）・11/12（木）・11/13（金、対象営業日）の確定終値・VIXレベル・セクターETF騰落率・AMAT決算結果はいずれも本稿作成時点で確認できておらず、未確認のまま記載した。NVIDIAの外部弁護人起用報道・Anthropic IPOの価格決定/取引開始日程（11/18・11/19）も単独ソースまたは未確定情報であり、社内端末での確認を推奨する。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
