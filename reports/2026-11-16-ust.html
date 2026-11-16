@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-16 米国債ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-16.html">統合レポートを見る</a><span>2026-11-16</span></div>
+  <h1 class="title">2026-11-16 米国債ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-16-fx.html">為替</a>
+    <a href="2026-11-16-commodities.html">コモディティ</a>
+    <a href="2026-11-16-jgb.html">円債</a>
+    <span class="current">米国債</span>
+    <a href="2026-11-16-intl-bonds.html">外債</a>
+    <a href="2026-11-16-jp-equity.html">日本株式</a>
+    <a href="2026-11-16-us-equity.html">米国株式</a>
+    <a href="2026-11-16-politics.html">政治・地政学</a>
+    <a href="2026-11-16-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得に関する留意事項（冒頭一括記載）</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">イールドカーブ</a>
+    <a href="#sec-5">FRB動向・入札結果</a>
+    <a href="#sec-6">フロー・需給・ポジション動向</a>
+    <a href="#sec-7">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得に関する留意事項（冒頭一括記載）</h2>
+<p>米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）・BLS（bls.gov）への直接WebFetchは今回も全件DNS解決エラーで失敗し、本稿は全セクションWebSearch経由の二次情報に依拠する。確度高〜中で確定できたUST現物の最終アンカーは<strong>11/10（火）終値</strong>（10年債利回りが前日4.88%から5.01%へ上昇）のままで、これは前稿（`daily/agents/2026-11-13-ust.md`）と同一である。<strong>11/11（水）はVeterans Dayで米国債市場休場</strong>。<strong>11/12（木）の30年債再発行入札（$25bn、13:00ET、決済日11/16＝本日）、同日のFRB高官（ハマック・グールズビー・デイリー・ウィリアムズ）発言、11/12・11/13のNY市場終値、11/13の10月分PPI結果、CFTC建玉11/10週分、ならびに対象営業日11/16の東京・欧州・NY各時間帯の米金利先物・現物の値動きは、いずれも検索インデックス未反映または情報源間の矛盾（異なる年・異なる月のPPI/オークション記事が混在）により確定できなかった</strong>。PPIについては10月分の市場コンセンサス（Dow Jones調査、11/11時点、ヘッドライン+0.4%m/m・前年比+6.6%程度、確度中）のみ確認でき、実際の発表値は未確認。個々の数値には「未確認」「推定」を付すが、この背景説明は本文中で繰り返さない。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li><strong>確定アンカーは変わらず11/10（火）終値：10年債利回りが前日4.88%から5.01%へ+13bp上昇（確度高）。</strong> 2年+14〜18bp（4.687〜4.725%の幅、確度中）、5年+10.5bp（4.764%、確度中）、30年は情報源間で5.29%超〜約5.37%の幅（確度低〜中）。10月分CPI上振れ（headline+0.4%・core+0.3%、3か月連続）が主因。</li>
+<li><strong>11/11（水）はVeterans Dayで米国債市場全面休場。</strong></li>
+<li><strong>11/12（木）の30年債再発行入札（$25bn、13:00ET）は本稿作成時点でも結果未確認。</strong> 決済日は本日11/16。3年・10年入札（11/9・11/10）が揃って弱かった（indirect比率低下・direct比率急上昇）直後の長期ゾーン需給テストだったが、応札倍率・テール・indirect比率とも未確認。</li>
+<li><strong>11/13（金）の10月分PPI（8:30ET）も結果未確認。</strong> 市場コンセンサス（Dow Jones調査、11/11時点）はヘッドライン+0.4%m/m・前年比+6.6%程度（9月分+1.3%m/m・前年比6.3%からの伸び鈍化想定）だったが、実際の発表値・UST反応は検索で確認できなかった。</li>
+<li><strong>12月FOMC（12/8-9）での利上げに関する市場観測は複数の二次情報で高水準（CME FedWatch系の二次集計で80%台後半〜99%の幅、時点・ソースにより差）に収斂しているとみられる一方、Reuters調査（経済学者101名、時点不明だが11月中旬とみられる）では全員が25bp利上げ（政策金利3.75-4.00%→4.00-4.25%）を予想しており、「利上げの有無」はほぼ確定的だが「25bpか50bpか」の規模論争は市場と経済学者コンセンサスの間でなお開きがある</strong>（確度中、複数の二次情報）。Waller理事が事前に示した「コア+0.3%が3か月連続なら0.50%利上げ検討」の条件は10月CPIで満たされており、残る10月PPI・11/18のFOMC議事録・雇用関連指標が規模論争の試金石となる。</li>
+<li><strong>CFTC建玉は11/3週分からの更新が今回も確認できず（確度中、前稿から変化なし）。</strong> 通常のCOTリリースのタイミング（週末金曜発表）を踏まえると、11/10週分は本日11/16前後に発表される可能性があるが、本稿作成時点では未反映。</li>
+<li>対象営業日11/16（月）の東京・欧州・NY各時間帯の米金利先物・現物の具体的な値動きは、検索インデックス未反映のため確認できなかった。翌日11/17（火）に10月分小売売上高、11/18（水）にFOMC議事録（10/28分）が予定されており、今週は11/12・11/13の未確認データの事後確認と合わせて材料が集中する週となる。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11月9日（月）</strong>：3年債入札（$58bn）実施。最高落札利回り4.627%、応札倍率2.53倍（2025年8月以来の低水準）、indirect比率55.5%（約15か月ぶりの低水準）、direct比率35%（過去最高）という弱い結果（確度中）。10年債利回りは終値4.88%。</li>
+<li><strong>11月10日（火）NY序盤</strong>：10月分CPI発表（headline+0.4%m/m・core+0.3%m/m、確度高）。UST利回りは全年限で急上昇し、10年債は終値5.01%（+13bp）。同日NY午後に10年債再発行入札（$42bn）実施、最高落札利回り5.02%（WI比約1.0bpテール）、応札倍率2.46倍、direct比率29.0%という弱い結果（確度中）。同日、Waller理事・Logan総裁がタカ派発言（Wallerは「コア+0.3%が3か月連続なら0.50%利上げ検討」、Loganは「さらに50bp以上必要」）。</li>
+<li><strong>11月11日（水、Veterans Day）</strong>：米国債市場全面休場。新規確定値なし。</li>
+<li><strong>11月12日（木）</strong>：30年債再発行入札（$25bn、13:00ET、決済日11/16）実施。FRB高官4名（ハマック・グールズビー・デイリー・ウィリアムズ）の発言も予定されていた（グールズビーはYahoo Finance Invest 2026でのQ&amp;A参加が一次情報で確認、ただし発言内容は未確認）。入札結果・同日NY市場終値はいずれも未確認。</li>
+<li><strong>11月13日（金）</strong>：10月分PPI発表（8:30ET）。市場コンセンサス（Dow Jones調査）はヘッドライン+0.4%m/m・前年比+6.6%程度だったとみられるが、実際の発表値・市場反応（UST利回り・株式）は未確認。CFTC週間建玉報告（11/10週分）も本日前後に発表予定だが未確認。</li>
+<li><strong>11月16日（月、対象営業日）</strong>：東京・欧州・NY各時間帯の米金利先物・現物の動きはいずれも未確認。30年債再発行（11/12入札分）の決済日。10月分Empire State製造業指数（8:30ET、前回25.5）等が予定されているが結果は本稿作成時点で未発表。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>イールドカーブ</h2>
+<p>（11/12〜11/16の新規確定値を取得できていないため、直近で確定できた11/10終値を起点に記述。11/11は休場）</p>
+<ul>
+<li><strong>2年</strong> 11/10終値4.687〜4.725%程度（情報源間で幅、前日比+14〜18bp、確度中）— 12月FOMCでの利上げ規模（25bpか50bpか）を最も敏感に織り込むゾーン。11/13PPI・11/18FOMC議事録の結果次第で一段の変動余地。11/12以降の確定値は未確認。</li>
+<li><strong>5年</strong> 11/10終値4.764%程度（前日比+10.5bp程度、単一情報源、確度中）— CFTCでは5年ゾーンへの弱気ポジション（ネットショート）が最大となっており（11/3週時点）、ポジション起因のボラティリティが集中しやすいゾーン。</li>
+<li><strong>10年</strong> 11/9終値4.88%→11/10終値5.01%（前日比+13bp、確度高）。同日の再発行入札（$42bn）は最高落札利回り5.02%・応札倍率2.46倍・direct比率29.0%という弱い結果。11/12〜11/16の確定値は未確認。</li>
+<li><strong>30年</strong> 11/10終値は情報源間で5.29%超〜約5.37%の幅（確度低〜中）。11/12の再発行入札（$25bn）で需給が試されたが、結果（応札倍率・indirect比率・テール）は未確認。財政・発行増懸念由来のタームプレミアムが構造的に残存しているとみられる。</li>
+</ul>
+<p><strong>カーブ形状の解説</strong>：確定できている最後の変化（11/9→11/10）は、2年+14〜18bpに対し10年+13bpという前中期ゾーン主導の<strong>ベア・フラット化</strong>だった（推定、2s10sは11/6終値の約+35bpから数bp縮小したとみられる）。主因はCPIコア上振れとWaller・Loganのタカ派発言による12月利上げ（規模含む）の織り込み強化。11/11の休場・11/12の30年入札・11/13のPPIを跨いだ後のカーブ形状変化は未確認であり、30年入札が弱ければ長期ゾーンのタームプレミアム再拡大（スティープ化方向）、PPIが上振れ継続なら前中期ゾーン主導のフラット化継続、という両方向の可能性が残る。本稿時点ではいずれの材料も結果不明のため、方向感の再評価には次回更新（社内端末での11/12〜11/16確定値の確認）が必要。</p>
+<p><strong>SOFRスワップ・スワップスプレッド</strong>：対象営業日の確定値は今回も未確認（前稿から状況変化なし）。各情報源で一致する方向性は、財政赤字拡大・大量発行・ディーラーのバランスシート制約を背景に国債がスワップレートに対して割安（スプレッドが負に拡大）という構造であり、11/9・11/10の弱い入札結果（direct比率の異例の高さ）はこの構造を支持する材料と解釈できる（推定）。QTは2025年12月に終了済みでFRBはリザーブ管理のための購入フェーズに移行しており、レポ市場のタイト化圧力自体は後退しているとみられるが、具体的なスワップスプレッドの数値変化（絶対水準・変化幅）は依然確認できていない。</p>
+</section>
+<section id="sec-5">
+<h2>FRB動向・入札結果</h2>
+<ul>
+<li><strong>FOMC・金融政策</strong>：10/28FOMCで政策金利を3.75-4.00%で据え置き（10-2、クック理事・ハマック・クリーブランド連銀総裁が利上げを主張して反対、既報）。次回FOMCは12/8-9（決定発表12/9）。Reuters調査（経済学者101名、時点不明だが11月中旬とみられる）では全員が25bp利上げ（→4.00-4.25%）を予想（確度中）。一方、複数の二次情報が示す市場（CME FedWatch系）での「12月利上げあり」の確率は80%台後半〜99%の幅で収斂しているとみられるが、25bp/50bpの内訳は情報源間でばらつきが大きく確度低い。</li>
+<li><strong>Waller理事（11/10）</strong>：コア前月比+0.3%が3か月連続なら12月FOMCで0.50%利上げを検討すべきとの考えを表明。実際にコアCPIはこの条件を満たした（確度中〜高）。</li>
+<li><strong>Logan総裁（ダラス連銀、11/10）</strong>：「さらに50bp以上の引き上げが必要」との立場を改めて表明。</li>
+<li><strong>FRB高官4名（11/12、ハマック・グールズビー・デイリー・ウィリアムズ）</strong>：グールズビー総裁がYahoo Finance Invest 2026でのバーチャルQ&amp;Aに参加したことは一次情報（シカゴ連銀）で確認できたが、発言内容を含む4名全員の具体的な発言は未確認。</li>
+<li><strong>FOMC議事録（10/28分）</strong>：11/18（水）公表予定。</li>
+<li><strong>入札結果</strong>：</li>
+<li><strong>3年債（11/9、$58bn）</strong>：最高落札利回り4.627%、応札倍率2.53倍（2025年8月以来の低水準）、indirect比率55.5%（約15か月ぶりの低水準）、direct比率35%（過去最高）。<strong>弱い結果</strong>（確度中）。</li>
+<li><strong>10年債再発行（11/10、$42bn）</strong>：最高落札利回り5.02%（WI比約1.0bpテール）、応札倍率2.46倍（平均2.60倍から低下）、direct比率29.0%（平均15.9%から大幅上昇）。<strong>弱い結果</strong>（確度中）。</li>
+<li><strong>30年債再発行（11/12、$25bn、13:00ET、決済日11/16）</strong>：<strong>実施されたが結果（最高落札利回り・応札倍率・indirect比率・テールの有無）は本稿作成時点で未確認。</strong> 対象営業日11/16は本入札の決済日に当たる（新規発行分の実質的な需給吸収が本日完了する形）。3年・10年と2本連続で海外需要（indirect）が後退した直後の長期ゾーン需給テストとして最重要イベントであり、社内端末での確認を強く推奨。</li>
+<li><strong>評価・次回入札への含意</strong>：3年・10年の結果からは、海外需要の構造的後退と国内ディーラー・直接入札者への依存拡大という構図が確認されている。11/12の30年入札が同様の弱さを見せた場合、長期ゾーンのタームプレミアム再拡大リスクが高まる。次回の2年・5年・7年入札は11月下旬に予定されるとみられるが、具体的日程は本稿では未確認。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li><strong>CFTC建玉（11/3週分、二次集計経由、確度中、前稿から更新なし）</strong>：5年ネットショート約1,275,370枚（当該リリース中で最大）、2年ネットショート約1,002,544枚、10年ネットショート約962,359枚、T-bondネットショート約9,097枚（いずれも前週比では一部縮小）。ベリー（5年）ゾーンへの弱気ポジション集中が目立つ。<strong>11/10週分は本日前後に発表予定とみられるが未反映・未確認。</strong> 11/9-10のCPI・入札通過、11/12の30年入札、11/13のPPIを経てこのポジションがどう変化したかは次回更新時の重要確認事項。</li>
+<li><strong>入札需給の傾向</strong>：3年・10年の2入札連続でindirect比率が過去平均を下回り、direct比率が過去最高・大幅上昇という構図。海外需要の構造的後退とドメスティックな需要への依存拡大が示唆される。11/12の30年入札でこの傾向が継続したかは未確認。</li>
+<li><strong>QT終了後の需給環境</strong>：FRBは2025年12月にQTを終了しリザーブ管理のための購入フェーズに移行済み。レポ・リザーブ需給は前年より緩和的とみられるが、財政赤字拡大に伴う発行増とのバランスは入札結果（特に11/12の30年債）次第であり、引き続き注視が必要。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>推奨トレード</h2>
+<h3>トレード1：米2年債 アウトライト・ショート（12月FOMC利上げ確度の上昇、特に50bpオプション性の再評価に乗る）</h3>
+<ul>
+<li>根拠：(1) 10月CPIコアが+0.3%m/m（3か月連続）とWaller理事の明示的な「0.50%利上げ検討」条件を満たした。(2) Logan総裁も同日タカ派発言しており、FOMC内のタカ派色が広がっている。(3) 市場の12月利上げ確率は高水準に収斂しているが、「25bpか50bpか」の規模論争はなお未解決で、Reuters経済学者調査（全員25bp予想）と市場の一部に残る50bpオプション性との間にギャップがある。11/13のPPI・11/18のFOMC議事録で追加のタカ派サプライズが出れば前中期ゾーンがさらに売られる余地がある。(4) 3年・10年入札（11/9・11/10）の弱さ（indirect比率低下）も前中期ゾーンの需給の脆さを裏付ける。</li>
+<li>エントリー目安：2年債利回り4.65〜4.75%程度（社内端末で直近の実勢を再確認した上で、戻り（利回り低下）があればショート追加）。</li>
+<li>利確目安：2年債利回り4.95〜5.05%程度。</li>
+<li>損切り目安：2年債利回りが4.55%を明確に下回る場合（PPI下振れ等で12月利上げ確度・規模論争が後退するシグナル）。</li>
+<li>ホライズン：12/8-9のFOMCまでの約3週間。</li>
+<li>リスク：①11/13PPI（結果未確認）・11/18FOMC議事録が市場予想より穏やかだった場合、タカ派色が後退し2年債利回りが低下するリスク。②11/12の30年入札が意外に強い結果だった場合、需給改善観測が前中期ゾーンにも及ぶ可能性。③FOMC自体が25bpで決着し、市場の一部に残っていた50bpオプション性が剥落することで、FOMC直前・直後に2年債利回りが低下（ショートカバー）するリスク（本トレードの主要な逆行シナリオ）。④12/11つなぎ予算期限にかけた財政協議の不透明感によるフロントエンドの逆行（リスクオフでの金利低下）。</li>
+</ul>
+<h3>トレード2：2s10sフラットナー（10年買い・2年売り、またはSOFRスワップ2s10sレシーブ）― ベア・フラット化継続を狙う</h3>
+<ul>
+<li>根拠：(1) CPIコア上振れ・Waller・Loganのタカ派発言を受け、前中期ゾーンの利回り上昇が長期ゾーンを上回る形でカーブがフラット化している（推定、2s10sは11/6の+35bp程度から数bp縮小したとみられる）。(2) 長期ゾーンは財政・発行増懸念由来のタームプレミアムが構造的に残存するため、前中期ゾーンの急激な利上げ織り込み強化に対して相対的に抵抗力を持つ。(3) 11/12の30年入札結果が未確認であるため、エントリーサイズは保守的に。</li>
+<li>エントリー目安：2s10sスプレッドが+30〜35bp程度まで戻った局面でフラットナーのエントリー。11/12の30年入札結果の社内端末での確認を先行させることを推奨。</li>
+<li>利確目安：2s10sスプレッドが+15〜20bp程度まで縮小した時点。</li>
+<li>損切り目安：2s10sスプレッドが+40bp超へ再拡大した場合（30年入札が弱い結果となり長期ゾーンの需給懸念が再燃するシグナル）。</li>
+<li>ホライズン：12/8-9のFOMCまでの約3週間。</li>
+<li>リスク：①11/12の30年入札が予想以上に弱い結果となり、長期ゾーンのタームプレミアムが再拡大してカーブがスティープ化するリスク（本トレードの主要な逆行シナリオ、未確認のため特に注意）。②PPI・FOMC議事録等でタカ派色が後退し前中期ゾーンが買われる場合、フラット化のペースが鈍化するリスク。③12/11つなぎ予算期限にかけた財政協議の不透明感・政府閉鎖リスクの再燃。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>随時（確認必須）</strong> 11/12（木）の30年債再発行入札（$25bn）の確定結果（応札倍率・indirect比率・テールの有無）〔重要度：高〕— 本稿では確認できず、社内端末での再確認を強く推奨。</li>
+<li><strong>随時（確認必須）</strong> 11/13（金）10月分PPIの実際の発表値とUST反応〔重要度：高〕— 市場コンセンサス（Dow Jones調査、+0.4%m/m程度）は確認できたが実際の結果は未確認。</li>
+<li><strong>11月16日（月、本日）</strong> 10月分Empire State製造業指数（8:30ET、前回25.5）〔重要度：低〜中〕。</li>
+<li><strong>11月17日（火）</strong> 10月分小売売上高（8:30ET）〔重要度：高〕— 消費の強さが12月FOMCの判断材料に。</li>
+<li><strong>11月18日（水）</strong> 10/28FOMC議事録公表〔重要度：中〜高〕— クック・ハマックの反対票の背景・利上げ継続論の強さを再確認する材料。</li>
+<li><strong>11月25日（水）</strong> ベージュブック公表〔重要度：低〜中〕。</li>
+<li><strong>12月8-9日</strong> FOMC（次回会合、決定発表12/9）〔重要度：最高〕— 25bpか50bpかの規模論争が最大の注目点。ウォーシュ議長の記者会見でのフォワードガイダンスにも注目。</li>
+<li><strong>12月11日（木）</strong> つなぎ予算期限〔重要度：高〕— 財政協議再燃・政府閉鎖リスクが年末にかけての財政リスクプレミアムの新たな注目点。</li>
+<li><strong>随時</strong> CFTC週間COT建玉報告（11/10週分、発表待ち）〔重要度：中〜高〕— 5年ネットショートの急増がCPI・入札通過後にどう変化したかを確認する必要がある。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [US sells stocks slide, yields jump, USD higher after hotter-than-expected October CPI - investinglive](https://investinglive.com/technical-analysis/us-stocks-slide-yields-jump-usd-higher-after-hotter-than-expected-october-cpi/)（WebSearch経由、取得日時：2026-11-16、CPI結果・2年+14.0bp・5年+10.5bp等、前稿から継続参照）</p><p>- [US yields rise, stocks fall as inflation data boosts odds of larger December rate hike - Kitco/Reuters](https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december)（WebSearch経由、取得日時：2026-11-16、Waller理事の0.5%利上げ条件発言）</p><p>- [U.S. Treasury sells $42 billion of 10 year notes at a high yield of 5.02% - investinglive](https://investinglive.com/news/u-s-treasury-sells-42-billion-of-10-year-notes-at-a-high-yield-of-5-02/)（WebSearch経由、取得日時：2026-11-16）</p><p>- [US 3-year Treasury auction draws weak demand as bid/cover hits lowest since August 2025 - primexbt](https://primexbt.com/news/us-3-year-treasury-auction-draws-weak-demand-as-bid-cover-hits-lowest-since-augu/)（WebSearch経由、取得日時：2026-11-16）</p><p>- [30-year Treasury bond reopening auction schedule - home.treasury.gov（press release、一次情報）](https://home.treasury.gov/news/press-releases/sb0678)（WebSearch経由、取得日時：2026-11-16、11/12 13:00ET実施・$25bn・決済日11/16を確認）</p><p>- [Fed December Rate Hike Looks Firm, but Is the 2026 Path Too Steep? - stockwirex](https://stockwirex.com/?p=55671)（WebSearch経由、取得日時：2026-11-16、Reuters調査で経済学者101名全員が25bp利上げ予想・CME FedWatch高水準）</p><p>- [Producer Inflation / October PPI preview - stocktitan, financecalendar等の二次集計](https://www.stocktitan.net/articles/october-2026-ppi-preview-yearly-rate)（WebSearch経由、取得日時：2026-11-16、Dow Jones調査によるコンセンサス+0.4%m/m・前年比+6.6%程度、BLS発表スケジュール11/13 8:30ET）</p><p>- [Chicago Fed - Goolsbee to participate in Yahoo Finance Invest 2026 Q&amp;A, Nov 12 - chicagofed.org（一次情報）](https://www.chicagofed.org/publications/speeches/2026/nov-12-yahoo-finance-invest)（WebSearch経由、取得日時：2026-11-16）</p><p>- [US economic calendar: Advance Retail Sales Oct 2026 Nov 17, Empire State Manufacturing Nov 16 - 複数二次集計（finviz, fedratecalc等）](https://fedratecalc.com/us-economic-calendar/november-2026/)（WebSearch経由、取得日時：2026-11-16）</p><p>- [5 year treasury shorts cftc cot november 2026 - tftc.io](https://www.tftc.io/5-year-treasury-shorts-cftc-cot-november-2026)（WebSearch経由、取得日時：2026-11-16、11/3週分、更新なし）</p><p>- 米財務省（home.treasury.gov/treasurydirect.gov）・FRB（federalreserve.gov）・BLS（bls.gov）への直接WebFetchアクセスはいずれもDNS解決エラーのため失敗（未確認データの主因）</p><p>- 本リポジトリ内：`daily/agents/2026-11-13-ust.md`、`daily/agents/2026-11-12-ust.md`、`daily/2026-11-13.md`（継続性・整合性確認のため参照）</p><p>（11/12の30年債入札確定結果・FRB高官4名の発言内容、11/13のPPI実際の発表値とUST反応、対象営業日11/16の東京・欧州・NY時間帯の米金利先物・現物の値動き、CFTC建玉11/10週分、SOFRスワップ・スワップスプレッドの確定値は、いずれも今回の調査では確認できず「未確認」として記載。次回更新時に一次情報源（Treasury H.15、TreasuryDirect、BLS、CFTC.gov等、社内端末含む）での補完が必要）</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
