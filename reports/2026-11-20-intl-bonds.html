@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-20 外債（米国・日本以外）ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-20.html">統合レポートを見る</a><span>2026-11-20</span></div>
+  <h1 class="title">2026-11-20 外債（米国・日本以外）ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-20-fx.html">為替</a>
+    <a href="2026-11-20-commodities.html">コモディティ</a>
+    <a href="2026-11-20-jgb.html">円債</a>
+    <a href="2026-11-20-ust.html">米国債</a>
+    <span class="current">外債</span>
+    <a href="2026-11-20-jp-equity.html">日本株式</a>
+    <a href="2026-11-20-us-equity.html">米国株式</a>
+    <a href="2026-11-20-politics.html">政治・地政学</a>
+    <a href="2026-11-20-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得状況に関する注記</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要国国債利回り</a>
+    <a href="#sec-5">クロス市場スプレッド</a>
+    <a href="#sec-6">中銀動向</a>
+    <a href="#sec-7">フロー・需給・ポジション動向</a>
+    <a href="#sec-8">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得状況に関する注記</h2>
+<p>本稿作成時点でも、Bundesbank・英DMO・ONS・Eurostat・RBA・Bank of Canada・BOE・米財務省等の公式ドメインへの直接WebFetchは全件DNS解決エラーで失敗し（CLAUDE.mdの一覧に記載された一部ドメインも含め、本実行環境では軒並み不通）、全面的にWebSearch経由の二次情報に依拠した。確度中〜高で複数ソース間の整合が取れた確定アンカーは<strong>独Bund・仏OAT・伊BTPが11/17（火）〜11/18（水）</strong>、<strong>英Gilt・豪・加・スイスが11/13〜11/16時点</strong>にとどまる。対象営業日11/20（金）および前営業日11/19（木）の確定終値・入札結果の多くは検索インデックスの反映遅れで確認できず、「未確認」と明記した箇所は実務利用前に社内端末での再確認を要する。一方、<strong>RBAの11月Statement on Monetary Policy（一次情報、rba.gov.au公表分だがWebFetch自体は不通のためWebSearchスニペット経由）</strong>により、本稿11/19版で記載した「市場は2027年末までの利下げを完全に織り込み」という記述は誤りだった可能性が高いことが判明し、本稿で訂正した（詳細は中銀動向参照）。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li><strong>独3.30%2033 Bund増発入札（11/18実施、7年ゾーン）</strong>は、応札額34.17億ユーロに対し配布額22.72億ユーロ（計画増発30億ユーロ、Bundesbank保有分24.27%）、カバー比率1.5倍（前回1.4倍から改善）、平均落札利回り3.27%（前回3.36%から低下）。カバー比率の改善と利回り低下を伴う結果で、評価は無難〜まずまず。</li>
+<li><strong>英10月CPIは前年比+3.6%（予想+3.7%、前月+3.5%）とわずかに予想・BOE見通しの双方を下回り（Newsquawk「Gilts shine after UK CPI」、確度中〜高）、サービス価格も市場・BOE予想を下回った一方コアは市場予想並み</strong>。Giltは独Bund以上にアウトパフォームし（Bund先物は約30チック高、UST先物はフラット）、BOEの12月追加利上げ確率はやや後退（複数報道でおよそ80%→70%程度、確度中）。</li>
+<li><strong>仏上院はPLFSS2027（社会保障予算法案）を11/18深夜に201対124で第一読会採択</strong>（年金部分の全会一致削除等の財政規律後退修正を含む）。両院合同委員会（CMP）は11/26予定。本予算案（PLF2027、国家予算本体）の上院審議は対象営業日11/20から開始、採決は12/9を目指す日程。OAT-Bundスプレッドは11/16の156bpから大きな方向感を欠くレンジ内の推移が続いているとみられる（推定）。</li>
+<li><strong>BTP-Bundスプレッドは11/16〜18にかけて104〜106bpの狭いレンジで安定</strong>（BTP10年4.42〜4.43%、Bund10年3.36〜3.38%、ソース間で1bp程度のばらつきあり）。連続的タイト化トレンドの地合い自体は崩れていない。</li>
+<li><strong>重要な訂正</strong>：11/19付の本稿では「RBA11月理事会議事要旨のタカ派トーンにもかかわらず、市場は2027年末までに25bpの利下げを完全に織り込んでいる」と記載したが、RBA自身の11月Statement on Monetary Policy（一次情報）は「OIS市場は11月理事会での利上げを85%の確率で織り込んでいた」「2027年半ばまでに追加で約1.5回・35bp相当の利上げが織り込まれている」と記載しており、市場は利下げではなく追加利上げを織り込んでいたことが確認された。この訂正は重要であり、以下「中銀動向」で詳述する。ただしこのSMP記載は11/3-4理事会決定時点に近い市場価格を反映したものであり、11/17公表の議事要旨後の最新の織り込みとは異なる可能性がある点に留意。</li>
+<li>加10年は11/16の3.82%（10月CPI下振れ・10月雇用者数減少を受けたBOC追加利上げ観測の後退）から更新なし。スイス10年は11/16の0.58%超（約2ヵ月ぶり高水準接近）から更新なし。英DMOは11/19にプログラマティック・テンダー（コンベンショナルGilt、銘柄未確認、決済11/20）を実施したと見られるが結果は未確認。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11/13（金）</strong>：英Gilt10年は5.3%超で前日の売りから落ち着き、2年は5%超で推移。独Bundは3.3%台前半で推移。</li>
+<li><strong>11/16（月）</strong>：独Bund10年は3.37〜3.40%（10/22以来高水準）、英Gilt10年は5.35%超（10/23以来高水準）・2年5%超（3年ぶり高水準）、仏OAT10年は4.95%（OAT-Bundスプレッド156bp）。NY時間にハイテク株急落（tech rout再燃）を受けたリスクオフが広がり、原油急落（Brent92.44ドル・WTI85.72ドル、ホルムズ海峡経由の輸出回復による供給過剰観測）・米国株安・米国債高・ドル高という逃避地合いとなった（既報）。</li>
+<li><strong>11/17（火）</strong>：独は3%2028シャッツ・リオープンを実施（応札倍率1.8倍・平均落札利回り3.10%）。英は5¼%2041コンベンショナル入札を実施（平均落札利回り5.591%、応札倍率3.28倍、テール0.5bp、決済11/18）。独Bund10年はMarketWatch経由で3.38%（-2bp）、仏OAT10年は4.91%（-4bp）まで後退。BTP-Bundスプレッドは104〜105bp。豪10年は5.1%超（2週間ぶり高水準）まで上昇し、米USTが主導するグローバル国債売りに追随。米国では10月分小売売上高（総合+0.2%・コントロールグループ+0.6%）が発表。NY引け後にNVIDIAが市場予想超えの決算を発表。RBA11月理事会議事要旨（6対3分裂・インフレ高止まり長期化の多数派評価）が公表された。仏上院は夜にPLFSS2027の年金部分（第35条）・1,260ユーロ超年金凍結案を全会一致で否決。</li>
+<li><strong>11/18（水）</strong>：独3.30%2033 Bund増発入札を実施（カバー比率1.5倍・平均落札利回り3.27%）。英10月CPIが前年比+3.6%（予想+3.7%、前月+3.5%）と予想・BOE見通し双方を下回る結果となり、Giltが独Bund以上にアウトパフォーム（Newsquawk「Gilts shine after UK CPI」）。米FOMC議事要旨（10/27-28会合分、米東部時間14:00＝日本時間11/19未明4:00頃公表）は「ほぼ全ての参加者が12月の追加利上げを想定」「複数名が0.25%超の利上げ検討の可能性に言及」とタカ派的内容。米ウォラー理事はCNBCで「12月FOMCで0.5%の利上げを推奨する」と発言。仏上院は深夜にPLFSS2027を201対124で第一読会採択。BTP-Bundスプレッドは104bp（開）→105.8bp（引け、BTP10年4.42%・Bund10年3.36〜3.38%）。</li>
+<li><strong>11/19（木、前営業日）</strong>：米10年債利回りはウォラー発言・FOMC議事要旨のタカ派的内容を受けて一時5.12%まで上昇後、原油安・米住宅関連指標の軟化を受けて5.06%まで低下（米国債担当・為替担当ノート経由）。英GBP/USDは英CPI下振れ後のBOE12月利上げ観測後退（確率80%→70%程度）を反映して2026年安値圏まで下落。欧州国債市場の確定ティックは本稿作成時点で未確認。深圳APECでトランプ・習近平・プーチンによる史上初の3者会談が開催されたが、結果は未確認。</li>
+<li><strong>11/20（金、対象営業日）</strong>：仏上院でPLF2027（本予算案）審議が本日開始予定。欧州・英国・米国の11月PMI速報値、米ミシガン大学消費者信頼感確定値が発表予定。英DMOの11/19プログラマティック・テンダー（決済11/20）の結果は未確認。対象営業日の欧州・NY時間の確定ティックは検索インデックス未反映のため未確認であり、本稿の記述は11/18〜19の確定アンカーからの構造的推察（推定）であることに留意。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>主要国国債利回り</h2>
+<p>（独Bund・仏OAT・伊BTPは11/17〜18、英Gilt・豪・加・スイスは11/13〜16時点を基準。対象営業日11/20の確定値は取得できておらず、以降は未確認。凡例：確度の明記がないものは未確認/推定）</p>
+<ul>
+<li><strong>ドイツ 10年</strong> 約3.36〜3.38%（11/17〜18、quifinanza/abcbourse(MarketWatch)、確度中〜高）— 11/16の10/22以来高水準（3.37〜3.40%）からわずかに後退。原油急落によるインフレ再加速懸念の一服、11/18英CPI下振れを受けたGiltの連れ高（Bund先物約30チック高）が背景。</li>
+<li><strong>ドイツ 7年（3.30%2033、11/18増発入札）</strong> 平均落札利回り3.27%（前回3.36%、確度高、新規確認）— カバー比率1.5倍（前回1.4倍）。</li>
+<li><strong>ドイツ 20年（2047ゾーン）</strong> 3.65%（11/11、Bundesbank公式タップ入札平均落札利回り、確度高、更新なし）。</li>
+<li><strong>ドイツ 30年（2056ゾーン）</strong> 3.66%（11/11、Bundesbank公式タップ入札平均落札利回り、確度高、更新なし）— 20年との差はわずか1bpで超長期ゾーンのフラットな形状が継続。</li>
+<li><strong>ドイツ 2年（Schatz、3%2028リオープン）</strong> 3.10%（11/17入札平均落札利回り、前回3.08%、確度高、更新なし）。</li>
+<li><strong>英国 10年</strong> 5.35%超（11/16、Trading Economics、10/23以来の高水準、確度中〜高）— 11/18の英10月CPI下振れ（+3.6%、予想+3.7%、予想・BOE見通しともに下回る）を受けてGiltがアウトパフォームし後退したとみられるが具体的bp水準は未確認（推定）。11/17の5¼%2041長期入札（平均落札利回り5.591%、テール0.5bp）は長期ゾーンの需給自体が崩れていないことを示唆。</li>
+<li><strong>英国 2年</strong> 5%超（11/16、Trading Economics、3年ぶり高水準、確度中〜高）— 英CPI下振れ後の反応（低下方向）は未確認。</li>
+<li><strong>英国 30年</strong> 6.03%前後（10月初頭時点、1998年以来の高水準）／以降の更新値は未確認、stale。</li>
+<li><strong>フランス 10年（OAT）</strong> 約4.91〜4.95%（11/16〜17、abcbourse(MarketWatch)/quifinanza、確度中〜高）— 10月下旬の5.1%超（2002年以来の高水準）からは後退したが依然高水準。</li>
+<li><strong>イタリア 10年（BTP）</strong> 4.42〜4.43%（11/17〜18、soldionline/MilanoFinanza、確度中〜高）— 102〜106bpのレンジでBTP-Bundスプレッドが往復。</li>
+<li><strong>米国 10年（参考、クロススプレッド算出用、担当外）</strong> 5.09〜5.10%（11/17終値、MilanoFinanza/247wallst、確度中〜高）。11/19に一時5.12%まで上昇後、原油安・住宅指標の軟化で5.06%まで低下したと為替・米国債担当ノートが既報（確度中）。</li>
+<li><strong>豪州 10年（AGS）</strong> 5.1%超（11/17、Trading Economics、2週間ぶり高水準、確度中〜高）— 米USTが主導するグローバル国債売りに追随。RBA11月議事要旨は6対3分裂・タカ派的評価。RBA自身の11月SMP（一次情報）は、市場が2027年半ばまでに追加で約1.5回・35bp相当の利上げを織り込んでいたと記載（11/3-4理事会決定時点に近い市場価格の記述、11/17議事要旨公表後の最新の織り込みとは異なる可能性）。</li>
+<li><strong>カナダ 10年</strong> 3.82%（11/16、Trading Economics、確度中〜高、更新なし）— 10月分CPI下振れ・10月雇用者数減少（予想+13,600人に対し▲4,700人）を受けたBOC追加利上げ観測の後退を反映。</li>
+<li><strong>ニュージーランド 10年</strong> 未確認（直近の確度ある確定値を得られず）。RBNZは10/28にOCRを2.75%で「サプライズホールド」（投票4-3）。</li>
+<li><strong>スウェーデン 10年</strong> 未確認（直近確認できた確定値は2026年7月時点の2.98%でstale）。</li>
+<li><strong>ノルウェー 10年</strong> 未確認（直近確認できた確定値は2026年6月時点の4.42%でstale）。</li>
+<li><strong>スイス 10年</strong> 0.58%超（11/16、Trading Economics、約2ヵ月ぶり高水準に接近、確度中〜高、更新なし）。</li>
+</ul>
+<p><strong>カーブ形状</strong>：独Bundは11/16の10/22以来高水準（約3.4%）から11/17〜18にかけてわずかに後退し、英CPI下振れを受けたGiltの連れ高（独Bundも一定程度ビッド）が10年ゾーンの上昇ペースを緩和した。前端（Schatz）と7年（3.30%2033）の入札はいずれもカバー比率改善・利回りほぼ横ばい〜低下という結果で、前端〜中期ゾーンの需給が崩れていないことを示す一方、20年超ゾーンのフラットな形状（20年3.65%・30年3.66%、11/11時点、更新未確認）は変化なしとみられる。英Giltは前端主導のベア・フラット化が11/16時点まで継続していたが、11/17の5¼%2041長期入札の良好な結果（テール0.5bp）と11/18の英CPI下振れ（BOEの12月追加利上げ確率がおよそ80%→70%程度に後退）が重なり、前端が長期より強く反応したとみられる（推定）ことから、2s10sはやや再スティープ化した可能性がある。伊BTPは102〜106bpのレンジで往復が続き方向感に乏しい。仏OATは10月下旬の170bp超からは縮小したレンジ（150〜157bp台）で推移しているが、仏上院が11/18深夜にPLFSS2027を201対124で第一読会採択（財政規律色の薄い修正を含む）し、対象営業日11/20からPLF2027（国家予算本体）の上院審議が開始されるため、スプレッドの方向感は不安定な地合いが続くとみられる。</p>
+<p><strong>EUR/GBPスワップカーブ・アセットスワップスプレッド</strong>：今回も信頼できる最新の具体的水準は確認できなかった（未確認）。参考情報として、独Bund-スワップスプレッドは過去にマイナス圏（-4bp程度、2025年11月時点）となった実績があり、構造的にボラタイルであることが知られている（確度低、年次不明瞭のため直近の数値として採用しない）。英SONIAスワップについても、スワップスプレッドが80bp近辺で2s10sのスティープ化を限定しているとの報道があったが、発信日付が確認できず直近の数値として採用を見送った（未確認）。</p>
+<p><strong>入札</strong>：</p>
+<ul>
+<li>独3.30%2033 Bund増発（11/18実施、7年ゾーン、計画増発30億ユーロ）：応札額34.17億ユーロ、配布額22.72億ユーロ（Bundesbank保有分24.27%）、カバー比率1.5倍（前回1.4倍）、平均落札利回り3.27%（前回3.36%）（Newsquawk・Bundesbank公式結果ファイルの存在を確認、確度中〜高）。カバー比率改善・利回り低下を伴う結果で、評価：無難〜まずまず。</li>
+<li>独3%2028シャッツ・リオープン（11/17実施、既報）：応札倍率1.8倍（前回1.3倍）、平均落札利回り3.10%（前回3.08%）、評価：無難〜まずまず（継続）。</li>
+<li>英5¼%2041（ミディアムコンベンショナル、11/17実施、額面32.5億£、決済11/18、既報）：平均落札利回り5.591%、応札倍率3.28倍、テール0.5bp、評価：無難〜強め（継続）。</li>
+<li>英4.125%2033（コンベンショナル、11/12実施、額面4.0億£、既報）：平均落札利回り4.993%、応札倍率3.52倍（前回3.4倍）、テール0.2bp、評価：無難〜強め（継続）。</li>
+<li>英DMOはプログラマティック・テンダー（コンベンショナルGilt、11/19実施、決済11/20）を予定していたとみられるが、対象銘柄・結果は本稿作成時点で未確認。</li>
+<li>Bundesbank・英DMOの直近PDF結果の直接WebFetchは今回も全件DNS解決エラーで失敗した。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>クロス市場スプレッド</h2>
+<p>（独Bund・仏OAT・伊BTPは11/17〜18、英Giltは11/16時点を基準。米UST10年は11/17終値5.09〜5.10%のまま、Bund-UST・Gilt-UST等は日付が1〜3日ずれた近似値である点に留意）</p>
+<ul>
+<li><strong>Bund-UST(10年)</strong> 約-172bp（Bund3.37%［11/17〜18、中間値］・UST5.09%［11/17］、確度中）— 前回ノート時点の推定-178bp（Bund11/17・UST11/16stale）から、UST側が11/17終値に更新されたことで見かけ上やや縮小。Bund側の確定終値が未確認であり、実際の現在値とは言い切れない。</li>
+<li><strong>Gilt-UST(10年)</strong> 約+26bp程度（Gilt5.35%超［11/16］・UST5.09%［11/17、1日ずれ］、確度中）— 英CPI下振れ後のGilt低下（未確認）を踏まえれば、実際のスプレッドは縮小している可能性が高い（推定）。</li>
+<li><strong>Gilt-Bund(10年)</strong> 約+198bp程度（Gilt5.35%超［11/16］－Bund3.37%［11/17〜18、1〜2日ずれ］、確度中）— 11/18の英CPI下振れを受けたGiltの連れ高（独Bundも一定程度ビッド）を踏まえれば、実際のスプレッドはやや縮小方向にあると推察される（推定）。</li>
+<li><strong>OAT-Bund(10年)</strong> 約150〜157bp（OAT4.91〜4.95%・Bund3.37〜3.40%、11/16〜17、確度中〜高）— 10月下旬の170bp超からは縮小したが10月中旬の約131bpよりは依然ワイド。仏上院のPLFSS2027第一読会採択（11/18深夜、201対124）と、対象営業日からのPLF2027（本予算案）上院審議開始を踏まえ、方向感の不安定な地合いが続くとみられる。</li>
+<li><strong>BTP-Bund(10年)</strong> 約104〜106bp（BTP4.42〜4.43%・Bund3.36〜3.38%、11/17〜18、確度中〜高）— 11/18引け時点で105.8bp（soldionline）、11/17時点で104bp（MilanoFinanza）とソース間で1〜2bpのばらつきがあるが、102〜106bpの狭いレンジ内での往復という評価に変わりはない。</li>
+<li><strong>OAT-BTP(フランス-イタリア、10年)</strong> 約48〜53bp（OAT4.91〜4.95%－BTP4.42〜4.43%、11/16〜18、確度中〜高）— 「仏伊逆転」構図（フランスの方がイタリアよりも政治・財政リスクプレミアムが高い状態）が継続。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>中銀動向</h2>
+<ul>
+<li><strong>ECB</strong>：預金ファシリティ金利2.50%を据え置き（10/29理事会、全会一致）。市場はなお12月の追加利上げに続き2027年中にさらに2回の25bp利上げを織り込んでいるとの既報（確度中、単一ソース）が続くが、新規の裏付けは確認できなかった。次回理事会は12/17。</li>
+<li><strong>BOE</strong>：11/5にBank Rateを3.75%→4.00%へ25bp利上げ（投票8-1）。11/18の英10月CPI（+3.6%、予想+3.7%・前月+3.5%）は市場・BOE見通しの双方を下回り、サービス価格も市場・BOE予想を下回ったため、12月の追加利上げ（4.00%→4.25%）確率はおよそ80%→70%程度にやや後退したとみられる（複数の二次情報、確度中）。次回会合は12/17。</li>
+<li><strong>RBA（重要な訂正を含む）</strong>：11/3-4理事会で現金金利を4.60%→4.85%へ25bp利上げ（6対3の分裂採決）。11/17公表の議事要旨は、賛成多数派が「インフレは依然高く、あと1年高止まりが続く」「需要過剰は2027年半ばまで持続する」と評価したことを明らかにした。本稿11/19版では「市場は2027年末までの25bp利下げを完全に織り込んでいる」と記載したが、RBA自身の2026年11月Statement on Monetary Policy（一次情報、WebSearchスニペット経由で確認）は「市場のOIS価格は11月理事会での利上げを85%の確率で織り込んでいた」「2027年半ばまでに現金金利がさらに約35bp（1.5回相当）上昇することが市場価格に織り込まれている」と明記しており、市場は利下げではなく追加利上げを織り込んでいたことが確認された。訂正する。ただしこのSMP記載は11/3-4理事会決定にあわせて確定した市場価格のスナップショットであり、11/17公表の議事要旨後に市場の織り込みがどう変化したかは別途確認が必要（未確認）。次回会合は12/7-8。</li>
+<li><strong>BOC（カナダ）</strong>：10/28に政策金利を2.25%→2.50%へ25bp利上げ。10月分CPI下振れ（+3.1%、予想+3.2%下回る）・10月雇用者数減少（予想+13,600人に対し▲4,700人）を受け追加利上げ観測が後退。次回会合は12/9。</li>
+<li><strong>RBNZ（ニュージーランド）</strong>：10/28にOCRを2.75%に据え置き（「サプライズホールド」、投票4-3）。次回会合は12/9。</li>
+<li><strong>Riksbank（スウェーデン）</strong>：11/4に政策金利を1.75%→2.00%へ25bp利上げ、11/11から適用開始。次回会合は12/15-16。</li>
+<li><strong>Norges Bank（ノルウェー）</strong>：11/5の中間会合で政策金利4.50%を据え置き。次回MPR会合は12/17。</li>
+<li><strong>SNB（スイス）</strong>：政策金利0%。次回会合は12/10。</li>
+<li><strong>FRB（参考、担当外）</strong>：政策金利3.75-4.00%（10/28維持、10-2、クック理事・ハマック総裁が利上げを主張して反対）。10/28FOMC議事要旨（11/18 14:00ET公表）は「ほぼ全ての参加者が12月の追加利上げを想定」「複数名が0.25%超の利上げ検討の可能性に言及」とタカ派的内容。ウォラー理事はCNBCで「12月FOMCで0.5%の利上げを推奨する」と発言。CME FedWatch基準で12月利上げ確率は約95%とされる（確度中、経済指標担当・為替担当ノート既報）。</li>
+</ul>
+</section>
+<section id="sec-7">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>独Bundについては、11/17のシャッツ・リオープン（前端ゾーン）に続き11/18の3.30%2033増発入札（7年ゾーン）もカバー比率改善・利回り低下という結果を示し、前端〜中期ゾーンの需給は崩れていないことが確認された。</li>
+<li>英Giltについては、11/17の5¼%2041長期入札がテール0.5bp・カバー3.28倍という良好な結果を示し、11/18の英CPI下振れによるGiltのアウトパフォームと合わせ、長期・前端双方の需給が底堅いことを示唆する。11/19のプログラマティック・テンダー結果は未確認。</li>
+<li>伊BTPについては、BTP-Bundスプレッドが102〜106bpの狭いレンジで安定しており、11/12実施の多銘柄入札の無難〜強めの消化実績と整合的な地合いが継続。</li>
+<li>仏国債については、上院が11/18深夜にPLFSS2027を201対124で第一読会採択したこと（財政規律色の薄い修正を含む）が、財政規律の後退シグナルとして意識される一方、OAT-Bundスプレッド自体は150〜157bp台で比較的落ち着いており、急激なポジション調整の動きは確認されていない。対象営業日11/20からのPLF2027（本予算案）上院審議開始・12/9採決予定にかけて、海外投資家のポジション調整が集中する局面が想定される（分析、具体的フローデータは未確認）。</li>
+<li>豪州については、RBA11月議事要旨のタカ派的トーンと、RBA自身のSMPが示す「市場は利下げでなく追加利上げを織り込んでいた」という訂正後の構図を踏まえると、従来想定していた「ポジション巻き戻しリスク（ピークアウト観測の修正）」のシナリオ自体を再検証する必要がある。12/7-8のRBA次回会合に向けた市場の織り込み（議事要旨公表後の最新状況）は未確認であり、社内端末での再確認を強く推奨する。</li>
+<li>加・スイス・NZ・スウェーデン・ノルウェーについては、具体的フローデータは引き続き未確認。</li>
+</ul>
+</section>
+<section id="sec-8">
+<h2>推奨トレード</h2>
+<h3>トレード1：英GBP Gilt 2s10sスティープナー（2年Giltロング／10年Giltショート、または2年SONIAスワップ・レシーブ／10年SONIAスワップ・ペイ）― 英CPI下振れ確認、エントリー推奨に格上げ</h3>
+<ul>
+<li>根拠：(1) 11/18の英10月CPIが前年比+3.6%（予想+3.7%、前月+3.5%）と、市場・BOE見通しの双方を下回り、サービス価格も市場・BOE予想を下回った。Newsquawk「Gilts shine after UK CPI」の報道では、Giltが独Bund以上にアウトパフォームしたとされ、前端を中心とした12月追加利上げ織り込み（約80%→70%程度）の一部巻き戻しが生じたとみられる。(2) 11/17の5¼%2041長期入札がテール0.5bp・カバー3.28倍という良好な結果を示し、長期ゾーンの需給自体は崩れていないことが確認されている。これは前端の過度な利上げ織り込みに対し、長期ゾーンが相対的な抵抗力を持つ構図を支える。(3) 前営業日までの時点で2s10sスプレッドの具体的な新しいbp水準は未確認だが、前端が長期より強く反応した（低下した）可能性が高く、スティープ化の方向に働いたとみられる。社内端末で当該CPI後の2s10s実勢を確認した上でのエントリーを推奨する。</li>
+<li>エントリー目安：Gilt2s10sスプレッド（10年利回り－2年利回り）が11/16時点の推定約+30〜35bp近辺から、英CPI下振れを受けたスティープ化が確認できた水準で、2年Giltロング（利回り低下期待）／10年Giltショート（または2年SONIAスワップ・レシーブ／10年SONIAスワップ・ペイ）を構築。</li>
+<li>利確目安：2s10sスプレッドが+45〜50bp程度まで拡大した時点。</li>
+<li>損切り目安：11月PMI速報・米欧インフレ関連材料を受けて前端が再度タカ派的に巻き戻され、2s10sスプレッドが+15bp以下まで一段とフラット化した場合。</li>
+<li>ホライズン：2〜4週間（11/20のPMI速報、11/26の英秋季予算、12/17のBOE次回会合を節目として想定）。</li>
+<li>リスク：本稿のGilt利回りはいずれも近似的な報道ベースの数値であり、正確なエントリーレベルの精度に限界がある点。11/26の英秋季予算（Autumn Budget）が新たな財政懸念としてロングエンドを押し上げ、スティープ化の方向性が財政要因由来に変質するリスク。米FOMCの12月0.5%利上げ観測（ウォラー理事発言）がグローバルな金利上昇圧力としてGilt全般を押し上げるリスク。</li>
+</ul>
+<h3>トレード2：BTP-Bund(10年)スプレッド・タイト化トレード（伊BTP10年ロング／独Bund10年ショート）― 継続</h3>
+<ul>
+<li>根拠：(1) BTP-Bundスプレッドは11/16の105bp・11/17の104bp・11/18の105.8bp（いずれも概算）という狭いレンジ（102〜106bp）で安定しており、10月下旬の116.8bpからの連続的タイト化トレンドの地合い自体は崩れていない。(2) 独Bund側は11/17のシャッツ・リオープン、11/18の3.30%2033増発入札ともにカバー比率改善・利回り低下という結果を示し需給面での崩れはないが、伊BTPが同時に独自の底堅さ（102〜106bpでの安定）を保っていることが、タイト化継続のシグナルと解釈できる。(3) 仏OAT-Bundが150〜157bp台で推移する中、伊BTPは依然仏OATより低リスクプレミアムとされる「仏伊逆転」構図が継続しており、イタリアの相対的なファンダメンタルズ改善ストーリーを支持する。</li>
+<li>エントリー目安：BTP-Bundスプレッドが104〜106bp近辺の局面で、伊BTP10年ロング／独Bund10年ショート（またはBTP先物ロング／Bund先物ショートのスプレッド取引）を構築。社内端末で最新のBTP・Bund利回りを再確認した上でのエントリーを推奨。</li>
+<li>利確目安：スプレッドが95〜98bp程度まで縮小した時点（10月下旬以来の最もタイトな水準に接近）。</li>
+<li>損切り目安：スプレッドが112〜115bp超まで再拡大した場合（中東情勢の再悪化・仏政治リスクの伊への伝播・グローバルなリスクオフでBTPが独自に売られるシグナル）。</li>
+<li>ホライズン：3〜6週間（11/20のPMI速報、12/17のECB理事会を節目として想定）。</li>
+<li>リスク：仏上院でのPLF2027（本予算案）審議が対象営業日11/20から開始され、12/9採決に向けて混乱が生じれば仏政治リスクが南欧他国（伊含む）へ伝播するリスク。ECBの追加利上げ観測（2027年中2回との既報、確度中・単一ソース）が強まりBund・BTP双方の利回りが上昇する中でスプレッドが期待通りに動かないリスク。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>本日11/20 欧州・米国</strong> 11月PMI速報（製造業・サービス業）〔重要度：高〕— 結果未確認。</li>
+<li><strong>本日11/20 米国</strong> ミシガン大学消費者信頼感確定値（11月分）〔重要度：中〜高〕— 予備値51.0・予想48.0を上回る3ヵ月ぶり高水準（結果未確認）。</li>
+<li><strong>本日11/20 フランス</strong> 上院でPLF2027（本予算案）本体の審議開始〔重要度：高〕。</li>
+<li><strong>随時（確認必須）</strong> 深圳APECでのトランプ・習近平・プーチン3者会談（11/19開催）の結果〔重要度：高〕。</li>
+<li><strong>随時（確認必須）</strong> 英DMOの11/19プログラマティック・テンダー（決済11/20）の結果〔重要度：中〕。</li>
+<li><strong>11/21（土）日本</strong> 全国CPI（10月分、参考・担当外）〔重要度：中〕。</li>
+<li><strong>11/23週 英国</strong> 1⅞%インデックス・リンクGilt2049のシンジケート増発予定〔重要度：中〕。</li>
+<li><strong>11/23〜27 ドイツ</strong> ブンデスターク2027年度予算最終本会議審議・採決（新規債務約2,105億ユーロ）〔重要度：高〕— 独財政拡張スタンス・Bund発行計画への構造的示唆。</li>
+<li><strong>11/26（木）フランス</strong> 仏上院・国民議会の両院合同委員会（CMP、PLFSS2027関連）〔重要度：中〜高〕。</li>
+<li><strong>11/26前後 英国</strong> 秋季予算（Autumn Budget）〔重要度：高〕— 財政スタンスがGiltロングエンド・BOE12月判断の前提条件に影響し得る。</li>
+<li><strong>12/7-8（予定）豪州</strong> RBA理事会〔重要度：高〕— 議事要旨公表後の市場の織り込み（11/17以降の最新状況）が未確認のまま会合を迎える点に留意。</li>
+<li><strong>12/9（火、予定）カナダ/ニュージーランド</strong> BOC・RBNZ政策金利決定〔重要度：高〕。</li>
+<li><strong>12/9（予定）フランス</strong> 上院でPLF2027最終採決予定〔重要度：高〕。</li>
+<li><strong>12/10（木、予定）スイス</strong> SNB政策金利決定〔重要度：中〕。</li>
+<li><strong>12/15-16（予定）スウェーデン</strong> Riksbank次回会合〔重要度：中〜高〕。</li>
+<li><strong>12/17（木、予定）ユーロ圏</strong> ECB理事会・スタッフ経済見通し更新〔重要度：高〕。</li>
+<li><strong>12/17（木、予定）英国</strong> BOE次回MPC会合〔重要度：高〕。</li>
+<li><strong>12/17（木、予定）ノルウェー</strong> Norges Bank次回会合（MPR公表）〔重要度：中〜高〕。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [Bund Yields Hit Multi-Week High - TradingEconomics](https://tradingeconomics.com/germany/government-bond-yield/news/601553)（2026-11-20取得、WebSearch経由、11/16付）</p><p>- [L'écart de taux se creuse entre la France et l'Allemagne - AbcBourse](https://www.abcbourse.com/marches/l-ecart-de-taux-se-creuse-entre-la-france-et-l-allemagne_706144)（2026-11-20取得、WebSearch経由、11/16付、Bund3.40%・OAT4.95%・スプレッド156bp）</p><p>- [Les taux se replient en zone euro, l'OAT en net recul - AbcBourse](https://www.abcbourse.com/marches/les-taux-se-replient-en-zone-euro-l-oat-en-net-recul_705683)（2026-11-20取得、WebSearch経由、11/17付、Bund3.38%・OAT4.91%、MarketWatchデータ引用）</p><p>- [spread btp bund a 105 punti cosa segnala il lieve calo - SoldiOnline](https://www.soldionline.it/notizie/obbligazioni-italia/spread-btp-bund-a-105-punti-cosa-segnala-il-lieve-calo)（2026-11-20取得、WebSearch経由、11/17付）</p><p>- [Lo spread torna a calare, primi effetti del calo del petrolio sui mercati obbligazionari - QuiFinanza](https://quifinanza.it/economia/finanza/spread-btp-bund-18-novembre-2026/1024746/)（2026-11-20取得、WebSearch経由、11/18付、BTP-Bundスプレッド105.8bp引け・BTP4.42%・Bund3.36%）</p><p>- [T-bond USA stabile al 5,09% - MilanoFinanza](https://www.milanofinanza.it/news/t-bond-usa-stabile-al-5-09-202611171756529732)（2026-11-20取得、WebSearch経由、11/17付、米UST10年5.09%・BTP-Bundスプレッド104bp）</p><p>- [Germany sells EUR 2.272bln vs exp. EUR 3bln 3.30% 2033 Bund: b/c 1.5x (prev. 1.4x), average yield 3.27% (prev. 3.36%), retention 24.27% - Newsquawk](https://www.newsquawk.com/headlines/germany-sells-eur-2272bln-vs-exp-eur-3bln-330-2033-bund-bc-15x-prev-14x-average-yield-327-prev-336-retention-2427)（2026-11-20取得、WebSearch経由、11/18実施分、新規確認）</p><p>- [2026-11-18 tenderergebnis download - Bundesbank](https://www.bundesbank.de/resource/blob/1016424/22da87ce239252a0bb8e88742fcbed29/472B63F073F071307366337C94F8C870/2026-11-18-tenderergebnis-download.pdf)（2026-11-20取得、WebSearchスニペット経由、結果ファイルの存在・応札額34.17億ユーロ・配布額22.72億ユーロを確認。直接WebFetchはDNS解決エラーで失敗）</p><p>- [UK CPI (Oct YY) 3.6% vs. Exp. 3.7% (Prev. 3.5%) - Newsquawk](https://www.newsquawk.com/headlines/uk-cpi-oct-yy-36-vs-exp-37-prev-35)（2026-11-20取得、WebSearch経由、確度高）</p><p>- [[MARKET ANALYSIS] Gilts shine after UK CPI - Newsquawk](https://www.newsquawk.com/headlines/market-analysis-gilts-shine-after-uk-cpi)（2026-11-20取得、WebSearch経由、11/18付、GiltアウトパフォームとBund先物約30チック高・UST先物フラットの記述）</p><p>- [UK sells GBP 3.25bln 5.25% 2041 Gilt: avg. yield 5.591%, b/c 3.28x, tail 0.5bps - Newsquawk](https://www.newsquawk.com/headlines/uk-sells-gbp-325bln-525-2041-gilt-avg-yield-5591-bc-328x-tail-05bps)（2026-11-20取得、WebSearch経由、11/17実施・決済11/18、既報）</p><p>- [UK sells GBP 4bln 4.125% 2033 Gilt: b/c 3.52x (prev. 3.4x), average yield 4.993% (prev. 4.761%), tail 0.2bps - Newsquawk／DMO結果PDF](https://www.dmo.gov.uk/media/e4hl53bu/121126conventional.pdf)（2026-11-20取得、WebSearch経由、11/12実施分、新規確認）</p><p>- [Australia 10Y Yield Hits 2-Week Top - TradingEconomics](https://tradingeconomics.com/australia/government-bond-yield/news/601744)（2026-11-20取得、WebSearch経由、11/17付、豪10年5.1%超）</p><p>- [Statement on Monetary Policy – November 2026, Outlook / Financial Conditions - RBA（一次情報）](https://www.rba.gov.au/publications/smp/2026/nov/outlook.html)（2026-11-20取得、WebSearchスニペット経由。直接WebFetchはDNS解決エラーで失敗。OIS市場が11月利上げを85%の確率で織り込み、2027年半ばまでに追加約35bpの利上げが織り込まれているとの記載を確認）</p><p>- [RBA minutes from November meeting - Newsquawk](https://www.newsquawk.com/headlines/rba-minutes-from-november-meeting-stated-that-members-noted-inflation-was-still-too-high-and-forecast-to-remain-so-for-another-year-while-members-noted-excess-demand-in-the-econmy-is-to-persist-until-mid-2027)（2026-11-20取得、WebSearch経由、既報）</p><p>- [Canadian 10-Year Yield Eases on Inflation Below Expectations - TradingEconomics](https://tradingeconomics.com/canada/government-bond-yield/news/601615)（2026-11-20取得、WebSearch経由、11/16付、加10年3.82%）</p><p>- [Swiss Bond Yields Climb Toward 2-Month High - TradingEconomics](https://tradingeconomics.com/switzerland/government-bond-yield/news/601568)（2026-11-20取得、WebSearch経由、11/16付、スイス10年0.58%超）</p><p>- [French Senate adopts social security budget bill for 2027, reports AFP - Newsquawk](https://www.newsquawk.com/headlines/french-senate-adopts-social-security-budget-bill-for-2027-reports-afp)（2026-11-20取得、WebSearch経由、11/18深夜201対124で採択）</p><p>- [Budget 2027 de la Sécurité sociale: le Sénat adopte un volet recettes affaibli - Public Sénat](https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-le-senat-adopte-un-volet-recettes-affaibli)（2026-11-20取得、WebSearch経由）</p><p>- [Fed minutes: higher interest rates needed in December as inflation worries mount - adn.com](https://www.adn.com/business-economy/2026/11/18/fed-minutes-higher-interest-rates-needed-in-december-as-inflation-worries-mount/)（2026-11-20取得、WebSearch経由、米国債・経済指標担当ノートと共通参照）</p><p>- [2026-11-19 外債ストラテジーノート（社内整合用）](daily/agents/2026-11-19-intl-bonds.md)（本リポジトリ内、2026-11-19作成）</p><p>- [2026-11-20 エコノミストノート（社内整合用）](daily/agents/2026-11-20-economist.md)（本リポジトリ内、2026-11-20作成、米FOMC議事要旨・ウォラー発言・米CPIの整合確認）</p><p>- [2026-11-20 為替ストラテジーノート（社内整合用）](daily/agents/2026-11-20-fx.md)（本リポジトリ内、2026-11-20作成、米英の利回り・CPI反応の整合確認）</p><p>- [2026-11-20 政治動向ノート（社内整合用）](daily/agents/2026-11-20-politics.md)（本リポジトリ内、2026-11-20作成、仏上院PLFSS2027・PLF2027日程の確認）</p><p>※対象営業日11/19〜20の独Bund・英Gilt・伊BTP・仏OATの確定終値、米UST10年の11/18以降の確定値、英Gilt2s10sの具体的現在水準、英DMOプログラマティック・テンダーの結果、NZGB・SEK・NOK国債の具体的利回りレベル、EUR/GBPスワップカーブ・アセットスワップスプレッドの具体的現在水準、深圳APEC3者会談の結果については、本稿作成時点で確認できなかった。該当箇所は本文中で「未確認」「推定」と明記した。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
