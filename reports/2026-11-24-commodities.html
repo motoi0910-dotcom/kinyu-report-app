@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-24 コモディティストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-24.html">統合レポートを見る</a><span>2026-11-24</span></div>
+  <h1 class="title">2026-11-24 コモディティストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-24-fx.html">為替</a>
+    <span class="current">コモディティ</span>
+    <a href="2026-11-24-jgb.html">円債</a>
+    <a href="2026-11-24-ust.html">米国債</a>
+    <a href="2026-11-24-intl-bonds.html">外債</a>
+    <a href="2026-11-24-jp-equity.html">日本株式</a>
+    <a href="2026-11-24-us-equity.html">米国株式</a>
+    <a href="2026-11-24-politics.html">政治・地政学</a>
+    <a href="2026-11-24-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">データ取得状況に関する注記</a>
+    <a href="#sec-2">サマリー</a>
+    <a href="#sec-3">値動きの時系列解説</a>
+    <a href="#sec-4">主要商品</a>
+    <a href="#sec-5">フロー・需給・ポジション動向</a>
+    <a href="#sec-6">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<section id="sec-1">
+<h2>データ取得状況に関する注記</h2>
+<p>無人実行環境のため取引所一次情報への直接アクセスは不可（CFTC・EIAともWebFetchは`getaddrinfo ENOTFOUND`で失敗）で、全面的にWebSearch経由の二次情報（Newsquawk、Kitco、USAGOLD、ISA Bullion、Khaleej Times、Trading Economics、PrimeXBT、Free Press Journal、Nvidia公式リリース等）に依拠している。検索インデックスの反映遅れにより、<strong>確定的に内容を追えたのは前稿（11/23付）と同様11/18（水）・11/19（木）まで</strong>で、<strong>11/20（金）は原油のみ単一ソース（Qatar News Agency）で確認済み</strong>（前稿既報）。今回新たに、<strong>週末11/21（土）・22（日）、前営業日11/23（月）、対象営業日11/24（火）の4日分について、金・銀・銅・原油すべての確定値・ヘッドラインが検索では一件も確認できなかった</strong>（前稿からさらにギャップが1日拡大）。試行した複数の検索（Kitco・USAGOLD・ISA Bullion・pricegold.net・fxstreet・CFTC COTアーカイブの日付別クエリ等）はいずれも11/19以前の記事に戻るか、2025年分の同日付記事（年違いのノイズ）を返す結果となった。本稿は11/18〜19の確定材料と11/20の単一ソース材料を土台に、11/21〜24を推定シナリオとして記載する。新たに確認できた材料として、NVIDIA取締役会が11/12にジェンセン・ファン氏のCEO辞任（即日効力、CFOコレット・クレス氏が暫定CEO）を発表した一次情報（Nvidia公式リリース）があり、これが11/12以降の銅急落の背景説明に資本支出・ファイナンス懸念という追加のレイヤーを与えている。個々の数値には「未確認」「推定」を付し、背景説明はここでまとめて記載し以降は繰り返さない。</p>
+</section>
+<section id="sec-2">
+<h2>サマリー</h2>
+<ul>
+<li>11/18（水）は貴金属・銅にとって年内最大級の急落日となった。10/28分FOMC議事要旨が「ほぼ全員が追加利上げが近く必要」との内容で公表され、12月FOMCでの利上げ確率はCME FedWatchで95.7%（25bp）まで上昇。金はKitco PM時点$3,722.60（-3.27%、2025年9月以来の安値）、銀はKitco PM$44.93（-4.95%）。銅はComex12月限が$5.660/lb（-5.45%）、LME3カ月は$12,471/トン（前日$13,226.50から-5.7%、2026年4月7日以来の安値）まで急落し、ドル指数19カ月ぶり高値とAI投資サイクル懸念が重なった。</li>
+<li>原油はEIA週間石油在庫統計で原油+340万バレル（予想+5.8万バレル）の大幅ビルドとなり、WTIはNewsquawk確定値で$83.26（-$2.75、-3.2%、2026年8月26日以来の安値）、Brentは$91.95（-$1.19、-1.28%）で清算。ホルムズ海峡での地政学リスク急伸が同時進行していたものの、供給過剰narrativeが上回る展開が11/18に続いていた。</li>
+<li>11/19（木）は金・銀がいったん底打ちの様相。USAGOLDによれば金は夜間に$3,693.50付近まで続落（14カ月ぶり安値更新）した後、欧州時間に$3,740付近まで戻し「$3,715近辺で底堅さ」との評価（確度中）。一方で銅はAI資本支出懸念とドル高が続き、「5カ月ぶり安値」「4カ月ぶり安値」との続落が報じられた（確度中）。パラジウムはPrimeXBT報道で52週安値$920.50（-3.30%）。</li>
+<li>11/20（金）は単一ソース（Qatar News Agency）で原油「ほぼ変わらず」の清算が確認できた：WTI$83.21（-$0.05、2026年8月26日以来の安値を継続）、Brent$91.98（+$0.03）。金・銀・銅等の11/20確定値、ならびに週末11/21・22、前営業日11/23、対象営業日11/24はいずれも未確認。</li>
+<li>本稿作成時点で新たに確認できた材料として、NVIDIA取締役会が11/12にジェンセン・ファン氏のCEO辞任（即日効力、CFOコレット・クレス氏が暫定CEO）を発表（Nvidia公式リリース、一次情報）。一部報道ではファン氏個人のスキャンダル・スパイ疑惑に言及しているが、これらは報道ベースで未確認。この経営トップ辞任が、AIデータセンター向けファイナンス（UBS・JPMorgan等が指摘）の遅延観測を通じて銅の11/13以降の軟化・11/18〜19の急落の背景の一つになっている可能性がある（確度中）。11/18〜19の地合い（タカ派FOMC議事要旨・ドル高19カ月ぶり高値圏・原油の供給過剰narrative・AI資本支出懸念による銅急落）が週末・週明けを越えて持ち込まれていれば、金・銀は$3,700台での底堅さを試す展開、銅は続落圧力、原油は$83〜92ドルレンジでの上値の重い展開が継続している可能性が高い（推定）。ホルムズ海峡の地政学リスクはテールリスクとして常に意識する必要がある。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11/12（木）</strong>：NVIDIA取締役会がジェンセン・ファン氏のCEO辞任（即日効力、33年間の在任）を発表、CFOコレット・クレス氏が暫定CEOに就任（Nvidia公式リリース、一次情報）。恒久的な後継者探索は内部・外部候補を検討中とされる。同日、USAGOLD報道では金が$3,866（-3%、ドル19カ月ぶり高値）まで下落（前稿既報の継続）。</li>
+<li><strong>11/13（金）〜11/17（火）</strong>：WTIは$86〜91ドル圏で推移（Newsquawk確定、前稿既報）。LME銅3カ月は11/17時点$13,226.50/トンで清算（前稿既報）。この間、UBS・JPMorgan等がファン氏辞任後のAIデータセンター向けファイナンス遅延リスクに言及する分析が複数出ていた（確度中、前稿未記載の新情報）。金はKitco PM$3,853.10（-0.06%）、銀$47.33（+1.01%）（11/17、前稿既報）。</li>
+<li><strong>11/18（水）</strong>：</li>
+<li>米EIA週間石油在庫統計（週末11/13分、米東部10:30前後）：原油+340万バレル（予想+5.8万バレル、商業在庫417.8百万バレル）、ガソリン+520万バレル。製油所稼働率は95.7%（+0.5pt）。WTIはNewsquawk確定値で$83.26（-$2.75、-3.2%、2026年8月26日以来の安値清算）、Brentは$91.95（-$1.19、-1.28%）。</li>
+<li>米FRB、10/27-28日分FOMC議事要旨を米東部14:00に公表。「ほぼ全ての参加者が、インフレを目標に戻すには今後数ヶ月で追加利上げが必要になる可能性が高いと判断」との内容でタカ派色が強いと評価された。CME FedWatchベースの12月25bp利上げ確率は95.7%まで上昇（USAGOLD経由、確度中）。ドル指数は19カ月ぶり高値圏を維持。</li>
+<li>貴金属・銅が揃って急落：金はKitco PM時点$3,722.60（-$125.90、-3.27%、日中安値$3,719.10）。Comex12月限ベースでは$3,741.90（-3.16%）との報道（確度中）。銀はKitco PM$44.93（-$2.34、-4.95%、日中安値$44.640）。銅はComex12月限が$5.660/lb（-5.45%、2026年4月7日以来の安値）、LME3カ月は$12,471/トン（前日$13,226.50から約-5.7%）。AI投資サイクル懸念（ファン氏辞任を起点とするデータセンター向けファイナンス遅延観測）とドル高が主因とされる。</li>
+<li>EIA、天然ガスに関する分析（Today in Energy）を公表：Lower 48の冬季注入期終了時点在庫は3,810Bcf（5年平均比約+2%）、2026-27冬季（11-3月）の取出量を1,900Bcfと予測（前稿既報の継続・補足）。</li>
+<li><strong>11/19（木）</strong>：</li>
+<li>金はUSAGOLD報道によれば夜間に$3,693.50付近まで続落し14カ月ぶり安値を更新したのち、欧州時間に$3,740付近まで戻し「ほぼ$3,715近辺で底堅さ」との評価（確度中）。要因はハト派回帰ではなく「レート期待（タカ派Fed）」と「ホルムズ海峡の地政学リスクがドルを支える」構図との整理。</li>
+<li>銅はTrading Economicsが「5カ月ぶり安値に接近」と報道（確度中）。ドル高とAI資本支出懸念（ファン氏辞任後のファイナンス遅延観測）の継続が背景。</li>
+<li>パラジウムはPrimeXBT報道で$920.50（-3.30%、52週安値）。</li>
+<li>米EIA週間天然ガス在庫統計（週末11/13分、11/19発表）：作業在庫3,882Bcf（確度中、前週11/6時点3,862Bcfからの変化）。</li>
+<li><strong>11/20（金、Qatar News Agency単一ソース、確度中）</strong>：原油はほぼ変わらずで清算：Brent$91.98（+$0.03）、WTI$83.21（-$0.05、2026年8月26日以来の安値を継続）。金・銀・銅・プラチナ・パラジウムの11/20確定値は検索では確認できず（未確認）。</li>
+<li><strong>11/21（土）・11/22（日）・11/23（月、前営業日）・11/24（火、対象営業日）</strong>：いずれも確定値・ヘッドラインを検索で確認できなかった（未確認）。検索を試行した複数ドメイン（Kitco・USAGOLD・ISA Bullion・pricegold.net・Trading Economics・fxstreet等）はいずれも11/19以前の記事に留まるか、年違い（2025年同日付）のノイズ記事を返す結果となった。ホルムズ海峡の情勢がこの間さらに悪化したかどうかも確認できていない。Thanksgiving週（11/26休場、11/27短縮取引）を控え、11/29のOPEC+会合（2027年生産枠組み、Reuters系報道で確認、確度高）までの残り日数が縮まる中、薄商い入りが近づいている。</li>
+</ul>
+</section>
+<section id="sec-4">
+<h2>主要商品</h2>
+<ul>
+<li><strong>WTI原油</strong> 直近確定値（11/20、Qatar News Agency単一ソース、確度中）$83.21/bbl（-$0.05、2026年8月26日以来の安値を継続）。11/18はEIA大幅ビルド（原油+340万バレル）を受けNewsquawk確定値で$83.26（-$2.75、-3.2%）まで急落。11/21〜24は未確認 — IEA11月報の供給過剰シフト観測とホルムズ海峡の地政学リスクが綱引き継続。</li>
+<li><strong>Brent原油</strong> 直近確定値（11/20、同ソース、確度中）$91.98/bbl（+$0.03、ほぼ変わらず）。11/18はNewsquawk確定値で$91.95（-$1.19、-1.28%）。11/21〜24は未確認 — OPEC+12月生産目標維持・11/29会合（2027年枠組み）への思惑が重石。</li>
+<li><strong>天然ガス（Henry Hub）</strong> 12月限直近確定値は11/11時点$3.22/MMBtu（AGA、前稿既報、更新未確認）。EIA11/18分析によればLower 48冬季注入期終了時点在庫は3,810Bcf（5年平均比約+2%、新規確認）。週間在庫統計は11/13週分で作業在庫3,882Bcf（確度中）。EIA11月STEOは2026-27冬季Henry Hub平均見通しを$2.87/MMBtuに下方修正（前月比-16%、前稿既報）。</li>
+<li><strong>金（Gold）</strong> 直近確定値（11/18 Kitco PM）$3,722.60/オンス（前日比-3.27%・-$125.90、2025年9月以来の安値）。11/19は夜間に$3,693.50付近（14カ月ぶり安値更新）まで続落後、欧州時間に$3,740付近へ戻し「$3,715近辺で底堅さ」（USAGOLD、確度中）。11/20〜24の確定値は未確認（5日分のギャップ）。</li>
+<li><strong>銀（Silver）</strong> 直近確定値（11/18 Kitco PM）$44.93/オンス（前日比-4.95%・-$2.34）。11/20〜24は未確認。</li>
+<li><strong>プラチナ（Platinum）</strong> 直近確認値（11/19、確度低、前稿既報）$1,388.15/オンス（+1.30%）。11/12時点のMonex報道では$1,502.00（-$23.00）だったため、11/13〜19にかけて大幅に下落した可能性が高いが具体的な経路は未確認。11/20以降の更新は未確認。</li>
+<li><strong>パラジウム（Palladium）</strong> 直近確認値（11/19、PrimeXBT、確度中）$920.50/オンス（-3.30%、52週安値）。11/16に心理的節目の$1,000を割り込んだ後も続落。11/20以降の更新は未確認。</li>
+<li><strong>銅（Copper, LME 3カ月／Comex）</strong> LME3カ月は11/17の$13,226.50/トンから11/18に$12,471/トンまで急落（-5.7%、2026年4月7日以来の安値）。Comex12月限は11/18に$5.660/lb（-5.45%）で清算。11/19もAI資本支出懸念（NVIDIA取締役会の11/12ファン氏CEO辞任を起点とするデータセンター向けファイナンス遅延観測、新規確認）とドル高を背景に続落（Trading Economics「5カ月ぶり安値」、確度中）。11/20以降の確定値は未確認。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li><strong>CFTC建玉（CFTC公式アーカイブ、週末10/27時点データ、futures-only、確度高）</strong>：金の非当業者ネットロングは約10.3万枚（ロング16.0万枚・ショート5.7万枚）。銅の非当業者ネットロングは約6.5万枚。銀の非当業者ネットロングは約5.5万枚。週末11/3・11/10・11/17・11/24時点のCFTC公式データは本稿作成時点でも検索インデックス・WebFetch（`www.cftc.gov`、DNS解決エラー）のいずれでも確認できず（未確認、4週分の更新遅延が継続する課題）。</li>
+<li><strong>NVIDIA経営トップ辞任（一次情報：Nvidia公式リリース、確度高／市場への影響は確度中）</strong>：11/12、ジェンセン・ファン氏がCEO辞任（即日効力）、CFOコレット・クレス氏が暫定CEOに就任。UBS・JPMorgan等がAIデータセンター向けファイナンス案件の遅延・コスト増を指摘（確度中、二次報道）。S&amp;P Globalは銅需要全体に対するAI/データセンター向けの比率は限定的（2025年28Mtに対しAI関連増分は~2Mt程度）としており、需要の「先送り」リスクであって構造的崩壊ではないとの見方もある（確度中）。</li>
+<li><strong>IEA石油市場報告（11月分、確度高）</strong>：2026年世界石油需要見通しを前回比-9万bpd下方修正の102.3百万bpd、供給見通しを+92万bpd上方修正の101.6百万bpdとし、2026年Q4に市場が供給過剰へ転換と予測（前稿既報、継続参照）。11/18のEIA週間統計（原油+340万バレルの大幅ビルド）はこの見通しと整合的な結果となった。</li>
+<li><strong>OPEC+（確度高）</strong>：11/1の会合で12月生産目標を維持。次回11/29（日）会合で2027年の生産枠組み（能力査定に基づくベースライン見直し）を協議予定。ホルムズ海峡の混乱でガルフ諸国の輸出が一部阻害されている一方、大半の産油国は現行目標を下回る生産にとどまっているとの分析あり（確度中）。</li>
+<li><strong>地政学リスク（確度中〜低）</strong>：ホルムズ海峡で11/15〜17に連日タンカー攻撃が発生、イラン側は複数タンカーの沈没を主張しているが独立した確認は取れていない（未確認、継続課題）。11/18の原油市場では地政学リスクの激化にもかかわらず供給過剰narrativeが上回る展開となったが、週末・週明けにかけての情勢悪化有無は未確認であり、急激にプレミアムが乗る可能性は常にテールリスクとして意識が必要。</li>
+<li><strong>貴金属のETF/実物フロー（確度中）</strong>：WGC（Gold.org）10月分データでは世界の金ETFへ約27億ドル流入、欧州系ファンドが主導（前稿既報の数値と整合）。11月分データは本稿作成時点で未公表（通常12月上旬公表）。11/18急落後のフロー反応は確認できず（未確認）。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>推奨トレード</h2>
+<h3>トレード1：金（Gold） 短期的な戻り狙いの戦術的買い（コントラリアン、小ロット・継続修正）</h3>
+<ul>
+<li>根拠：金は10/28分FOMC議事要旨のタカ派評価（12月25bp利上げ確率がCME FedWatchで95.7%まで上昇）を受け、11/18に単日-3.27%、11/19夜間には$3,693.50付近まで続落し14カ月ぶり安値を更新した。しかし11/19の欧州時間には$3,740付近まで戻し「$3,715近辺で底堅さ」との評価も出ており、急落ペースが一旦緩む兆しがある。11/20〜24の確定値が取得できていないため本トレードの現在のポジション評価には限界があるが、12月FOMC（12/8-9）までの間、翌11/25PCE・12/4雇用統計というタカ派期待を左右する重要指標が控えており、Thanksgiving週の薄商いでの短期的なショートカバーの余地がある一方、ホルムズ海峡の地政学リスクが実際の供給障害に転じれば安全資産買いが遅れて入る可能性もある。あくまで短期的・小ロットのコントラリアン・トレードであり、トレンドフォローではない点に留意。</li>
+<li>エントリー目安：$3,670〜3,710/オンス（11/19安値圏を参照した下押し局面。11/20以降の実際の安値確認後に水準再調整が必要）</li>
+<li>利確目安：$3,800〜3,850/オンス（11/16〜17の戻り高値圏）</li>
+<li>損切り目安：$3,650/オンス割れ（14カ月ぶり安値をさらに下抜け、タカ派Fed観測が一段と強まったと判断される場合）</li>
+<li>ホライズン：1〜2週間（12月FOMCに向けた11/25 PCE・12/4雇用統計の反応を見極めつつ短期で判断）</li>
+<li>リスク：11/25PCE・12/4雇用統計が予想以上に強く12月利上げ観測がさらに強まるケース、ドル指数の一段高、金ETFフローの11月分データが悪化方向で確認されるリスク、11/20〜24の値動きが本稿の前提と異なっていた場合のレベル再調整の必要性。</li>
+</ul>
+<h3>トレード2：銅（Copper, LME） 戻り売り（継続）</h3>
+<ul>
+<li>根拠：LME銅3カ月は11/18に$13,226.50/トンから$12,471/トンまで単日-5.7%の急落となり2026年4月以来の安値を記録、Comex銅先物も-5.45%の大幅下落。背景はFOMC議事要旨のタカ派評価によるドル高（19カ月ぶり高値圏）に加え、11/12のNVIDIA取締役会によるジェンセン・ファン氏CEO辞任を起点とするAI関連データセンター投資のファイナンス遅延観測（UBS・JPMorgan等指摘）が重なったこと。11/19もTrading Economics等が「5カ月ぶり安値」と報じ続落が継続しており、LME在庫も8月の安値20.5万トンから11月中旬に約32万トンへ積み上がるなど需給面でも緩和方向。一方でS&amp;P Globalの分析ではAI/データセンター向け需要の銅需要全体への比率は限定的で「先送りリスク」との見方もあり、過度な悲観の反動（ショートカバー）には注意が必要。AI資本支出懸念とドル高という二つの重石が同時に強まっている局面では、戻りを売る方が理に適うと判断。</li>
+<li>エントリー目安：$13,000〜13,300/トン（11/17以前の戻り高値圏、ショートカバーでの戻り局面。11/20以降の実際の値動き確認後に水準再調整が必要）</li>
+<li>利確目安：$12,200〜12,400/トン（11/18安値圏への接近）、さらに下値余地は$11,800/トン（2026年4月安値圏）</li>
+<li>損切り目安：$13,600/トン超（ドル指数が急激に軟化し、AI資本支出懸念が後退するサプライズが出た場合、またはNVIDIA新CEO選任等でファイナンス懸念が払拭される場合）</li>
+<li>ホライズン：2〜3週間</li>
+<li>リスク：12月FOMCに向けたタカ派観測の後退（ハト派サプライズ）によるドル急落、NVIDIAの恒久的CEO選任やAI関連企業の決算・ガイダンスをきっかけとしたAI資本支出懸念の急速な巻き戻し、中国の追加的な需要刺激策発表、11/20〜24の値動きが本稿の前提と異なっていた場合のレベル再調整の必要性。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>随時 中東・ホルムズ海峡</strong> イラン関連のタンカー攻撃・航行阻害動向〔重要度：高〕— 11/15〜17に連日攻撃が発生、イラン側は複数タンカー沈没を主張（未確認）。週末〜週明けにかけての情勢悪化有無は未確認で、原油の地政学リスクプレミアムの最大の変動要因。</li>
+<li><strong>11/25（水）米国EIA</strong> 週間石油在庫統計〔重要度：高〕— 直近（11/13週分、11/18公表）は原油+340万バレルの大幅ビルド。Thanksgiving週のため発表日程に注意（標準的な水曜10:30ET発表が維持される見込みだが、本稿作成時点で公式スケジュールは未確認）。</li>
+<li><strong>11/25（水）米国 BEA</strong> 10月分PCEデフレーター〔重要度：高〕— 12月FOMCの判断材料として、タカ派観測の強弱を左右する最重要指標の一つ。</li>
+<li><strong>11/25（水）米国EIA</strong> 週間天然ガス在庫統計〔重要度：中〕— Thanksgiving週のため通常木曜発表が水曜に前倒しとなる可能性（推定、未確認）。</li>
+<li><strong>11/26（木）米国</strong> 感謝祭で市場休場〔重要度：低〕、<strong>11/27（金）米国</strong> 短縮取引〔重要度：低〕— 薄商いによる値動きの増幅に注意。</li>
+<li><strong>11/29（日）OPEC+</strong> 第42回OPEC・非OPEC閣僚級会合〔重要度：高〕— 2027年の生産枠組み（能力査定に基づくベースライン見直し）が焦点。イラン戦争の影響で中東各国の生産能力見積もりに不確実性が強く、結論は読みにくい。</li>
+<li><strong>12/4（金）米国</strong> 11月分雇用統計〔重要度：高〕— 12月FOMC直前の最重要指標、タカ派観測の強弱を左右。</li>
+<li><strong>12/8-9（火-水）米国FOMC</strong> 政策金利決定・SEP・ドットプロット〔重要度：高〕— CME FedWatchは12月25bp利上げを95.7%の確率で既定路線視（11/18時点）。金・ドルの最大の方向性決定要因。</li>
+<li><strong>週内 CFTC</strong> 建玉週報の次回更新（週末11/3・11/10・11/17・11/24時点分）〔重要度：中〕— いずれも本稿作成時点で確認できず（未確認、継続課題）。</li>
+<li><strong>随時 NVIDIA</strong> 恒久的CEO後継者選任の動向〔重要度：中〕— 11/12のファン氏辞任後、CFOコレット・クレス氏が暫定CEO。後継者選任のタイミング・方針がAI資本支出・データセンター投資観測を通じて銅価格に影響する可能性。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [CRUDE WRAP: WTI (F7) SETTLES USD 2.75 LOWER AT USD 83.26/BBL; BRENT (F7) SETTLES USD 1.19 LOWER AT USD 91.95/BBL - Newsquawk](https://www.newsquawk.com/headlines/crude-wrap-wti-f7-settles-usd-275-lower-at-usd-8326bbl)（WebSearch経由取得、2026-11-24、11/18分）</p><p>- [Oil down 1% as US oil stocks post larger-than-expected rise - Khaleej Times](https://www.khaleejtimes.com/business/oil-down-1-as-us-oil-stocks-post-larger-than-expected-rise)（WebSearch経由取得、2026-11-24、11/18分）</p><p>- [Oil prices end largely unchanged as Brent edges higher and US crude slips - Qatar News Agency (QNA)](https://qna.org.qa/en/News-Area/News/2026-11/20/oil-prices-end-largely-unchanged-as-brent-edges-higher-and-us-crude-slips)（WebSearch経由取得、2026-11-24、11/20分、単一ソースで確度中）</p><p>- [Gold plunges below $3,750, silver tumbles as hawkish Fed minutes pressure metals - Kitco PM Report](https://www.kitco.com/news/article/2026-11-18/gold-plunges-below-3750-silver-tumbles-hawkish-fed-minutes-pressure-metals)（WebSearch経由取得、2026-11-24、11/18分）</p><p>- [Gold Steadies Near $3,715 After Hawkish Fed Minutes as Iran Risk Lifts the Dollar - USAGOLD](https://www.usagold.com/daily-precious-metals-market-report-november-19-2026/)（WebSearch経由取得、2026-11-24、11/19分）</p><p>- [Copper Sinks to Near Five-Month Low - Trading Economics](https://tradingeconomics.com/commodity/copper/news/601397)（WebSearch経由取得、2026-11-24、11/19分、確度中）</p><p>- [Palladium falls to 52-week low of $920.50 as surplus expectations weigh - PrimeXBT](https://primexbt.com/news/palladium-falls-to-52-week-low-of-920-50-as-surplus-expectations-weigh/)（WebSearch経由取得、2026-11-24、11/19分、確度中）</p><p>- [NVIDIA Announces CEO Transition - NVIDIA（公式リリース）](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition)（WebSearch経由取得、2026-11-24、一次情報、11/12分、新規確認）</p><p>- [Copper Hits Four-Month Low as Nvidia's CEO Exit Clouds AI Financing - PrimeXBT](https://primexbt.com/news/copper-hits-four-month-low-as-nvidias-ceo-exit-clouds-ai-financing/)（WebSearch経由取得、2026-11-24、確度中）</p><p>- [Nvidia turmoil tests metals demand boom - Northern Miner](https://www.northernminer.com/news/nvidia-turmoil-tests-metals-demand-boom/1003897724/)（WebSearch経由取得、2026-11-24、確度中）</p><p>- [EIA Today in Energy（天然ガス冬季見通し分析：Lower 48在庫3,810Bcf等） - US EIA](https://www.eia.gov/todayinenergy/detail.php?id=68484)（WebSearch経由取得、2026-11-24、一次情報、11/18公表分、WebFetchは`ENOTFOUND`で失敗のためスニペットのみ確認）</p><p>- [Natural Gas Market Indicators – November 12, 2026 - American Gas Association](https://www.aga.org/research-policy/resource-library/natural-gas-market-indicators-november-12-2026/)（WebSearch経由取得、2026-11-24）</p><p>- [OPEC+ keeps December oil output targets steady ahead of tougher call for 2027 - Engineering News](https://engineeringnews.co.za/article/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027-2026-11-02)（WebSearch経由取得、2026-11-24、11/1分）</p><p>- [Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman reaffirm commitment to market stability - OPEC（公式プレスリリース）](https://www.opec.org/pr-detail/2033620-1-november-2026.html)（WebSearch経由取得、2026-11-24、11/29会合日程の確認に利用）</p><p>- [SILVER/GOLD/COPPER - COMMODITY EXCHANGE INC. Commitments of Traders, futures-only, as of 10/27/2026 - CFTC公式アーカイブ](https://www.cftc.gov/files/dea/cotarchives/2026/futures/deacmxsf102726.htm)（WebSearch経由取得、2026-11-24、一次情報、スニペットから金・銀・銅の建玉数値を確認。WebFetchで11/17時点分の直接取得を試行したが`ENOTFOUND`で失敗）</p><p>- 前営業日ノート：`daily/agents/2026-11-23-commodities.md`（CFTC建玉・IEA/OPEC+前提・WGCフロー等の継続参照）</p><p>※ Newsquawk・Kitco・USAGOLD・Khaleej Times・Qatar News Agency・Trading Economics・PrimeXBT・Northern Miner等はCLAUDE.mdが定める一次情報源（中央銀行・統計局・取引所等の公式ドメイン）には該当しない二次情報源であり、WebSearchの検索結果スニペットから内容を確認したもの。Nvidia公式リリース・OPEC公式サイト・CFTC・EIAは一次情報として扱ったが、本文の詳細はWebSearchスニペット経由の確認に留まる（CFTC・EIAはWebFetchを試行したが`getaddrinfo ENOTFOUND`でいずれも失敗し、本稿ではこのセッションのネットワーク制約によりアクセスできなかった）。11/20の金・銀・銅等の確定値、週末11/21・22、前営業日11/23、対象営業日11/24東京時間朝〜NY引けの値動きはいずれも本稿作成時点で確認できなかった（5取引日分のデータギャップ）。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
