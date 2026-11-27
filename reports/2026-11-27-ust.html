@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026-11-27 米国債ストラテジーノート</title>
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="apple-touch-icon" href="../icons/icon-192.png">
+<meta name="theme-color" content="#A8672E">
+</head>
+<body>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('mr_authed') !== '1') {
+      location.replace('../index.html');
+    }
+  } catch (e) {
+    location.replace('../index.html');
+  }
+})();
+</script>
+<header class="masthead">
+  <div class="eyebrow"><a href="../index.html">&larr; 一覧に戻る</a><a href="2026-11-27.html">統合レポートを見る</a><span>2026-11-27</span></div>
+  <h1 class="title">2026-11-27 米国債ストラテジーノート</h1>
+  <div class="range"></div>
+</header>
+<div class="agentrow"><div class="label">個別ノート（各担当AI）</div><div class="track">
+    <a href="2026-11-27-fx.html">為替</a>
+    <a href="2026-11-27-commodities.html">コモディティ</a>
+    <a href="2026-11-27-jgb.html">円債</a>
+    <span class="current">米国債</span>
+    <a href="2026-11-27-intl-bonds.html">外債</a>
+    <a href="2026-11-27-jp-equity.html">日本株式</a>
+    <a href="2026-11-27-us-equity.html">米国株式</a>
+    <a href="2026-11-27-politics.html">政治・地政学</a>
+    <a href="2026-11-27-economist.html">マクロ経済</a>
+    </div></div>
+<nav class="jump" aria-label="セクション">
+  <div class="track">
+    <a href="#sec-1">サマリー</a>
+    <a href="#sec-2">値動きの時系列解説</a>
+    <a href="#sec-3">イールドカーブ</a>
+    <a href="#sec-4">FRB動向・入札結果</a>
+    <a href="#sec-5">フロー・需給・ポジション動向</a>
+    <a href="#sec-6">推奨トレード</a>
+    <a href="#calendar">翌営業日以降の注目イベント・材料</a>
+  </div>
+</nav>
+<div class="wrap">
+<article>
+<p><strong>データ取得制約について（冒頭一括注記）</strong>：対象営業日11/27（金）はSIFMA推奨による早期引け（米東部14:00、株式は13:00）で、感謝祭（11/26、終日休場）明けの薄商いの一日。WebFetchは一次情報源（federalreserve.gov等）以外のドメインでDNS制約により機能しないため、本稿は主にWebSearchのスニペット・二次情報（CNBC、Trading Economics、Newsquawk系アグリゲーター、helious.io・thevaultreport.com等の入札データサイト）に基づく。11/25（水）・11/27（金）のUST終値は複数の二次情報間で数ベーシスポイントの食い違いがあり、特に11/27は早期引け前の中間値を報じた記事と引け後の記事が混在するため、本稿では複数ソースの中心値を採用し「推定」と付した。Treasury.gov公式の日次イールドカーブ、FRED（DGS2/DGS5/DGS10/DGS30）、SOFRスワップレートの確定値は未反映であり、社内端末での再確認を推奨する。</p>
+<section id="sec-1">
+<h2>サマリー</h2>
+<ul>
+<li>11/27（金、対象営業日）は感謝祭明けの早期引け。米国株式市場でAI関連株（特に半導体）が反発し（Dow+592pt等）、リスクオン回帰を受けて米国債は全年限で売られ利回りは上昇。10年は前営業日11/25終値4.846%から4.89〜4.93%程度（推定、ソース間で分散）まで上昇、2年は4.64%前後から4.70%近辺まで上昇、30年は5.24%前後から5.30%前後まで上昇したとみられる。11/25の「ブル・スティープ化」（リスクオフの逃避需要）から一転、11/27は「ベア・フラット化」気味の巻き戻しとなった。</li>
+<li>週の中心的な材料は11/23〜25の2年・5年・7年債連続入札（計$1,830億）と、11/25の一連の指標・ベージュブック。2年債入札は応札倍率2.65倍・ステイ・スルー（テールなし）で底堅い結果だったが、5年債（応札倍率2.37倍・テール0.3bp・indirect比率54.3%＝6ヵ月平均61.93%を下回る）、7年債（応札倍率2.43倍・テール1.0bp＝6ヵ月平均0.1bpを大幅に上回る・indirect比率58.2%）は中期・やや長めのゾーンでの需要の緩み、特にindirect bidder（海外中銀等）比率の低下が目立った。</li>
+<li>11/25発表のGDP第2次推計は前期比年率+4.3%（Q2の+2.2%から大幅加速、市場予想+3.4%を上回る）、10月分PCE価格指数は総合+3.8%・コア+3.3%（予想+3.2%）とインフレは上振れ。通常であればベア材料だが、同日はAI関連株の売りでリスクオフが優勢となり、10年は前日比-8.36bpの4.8461%まで低下する「悪いデータでも金利が下がる」逆相関の動きとなった。</li>
+<li>同日公表の11月分ベージュブックは、12地区中8地区で「緩やか〜中程度」の成長、4地区は「ほぼ変化なし」。物価は全般的に中程度のペースで上昇し続け、企業は先行きも同様のペースを予想。関税によるコスト圧力（特にニューヨーク管轄区）、賃金の緩やか〜中程度の上昇、消費者の低価格品シフトが指摘された。定性的にはタカ派的な解釈もできる内容で、12月FOMC（12/8-9）での25bp利上げ確率は複数の二次情報で95〜99%超と、ほぼ完全に織り込まれている状態が続いている。50bp利上げ確率は3〜10%程度（推定、ソースにより分散）。</li>
+<li>カーブは11/25時点で2s10sスプレッドが推定20bp程度（4.846%-4.64%）まで縮小しており、前週（11/17-19時点）の推定25〜30bpから一段のフラット化。11/27の全年限売りを経てもスプレッドは概ね20bp近辺で膠着しているとみられ、フラット化方向への地合いが継続している可能性がある。</li>
+<li>推奨トレードは(1) 2s10sスティープナーの再構築（フラット化が進んだ水準を新規・追加エントリーの好機とみる）、(2) 12月FOMCに向けたリスクオン反動の行き過ぎを見込んだ10年債のタクティカル・ロング（利回りの戻り局面での買い）。</li>
+</ul>
+</section>
+<section id="sec-2">
+<h2>値動きの時系列解説</h2>
+<ul>
+<li><strong>11/23（月、東京・NY）</strong>：2年債入札（$690億）実施。応札倍率2.65倍、最高落札利回り4.700%、ステイ・スルー（WI対比-0.3bp、テールなし）、indirect比率51.5%（直近平均56.5%をやや下回る）、direct比率38.1%（平均32.0%を上回る）、dealer比率10.4%。全体としては「in line」〜無難な結果。日本は3連休で東証休場。</li>
+<li><strong>11/24（火）</strong>：5年債入札（$700億）実施。最高落札利回り4.719%（WI 4.716%からテール+0.3bp）、応札倍率2.37倍（6ヵ月平均2.31倍をやや上回る）、indirect比率54.3%（6ヵ月平均61.93%を大きく下回る）、direct比率36.7%（平均25.47%を上回る）、dealer比率9.0%。応札倍率自体は平均並みだが、海外中銀等のindirect需要の低下が気になる結果。</li>
+<li><strong>11/25（水）</strong>：米東部8:30amにGDP第2次推計（年率+4.3%、Q2+2.2%から加速、予想+3.4%超）、10月分PCE価格指数（総合+3.8%、コア+3.3%、予想+3.2%）が発表され、いずれも市場予想を上振れる強い・インフレ上振れの内容。しかし同日はAI関連株の売りが再燃しリスクオフが優勢となり、10年債利回りは前日比-8.36bpの4.8461%まで低下（CNBC）。7年債入札（$440億）も実施され、最高落札利回り4.708%（WI 4.698%からテール+1.0bp＝6ヵ月平均0.1bpを大幅に上回る）、応札倍率2.43倍（平均2.48倍をやや下回る）、indirect比率58.2%、direct比率33.2%、dealer比率8.6%。「C+」評価とされるやや弱めの結果で、GDP・PCE発表直後のボラティリティと相まってテールが拡大したとみられる。同日公表の11月分ベージュブックは、8地区で緩やか〜中程度の成長、物価は中程度のペースで上昇継続、関税起因のコスト圧力・賃金の緩やかな上昇・消費者の低価格品シフトを指摘。</li>
+<li><strong>11/26（木）</strong>：米感謝祭でSIFMA推奨の全面休場（確定）。米国債・米国株式市場とも新規の取引・確定値なし。</li>
+<li><strong>11/27（金、対象営業日）</strong>：米東部14:00早期引け（株式は13:00）。アジア・欧州時間は薄商いで方向感に乏しかったとみられる（推定）。NY時間に入り、AI関連・半導体株の反発（Dow+592pt等）でリスクオンが強まり、前日までの質への逃避需要が後退。米国債は全年限で売られ、2年は4.64%前後→4.70%近辺（CNBC報道では前日比+6bp超の4.699%）、10年は4.846%→4.89〜4.93%程度（複数ソースで4.89%・4.90%・4.93%・4.914%など分散、いずれも+4〜+9bp程度の上昇）、30年は5.24%前後→5.30%前後（CNBC報道では+8bp超の5.32%）まで上昇したとみられる。来週12/4の雇用統計を見据えた持ち高調整の側面もあるとみられる（推定）。早期引けのため午後の商いは薄く、引け値の確定性は通常日より低い。</li>
+</ul>
+</section>
+<section id="sec-3">
+<h2>イールドカーブ</h2>
+<p>（11/27は早期引け・感謝祭明けの薄商いのため、複数ソース間で引け値に数bpの分散があり中心値を採用。「前日比」は直前の取引日である11/25終値との比較）</p>
+<ul>
+<li><strong>2年</strong> 4.70%程度（推定、ソースにより4.66〜4.70%）（前日比：+5〜+6bp程度）— FF金利3.75-4.00%の上限近辺での推移が続く中、12月FOMCでの25bp利上げがほぼ完全に織り込まれ（確率95〜99%超）、下値が限定的な水準。11/27はリスクオン回帰で逃避需要が後退し売られた。</li>
+<li><strong>5年</strong> 4.78〜4.80%程度（推定、11/24終値4.719%・11/25以降の確定値未確認、2年・10年の動きから補間した推定値）（前日比：+5bp程度、推定）— 5年債入札（11/24）ではindirect需要の低下（54.3%、6ヵ月平均61.93%）が目立ち、海外勢の中期ゾーンへの参加意欲にやや鈍化の兆しがみられた。</li>
+<li><strong>10年</strong> 4.90%程度（推定、ソースにより4.89〜4.93%）（前日比：+4〜+9bp程度）— 11/25はGDP・PCEの上振れにもかかわらずAI株安のリスクオフで-8.36bpの4.8461%まで低下したが、11/27はリスクオン回帰で巻き戻し。7年債入札（11/25）はテール1.0bp（平均0.1bp）とやや弱い結果で、GDP・PCE発表直後のボラティリティの影響もあったとみられる。</li>
+<li><strong>30年</strong> 5.30%程度（推定、ソースにより5.29〜5.32%）（前日比：+8bp程度）— 財政赤字・発行増を背景とした高水準での推移が続く。12月入札（通常月初の3年・10年・30年債、来週以降に発表・実施予定）に向けたタームプレミアムの持続性が焦点。</li>
+</ul>
+<p><strong>カーブ形状の解説</strong>：11/25時点の2s10sスプレッドは推定20bp程度（10年4.846%－2年4.64%）となり、前週（11/17-19時点）の推定25〜30bpから一段のフラット化が進んだ形。11/27の全年限売りを経てもスプレッドは概ね20bp前後で膠着しているとみられる（10年4.90%－2年4.70%＝20bp）。2s30sは推定60bp程度（30年5.30%－2年4.70%）。背景としては、（1）12月FOMCでの25bp利上げがほぼ完全に織り込まれたことで短期ゾーンの追加的な売り余地が限定的である一方、（2）5年・7年債入札でのindirect需要の鈍化や、GDP・PCEの上振れに伴う長期ゾーンのタームプレミアム再評価が、中長期ゾーンの利回りを相対的に押し上げやすくしている可能性がある。11/25のリスクオフ時のブル・スティープ化（逃避需要が中短期に強く向かう）と11/27のリスクオン時のベア・フラット化（逃避需要の巻き戻し＋ハイテク株高への資金シフト）が交互に出る不安定な地合いが続いている。</p>
+<p>SOFRスワップカーブ・UST対SOFRスワップスプレッドは確定値を一次情報・単一の信頼できる二次情報で確認できず<strong>未確認</strong>。複数の二次情報（Bluegamma、Axiom Capital）では11/24時点の10年SOFRスワップレートが4.45〜4.50%程度と報じられ、同時点の10年UST（4.92〜4.93%程度、streetstats等）と比較すると10年スワップスプレッドは推定-40bp前後（財政赤字拡大・発行増を背景にディーラーのバランスシート制約が意識されやすい負のスプレッド構造が継続）となるが、別の二次情報（Investing.com系10年スワップ系列、4.81%程度）を用いると推定-11bp程度と、ソース間の値の分散が大きく定量的な採用は見送る。方向感としては「10年スワップスプレッドが負圏で推移し、USTの相対的な供給過剰・レポ需給のタイト化を示唆する」という定性的な構図自体は直近数ヵ月と整合的（推定）。</p>
+</section>
+<section id="sec-4">
+<h2>FRB動向・入札結果</h2>
+<p><strong>FRB動向</strong>：政策金利は10月28日FOMCで3.75〜4.00%に維持（10-2採決、Cook理事・Hammackクリーブランド連銀総裁が利上げ主張で反対）。12月8-9日FOMC（新議長Kevin Warsh氏下）を控え、タカ派側のWaller理事は「12月の50bp利上げがおそらく必要」「市場を驚かせる(shock people)必要があるかもしれない」との発言を継続（複数の二次情報）。一方Williams・NY連銀総裁は「ドラスティックな対応が必要な状況ではない」とジャンボ利上げを牽制、Paulson・フィラデルフィア連銀総裁は「漸進的な追加引き締め」を支持するなど、委員内で利上げペース（25bp vs 50bp）を巡る温度差が残る。市場の12月FOMCでの25bp利上げ確率は複数の二次情報で95〜99%超とほぼ完全に織り込まれ、50bp確率は3〜10%程度（いずれもCME FedWatchの直接確認は未了、複数の二次情報の中心値）。11/25公表の11月分ベージュブックは8地区で緩やか〜中程度の成長、物価は中程度のペースでの上昇継続、関税起因のコスト圧力・賃金の緩やかな上昇・消費者の低価格品シフトを指摘し、総じて「引き続き緩やかな成長・粘着的な物価上昇」という12月FOMCでの利上げ継続を支持する内容と受け止められている（二次情報の評価）。同日のGDP第2次推計（+4.3%、Q2+2.2%から加速）・10月PCE（コア+3.3%、予想+3.2%超）も上振れで、ハードデータは総じてタカ派的。</p>
+<p><strong>入札結果（今週：2年・5年・7年債連続入札、計$1,830億）</strong>：</p>
+<ul>
+<li><strong>2年債（11/23実施、$690億）</strong>：最高落札利回り4.700%、応札倍率2.65倍（前回2.59倍から改善）、ステイ・スルー（WI対比-0.3bp、テールなし）、indirect比率51.5%（直近平均56.5%をやや下回る）、direct比率38.1%（平均32.0%を上回る）、dealer比率10.4%。無難〜やや強めの結果（評価：B/B+相当）。</li>
+<li><strong>5年債（11/24実施、$700億）</strong>：最高落札利回り4.719%、応札倍率2.37倍（6ヵ月平均2.31倍をやや上回る）、テール+0.3bp（6ヵ月平均0.9bpより良好）、indirect比率54.3%（6ヵ月平均61.93%を大きく下回る）、direct比率36.7%、dealer比率9.0%。応札倍率・テールは平均並みだが、indirect（海外中銀等）需要の鈍化が目立つ（評価：B-相当）。</li>
+<li><strong>7年債（11/25実施、$440億）</strong>：最高落札利回り4.708%、応札倍率2.43倍（平均2.48倍をやや下回る）、テール+1.0bp（6ヵ月平均0.1bpを大幅に上回る）、indirect比率58.2%、direct比率33.2%、dealer比率8.6%。GDP・PCE発表直後のボラティリティも影響したとみられ、やや弱めの結果（評価：C+相当）。</li>
+<li><strong>総括</strong>：2年債は底堅かったが、5年・7年と年限が長くなるにつれてindirect需要の鈍化・テールの拡大が確認され、中期〜やや長めのゾーンでの需給がタイトになりつつある兆候。12月入札（通常月初に発表される3年・10年・30年債の四半期定例入札）での結果が、この需給軟化傾向の継続・反転を見極める次の重要な材料となる。</li>
+<li>11/26（感謝祭）・11/27（早期引け日）に新規の入札はなし（確度高）。</li>
+</ul>
+</section>
+<section id="sec-5">
+<h2>フロー・需給・ポジション動向</h2>
+<ul>
+<li>海外中銀の米国債保有動向（TIC統計）：直近公表は9月分（海外勢の短期国債保有が35億ドル増加）。次回10月分は12月15日公表予定で、今週の5年・7年債入札でのindirect需要の鈍化が構造的なものか一時的なものかを検証する重要な材料となる。</li>
+<li>CFTC建玉（米国債先物の投機筋ポジション）：直近週分は本稿の調査では確認できず未確認。感謝祭前後は政府機関の休業に伴いCOTレポートの公表が通常より後ろ倒しになる可能性がある。</li>
+<li>入札需給：今週の2/5/7年債連続供給では、入札が進むにつれてindirect bidder比率が緩やかに低下する傾向が観察された（2年51.5%→5年54.3%→7年58.2%、ただし5年は6ヵ月平均比で大きく低下）。12月入札（来週以降に発行規模発表）に向けて、海外中銀の参加度・ディーラーの在庫吸収能力が引き続き注目点。</li>
+<li>月末（11/30）に向けた指数延伸（index extension）に伴うデュレーション買いが入りやすい時期であり、12月入札発表前の一時的な需給の緩和要因となり得る（推定）。</li>
+</ul>
+</section>
+<section id="sec-6">
+<h2>推奨トレード</h2>
+<h3>トレード1：UST 2s10sスティープナー再構築（2年ロング・10年ショート、デュレーション中立）</h3>
+<ul>
+<li>根拠：11/25〜27にかけて2s10sスプレッドは推定20bp前後まで縮小し、前週（11/17-19時点）の推定25〜30bpからフラット化が進んだ。しかし12月FOMCでの25bp利上げがほぼ完全に織り込まれており（確率95〜99%超）、2年ゾーンの追加的な売り余地は限定的である一方、5年・7年債入札で確認されたindirect需要の鈍化・財政赤字拡大・12月の3年・10年・30年債入札という長期ゾーンの供給イベントは、長期ゾーンのタームプレミアムを支える方向に働きやすい。Fed内の利上げペース論争（Waller50bp派 vs Williams慎重派）が12月FOMCでの最終判断に向けて続く中、25bpでの決着（50bpではない）となった場合、短期ゾーンはむしろ「打ち止め近づく」との見方で相対的に support されやすく、スティープ化が再燃するシナリオを想定する。</li>
+<li>エントリー目安：2s10sスプレッドが18〜20bp近辺（現状水準）でエントリー・追加。</li>
+<li>利確目安：スプレッドが35〜40bp程度まで拡大した時点で一部利益確定（12月FOMC後の反応を見て判断）。</li>
+<li>損切り目安：スプレッドが10bp近辺まで再フラット化した場合は撤退（50bp利上げ観測が急速に強まるシナリオ）。</li>
+<li>ホライズン：2〜4週間程度（12月8〜9日FOMCとその直後の反応までを一つの判断ポイントとする）。</li>
+<li>リスク：①12/4雇用統計が強い内容となり50bp利上げ観測が再燃するリスク、②12月入札（3年・10年・30年）の規模・結果次第で長期ゾーンの需給評価が急変するリスク、③Warsh議長から明確なガイダンスが出た場合の急変動リスク、④AI関連株の急落再燃によるリスクオフでブル・スティープ化が過度に進むオーバーシュートのリスク（方向は同じだがペース管理が必要）。</li>
+</ul>
+<h3>トレード2：10年債タクティカル・ロング（11/27の戻り局面での利回り買い＝価格売りではなく、利回り低下＝価格上昇を狙った買い）</h3>
+<ul>
+<li>根拠：11/27の利回り上昇（4.846%→4.90%程度）はAI関連株の反発に伴うリスクオンの巻き戻しが主因であり、GDP・PCEの上振れというファンダメンタルズの変化を伴うものではない。12月FOMCでの25bp利上げはほぼ完全に織り込まれ済みで、追加的なタカ派サプライズの余地は限定的（50bp確率は3〜10%程度）。AI関連株のボラティリティは依然高く、リスクオフが再燃すれば11/25同様のブル・スティープ化（10年の相対的な低下）が再演されやすい。月末の指数延伸に伴うデュレーション買いも短期的な support 要因。</li>
+<li>エントリー目安：10年債利回りが4.90〜4.95%近辺（11/27の戻り高値圏）まで上昇した場面で買い（利回り低下＝価格上昇を狙う）。</li>
+<li>利確目安：4.80%近辺（11/25安値圏）への低下。</li>
+<li>損切り目安：5.00%を明確に上回った場合（12月FOMCでの50bp観測の急速な強まり、または12月入札での大幅なコンセッション発生を示唆）。</li>
+<li>ホライズン：1〜2週間程度（12/4雇用統計・12月入札発表を一つの判断ポイントとする）。</li>
+<li>リスク：①12/4雇用統計が強い内容となり、ハードデータの改善が継続的に意識されるリスク、②AI関連株の続伸でリスクオン・逃避需要の後退が長期化するリスク、③12月の3年・10年・30年債入札発表で規模増額となった場合のコンセッション、④本稿のUST終値自体が早期引け・薄商いによる推定値であり、社内端末での当日水準の再確認が前提。</li>
+</ul>
+</section>
+<section id="calendar">
+<h2>翌営業日以降の注目イベント・材料</h2>
+<ul>
+<li><strong>随時（確認必須）</strong> 11/25〜27のUST確定終値・前日比（本稿は複数ソースの中心値による推定）〔重要度：高〕</li>
+<li><strong>11/30（月）米国</strong> 2/5/7年債入札settle日〔重要度：低〕</li>
+<li><strong>11/30（月）日本</strong> 植田日銀総裁講演・記者会見〔重要度：中〜高〕— 日米中銀同時タカ派化の構図を通じ間接的にUST市場のリスクセンチメントに影響し得る。</li>
+<li><strong>12/1（火）米国</strong> 11月ISM製造業指数〔重要度：中〕</li>
+<li><strong>12/3（木）米国</strong> 11月ISM非製造業（サービス業）指数、ADP雇用統計〔重要度：中〜高〕</li>
+<li><strong>12/4（金）米国</strong> 11月分雇用統計（非農業部門雇用者数・失業率・賃金）〔重要度：最高〕— 12月FOMC直前の最後の主要指標で、25bp vs 50bpの論争に決定的な影響を与え得る。</li>
+<li><strong>12月第1週</strong> 米財務省、12月分四半期定例入札（3年・10年・30年債）の発行規模発表〔重要度：高〕— 今後数ヵ月の供給ペース・タームプレミアムに影響。</li>
+<li><strong>12/8〜9（火〜水）米国</strong> FOMC政策金利決定・SEP・ドットプロット公表（25bp vs 50bp、Warsh議長の初の本格的なガイダンスに注目）〔重要度：最高〕</li>
+<li><strong>12/10（木）米国</strong> 11月分CPI〔重要度：高〕</li>
+<li><strong>12/15（火）米国</strong> 財務省TIC統計（10月分、海外中銀の米国債保有動向）〔重要度：中〕</li>
+<li><strong>随時</strong> Fed高官（Waller、Williams、Musalem、Logan、Collins、Hammack、Schmid、Paulson、Warsh等）の発言〔重要度：高〕— 12月FOMCでの利上げ幅（25bp vs 50bp）を巡る温度差の変化に要注意。</li>
+</ul>
+</section>
+<section id="sources"><h2>情報源</h2><details class="src-details"><summary>すべて表示</summary><div class="src-body"><p>- [7-Year Note Auction, Nov 25, 2026: 4.708% High, In Line - helious.io](https://helious.io/news/auc-91282CSA0-2026-11-25/7-year-note-auction-in-line)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Treasury 7-Year Auction Tails as Demand Disappoints - roic.ai](https://www.roic.ai/news/treasury-7-year-auction-tails-as-demand-disappoints-11-25-2026)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [2-Year Note Auction, Nov 23, 2026: 4.700% High, In Line - helious.io](https://helious.io/news/auc-91282CRY9-2026-11-23/2-year-note-auction-in-line)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [US sells USD 70bln of 5-year notes; Tail 0.3bps - Newsquawk](https://www.newsquawk.com/headlines/us-sells-usd-70bln-of-5-year-notes-tail-03bps)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [5-Year Note Auction, Nov 24, 2026: 4.719% High, In Line - helious.io](https://helious.io/news/auc-91282CRZ6-2026-11-24/5-year-note-auction-in-line)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [US Treasury Auction Results November 2026: Yields, Bid-to-Cover - thevaultreport.com](https://thevaultreport.com/treasury-auctions/2026-11)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection - CNBC](https://www.cnbc.com/amp/2026/11/25/treasury-yields-bonds-inflation.html)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [US Treasury yields decline despite rising PCE inflation and strong GDP growth - Equiti](https://www.equiti.com/jo-en/news/trade-reviews/us-treasury-yields-decline-despite-rising-pce-inflation-and-strong-gdp-growth/)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Fed Beige Book shows slight growth, sticky inflation ahead of Dec meeting - Yahoo Finance](https://finance.yahoo.com/economy/articles/fed-beige-book-shows-slight-211120530.html)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [The Fed - Monetary Policy: Beige Book (Branch) - 連邦準備制度理事会](https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Treasury yields are higher as investors look ahead to payroll data - CNBC](https://www.cnbc.com/2026/11/27/treasury-yields-bonds-fed.html)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Dow Adds 592 Points on Black Friday as AI Fear Fades: Stock Market Today - Kiplinger](https://kiplinger.com/investing/stocks/dow-adds-592-points-on-black-friday-as-ai-fear-fades-stock-market-today)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [U.S. Stock Market Today, November 27, 2026: Tech Rebounds in Shortened Black Friday Session - Eurasia Business News](https://eurasiabusinessnews.com/2026/11/27/u-s-stock-market-today-november-27-2026-tech-rebounds-in-shortened-black-friday-session/)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Fed's Waller doubles down on a jumbo rate hike in December, sees more hikes to come - Yahoo Finance](https://finance.yahoo.com/economy/policy/article/feds-waller-doubles-down-on-a-jumbo-rate-hike-in-december-sees-more-hikes-to-come-174616572.html)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [Fed's Williams signals warning on jumbo rate hike in December - Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/fed-williams-signals-warning-jumbo-173300088.html)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [December Fed Rate Hike Nearly Priced In at 94% to 97% - marketintellabs.com](https://marketintellabs.com/research/december-fed-rate-hike-odds)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [10 Year SOFR Swap Rate: Current Rate, Chart &amp; History - bluegamma.io](https://www.bluegamma.io/usd-swap-rates/10-year-sofr-swap-rate)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [U.S. Market Rates（10年SOFRスワップ参考値） - Axiom Capital](https://axiom-capital.com/rate-watch/)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- [U.S. Treasury Yield Curve - streetstats.finance](https://streetstats.finance/rates/treasuries)（WebSearch経由、取得日時：2026-11-27 JST）</p><p>- 本リポジトリ内：`daily/agents/2026-11-26-ust.md`、`daily/agents/2026-11-25-ust.md`、`daily/agents/2026-11-24-ust.md`、`daily/agents/2026-11-23-ust.md`（継続性・整合性確認のため参照）</p><p>※本稿で「未確認」「推定」とした主な項目：11/25・11/27のUST確定終値（複数ソース間で数bpの分散あり、Treasury.gov公式値・FRED未反映）、5年債11/27時点の利回り、SOFRスワップカーブ・UST対SOFRスワップスプレッドの具体的数値（ソース間で-11bp〜-40bp程度の大きな分散）、CME FedWatchでの12月FOMC利上げ確率の一次確認、直近週のCFTC建玉データ。</p></div></details></section>
+</article>
+</div>
+<footer class="foot">
+金融市場リサーチ — 自動生成レポート
+<div class="legal"><p>本サイトの情報は情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。内容は執筆時点の情報に基づく分析・見解であり、正確性・完全性を保証するものではなく、将来の市場動向を保証するものでもありません。記載内容にはAIによる自動生成部分を含みます。実際の投資判断は、利用者ご自身の責任において行ってください。本サイトの情報の利用により生じたいかなる損害についても、作成者は責任を負いません。本サイトは限定した関係者内での共有を目的としており、URL・合言葉の第三者への転送はご遠慮ください。</p></div>
+</footer>
+<script src="../assets/app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d82a3b033cff49d793a11433e0fb0c46"}'></script>
+</body>
+</html>
